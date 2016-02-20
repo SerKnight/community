@@ -106,6 +106,8 @@ GEM
       multipart-post (>= 1.2, < 3)
     gherkin (3.2.0)
     google-analytics-rails (1.0.0)
+    haml (4.0.7)
+      tilt
     hashie (3.4.3)
     hike (1.2.3)
     i18n (0.7.0)
@@ -251,6 +253,7 @@ DEPENDENCIES
   dotenv-rails
   factory_girl_rails
   google-analytics-rails
+  haml
   jbuilder (~> 2.0)
   jquery-rails
   omniauth

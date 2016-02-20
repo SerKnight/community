@@ -41,3 +41,4 @@ end
 
 gem "autoprefixer-rails"
 gem 'rails_12factor', group: :production
+gem 'haml'
