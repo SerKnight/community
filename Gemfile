@@ -40,3 +40,4 @@ group :development do
 end
 
 gem "autoprefixer-rails"
+gem 'rails_12factor', group: :production
