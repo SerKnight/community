@@ -5598,8 +5598,6 @@ tbody.collapse.in {
 .navbar {
   position: relative;
   min-height: 50px;
-  margin-bottom: 20px;
-  border: 1px solid transparent;
 }
 /* line 15, /Users/SerKnight/.rvm/gems/ruby-2.2.2/gems/bootstrap-sass-3.3.5/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
 .navbar:before, .navbar:after {
@@ -5609,12 +5607,6 @@ tbody.collapse.in {
 /* line 19, /Users/SerKnight/.rvm/gems/ruby-2.2.2/gems/bootstrap-sass-3.3.5/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
 .navbar:after {
   clear: both;
-}
-@media (min-width: 768px) {
-  /* line 11, /Users/SerKnight/.rvm/gems/ruby-2.2.2/gems/bootstrap-sass-3.3.5/assets/stylesheets/bootstrap/_navbar.scss */
-  .navbar {
-    border-radius: 4px;
-  }
 }
 
 /* line 15, /Users/SerKnight/.rvm/gems/ruby-2.2.2/gems/bootstrap-sass-3.3.5/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
@@ -6023,7 +6015,7 @@ tbody.collapse.in {
 /* line 397, /Users/SerKnight/.rvm/gems/ruby-2.2.2/gems/bootstrap-sass-3.3.5/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default {
   background-color: #f8f8f8;
-  border-color: #e7e7e7;
+  border: none;
 }
 /* line 401, /Users/SerKnight/.rvm/gems/ruby-2.2.2/gems/bootstrap-sass-3.3.5/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default .navbar-brand {

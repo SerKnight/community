@@ -1,0 +1,12 @@
+= render partial: 'hero_image'
+= render partial: 'hiw_grid'
+
+- if notice
+  :javascript
+    remove_notice(10);
+
+:javascript
+  $(document).ready(function(){
+    homepageInit();
+    masonrySetup();
+  })

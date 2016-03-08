@@ -1,0 +1,60 @@
+.navbar.logged-out {
+	height: 58px;
+	font-family: proxima_bold;
+	background: #fff;
+	padding: 4px 0 4px 10px;
+	z-index: 1001;
+	border: none;
+	margin-bottom: 0px;
+
+	.navbar-brand {
+		background: asset-url("logos/header_logo.png");
+		background-repeat: no-repeat;
+		background-size: 100%;
+		width: 48px !important;
+		margin-top: 2px;
+	}
+
+	.header-button{
+		margin-right: 20px;
+
+		button.btn-default {
+			border: none;
+			background-color: transparent;
+		}
+
+		&.bordered.btn-default {
+			padding-top: 4px;
+			padding-bottom: 4px;
+			margin-top: 10px;
+		}
+	}
+
+	.btn.btn-default {
+		color: #fff;
+		border: none;
+		background-color: #aa4b41;
+		border-bottom: 2px solid #77352E;
+
+
+		&:hover {
+			background: #77352E;
+		}
+	}
+
+	small.help-block {
+		text-align: center;
+	}
+
+	.login_in_sign_up_btn {
+		border: 2px solid #fff;
+		background-color: transparent;
+		padding-top: 3px;
+		padding-bottom: 3px;
+		margin-top: 10px;
+
+		&:hover{
+			border: 2px solid #aa4b41;
+		}
+	}
+}

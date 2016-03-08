@@ -1,20 +1,13 @@
-%nav.navbar.navbar-default{:role => "navigation"}
-  / Brand and toggle get grouped for better mobile display
-  .navbar-header
-    %button.navbar-toggle{"data-target" => "#navbar-collapse-1", "data-toggle" => "collapse", :type => "button"}
-      %span.sr-only Toggle navigation
-      %span.icon-bar
-      %span.icon-bar
-      %span.icon-bar
-    = link_to "Travel Planet", defined?(root_path) ? root_path : "#", class: "navbar-brand"
-    / Collect the nav links, forms, and other content for toggling
-    %ul.nav.navbar-nav
-      %li= link_to "Creat a trip (more info)", '/adventure'
-
-
-  #navbar-collapse-1.collapse.navbar-collapse
-    %ul.nav.navbar-nav
-    %ul.nav.navbar-nav.navbar-right
+%nav.navbar.navbar-default.logged-out{role: "navigation"}
+  .container-fluid
+    .navbar-header
+      %a.navbar-brand{href: "/"}
+    #header-navbar.collapse.navbar-collapse
+      %ul.nav.navbar-nav.navbar-right.login-right
+        %li
+          %form
+            %a.btn.btn-default.navbar-btn.header-button.bordered{href: "/adventure"}
+              BUILD A TRIP
       - if defined?(Devise)
         - if user_signed_in?
           %li.dropdown
@@ -26,6 +19,12 @@
               %li.divider
               %li= link_to "Sign Out", destroy_user_session_path, method: :delete
         - else
-          %li= link_to "Login", new_user_session_path
-          %li= link_to "Sign Up", new_user_registration_path
-  / /.navbar-collapse
+/          %li
+/            %form
+/              .btn.btn-primary.navbar-btn.login_in_sign_up_btn.new-account{style: "margin-right: 10px; font-weight: bold;"}
+/                LOGIN
+
+
+
+/          %li= link_to "Login", new_user_session_path
+/ /.navbar-collapse
