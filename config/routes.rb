@@ -8,6 +8,8 @@ Rails.application.routes.draw do
   root 'homepage#homepage'
   
   get 'adventure' =>  'homepage#trip_onboard'
+  get 'vietnam'   =>  'homepage#vietnam'
+  get 'ecuador'   =>  'homepage#ecuador'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

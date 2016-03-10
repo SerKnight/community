@@ -1,0 +1,129 @@
+.adventure-hero {
+  margin-bottom: 0px !important;
+}
+
+.adventure-hero-fix {
+	min-height: 750px;
+	background-size: cover !important;
+	margin-top: -60px;
+}
+
+.adventure-slow-scroll {
+	position: absolute;
+	width: 100%;
+	top: 0px;
+	margin-top: 310px;
+
+	#adventure-text {
+		position: relative;
+		text-align: center;
+		width: 100%;
+		margin-bottom: 12px;
+		color: #212326;
+		background: transparent;
+		padding-bottom: 20px;
+		max-width: 1000px;
+		border-radius: 12px;
+		margin: auto;
+
+    #adventure-header{
+		font-family: proxima_black;
+		font-size: 3.8em;
+	}
+
+	#adventure-explanation {
+		max-width: 570px;
+		margin: 0 auto;
+		font-size: 1.6em;
+		font-family: proxima_light;
+	}
+  }
+}  
+
+
+.adventure-details{
+	position: absolute;
+	width: 100%;
+	background: #fff;
+
+	.adventure-description{
+		padding-top: 80px;
+		padding-bottom: 80px;
+
+		.description-title{
+			font-family: proxima_black;
+			font-size: 2.8em;
+			color: #212326;
+			text-align: center;
+			border-bottom: 4px solid #aa4b41;
+			max-width: 460px;
+			margin: auto;
+		}
+
+		.description-body{
+			font-family: proxima_light;
+			font-size: 1.4em;
+			color: #212326;
+			text-align: center;
+			max-width: 700px;
+			margin: auto;
+			padding-top: 40px;
+		}
+
+		.final-sentence{
+			font-family: proxima_bold;
+			font-size: 1.4em;
+			color: #212326;
+			text-align: center;
+			max-width: 700px;
+			margin: auto;
+		}
+	}
+
+	.adventure-itinerary{
+		width: 100%;
+		background: #212326;
+		min-height: 400px;
+		padding-top: 80px;
+		padding-bottom: 80px;
+		padding-right: 0px;
+		padding-left: 0px;
+		
+		.itinerary-header{
+			font-family: proxima_black;
+			font-size: 2.8em;
+			color: #fff;
+			text-align: center;
+			border-bottom: 4px solid #aa4b41;
+			max-width: 460px;
+			margin: auto;
+		}
+
+		.destination-container{
+			padding-top: 80px;
+
+			.destination-image{
+				min-height: 300px;
+				border: 8px solid #212326;
+				padding: 0px;
+			}
+				
+			.destination-description{
+				.destination-title{
+					font-family: proxima_bold;
+					font-size: 2em;
+					color: #fff;
+					text-align: center;
+				}
+
+				.destination-body{
+					font-family: proxima_light;
+					text-align: center;
+					color: #fff;
+					font-size: 1.2em;
+					padding: 12px;
+				}
+			}
+		}
+	}
+}

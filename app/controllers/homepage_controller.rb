@@ -8,4 +8,12 @@ class HomepageController < ApplicationController
 
   end
 
+  def vietnam
+
+  end
+
+  def ecuador
+
+  end
+
 end

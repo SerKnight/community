@@ -5,13 +5,14 @@
 .jumbotron_fix {
 	min-height: 800px;
 	background-size: cover !important;
+  margin-top: -60px;
 }
 
 .scroll-slow {
   position: absolute;
   width: 100%;
   top: 0px;
-  margin-top: 230px;
+  margin-top: 340px;
 
   #homepage-text {
     position: relative;
@@ -19,23 +20,15 @@
     width: 100%;
     margin-bottom: 12px;
     color: #fff;
-    background: rgba(0,41,60,0.7);
+    background: transparent;
     padding-bottom: 80px;
     max-width: 700px;
     border-radius: 12px;
     margin: auto;
 
     #adventure-local{
-      font-family: proxima_thin;
+      font-family: proxima_black;
       font-size: 4.5em;
-    }
-
-    #explanation {
-      max-width: 480px;
-      margin: 0 auto;
-      font-size: 1.5em;
-      margin-bottom: 17px;
-      font-family: proxima_light;
     }
   }
 }  

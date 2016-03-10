@@ -1,7 +1,6 @@
 .navbar.logged-out {
-	height: 58px;
 	font-family: proxima_bold;
-	background: #fff;
+	background: transparent;
 	padding: 4px 0 4px 10px;
 	z-index: 1001;
 	border: none;
@@ -32,13 +31,17 @@
 
 	.btn.btn-default {
 		color: #fff;
-		border: none;
-		background-color: #aa4b41;
-		border-bottom: 2px solid #77352E;
-
+		border: 2px solid #fff;
+		border-radius: 0px;
+		background-color: transparent;
+		font-family: proxima_thin;
+		background: rgba(0,0,0,0.7);
 
 		&:hover {
-			background: #77352E;
+			background: rgba(255,255,255,0.7);
+			color: #212326;
+			-webkit-transition: all 0.3s ease;
+			transition: all 0.3s ease;
 		}
 	}
 
