@@ -106,15 +106,20 @@
 				min-height: 300px;
 				border: 8px solid #212326;
 				padding: 0px;
+			
+				.destination-title{
+					font-family: proxima_thin;
+					font-size: 3em;
+					color: #fff;
+					text-align: center;
+					margin-top: 120px !important;
+					margin: auto;
+					background: rgba(170,75,65,0.7);
+					max-width: 330px;
+				}
 			}
 				
 			.destination-description{
-				.destination-title{
-					font-family: proxima_bold;
-					font-size: 2em;
-					color: #fff;
-					text-align: center;
-				}
 
 				.destination-body{
 					font-family: proxima_light;
