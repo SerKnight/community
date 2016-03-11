@@ -52,16 +52,16 @@
 
 		.description-title{
 			font-family: proxima_black;
-			font-size: 2.8em;
+			font-size: 3.2em;
 			color: #212326;
 			text-align: center;
 			border-bottom: 4px solid #aa4b41;
-			max-width: 460px;
+			max-width: 480px;
 			margin: auto;
 		}
 
 		.description-body{
-			font-family: proxima_light;
+			font-family: proxima_thin;
 			font-size: 1.4em;
 			color: #212326;
 			text-align: center;
@@ -91,11 +91,11 @@
 		
 		.itinerary-header{
 			font-family: proxima_black;
-			font-size: 2.8em;
+			font-size: 3.2em;
 			color: #fff;
 			text-align: center;
 			border-bottom: 4px solid #aa4b41;
-			max-width: 460px;
+			max-width: 500px;
 			margin: auto;
 		}
 
@@ -122,7 +122,7 @@
 			.destination-description{
 
 				.destination-body{
-					font-family: proxima_light;
+					font-family: proxima_thin;
 					text-align: center;
 					color: #fff;
 					font-size: 1.2em;
@@ -130,5 +130,152 @@
 				}
 			}
 		}
+	}
+
+	.adventure-how{
+		min-height: 700px;
+		background-size: cover !important;
+		padding-top: 80px;
+		padding-bottom: 80px;
+	
+		.adventure-how-header{
+			font-family: proxima_black;
+			font-size: 3.2em;
+			color: #fff;
+			text-align: center;
+			border-bottom: 4px solid #aa4b41;
+			max-width: 380px;
+			margin: auto;
+			margin-bottom: 80px;
+		}
+
+		.how-box-container{
+			margin: auto;
+
+			.how-box{
+				background: transparent;
+				min-height: 300px;
+			
+				.how-box-text{
+					margin: 20px;
+					background: rgba(33, 35, 38, 0.75);
+					border-radius: 4px;
+					min-height: 300px;
+
+					.how-box-title{
+						font-family: proxima_thin;
+						font-size: 2.2em;
+						text-align: center;
+						padding: 10px;
+						color: #fff;
+						padding-top: 74px;
+					}
+
+					.how-box-body{
+						font-family: proxima_thin;
+						font-size: 1.2em;
+						text-align: center;
+						padding: 20px;
+						color: rgba(255,255,255,0.5);
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 992px){
+	#adventure-header-mobile{
+		display: none;
+	}
+
+	#adventure-explanation-mobile{
+		display: none;
+	}
+}
+
+
+@media screen and (max-width: 991px){
+	#adventure-header{
+		display: none;
+	}
+
+	#adventure-explanation{
+		display: none;
+	}
+
+	#adventure-header-mobile{
+		display: block;
+		font-family: proxima_black;
+		font-size: 4em;
+		color: #212326;
+		text-align: center;
+	}
+
+	#adventure-explanation-mobile{
+		display: block;
+		font-family: proxima_light;
+		font-size: 1.6em;
+		color: #212326;
+		text-align: center;
+		max-width: 400px;
+		margin: auto;
+		padding-top: 20px;
+	}
+
+	.adventure-slow-scroll{
+		margin-top: 100px;
+	}
+
+	.adventure-details .adventure-how .how-box-container .how-box{
+		min-height: 0px;
+		margin-top: 0px;
+		max-width: 500px;
+		margin: auto;
+	}
+
+	.adventure-details .adventure-how .how-box-container .how-box .how-box-text{
+		min-height: 0px;
+	}
+
+	.adventure-details .adventure-how .how-box-container .how-box .how-box-text .how-box-title{
+		padding-top: 20px;
+	}
+
+	.adventure-details .adventure-how .how-box-container .how-box .how-box-text .how-box-body{
+		max-width: 400px;
+		margin: auto;
+		padding-top: 0px;
+	}
+}
+
+@media screen and (max-width: 500px){
+	#adventure-explanation-mobile{
+		font-size: 1.4em;
+		max-width: 350px;
+	}
+
+	.adventure-details .adventure-description .description-title{
+		font-size: 2.2em;
+		max-width: 350px;
+	}
+
+	.adventure-details .adventure-description .description-body{
+		font-size: 1.2em;
+		max-width: 350px;
+	}
+
+	.adventure-details .adventure-description .final-sentence{
+		max-width: 350px;
+	}
+
+	.adventure-details .adventure-itinerary .itinerary-header{
+		font-size: 2.2em;
+		max-width: 350px;
+	}
+
+	.adventure-details .adventure-how .adventure-how-header{
+		font-size: 2.2em;
+		max-width: 350;
 	}
 }
