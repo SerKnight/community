@@ -1,37 +1,37 @@
-.vietnam-hero {
+.ecuador-hero {
   margin-bottom: 0px !important;
 }
 
-.vietnam-hero-fix {
+.ecuador-hero-fix {
 	min-height: 750px;
 	background-size: cover !important;
 	margin-top: -60px;
 }
 
-.vietnam-slow-scroll {
+.ecuador-slow-scroll {
 	position: absolute;
 	width: 100%;
 	top: 0px;
-	margin-top: 310px;
+	margin-top: 250px;
 
-	#vietnam-text {
+	#ecuador-text {
 		position: relative;
 		text-align: center;
 		width: 100%;
 		margin-bottom: 12px;
-		color: #212326;
+		color: #fff;
 		background: transparent;
 		padding-bottom: 20px;
 		max-width: 1000px;
 		border-radius: 12px;
 		margin: auto;
 
-    #vietnam-header{
+    #ecuador-header{
 		font-family: proxima_black;
 		font-size: 3.8em;
 	}
 
-	#vietnam-explanation {
+	#ecuador-explanation {
 		max-width: 570px;
 		margin: 0 auto;
 		font-size: 1.6em;
@@ -41,12 +41,12 @@
 }  
 
 
-.vietnam-details{
+.ecuador-details{
 	position: absolute;
 	width: 100%;
 	background: #fff;
 
-	.vietnam-description{
+	.ecuador-description{
 		padding-top: 80px;
 		padding-bottom: 80px;
 
@@ -71,7 +71,7 @@
 		}
 	}
 
-	.vietnam-itinerary{
+	.ecuador-itinerary{
 		width: 100%;
 		background: #212326;
 		min-height: 400px;
@@ -170,13 +170,13 @@
 		}
 	}
 
-	.vietnam-how{
+	.ecuador-how{
 		min-height: 700px;
 		background-size: cover !important;
 		padding-top: 80px;
 		padding-bottom: 80px;
 	
-		.vietnam-how-header{
+		.ecuador-how-header{
 			font-family: proxima_black;
 			font-size: 3.2em;
 			color: #fff;
@@ -223,72 +223,74 @@
 }
 
 @media screen and (min-width: 992px){
-	#vietnam-header-mobile{
+	#ecuador-header-mobile{
 		display: none;
 	}
 
-	#vietnam-explanation-mobile{
+	#ecuador-explanation-mobile{
 		display: none;
 	}
 }
 
 
 @media screen and (max-width: 991px){
-	#vietnam-header{
+	#ecuador-header{
 		display: none;
 	}
 
-	#vietnam-explanation{
+	#ecuador-explanation{
 		display: none;
 	}
 
-	#vietnam-header-mobile{
+	#ecuador-header-mobile{
 		display: block;
 		font-family: proxima_black;
-		font-size: 4em;
-		color: #212326;
+		font-size: 3em;
+		color: #fff;
 		text-align: center;
+		line-height: 48px;
+
 	}
 
-	#vietnam-explanation-mobile{
+	#ecuador-explanation-mobile{
 		display: block;
 		font-family: proxima_light;
 		font-size: 1.6em;
-		color: #212326;
+		color: #fff;
 		text-align: center;
 		max-width: 400px;
 		margin: auto;
 		padding-top: 20px;
 	}
 
-	.vietnam-slow-scroll{
-		margin-top: 100px;
+	.ecuador-slow-scroll{
+		margin-top: 120px;
 	}
 
-	.vietnam-details .vietnam-itinerary{
+	.ecuador-details .ecuador-itinerary{
 		padding-top: 1px;
 	}
 
-	.vietnam-details .vietnam-itinerary .map-block .route-map{
+	.ecuador-details .ecuador-itinerary .map-block .route-map{
 		margin-top: 80px;
 	}
 
-	.vietnam-details .vietnam-how .how-box-container .how-box{
+	.ecuador-details .ecuador-how .how-box-container .how-box{
 		min-height: 0px;
 		margin-top: 0px;
 		max-width: 500px;
 		margin: auto;
 	}
 
-	.vietnam-details .vietnam-how .how-box-container .how-box .how-box-text{
+	.ecuador-details .ecuador-how .how-box-container .how-box .how-box-text{
 		min-height: 0px;
 	}
 
-	.vietnam-details .vietnam-how .how-box-container .how-box .how-box-text .how-box-title{
+	.ecuador-details .ecuador-how .how-box-container .how-box .how-box-text .how-box-title{
 		padding-top: 20px;
 	}
 
-	.vietnam-details .vietnam-how .how-box-container .how-box .how-box-text .how-box-body{
+	.ecuador-details .ecuador-how .how-box-container .how-box .how-box-text .how-box-body{
 		max-width: 400px;
 		margin: auto;
 		padding-top: 0px;
@@ -297,50 +299,54 @@
 
 @media screen and (max-width: 500px){
 
-	#vietnam-explanation-mobile{
+	.ecuador-hero-fix{
+		min-height: 600px;
+	}
+
+	#ecuador-explanation-mobile{
 		font-size: 1.4em;
 		max-width: 350px;
 	}
 
-	.vietnam-details .vietnam-description .description-title{
+	.ecuador-details .ecuador-description .description-title{
 		font-size: 2.2em;
 		max-width: 300px;
 	}
 
-	.vietnam-details .vietnam-description .description-body{
+	.ecuador-details .ecuador-description .description-body{
 		font-size: 1.2em;
 		max-width: 300px;
 	}
 
-	.vietnam-details .vietnam-itinerary .final-sentence{
+	.ecuador-details .ecuador-itinerary .final-sentence{
 		max-width: 350px;
 	}
 
-	.vietnam-details .vietnam-itinerary .itinerary-header{
+	.ecuador-details .ecuador-itinerary .itinerary-header{
 		font-size: 2.2em;
 		max-width: 350px;
 	}
 
-	.vietnam-details .vietnam-itinerary .itinerary-body{
+	.ecuador-details .ecuador-itinerary .itinerary-body{
 		font-size: 1.2em;
 		max-width: 350;
 	}	
 
-	.vietnam-details .vietnam-how .vietnam-how-header{
+	.ecuador-details .ecuador-how .ecuador-how-header{
 		font-size: 2.2em;
 		max-width: 350;
 	}
 
-	.vietnam-details .vietnam-how .how-box-container .how-box .how-box-text{
+	.ecuador-details .ecuador-how .how-box-container .how-box .how-box-text{
 		margin: 0px;
 		margin-top: 10px;
 	}
 
-	.vietnam-details .vietnam-how .how-box-container{
+	.ecuador-details .ecuador-how .how-box-container{
 		padding: 0px;
 	}
 
-	.vietnam-details .vietnam-how .how-box-container .how-box .how-box-text .how-box-body{
+	.ecuador-details .ecuador-how .how-box-container .how-box .how-box-text .how-box-body{
 		font-size: 1.0em;
 	}
 }

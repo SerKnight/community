@@ -1,20 +1,20 @@
-.vietnam-hero {
+.adventure-hero {
   margin-bottom: 0px !important;
 }
 
-.vietnam-hero-fix {
+.adventure-hero-fix {
 	min-height: 750px;
 	background-size: cover !important;
 	margin-top: -60px;
 }
 
-.vietnam-slow-scroll {
+.ecuador-slow-scroll {
 	position: absolute;
 	width: 100%;
 	top: 0px;
 	margin-top: 310px;
 
-	#vietnam-text {
+	#ecuador-text {
 		position: relative;
 		text-align: center;
 		width: 100%;
@@ -26,12 +26,12 @@
 		border-radius: 12px;
 		margin: auto;
 
-    #vietnam-header{
+    #ecuador-header{
 		font-family: proxima_black;
 		font-size: 3.8em;
 	}
 
-	#vietnam-explanation {
+	#ecuador-explanation {
 		max-width: 570px;
 		margin: 0 auto;
 		font-size: 1.6em;
@@ -41,12 +41,12 @@
 }  
 
 
-.vietnam-details{
+.ecuador-details{
 	position: absolute;
 	width: 100%;
 	background: #fff;
 
-	.vietnam-description{
+	.ecuador-description{
 		padding-top: 80px;
 		padding-bottom: 80px;
 
@@ -71,7 +71,7 @@
 		}
 	}
 
-	.vietnam-itinerary{
+	.adventure-itinerary{
 		width: 100%;
 		background: #212326;
 		min-height: 400px;
@@ -170,13 +170,13 @@
 		}
 	}
 
-	.vietnam-how{
+	.adventure-how{
 		min-height: 700px;
 		background-size: cover !important;
 		padding-top: 80px;
 		padding-bottom: 80px;
 	
-		.vietnam-how-header{
+		.adventure-how-header{
 			font-family: proxima_black;
 			font-size: 3.2em;
 			color: #fff;
@@ -223,26 +223,26 @@
 }
 
 @media screen and (min-width: 992px){
-	#vietnam-header-mobile{
+	#adventure-header-mobile{
 		display: none;
 	}
 
-	#vietnam-explanation-mobile{
+	#adventure-explanation-mobile{
 		display: none;
 	}
 }
 
 
 @media screen and (max-width: 991px){
-	#vietnam-header{
+	#adventure-header{
 		display: none;
 	}
 
-	#vietnam-explanation{
+	#adventure-explanation{
 		display: none;
 	}
 
-	#vietnam-header-mobile{
+	#adventure-header-mobile{
 		display: block;
 		font-family: proxima_black;
 		font-size: 4em;
@@ -250,7 +250,7 @@
 		text-align: center;
 	}
 
-	#vietnam-explanation-mobile{
+	#adventure-explanation-mobile{
 		display: block;
 		font-family: proxima_light;
 		font-size: 1.6em;
@@ -261,34 +261,34 @@
 		padding-top: 20px;
 	}
 
-	.vietnam-slow-scroll{
+	.adventure-slow-scroll{
 		margin-top: 100px;
 	}
 
-	.vietnam-details .vietnam-itinerary{
+	.adventure-details .adventure-itinerary{
 		padding-top: 1px;
 	}
 
-	.vietnam-details .vietnam-itinerary .map-block .route-map{
+	.adventure-details .adventure-itinerary .map-block .route-map{
 		margin-top: 80px;
 	}
 
-	.vietnam-details .vietnam-how .how-box-container .how-box{
+	.adventure-details .adventure-how .how-box-container .how-box{
 		min-height: 0px;
 		margin-top: 0px;
 		max-width: 500px;
 		margin: auto;
 	}
 
-	.vietnam-details .vietnam-how .how-box-container .how-box .how-box-text{
+	.adventure-details .adventure-how .how-box-container .how-box .how-box-text{
 		min-height: 0px;
 	}
 
-	.vietnam-details .vietnam-how .how-box-container .how-box .how-box-text .how-box-title{
+	.adventure-details .adventure-how .how-box-container .how-box .how-box-text .how-box-title{
 		padding-top: 20px;
 	}
 
-	.vietnam-details .vietnam-how .how-box-container .how-box .how-box-text .how-box-body{
+	.adventure-details .adventure-how .how-box-container .how-box .how-box-text .how-box-body{
 		max-width: 400px;
 		margin: auto;
 		padding-top: 0px;
@@ -296,51 +296,37 @@
 }
 
 @media screen and (max-width: 500px){
-
-	#vietnam-explanation-mobile{
+	#adventure-explanation-mobile{
 		font-size: 1.4em;
 		max-width: 350px;
 	}
 
-	.vietnam-details .vietnam-description .description-title{
+	.adventure-details .adventure-description .description-title{
 		font-size: 2.2em;
-		max-width: 300px;
+		max-width: 350px;
 	}
 
-	.vietnam-details .vietnam-description .description-body{
+	.adventure-details .adventure-description .description-body{
 		font-size: 1.2em;
-		max-width: 300px;
-	}
-
-	.vietnam-details .vietnam-itinerary .final-sentence{
 		max-width: 350px;
 	}
 
-	.vietnam-details .vietnam-itinerary .itinerary-header{
+	.adventure-details .adventure-itinerary .final-sentence{
+		max-width: 350px;
+	}
+
+	.adventure-details .adventure-itinerary .itinerary-header{
 		font-size: 2.2em;
 		max-width: 350px;
 	}
 
-	.vietnam-details .vietnam-itinerary .itinerary-body{
+	.adventure-details .adventure-itinerary .itinerary-body{
 		font-size: 1.2em;
 		max-width: 350;
 	}	
 
-	.vietnam-details .vietnam-how .vietnam-how-header{
+	.adventure-details .adventure-how .adventure-how-header{
 		font-size: 2.2em;
 		max-width: 350;
-	}
-
-	.vietnam-details .vietnam-how .how-box-container .how-box .how-box-text{
-		margin: 0px;
-		margin-top: 10px;
-	}
-
-	.vietnam-details .vietnam-how .how-box-container{
-		padding: 0px;
-	}
-
-	.vietnam-details .vietnam-how .how-box-container .how-box .how-box-text .how-box-body{
-		font-size: 1.0em;
 	}
 }
