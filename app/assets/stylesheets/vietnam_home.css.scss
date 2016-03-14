@@ -125,11 +125,12 @@
 	.destination-container{
 		padding-top: 80px;
 		padding-bottom: 80px;
+		background: #212326;
 
 		.basecamps-title{
 			font-family: proxima_black;
 			font-size: 3.2em;
-			color: #212326;
+			color: #fff;
 			text-align: center;
 			border-bottom: 4px solid #aa4b41;
 			max-width: 560px;
@@ -140,7 +141,7 @@
 		.destination-image{
 			min-height: 300px;
 			max-width: 500px;
-			border: 8px solid #fff;
+			border: 8px solid #212326;
 			padding: 0px;
 			margin: auto;
 
@@ -190,7 +191,7 @@
 				font-size: 3em;
 				color: #fff;
 				text-align: center;
-				margin-top: 20px !important;
+				margin-top: 20px;
 				right: 20px;
 				background: rgba(170,75,65,0.85);
 				max-width: 330px;
@@ -221,17 +222,31 @@
 				padding: 8px;
 				opacity: 0;
 				-webkit-transition: .3s ease-in-out;
-				background: rgba(33,35,38,0.6);
+				background: rgba(33,35,38,0.8);
 				border: 2px solid #fff;
 				width: 100%;
 				max-width: 140px;
-				margin: auto !important;
+				margin: auto;
 
 				&:hover{
 					background: rgba(255,255,255,0.2);
 					border: 2px solid rgba(33,35,38,0.8);
 				}
 			}
+		}
+
+		.destination-body-mobile{
+			display: none;
+			font-family: proxima_thin;
+			text-align: center;
+			color: #fff;
+			font-size: 1.2em;
+			padding-left: 12px;
+			padding-right: 12px;
+			padding-top: 20px;
+			padding-bottom: 20px;
+			max-width: 550px;
+			margin: auto;
 		}
 	}
 
@@ -358,6 +373,27 @@
 		max-width: 400px;
 		margin: auto;
 		padding-top: 0px;
+	}
+}
+
+@media screen and (max-width: 771px){
+
+	.destination-description .destination-title{
+		margin: auto !important;
+		margin-top: 75px !important;
+	}
+
+	.destination-body-mobile{
+		display: block !important;
+	}
+
+	.destination-body{
+		display: none;
+	}
+
+	.destination-button{
+		opacity: 1 !important;
+		margin-top: 40px !important;
 	}
 }
 
