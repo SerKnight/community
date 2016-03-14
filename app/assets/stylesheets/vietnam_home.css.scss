@@ -132,7 +132,7 @@
 			color: #212326;
 			text-align: center;
 			border-bottom: 4px solid #aa4b41;
-			max-width: 440px;
+			max-width: 560px;
 			margin: auto;
 			margin-bottom: 80px;
 		}
@@ -143,29 +143,94 @@
 			border: 8px solid #fff;
 			padding: 0px;
 			margin: auto;
-		
-			.destination-title{
-				font-family: proxima_thin;
-				font-size: 3em;
-				color: #fff;
-				text-align: center;
-				margin-top: 120px !important;
-				margin: auto;
-				background: rgba(170,75,65,0.85);
-				max-width: 330px;
+
+			-webkit-transition: .5s ease-in-out;
+			-moz-transition: .5s ease-in-out;
+			-o-transition: .5s ease-in-out;
+
+			&:hover{
+			-webkit-transition: .5s ease-in-out;
+			-moz-transition: .5s ease-in-out;
+			-o-transition: .5s ease-in-out;
+
+				.destination-description{
+					background: rgba(33,35,38,0.8);
+					-webkit-transition: .5s ease-in-out;
+				}
+
+				.destination-body{
+					opacity: 1;
+					-webkit-transition: .5s ease-in-out;
+				}
+
+				.destination-button{
+					opacity: 1;
+					-webkit-transition: .5s ease-in-out;
+				}
+
+				.destination-title{
+					-webkit-transition: .5s ease-in-out;
+					max-width: 100%;
+					margin-top: 0px !important;
+					padding-top: 20px;
+					padding-bottom: 20px;
+					background: transparent;
+					border-bottom: 4px solid #aa4b41;
+				}
 			}
 		}
 			
 		.destination-description{
+			-webkit-transition: .5s ease-in-out;
+			min-height: 300px;
+			border: 8px solid transparent;
+
+			.destination-title{
+				font-family: proxima_bold;
+				font-size: 3em;
+				color: #fff;
+				text-align: center;
+				margin-top: 20px !important;
+				right: 20px;
+				background: rgba(170,75,65,0.85);
+				max-width: 330px;
+				-webkit-transition: .5s ease-in-out;
+				border-bottom: 0px solid #aa4b41;
+			}
 
 			.destination-body{
 				font-family: proxima_thin;
 				text-align: center;
-				color: #212326;
+				color: #fff;
 				font-size: 1.2em;
-				padding: 12px;
+				padding-left: 12px;
+				padding-right: 12px;
+				padding-top: 20px;
+				padding-bottom: 20px;
 				max-width: 550px;
 				margin: auto;
+				opacity: 0;
+				-webkit-transition: .5s ease-in-out;
+			}
+
+			.destination-button{
+				font-family: proxima_thin;
+				text-align: center;
+				color: #fff;
+				font-size: 1.0em;
+				padding: 8px;
+				opacity: 0;
+				-webkit-transition: .3s ease-in-out;
+				background: rgba(33,35,38,0.6);
+				border: 2px solid #fff;
+				width: 100%;
+				max-width: 140px;
+				margin: auto !important;
+
+				&:hover{
+					background: rgba(255,255,255,0.2);
+					border: 2px solid rgba(33,35,38,0.8);
+				}
 			}
 		}
 	}
@@ -245,9 +310,10 @@
 	#vietnam-header-mobile{
 		display: block;
 		font-family: proxima_black;
-		font-size: 4em;
+		font-size: 3em;
 		color: #212326;
 		text-align: center;
+		line-height: 40px;
 	}
 
 	#vietnam-explanation-mobile{
@@ -262,7 +328,7 @@
 	}
 
 	.vietnam-slow-scroll{
-		margin-top: 100px;
+		margin-top: 200px;
 	}
 
 	.vietnam-details .vietnam-itinerary{
@@ -296,10 +362,22 @@
 }
 
 @media screen and (max-width: 500px){
+	
+	.vietnam-hero-fix{
+		min-height: 600px;
+	}
+
+	.vietnam-slow-scroll{
+		margin-top: 140px;
+	}
+
+	#vietnam-explanation-title{
+		font-size: 2em;
+	}
 
 	#vietnam-explanation-mobile{
-		font-size: 1.4em;
-		max-width: 350px;
+		font-size: 1.2em;
+		max-width: 300px;
 	}
 
 	.vietnam-details .vietnam-description .description-title{
@@ -309,7 +387,7 @@
 
 	.vietnam-details .vietnam-description .description-body{
 		font-size: 1.2em;
-		max-width: 300px;
+		max-width: 300p
 	}
 
 	.vietnam-details .vietnam-itinerary .final-sentence{
