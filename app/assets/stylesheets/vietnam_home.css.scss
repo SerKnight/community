@@ -652,7 +652,7 @@
 
 	.vietnam-details .vietnam-itinerary .itinerary-body{
 		font-size: 1.2em;
-		max-width: 350;
+		max-width: 350px;
 	}	
 
 	.destination-description .destination-title{
@@ -660,9 +660,14 @@
 		font-size: 2.2em !important;
 	}
 
+	.vietnam-details .destination-container .basecamps-title{
+		font-size: 2.2em;
+		max-width: 300px;
+	}
+
 	.vietnam-details .vietnam-how .vietnam-how-header{
 		font-size: 2.2em;
-		max-width: 350;
+		max-width: 300px;
 	}
 
 	.vietnam-details .vietnam-how .how-box-container .how-box .how-box-text{
