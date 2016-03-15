@@ -14,10 +14,9 @@
 *= require_self
 */
 @import "bootstrap_configuration";
-
 @import "bootstrap-sprockets";
-
 @import "bootstrap";
+@import "font-awesome";
 
 //->Prelang (ui_framework:twitter_bootstrap)
 
@@ -53,6 +52,32 @@
 a:hover {
 	text-decoration: none;
 	opacity: 0.9;
+}
+
+.fa-arrow-left {
+	position: absolute;
+	bottom: 43%;
+	left: -15%;
+  cursor: pointer;
+	font-size: 65px;
+	color: #fff;
+
+	&:hover {
+		opacity: 0.5;
+	}
+}
+
+.fa-arrow-right {
+  position: absolute;
+  bottom: 43%;
+	right: -15%;
+  cursor: pointer;
+  font-size: 65px;
+  color: #fff;
+
+  &:hover {
+  	opacity: 0.5;
+  }
 }
 
 @media screen and (max-width: 767px){
