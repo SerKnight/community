@@ -35,3 +35,23 @@
 .form-user {
   max-width: 450px;
 }
+
+
+.modal-img {
+	height: 200px;
+	width: 300px;
+}
+
+#myModal {
+
+	// put any crazy modal css here, or maybe best to createa a new css file, then require that file in your app.css
+}
+
+.modal-open {
+  overflow: scroll;
+}
+
+a:hover {
+	text-decoration: none;
+	opacity: 0.9;
+}

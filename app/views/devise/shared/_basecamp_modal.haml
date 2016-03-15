@@ -1,0 +1,18 @@
+
+#myModal.modal.fade{"aria-labelledby" => "myModalLabel", :role => "dialog", :tabindex => "-1"}
+  .modal-dialog{:role => "document"}
+    .modal-content
+      .modal-header
+        %button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
+          %span{"aria-hidden" => "true"} ×
+        %h4#myModalLabel.modal-title.text-center
+          // this is where default title would go
+          // instead we use a little JS to take it from data
+          // attibutes that we put on the buttons / basecamps themselves
+      %img.modal-img
+      .modal-body
+
+        
+      .row.text-center{style: "margin: 20px;"}
+        = link_to '/users/auth/facebook' do 
+          %button.btn.btn-primary{:type => "button", color: 'color: #fff; font-size: 30px; margin: 20px;'} See who else is going
