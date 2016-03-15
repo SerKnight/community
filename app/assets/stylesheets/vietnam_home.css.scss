@@ -1,20 +1,20 @@
-.vietnam-hero {
+.location-hero {
   margin-bottom: 0px !important;
 }
 
-.vietnam-hero-fix {
+.location-hero-fix {
 	min-height: 750px;
 	background-size: cover !important;
 	margin-top: -60px;
 }
 
-.vietnam-slow-scroll {
+.location-slow-scroll {
 	position: absolute;
 	width: 100%;
 	top: 0px;
 	margin-top: 310px;
 
-	#vietnam-text {
+	#location-text {
 		position: relative;
 		text-align: center;
 		width: 100%;
@@ -26,27 +26,27 @@
 		border-radius: 12px;
 		margin: auto;
 
-    #vietnam-header{
-		font-family: proxima_black;
-		font-size: 3.8em;
-	}
+    #location-header{
+			font-family: proxima_black;
+			font-size: 3.8em;
+		}
 
-	#vietnam-explanation {
-		max-width: 570px;
-		margin: 0 auto;
-		font-size: 1.6em;
-		font-family: proxima_light;
-	}
+		#location-explanation {
+			max-width: 570px;
+			margin: 0 auto;
+			font-size: 1.6em;
+			font-family: proxima_light;
+		}
   }
 }  
 
 
-.vietnam-details{
+.location-details{
 	position: absolute;
 	width: 100%;
 	background: #fff;
 
-	.vietnam-description{
+	.location-description{
 		padding-top: 80px;
 		padding-bottom: 80px;
 
@@ -71,7 +71,7 @@
 		}
 	}
 
-	.vietnam-itinerary{
+	.location-itinerary{
 		width: 100%;
 		background: #212326;
 		min-height: 400px;
@@ -165,6 +165,7 @@
 				}
 
 				.destination-button{
+					cursor: pointer;
 					opacity: 1;
 					-webkit-transition: .5s ease-in-out;
 					
@@ -251,13 +252,13 @@
 		}
 	}
 
-	.vietnam-how{
+	.location-how{
 		min-height: 700px;
 		background-size: cover !important;
 		padding-top: 80px;
 		padding-bottom: 80px;
 	
-		.vietnam-how-header{
+		.location-how-header{
 			font-family: proxima_black;
 			font-size: 3.2em;
 			color: #fff;
@@ -302,13 +303,13 @@
 		}
 	}
 
-	.vietnam-who{
+	.location-who{
 		padding-top: 80px;
 		padding-bottom: 80px;
 		min-height: 600px;
 		background: #fff;
 
-		.vietnam-who-header{
+		.location-who-header{
 			font-family: proxima_black;
 			font-size: 3.2em;
 			color: #212326;
@@ -404,13 +405,13 @@
 		}
 	}
 
-	.vietnam-inclusions{
+	.location-inclusions{
 		padding-top: 80px;
 		padding-bottom: 80px;
 		min-height: 700px;
 		background-size: cover !important;
 
-		.vietnam-inclusions-header{
+		.location-inclusions-header{
 			font-family: proxima_black;
 			font-size: 3.2em;
 			color: #fff;
@@ -421,7 +422,7 @@
 			margin-bottom: 40px;
 		}
 
-		.vietnam-date{
+		.location-date{
 			font-family: proxima_bold;
 			font-size: 3em;
 			color: #fff;
@@ -458,7 +459,7 @@
 		}
 	}
 
-	.vietnam-join{
+	.location-join{
 		padding-top: 80px;
 		padding-bottom: 80px;
 		min-height: 320px;
@@ -506,26 +507,26 @@
 }
 
 @media screen and (min-width: 992px){
-	#vietnam-header-mobile{
+	#location-header-mobile{
 		display: none;
 	}
 
-	#vietnam-explanation-mobile{
+	#location-explanation-mobile{
 		display: none;
 	}
 }
 
 
 @media screen and (max-width: 991px){
-	#vietnam-header{
+	#location-header{
 		display: none;
 	}
 
-	#vietnam-explanation{
+	#location-explanation{
 		display: none;
 	}
 
-	#vietnam-header-mobile{
+	#location-header-mobile{
 		display: block;
 		font-family: proxima_black;
 		font-size: 3em;
@@ -534,7 +535,7 @@
 		line-height: 40px;
 	}
 
-	#vietnam-explanation-mobile{
+	#location-explanation-mobile{
 		display: block;
 		font-family: proxima_light;
 		font-size: 1.6em;
@@ -545,40 +546,40 @@
 		padding-top: 20px;
 	}
 
-	.vietnam-slow-scroll{
+	.location-slow-scroll{
 		margin-top: 200px;
 	}
 
-	.vietnam-details .vietnam-itinerary{
+	.location-details .location-itinerary{
 		padding-top: 1px;
 	}
 
-	.vietnam-details .vietnam-itinerary .map-block .route-map{
+	.location-details .location-itinerary .map-block .route-map{
 		margin-top: 80px;
 	}
 
-	.vietnam-details .vietnam-how .how-box-container .how-box{
+	.location-details .location-how .how-box-container .how-box{
 		min-height: 0px;
 		margin-top: 0px;
 		max-width: 500px;
 		margin: auto;
 	}
 
-	.vietnam-details .vietnam-how .how-box-container .how-box .how-box-text{
+	.location-details .location-how .how-box-container .how-box .how-box-text{
 		min-height: 0px;
 	}
 
-	.vietnam-details .vietnam-how .how-box-container .how-box .how-box-text .how-box-title{
+	.location-details .location-how .how-box-container .how-box .how-box-text .how-box-title{
 		padding-top: 20px;
 	}
 
-	.vietnam-details .vietnam-how .how-box-container .how-box .how-box-text .how-box-body{
+	.location-details .location-how .how-box-container .how-box .how-box-text .how-box-body{
 		max-width: 400px;
 		margin: auto;
 		padding-top: 0px;
 	}
 
-	.vietnam-details .vietnam-who .who-container .who-image{
+	.location-details .location-who .who-container .who-image{
 		margin-top: 50px !important;
 	}
 }
@@ -603,54 +604,54 @@
 		margin-top: 40px !important;
 	}
 
-	.vietnam-details .vietnam-join .who-join{
+	.location-details .location-join .who-join{
 		font-size: 2.4em;
 	}
 
-	.vietnam-details .vietnam-join .who-join-description{
+	.location-details .location-join .who-join-description{
 		font-size: 1.6em;
 	}
 }
 
 @media screen and (max-width: 500px){
 	
-	.vietnam-hero-fix{
+	.location-hero-fix{
 		min-height: 600px;
 	}
 
-	.vietnam-slow-scroll{
+	.location-slow-scroll{
 		margin-top: 140px;
 	}
 
-	#vietnam-header-mobile{
+	#location-header-mobile{
 		font-size: 2em;
 	}
 
-	#vietnam-explanation-mobile{
+	#location-explanation-mobile{
 		font-size: 1.2em;
 		max-width: 300px;
 	}
 
-	.vietnam-details .vietnam-description .description-title{
+	.location-details .location-description .description-title{
 		font-size: 2.2em;
 		max-width: 300px;
 	}
 
-	.vietnam-details .vietnam-description .description-body{
+	.location-details .location-description .description-body{
 		font-size: 1.2em;
 		max-width: 300p
 	}
 
-	.vietnam-details .vietnam-itinerary .final-sentence{
+	.location-details .location-itinerary .final-sentence{
 		max-width: 350px;
 	}
 
-	.vietnam-details .vietnam-itinerary .itinerary-header{
+	.location-details .location-itinerary .itinerary-header{
 		font-size: 2.2em;
 		max-width: 350px;
 	}
 
-	.vietnam-details .vietnam-itinerary .itinerary-body{
+	.location-details .location-itinerary .itinerary-body{
 		font-size: 1.2em;
 		max-width: 350px;
 	}	
@@ -660,51 +661,51 @@
 		font-size: 2.2em !important;
 	}
 
-	.vietnam-details .destination-container .basecamps-title{
+	.location-details .destination-container .basecamps-title{
 		font-size: 2.2em;
 		max-width: 300px;
 	}
 
-	.vietnam-details .vietnam-how .vietnam-how-header{
+	.location-details .location-how .location-how-header{
 		font-size: 2.2em;
 		max-width: 300px;
 	}
 
-	.vietnam-details .vietnam-how .how-box-container .how-box .how-box-text{
+	.location-details .location-how .how-box-container .how-box .how-box-text{
 		margin: 0px;
 		margin-top: 10px;
 	}
 
-	.vietnam-details .vietnam-how .how-box-container{
+	.location-details .location-how .how-box-container{
 		padding: 0px;
 	}
 
-	.vietnam-details .vietnam-how .how-box-container .how-box .how-box-text .how-box-body{
+	.location-details .location-how .how-box-container .how-box .how-box-text .how-box-body{
 		font-size: 1.0em;
 	}
 
-	.vietnam-details .vietnam-inclusions .vietnam-inclusions-header{
+	.location-details .location-inclusions .location-inclusions-header{
 		font-size: 2.4em;
 	}
 
-	.vietnam-details .vietnam-inclusions .vietnam-date{
+	.location-details .location-inclusions .location-date{
 		font-size: 1.6em;
 	}
 
-	.vietnam-details .vietnam-inclusions .inclusions-container .inclusions-title{
+	.location-details .location-inclusions .inclusions-container .inclusions-title{
 		font-size: 1.6em;
 	}
 
-	.vietnam-details .vietnam-inclusions .inclusions-container .inclusions-description{
+	.location-details .location-inclusions .inclusions-container .inclusions-description{
 		font-size: 15px;
 		padding-bottom: 20px;
 	}
 
-	.vietnam-details .vietnam-join .who-join{
+	.location-details .location-join .who-join{
 		font-size: 3em;
 	}
 
-	.vietnam-details .vietnam-join .who-join-description{
+	.location-details .location-join .who-join-description{
 		font-size: 1.3em;
 		padding-top: 18px;
 	}

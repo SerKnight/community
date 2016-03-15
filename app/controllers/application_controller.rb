@@ -4,6 +4,12 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
   private
+
+
+  def after_sign_in_path_for(resource)
+    
+    '/account'  
+  end
   
   #-> Prelang (user_login:devise)
   def require_user_signed_in
