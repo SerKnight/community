@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   
   get 'adventure' =>  'homepage#trip_onboard'
   get 'vietnam'   =>  'homepage#vietnam'
-  get 'ecuador'   =>  'homepage#ecuador'
+  get 'colombia'   =>  'homepage#colombia'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

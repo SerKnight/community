@@ -1,0 +1,51 @@
+.basecamp-content{
+	position: relative;
+	background: transparent;
+	border: none;
+	border-radius: 4px;
+	background-clip: padding-box;
+	outline: 0;
+
+	.basecamp-header{
+		padding: 15px;
+		border-bottom: 4px solid #aa4b41;
+		max-width: 500px;
+		margin: auto;
+		margin-bottom: 40px;
+
+		.modal-title{
+			font-family: proxima_black;
+			font-size: 2.5em;
+			color: #fff;
+		}
+	}
+
+	.modal-img {
+		height: 400px;
+		width: 600px;
+		margin: auto;
+		border-radius: 4px;
+	}
+
+	.modal-body{
+		font-family: proxima_thin;
+		font-size: 1.4em;
+		color: #fff;
+		text-align: center;
+		padding: 20px;
+	}
+}
+
+@media screen and (max-width: 768px){
+	.modal-img{
+		height: 300px !important;
+		width: 400px !important;
+	}
+}
+
+@media screen and (max-width: 500px){
+	.modal-img{
+		height: 240px !important;
+		width: 320px !important;
+	}
+}

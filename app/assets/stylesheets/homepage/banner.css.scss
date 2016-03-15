@@ -28,15 +28,25 @@
 
     #adventure-local{
       font-family: proxima_bold;
-      font-size: 4em;
-      letter-spacing: -2px;
+      font-size: 2.3em;
+      letter-spacing: -1px;
+    }
+
+    #adventure-local-explainer{
+      font-family: proxima_thin;
+      letter-spacing: 0px;
+      font-size: 1.6em;
     }
   }
 }
 
-@media screen and (max-width: 991px){
+@media screen and (max-width: 768px){
   .scroll-slow #homepage-text #adventure-local{
-    font-size: 2.8em;
+    font-size: 1.8em;
+  }
+
+  .scroll-slow #homepage-text #adventure-local-explainer{
+    font-size: 1.3em;
   }
 }
 
@@ -57,10 +67,10 @@
   }
 
   .scroll-slow{
-    margin-top: 190px;
+    margin-top: 200px;
   }
 
-  .scroll-slow #homepage-text #adventure-local{
-    font-size: 2em;
+  .scroll-slow #homepage-text #adventure-local-explainer{
+    font-size: 1.0em;
   }
 }  

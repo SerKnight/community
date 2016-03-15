@@ -36,15 +36,14 @@
   max-width: 450px;
 }
 
-
-.modal-img {
-	height: 200px;
-	width: 300px;
-}
-
 #myModal {
 
-	// put any crazy modal css here, or maybe best to createa a new css file, then require that file in your app.css
+	// put any crazy modal css here, or maybe best to create a new css file, then require that file in your app.css
+}
+
+.modal-dialog{
+	width: 600px;
+	margin: 30px auto;
 }
 
 .modal-open {
@@ -54,4 +53,16 @@
 a:hover {
 	text-decoration: none;
 	opacity: 0.9;
+}
+
+@media screen and (max-width: 767px){
+	.modal-dialog{
+		width: 400px;
+	}
+}
+
+@media screen and (max-width: 500px){
+	.modal-dialog{
+		width: 320px;
+	}
 }
