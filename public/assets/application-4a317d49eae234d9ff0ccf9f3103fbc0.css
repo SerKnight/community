@@ -7809,7 +7809,7 @@ button.close {
 @media (min-width: 768px) {
   /* line 136, /Users/SerKnight/.rvm/gems/ruby-2.2.2/gems/bootstrap-sass-3.3.5/assets/stylesheets/bootstrap/_modals.scss */
   .modal-dialog {
-    width: 600px;
+    width: 700px;
     margin: 30px auto;
   }
 

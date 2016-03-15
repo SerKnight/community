@@ -12,7 +12,7 @@ class HomepageController < ApplicationController
 
   end
 
-  def ecuador
+  def colombia
 
   end
 

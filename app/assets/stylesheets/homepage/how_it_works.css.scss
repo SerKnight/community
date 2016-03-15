@@ -1,12 +1,36 @@
 #how_it_works {
-	background: #212326;
+	background: #fff;
 	padding-bottom: 50px;
 	padding-top: 50px;
 
+	.mission-statement{
+		padding-bottom: 80px;
+	}
+
+		.mission-header{
+			font-family: proxima_black;
+			font-size: 2.4em;
+			color: #212326;
+			text-align: center;
+			border-bottom: 2px solid #aa4b41;
+			max-width: 300px;
+			margin: auto;
+			margin-bottom: 40px;
+		}
+
+		.mission-description{
+			font-family: proxima_thin;
+			font-size: 1.4em;
+			color: #212326;
+			text-align: center;
+			max-width: 800px;
+			margin: auto;
+		}
+
 	.hiw_panel{
-		background: rgba(0, 0, 0, 0.3);
+		background: #212326;
 		border-radius: 12px;
-		border: 6px solid #212326;
+		border: 6px solid #fff;
 		padding: 10px;
 		max-width: 600px;
 		margin: auto;
