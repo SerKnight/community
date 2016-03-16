@@ -12,28 +12,8 @@
 		padding-right: 0px;
 
 		&:hover{
-			.grid-one-overlay{
-				opacity: 1;
-			}
-
-			.grid-one-img{
-				zoom: 1;
-				filter: alpha(opacity=30);
-				opacity: 0.3;
-			}
-
-			.grid-one-btn{
-				opacity: 1;
-			}
-
-			.grid_one_text{
-				opacity: 1;
-			}
-
 			.grid-title-one{
-				opacity: 0;
-				-webkit-transition: all 0.3s ease;
-				transition: all 0.3s ease;
+				background: rgba(0,41,60,0.8);
 			}
 		}
 
@@ -50,6 +30,7 @@
 			-o-transition:opacity 0.3s ease-in-out;
 			-ms-transition: opacity 0.3s ease-in-out;
 			transition: opacity 0.3s ease-in-out;
+			opacity: 0.5;
 		}
 
 		.grid-one-overlay{
@@ -75,7 +56,6 @@
 	  		font-size: 4em;
 	  		text-align: center;
 	  		border: none;
-	  		background: rgba(33, 35, 38, 0.7);
 	  		margin-right: auto;
 	  		margin-left: auto;
 	  		max-width: 670px;
@@ -106,7 +86,7 @@
 		}
 
 		.locationtext{
-			margin-top: -300px;
+			margin-top: -330px;
 		}
 
 		.grid_one_text{
@@ -129,27 +109,10 @@
 		padding-right: 0px;
 
 		&:hover{
-			.grid-two-overlay{
-				opacity: 1;
-			}
-
-			.grid-two-img{
-				zoom: 1;
-				filter: alpha(opacity=30);
-				opacity: 0.3;
-			}
-
-			.grid-two-btn{
-				opacity: 1;
-			}
-
 			.grid-title-two{
-				opacity: 0;
-				-webkit-transition: all 0.3s ease;
-				transition: all 0.3s ease;
+				background: rgba(0,41,60,0.8);
 			}
 		}
-	
 
 		.grid-two-img{
 		    background-repeat: no-repeat;
@@ -164,6 +127,7 @@
 			-o-transition:opacity 0.3s ease-in-out;
 			-ms-transition: opacity 0.3s ease-in-out;
 			transition: opacity 0.3s ease-in-out;
+			opacity: 0.5;
 		}
 
 		.grid-two-overlay{
@@ -189,7 +153,6 @@
 	  		font-size: 4em;
 	  		text-align: center;
 	  		border: none;
-	  		background: rgba(33, 35, 38, 0.7);
 	  		margin-right: auto;
 	  		margin-left: auto;
 	  		max-width: 700px;
@@ -220,7 +183,7 @@
 		}
 
 		.locationtext{
-			margin-top: -300px;
+			margin-top: -330px;
 		}
 	}
 
@@ -231,27 +194,11 @@
 		padding-right: 0px;
 
 		&:hover{
-			.grid-three-overlay{
-				opacity: 1;
-			}
-
-			.grid-three-img{
-				zoom: 1;
-				filter: alpha(opacity=30);
-				opacity: 0.3;
-			}
-
-			.grid_three_text{
-				opacity: 1;
-			}
-
 			.grid-title-three{
-				opacity: 0;
-				-webkit-transition: all 0.3s ease;
-				transition: all 0.3s ease;
+				background: rgba(0,41,60,0.8);
 			}
 		}
-	
+
 		.grid-three-img{
 		    background-repeat: no-repeat;
 		    background-size: cover;
@@ -265,6 +212,7 @@
 			-o-transition:opacity 0.3s ease-in-out;
 			-ms-transition: opacity 0.3s ease-in-out;
 			transition: opacity 0.3s ease-in-out;
+			opacity: 0.5;
 		}
 
 		.grid-three-overlay{
@@ -290,7 +238,6 @@
 	  		font-size: 4em;
 	  		text-align: center;
 	  		border: none;
-	  		background: rgba(33,35,38,0.7);
 	  		margin-right: auto;
 	  		margin-left: auto;
 	  		max-width: 480px;
@@ -310,27 +257,11 @@
 		padding-right: 0px;
 
 		&:hover{
-			.grid-four-overlay{
-				opacity: 1;
-			}
-
-			.grid-four-img{
-				zoom: 1;
-				filter: alpha(opacity=30);
-				opacity: 0.3;
-			}
-
-			.grid_four_text{
-				opacity: 1;
-			}
-
 			.grid-title-four{
-				opacity: 0;
-				-webkit-transition: all 0.3s ease;
-				transition: all 0.3s ease;
+				background: rgba(0,41,60,0.8);
 			}
 		}
-	
+
 		.grid-four-img{
 		    background-repeat: no-repeat;
 		    background-size: cover;
@@ -344,6 +275,7 @@
 			-o-transition:opacity 0.3s ease-in-out;
 			-ms-transition: opacity 0.3s ease-in-out;
 			transition: opacity 0.3s ease-in-out;
+			opacity: 0.5;
 		}
 
 		.grid-four-overlay{
@@ -368,7 +300,6 @@
 	  		font-size: 4em;
 	  		text-align: center;
 	  		border: none;
-	  		background: rgba(33,35,38,0.7);
 	  		margin-right: auto;
 	  		margin-left: auto;
 	  		max-width: 480px;
@@ -379,6 +310,12 @@
 		.locationtext{
 			margin-top: -330px;
 		}
+	}
+}
+
+@media screen and (min-width: 992px){
+	#hiw_grid{
+		display: none;
 	}
 }
 
@@ -555,11 +492,11 @@
 	}
 
 	#hiw_grid .grid-one .locationtext{
-		margin-top: -245px;
+		margin-top: -260px;
 	}
 
 	#hiw_grid .grid-two .locationtext{
-		margin-top: -245px;
+		margin-top: -260px;
 	}
 
 	#hiw_grid .grid-three .locationtext{

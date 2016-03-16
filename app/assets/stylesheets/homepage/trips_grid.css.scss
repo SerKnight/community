@@ -1,0 +1,115 @@
+#trips_grid{
+	background: #212326;
+
+	.grid_background{
+		width: 100%;
+	}
+
+	.grid-container{
+		position: relative;
+		padding-left: 0px;
+		padding-right: 0px;
+
+		.grid-img{
+		    position: relative;
+		    min-height: 448px;
+		    width: 100%;
+			-moz-transition:opacity 0.3s ease-in-out; 
+			-webkit-transition:opacity 0.3s ease-in-out;
+			-o-transition:opacity 0.3s ease-in-out;
+			-ms-transition: opacity 0.3s ease-in-out;
+			transition: opacity 0.3s ease-in-out;
+		}
+	}
+
+	.grid-text{
+		margin-top: 100px;
+
+		.grid-title{
+	  		font-family: proxima_thin;
+	  		color: #FFF;
+	  		font-size: 3em;
+	  		text-align: center;
+	  		border: none;
+	  		margin-right: auto;
+	  		margin-left: auto;
+	  		max-width: 500px;
+	  		padding-bottom: 12px;
+	  		border-bottom: 2px solid #aa4b41;
+	  		-webkit-transition: all 0.7s ease;
+			transition: all 0.7s ease;
+	  	}
+
+	  	.grid-description{
+	  		font-family: proxima_thin;
+	  		color: rgba(255,255,255,0.6);
+	  		font-size: 1.3em;
+	  		text-align: center;
+	  		border: none;
+	  		margin-right: auto;
+	  		margin-left: auto;
+	  		max-width: 500px;
+	  		padding-top: 30px;
+	  		padding-bottom: 40px;
+	  	}
+
+		.grid-btn{
+			font-family: proxima_thin;
+			text-align: center;
+			font-size: 1.6em;
+			color: #fff;
+			min-height: 40px;
+			-webkit-transition: all 0.7s ease;
+			transition: all 0.7s ease;
+			border-radius: 100px;
+			background-color: rgba(170,75,65,0.6);
+			box-shadow: 1px 1px 2px #333333;
+
+			&:hover{
+				background-color: rgba(89,39,34,0.8);
+				-webkit-transition: all 0.4s ease;
+				transition: all 0.4s ease;
+			}
+		}
+	}
+
+	.grid-text-coming{
+		margin-top: 140px;
+
+		.grid-title{
+	  		font-family: proxima_thin;
+	  		color: #FFF;
+	  		font-size: 3em;
+	  		text-align: center;
+	  		border: none;
+	  		margin-right: auto;
+	  		margin-left: auto;
+	  		max-width: 500px;
+	  		padding-bottom: 12px;
+	  		border-bottom: 2px solid #aa4b41;
+	  		-webkit-transition: all 0.7s ease;
+			transition: all 0.7s ease;
+	  	}
+
+	  	.grid-description{
+	  		font-family: proxima_thin;
+	  		color: rgba(255,255,255,0.6);
+	  		font-size: 1.6em;
+	  		text-align: center;
+	  		border: none;
+	  		margin-right: auto;
+	  		margin-left: auto;
+	  		max-width: 500px;
+	  		padding-top: 30px;
+	  		padding-bottom: 40px;
+	  	}
+	}
+}
+
+@media screen and (max-width: 991px){
+	#trips_grid{
+		display: none;
+	}
+}
+
+
