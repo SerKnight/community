@@ -18,7 +18,8 @@ gem 'tzinfo-data'
 gem 'devise', github: 'plataformatec/devise'
 gem 'omniauth'
 gem 'omniauth-facebook'
-gem 'binding_of_caller'
+gem "koala", "~> 2.2"
+
 gem 'bootstrap-sass', '3.3.5'
 gem 'bootstrap-sass-extras'
 gem 'google-analytics-rails'
@@ -37,6 +38,7 @@ end
 
 group :development do
   gem 'better_errors'
+  gem 'binding_of_caller'
 end
 
 gem "autoprefixer-rails"
