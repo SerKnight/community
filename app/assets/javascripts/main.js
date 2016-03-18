@@ -13,6 +13,10 @@ function baseCampModal(){
 		replaceDiv($(this))
 	})
 
+	$('.fa-times').click(function(){
+	  $('#myModal').modal('close')
+	})
+
 
 	$('#toggle-basecamp-left').click(function(){
 		var campIndex = activeCamp - 1
