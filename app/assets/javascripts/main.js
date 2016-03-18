@@ -13,9 +13,10 @@ function baseCampModal(){
 		replaceDiv($(this))
 	})
 
-	$('#modal-content').on('shown', function() {
-    $("#txtname").focus();
-  })
+	// not sure what this was so I left it.. 
+	// $('#modal-content').on('shown', function() {
+ 	//    $("#txtname").focus();
+ 	//  })
 
 
 	$('#toggle-basecamp-left').click(function(){

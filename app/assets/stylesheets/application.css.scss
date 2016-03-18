@@ -41,8 +41,11 @@
 }
 
 .modal-dialog{
-	width: 600px;
-	margin: 30px auto;
+	width: 60%;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	min-height: 1000px;
+	background: #fff;
 }
 
 .modal-open {
@@ -56,8 +59,8 @@ a:hover {
 
 .fa-chevron-left {
 	position: absolute;
-	top: 45%;
-	left: -15%;
+	top: 400px;
+	left: -80px;
   cursor: pointer;
 	font-size: 65px;
 	color: #fff;
@@ -69,8 +72,8 @@ a:hover {
 
 .fa-chevron-right {
   position: absolute;
-  top: 45%;
-	right: -15%;
+  top: 400px;
+	right: -80px;
   cursor: pointer;
   font-size: 65px;
   color: #fff;
@@ -80,22 +83,53 @@ a:hover {
   }
 }
 
+<<<<<<< HEAD
 .close {
 	color: #fff;
 	z-index: 9999999;
 	opacity: 1.0;
 	font-size: 55px;
 	margin: 2%;
+=======
+.fa-times{
+	display: block;
+	position: fixed;
+	top: 2%;
+	right: 2%;
+	cursor: pointer;
+	font-size: 2em;
+	color: #fff;
+
+	&:hover {
+		opacity: 0.5;
+	}
+}
+
+@media screen and (max-width: 991px){
+	.modal-dialog{
+		width: 600px;
+	}
+>>>>>>> 9193faf1c4df8113a7f20c19b5a8ad4db40ecc13
 }
 
 @media screen and (max-width: 767px){
 	.modal-dialog{
 		width: 400px;
+		margin: auto;
 	}
 }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 550px){
 	.modal-dialog{
-		width: 320px;
+		width: 90%;
+		margin-left: 0px;
+	}
+
+	.fa-chevron-left{
+		display: none !important;
+	}
+
+	.fa-chevron-right{
+		display: none !important;
 	}
 }
