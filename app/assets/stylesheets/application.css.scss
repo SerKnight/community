@@ -83,33 +83,26 @@ a:hover {
   }
 }
 
-<<<<<<< HEAD
 .close {
 	color: #fff;
 	z-index: 9999999;
 	opacity: 1.0;
 	font-size: 55px;
+  right: 0px;
+  position: fixed;
 	margin: 2%;
-=======
-.fa-times{
-	display: block;
-	position: fixed;
-	top: 2%;
-	right: 2%;
-	cursor: pointer;
-	font-size: 2em;
-	color: #fff;
 
-	&:hover {
-		opacity: 0.5;
-	}
+}
+
+.close:hover, .close:focus {
+	color: #fff !important;
+	opacity: 0.5;
 }
 
 @media screen and (max-width: 991px){
 	.modal-dialog{
 		width: 600px;
 	}
->>>>>>> 9193faf1c4df8113a7f20c19b5a8ad4db40ecc13
 }
 
 @media screen and (max-width: 767px){
