@@ -80,6 +80,14 @@ a:hover {
   }
 }
 
+.close {
+	color: #fff;
+	z-index: 9999999;
+	opacity: 1.0;
+	font-size: 55px;
+	margin: 2%;
+}
+
 @media screen and (max-width: 767px){
 	.modal-dialog{
 		width: 400px;

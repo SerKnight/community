@@ -13,6 +13,10 @@ function baseCampModal(){
 		replaceDiv($(this))
 	})
 
+	$('#modal-content').on('shown', function() {
+    $("#txtname").focus();
+  })
+
 
 	$('#toggle-basecamp-left').click(function(){
 		var campIndex = activeCamp - 1
@@ -24,7 +28,6 @@ function baseCampModal(){
 		var campIndex = activeCamp + 1
 		activeCamp = campIndex;
 		replaceDiv($('*[data-num="' + campIndex + '"]'))
-
 	})
 
 }
