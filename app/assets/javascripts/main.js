@@ -34,7 +34,7 @@ function replaceDiv(element){
 	$('.modal-body').html(element.data('body'))
 	$('.modal-img').attr('src', element.data('img-src'))
 
-	if(activeCamp == 6){
+	if(activeCamp == $('.destination-image').length ){
 		$('#toggle-basecamp-right').hide()
 	} else {
 		$('#toggle-basecamp-right').show()
