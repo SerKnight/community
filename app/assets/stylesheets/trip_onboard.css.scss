@@ -1,0 +1,227 @@
+.hero-image {
+  margin-bottom: 0px !important;
+}
+
+.hero-image-fix {
+	min-height: 700px;
+	background-size: cover !important;
+  	margin-top: -60px;
+}
+
+.banner-scroll {
+	position: absolute;
+	width: 100%;
+	top: 0px;
+	margin-top: 220px;
+
+	#landing-text {
+		position: relative;
+		text-align: center;
+		width: 100%;
+		margin-bottom: 12px;
+		color: #fff;
+		background: transparent;
+		padding-bottom: 12px;
+		margin: auto;
+		background: rgba(0,0,0,0.8);
+		max-width: 800px;
+
+		#landing-header{
+			font-family: proxima_bold;
+			font-size: 4em;
+		}
+
+		#landing-body{
+			font-family: proxima_thin;
+			letter-spacing: 0px;
+			font-size: 1.6em;
+		}
+	}
+}
+
+.onboard-mission{
+	background: rgba(255,255,255,0.88);
+
+	.onboard-mission-header{
+		font-family: proxima_black;
+		color: #212326;
+		font-size: 3em;
+		text-align: center;
+		max-width: 280px;
+		margin: auto;
+		padding-top: 80px;
+		border-bottom: 2px solid #aa4b41;
+	}
+
+	.onboard-mission-body{
+		font-family: proxima_thin;
+		color: #212326;
+		font-size: 1.8em;
+		text-align: center;
+		max-width: 800px;
+		margin: auto;
+		padding-top: 40px;
+		padding-bottom: 80px;
+	}
+}
+
+.creator-hiw{
+	padding-top: 80px;
+	padding-bottom: 80px;
+	height: 700px;
+	background-size: cover !important;
+
+	.creator-hiw-header{
+		font-family: proxima_black;
+		color: #212326;
+		margin-bottom: 80px !important;
+		font-size: 3em;
+		text-align: center;
+		max-width: 385px;
+		margin: auto;
+		border-bottom: 2px solid #aa4b41;
+	}
+
+	.creator-hiw-box{
+		padding: 20px;
+
+		.creator-hiw-box-title{
+			font-family: proxima_black;
+			color: #212326;
+			font-size: 3em;
+			text-align: center;
+			max-width: 400px;
+			margin: auto;
+		}
+
+		.creator-hiw-box-body{
+			font-family: proxima_thin;
+			color: #212326;
+			font-size: 1.8em;
+			text-align: center;
+			max-width: 400px;
+			margin: auto;
+		}
+	}
+}
+
+.adventure-creator-container{
+	background: #212326;
+
+	.adventure-creator{
+		padding-top: 80px;
+		padding-bottom: 160px;
+
+		.adventure-creator-image{
+			height: 400px;
+			border-radius: 50%;
+			margin: auto;
+			max-width: 400px;
+			margin-top: 80px;
+		}
+
+		.adventure-creator-text{
+			padding-top: 100px;
+			min-height: 400px;
+			margin-top: 80px;
+
+			.adventure-creator-header{
+				font-family: proxima_black;
+				color: #fff;
+				font-size: 3em;
+				text-align: center;
+				max-width: 400px;
+				margin: auto;
+				border-bottom: 2px solid #aa4b41;
+			}
+
+			.adventure-creator-body{
+				font-family: proxima_thin;
+				color: #fff;
+				font-size: 1.8em;
+				text-align: center;
+				max-width: 500px;
+				margin: auto;
+				margin-top: 40px;
+			}
+		}
+	}
+}
+
+.we-are-seeking{
+	background: #fff;
+	padding-top: 80px;
+	padding-bottom: 80px;
+	height: 600px;
+
+	.we-are-seeking-header{
+		font-family: proxima_black;
+		color: #212326;
+		font-size: 3em;
+		text-align: center;
+		max-width: 300px;
+		margin: auto;
+		border-bottom: 2px solid #aa4b41;
+	}
+
+	.we-are-seeking-body{
+		font-family: proxima_thin;
+		color: #212326;
+		font-size: 1.8em;
+		text-align: center;
+		max-width: 800px;
+		margin: auto;
+		margin-top: 40px;
+	}
+}
+
+.creation-apply{
+	padding-top: 150px;
+	padding-bottom: 150px;
+	height: 700px;
+	background-size: cover !important;
+
+	.creation-apply-box{
+		background: rgba(255,255,255,0.5);
+		min-height: 240px;
+		max-width: 500px;
+		margin: auto;
+	
+		.creation-apply-header{
+			font-family: proxima_bold;
+			color: #212326;
+			text-align: center;
+			font-size: 3em;
+			padding-top: 40px;
+		}
+
+		.creation-apply-body{
+			font-family: proxima_thin;
+			color: #212326;
+			text-align: center;
+			font-size: 1.8em;
+		}
+
+		.creation-apply-btn{
+			max-width: 140px;
+			color: #fff;
+			border: 2px solid #212326;
+			margin: auto;
+			text-align: center;
+			height: 48px;
+			font-family: proxima_bold;
+			font-size: 1.8em;
+			margin-top: 24px;
+			background: rgba(0,0,0,0.4);
+			padding-top: 4px;
+
+			-webkit-transition: .5s ease-in-out;
+			-moz-transition: .5s ease-in-out;
+			-o-transition: .5s ease-in-out;
+
+			&:hover{
+				background: rgba(0,0,0,0.8);
+			}
+		}
+	}
+}
