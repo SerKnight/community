@@ -118,6 +118,7 @@
 			margin: auto;
 			max-width: 400px;
 			margin-top: 80px;
+			border: 6px solid #fff;
 		}
 
 		.adventure-creator-text{
@@ -182,22 +183,21 @@
 	background-size: cover !important;
 
 	.creation-apply-box{
-		background: rgba(255,255,255,0.5);
 		min-height: 240px;
 		max-width: 500px;
 		margin: auto;
 	
 		.creation-apply-header{
 			font-family: proxima_bold;
-			color: #212326;
+			color: #fff;
 			text-align: center;
-			font-size: 3em;
+			font-size: 4em;
 			padding-top: 40px;
 		}
 
 		.creation-apply-body{
 			font-family: proxima_thin;
-			color: #212326;
+			color: #fff;
 			text-align: center;
 			font-size: 1.8em;
 		}
@@ -205,22 +205,22 @@
 		.creation-apply-btn{
 			max-width: 140px;
 			color: #fff;
-			border: 2px solid #212326;
 			margin: auto;
 			text-align: center;
 			height: 48px;
 			font-family: proxima_bold;
 			font-size: 1.8em;
 			margin-top: 24px;
-			background: rgba(0,0,0,0.4);
+			background: rgba(0,0,0,0.7);
 			padding-top: 4px;
+			border: 2px solid #fff;
 
 			-webkit-transition: .5s ease-in-out;
 			-moz-transition: .5s ease-in-out;
 			-o-transition: .5s ease-in-out;
 
 			&:hover{
-				background: rgba(0,0,0,0.8);
+				background: rgba(0,0,0,0.9);
 			}
 		}
 	}
