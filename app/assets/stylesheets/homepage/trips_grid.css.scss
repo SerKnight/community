@@ -23,18 +23,18 @@
 	}
 
 	.grid-text{
-		margin-top: 100px;
+		margin-top: 90px;
 
 		.grid-title{
 	  		font-family: proxima_thin;
 	  		color: #FFF;
-	  		font-size: 3em;
+	  		font-size: 2.4em;
 	  		text-align: center;
 	  		border: none;
 	  		margin-right: auto;
 	  		margin-left: auto;
-	  		max-width: 500px;
-	  		padding-bottom: 12px;
+	  		max-width: 360px;
+	  		padding-bottom: 20px;
 	  		border-bottom: 2px solid #aa4b41;
 	  		-webkit-transition: all 0.7s ease;
 			transition: all 0.7s ease;
@@ -50,13 +50,13 @@
 	  		margin-left: auto;
 	  		max-width: 500px;
 	  		padding-top: 30px;
-	  		padding-bottom: 40px;
+	  		padding-bottom: 30px;
 	  	}
 
 		.grid-btn{
 			font-family: proxima_thin;
 			text-align: center;
-			font-size: 1.6em;
+			font-size: 1.4em;
 			color: #fff;
 			min-height: 40px;
 			-webkit-transition: all 0.7s ease;
@@ -79,13 +79,13 @@
 		.grid-title{
 	  		font-family: proxima_thin;
 	  		color: #FFF;
-	  		font-size: 3em;
+	  		font-size: 2.4em;
 	  		text-align: center;
 	  		border: none;
 	  		margin-right: auto;
 	  		margin-left: auto;
-	  		max-width: 500px;
-	  		padding-bottom: 12px;
+	  		max-width: 360px;
+	  		padding-bottom: 20px;
 	  		border-bottom: 2px solid #aa4b41;
 	  		-webkit-transition: all 0.7s ease;
 			transition: all 0.7s ease;
@@ -106,10 +106,65 @@
 	}
 }
 
+.your-adventure{
+	background: #17181B;
+	height: 448px;
+
+	.your-adventure-header{
+		font-family: proxima_thin;
+  		color: #fff;
+  		font-size: 4em;
+  		text-align: center;
+  		padding-top: 130px;
+	}
+
+	.your-adventure-body{
+		font-family: proxima_thin;
+  		color: rgba(255,255,255,0.7);
+  		font-size: 1.6em;
+  		text-align: center;
+	}
+
+	.your-adventure-btn{
+		font-family: proxima_thin;
+		text-align: center;
+		font-size: 1.4em;
+		color: #fff;
+		min-height: 40px;
+		max-width: 200px;
+		margin: auto;
+		padding-top: 6px;
+		-webkit-transition: all 0.7s ease;
+		transition: all 0.7s ease;
+		border-radius: 100px;
+		background-color: rgba(170,75,65,1);
+		box-shadow: 1px 1px 2px #000;
+		margin-top: 20px;
+
+		&:hover{
+			background-color: rgba(89,39,34,1);
+			-webkit-transition: all 0.4s ease;
+			transition: all 0.4s ease;
+		}
+	}
+}
+
 @media screen and (max-width: 991px){
 	#trips_grid{
 		display: none;
 	}
 }
 
+@media screen and (max-width: 600px){
+	.your-adventure .your-adventure-header{
+		padding-top: 110px;
+		line-height: 60px;
+	}
+
+	.your-adventure .your-adventure-body{
+		font-size: 1.2em;
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+}
 

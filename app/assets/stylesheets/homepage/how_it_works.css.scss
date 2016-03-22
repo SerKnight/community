@@ -1,28 +1,29 @@
 #how_it_works {
-	background: #fff;
+	background: #17181B;
 	padding-bottom: 50px;
 	padding-top: 50px;
 	min-height: 300px;
 
 	.mission-statement{
-		padding-bottom: 80px;
+		padding-bottom: 60px;
 	}
 
 		.mission-header{
-			font-family: proxima_black;
+			font-family: proxima_thin;
 			font-size: 2.4em;
-			color: #212326;
+			color: #fff;
 			text-align: center;
 			border-bottom: 2px solid #aa4b41;
-			max-width: 300px;
+			max-width: 250px;
 			margin: auto;
 			margin-bottom: 40px;
+			padding-bottom: 20px;
 		}
 
 		.mission-description{
 			font-family: proxima_thin;
 			font-size: 1.4em;
-			color: #212326;
+			color: rgba(255,255,255,0.7);
 			text-align: center;
 			max-width: 800px;
 			margin: auto;
