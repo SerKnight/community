@@ -1,5 +1,5 @@
 class ApplicationMailer < ActionMailer::Base
-	  default from: "info@adventure-made.com"
+  default from: "apply@madebyadventure.com"
 
 
   def team_notification(contact_id)
