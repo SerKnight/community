@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   devise_for :users, controllers: {registrations: "users/registrations", sessions: "users/sessions", passwords: "users/passwords", omniauth_callbacks: "users/omniauth_callbacks"}, skip: [:sessions, :registrations]
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
@@ -11,6 +12,9 @@ Rails.application.routes.draw do
   get 'vietnam'   =>  'homepage#vietnam'
   get 'colombia'   =>  'homepage#colombia'
 
+  get '/apply' => 'contacts#new'
+  get '/apply/:type' => 'contacts#new'
+  post '/contact' => 'contacts#create'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

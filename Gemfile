@@ -43,3 +43,4 @@ gem "autoprefixer-rails"
 gem 'rails_12factor', group: :production
 gem 'haml'
 gem "font-awesome-rails"
+gem 'rails_admin'
