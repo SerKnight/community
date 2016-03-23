@@ -1,5 +1,5 @@
 #trips_grid{
-	background: #212326;
+	background: rgba(33,35,38,0.9);
 
 	.grid_background{
 		width: 100%;
@@ -111,9 +111,9 @@
 	height: 448px;
 
 	.your-adventure-header{
-		font-family: proxima_thin;
+		font-family: proxima_black;
   		color: #fff;
-  		font-size: 4em;
+  		font-size: 3.4em;
   		text-align: center;
   		padding-top: 130px;
 	}
@@ -157,14 +157,17 @@
 
 @media screen and (max-width: 600px){
 	.your-adventure .your-adventure-header{
-		padding-top: 110px;
+		padding-top: 88px;
 		line-height: 60px;
+		max-width: 340px;
+		margin: auto;
 	}
 
 	.your-adventure .your-adventure-body{
-		font-size: 1.2em;
 		padding-top: 20px;
-		padding-bottom: 20px;
+		padding-bottom: 10px;
+		max-width: 280px;
+		margin: auto;
 	}
 }
 

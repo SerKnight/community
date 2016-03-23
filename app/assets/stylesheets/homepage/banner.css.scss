@@ -28,49 +28,62 @@
 
     #adventure-local{
       font-family: proxima_bold;
-      font-size: 2.3em;
-      letter-spacing: -1px;
+      font-size: 3.5em;
     }
 
     #adventure-local-explainer{
       font-family: proxima_thin;
       letter-spacing: 0px;
-      font-size: 1.6em;
+      font-size: 1.7em;
+    }
+
+    #adventure-local-mobile{
+      display: none;
+    }
+
+    #adventure-local-explainer-mobile{
+      display: none;
     }
   }
 }
 
 @media screen and (max-width: 768px){
+
+  .jumbotron_fix{
+    min-height: 650px;
+  }
+
+  .scroll-slow{
+    margin-top: 150px;
+  }
+
   .scroll-slow #homepage-text #adventure-local{
-    font-size: 1.8em;
+    display: none;
   }
 
   .scroll-slow #homepage-text #adventure-local-explainer{
-    font-size: 1.3em;
-  }
-}
-
-@media screen and (min-width: 501px){
-  .jumbotron_fix_mobile{
     display: none;
+  }
+
+  .scroll-slow #homepage-text #adventure-local-mobile{
+    font-family: proxima_bold;
+    font-size: 3em;
+    display: block;
+    line-height: 50px;
+  }
+
+  .scroll-slow #homepage-text #adventure-local-explainer-mobile{
+    font-family: proxima_thin;
+    letter-spacing: 0px;
+    font-size: 1.6em;
+    display: block;
   }
 }
 
 @media screen and (max-width: 500px){
-  .jumbotron_fix_mobile{
-    min-height: 600px;
-    margin-top: -60px;
-  }
 
-  .jumbotron_fix{
-    display: none;
-  }
-
-  .scroll-slow{
-    margin-top: 200px;
-  }
-
-  .scroll-slow #homepage-text #adventure-local-explainer{
-    font-size: 1.0em;
+  .scroll-slow #homepage-text #adventure-local-mobile{
+    font-size: 2.5em;
+    line-height: 45px;
   }
 }  

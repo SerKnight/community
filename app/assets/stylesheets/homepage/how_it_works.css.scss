@@ -1,33 +1,39 @@
 #how_it_works {
 	background: #17181B;
 	padding-bottom: 50px;
-	padding-top: 50px;
-	min-height: 300px;
+	padding-top: 100px;
+	min-height: 400px;
 
 	.mission-statement{
-		padding-bottom: 60px;
-	}
 
 		.mission-header{
-			font-family: proxima_thin;
+			font-family: proxima_bold;
 			font-size: 2.4em;
 			color: #fff;
 			text-align: center;
-			border-bottom: 2px solid #aa4b41;
-			max-width: 250px;
+			max-width: 700px;
 			margin: auto;
-			margin-bottom: 40px;
-			padding-bottom: 20px;
+			padding-bottom: 30px;
+			letter-spacing: -1px;
+		}
+
+		.mission-underline{
+			border-bottom: 2px solid #aa4b41;
+			max-width: 150px;
+			margin: auto;
+			margin-bottom: 30px;
+
 		}
 
 		.mission-description{
 			font-family: proxima_thin;
-			font-size: 1.4em;
-			color: rgba(255,255,255,0.7);
+			font-size: 1.3em;
+			color: rgba(255,255,255,0.8);
 			text-align: center;
-			max-width: 800px;
+			max-width: 600px;
 			margin: auto;
 		}
+	}
 
 	.hiw_panel{
 		background: #212326;
@@ -75,5 +81,30 @@
 		margin-bottom: 20px;
 		margin-top: 20px;
 		padding-bottom: 20px;
+	}
+}
+
+@media screen and (max-width: 771px){
+	#how_it_works .mission-statement .mission-header{
+		font-size: 1.8em;
+	}
+
+	#how_it_works .mission-statement .mission-description{
+		max-width: 450px;
+	}
+}
+
+@media screen and (max-width: 500px){
+
+	#how_it_works{
+		padding-top: 58px;
+	}
+
+	#how_it_works .mission-statement .mission-header{
+		max-width: 200px;
+	}
+
+	#how_it_works .mission-statement .mission-description{
+		font-size: 1.1em;
 	}
 }
