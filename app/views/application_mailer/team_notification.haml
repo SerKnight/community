@@ -1,0 +1,26 @@
+%div{:style => "color: rgb(76, 76, 76); font-family: 'Lucida Grande', Helvetica, Verdana, Arial, sans-serif; font-size: 13px;"}
+  %div
+    %strong
+      %i New Lead Submission
+
+  %div
+    %h1 Lead Details
+    %strong
+      %br
+    %div
+      %b Contact Name:
+      = @contact.name
+
+    %div
+      %b Email:
+      = @contact.email
+
+    %div
+      %b Message:
+      = @contact.message
+
+
+  %div
+    %br/
+  %div
+    %a{href: "www.scratchevents.com/admin/contact/#{@contact.id}/edit", target: '_blank'} Review Lead Here

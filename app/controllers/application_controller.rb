@@ -3,11 +3,22 @@ class ApplicationController < ActionController::Base
   # For APIs, you may want to use :null_session instead.
   protect_from_forgery with: :exception
 
+  def allowed_user(current_user)
+    if current_user 
+      if current_user.email == 'chrisknight.mail@gmail.com' || current_user.email == 'jolesorama@gmail.com' || current_user.email == 'jemaser@syr.edu'
+        return true
+      else
+        return false
+      end
+    else
+      return false
+    end
+  end
+
   private
 
 
-  def after_sign_in_path_for(resource)
-    
+  def after_sign_in_path_for(resource)    
     '/account'  
   end
   

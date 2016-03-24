@@ -1,0 +1,50 @@
+
+.col-md-12.location-inclusions{style: "background: url('#{asset_path("background/vietnampath.jpeg")}') center center no-repeat"}
+  .location-inclusions-header
+    Adventure Made
+  .location-date
+    - if params[:type] == 'adventure'
+      Lead a Trip
+
+    - elsif params[:type]
+      Reserve your Spot:
+      %br
+      = link_to params[:type].capitalize, "/#{params[:type]}", target: '_blank'
+    - else
+      Contact Us
+
+  .col-md-10.col-md-offset-1.inclusions-container
+    .col-md-10.col-md-offset-1
+      %br        
+      %br        
+      %br        
+      = form_for :contact, url: {:controller => "contacts", :action => "create"}, method: "post", remote: true do |f|
+        %input{:name => "contact[contact_type]", :type => "hidden", value: params[:type]}
+
+        .col-lg-6.col-md-offset-3
+          .well.well-sm
+            .form-group
+              .input-group
+                %span.input-group-addon
+                  %span.glyphicon.glyphicon-asterisk
+                %input#InputName.form-control{:name => "contact[name]", :placeholder => "Your Name", :required => "", :type => "text"}
+            .form-group
+              .input-group
+                %span.input-group-addon
+                  %span.glyphicon.glyphicon-asterisk
+                %input#InputEmailFirst.form-control{:name => "contact[email]", :placeholder => "Your Email", :required => "", :type => "email"}
+            
+            .form-group
+              .input-group
+                %span.input-group-addon
+                  %span.glyphicon.glyphicon-asterisk
+                %textarea#InputMessage.form-control{:name => "contact[message]", :required => "", :rows => "5"}
+
+            .form-group.text-center
+              %input#submit.btn.btn-success{:name => "submit", :type => "submit", :value => "Lets do this"}
+
+
+      .thanks
+        Thanks so much for applying. We will be in touch as soon as possible. 
+        %br
+          Looking forward for you to become Adventure Made!

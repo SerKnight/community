@@ -406,60 +406,6 @@
 		}
 	}
 
-	.location-inclusions{
-		padding-top: 80px;
-		padding-bottom: 80px;
-		min-height: 700px;
-		background-size: cover !important;
-
-		.location-inclusions-header{
-			font-family: proxima_black;
-			font-size: 3.2em;
-			color: #fff;
-			text-align: center;
-			border-bottom: 4px solid #aa4b41;
-			max-width: 420px;
-			margin: auto;
-			margin-bottom: 40px;
-		}
-
-		.location-date{
-			font-family: proxima_bold;
-			font-size: 3em;
-			color: #fff;
-			text-align: center;
-			border-bottom: 4px solid #aa4b41;
-			max-width: 550px;
-			margin: auto;
-			background: #aa4b41;
-			margin-bottom: 40px;
-		}
-
-		.inclusions-container{
-			background: rgba(33,35,38,0.7);
-			min-height: 440px;
-			border-radius: 4px;
-
-			.inclusions-title{
-				font-family: proxima_bold;
-				font-size: 2.4em;
-				color: #fff;
-				text-align: center;
-				padding-top: 20px;
-			}
-
-			.inclusions-description{
-				font-family: proxima_thin;
-				font-size: 20px;
-				color: #fff;
-				text-align: center;
-				padding-top: 20px;
-				max-width: 400px;
-				margin: auto;
-			}
-		}
-	}
-
 	.location-join{
 		padding-top: 80px;
 		padding-bottom: 80px;
@@ -503,6 +449,59 @@
 			.btn, .btn:active, .btn:hover{
 				text-decoration: none;
 			}
+		}
+	}
+}
+.location-inclusions{
+	padding-top: 80px;
+	padding-bottom: 80px;
+	min-height: 700px;
+	background-size: cover !important;
+
+	.location-inclusions-header{
+		font-family: proxima_black;
+		font-size: 3.2em;
+		color: #fff;
+		text-align: center;
+		border-bottom: 4px solid #aa4b41;
+		max-width: 420px;
+		margin: auto;
+		margin-bottom: 40px;
+	}
+
+	.location-date{
+		font-family: proxima_bold;
+		font-size: 3em;
+		color: #fff;
+		text-align: center;
+		border-bottom: 4px solid #aa4b41;
+		max-width: 550px;
+		margin: auto;
+		background: #aa4b41;
+		margin-bottom: 40px;
+	}
+
+	.inclusions-container{
+		background: rgba(33,35,38,0.7);
+		min-height: 440px;
+		border-radius: 4px;
+
+		.inclusions-title{
+			font-family: proxima_bold;
+			font-size: 2.4em;
+			color: #fff;
+			text-align: center;
+			padding-top: 20px;
+		}
+
+		.inclusions-description{
+			font-family: proxima_thin;
+			font-size: 20px;
+			color: #fff;
+			text-align: center;
+			padding-top: 20px;
+			max-width: 400px;
+			margin: auto;
 		}
 	}
 }
