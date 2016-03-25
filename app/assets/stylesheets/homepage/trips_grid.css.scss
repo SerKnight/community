@@ -23,20 +23,37 @@
 	}
 
 	.grid-text{
-		margin-top: 90px;
+		margin-top: 72px;
 
 		.grid-title{
-	  		font-family: proxima_thin;
+	  		font-family: proxima_bold;
 	  		color: #FFF;
-	  		font-size: 2.4em;
+	  		font-size: 2.0em;
+	  		text-align: center;
+	  		border: none;
+	  		margin-right: auto;
+	  		margin-left: auto;
+	  		max-width: 460px;
+	  		padding-bottom: 20px;
+	  		-webkit-transition: all 0.7s ease;
+			transition: all 0.7s ease;
+			text-transform: uppercase;
+	  	}
+
+	  	.grid-title-creator{
+	  		font-family: proxima_bold;
+	  		color: #FFF;
+	  		font-size: 1.3em;
 	  		text-align: center;
 	  		border: none;
 	  		margin-right: auto;
 	  		margin-left: auto;
 	  		max-width: 360px;
-	  		padding-bottom: 20px;
+	  		padding-top: 20px;
 	  		-webkit-transition: all 0.7s ease;
 			transition: all 0.7s ease;
+	  		padding-bottom: 30px;
+
 	  	}
 
 	  	.grid-title-underline{
@@ -48,21 +65,21 @@
 
 	  	.grid-description{
 	  		font-family: proxima_thin;
-	  		color: rgba(255,255,255,0.6);
-	  		font-size: 1.3em;
+	  		color: #fff;
+	  		font-size: 1.2em;
 	  		text-align: center;
 	  		border: none;
 	  		margin-right: auto;
 	  		margin-left: auto;
-	  		max-width: 500px;
+	  		max-width: 430px;
 	  		padding-top: 30px;
-	  		padding-bottom: 30px;
+	  		line-height: 24px;
 	  	}
 
 		.grid-btn{
 			font-family: proxima_thin;
 			text-align: center;
-			font-size: 1.4em;
+			font-size: 1.1em;
 			color: #fff;
 			min-height: 40px;
 			-webkit-transition: all 0.7s ease;
@@ -70,6 +87,8 @@
 			border-radius: 100px;
 			background-color: rgba(170,75,65,0.6);
 			box-shadow: 1px 1px 2px #333333;
+			padding-top: 8px;
+			text-transform: uppercase;
 
 			&:hover{
 				background-color: rgba(89,39,34,0.8);
@@ -83,7 +102,7 @@
 		margin-top: 150px;
 
 		.grid-title{
-	  		font-family: proxima_thin;
+	  		font-family: proxima_bold;
 	  		color: #FFF;
 	  		font-size: 2.4em;
 	  		text-align: center;
@@ -94,6 +113,7 @@
 	  		padding-bottom: 20px;
 	  		-webkit-transition: all 0.7s ease;
 			transition: all 0.7s ease;
+			text-transform: uppercase;
 	  	}
 
 	  	.grid-title-underline{

@@ -37,7 +37,13 @@
 			font-size: 1.6em;
 			font-family: proxima_light;
 		}
-  }
+
+		#created-by{
+			font-size: 1.2em;
+			font-family: proxima_bold;
+			padding-top: 12px;
+		}
+	}
 }  
 
 
@@ -139,7 +145,7 @@
 		}
 
 		.destination-image{
-			min-height: 300px;
+			min-height: 360px;
 			max-width: 500px;
 			border: 8px solid #212326;
 			padding: 0px;
@@ -159,6 +165,11 @@
 					-webkit-transition: .5s ease-in-out;
 				}
 
+				.destination-subtitle{
+					opacity: 1;
+					-webkit-transition: .5s ease-in-out;
+				}
+
 				.destination-body{
 					opacity: 1;
 					-webkit-transition: .5s ease-in-out;
@@ -167,8 +178,7 @@
 				.destination-button{
 					cursor: pointer;
 					opacity: 1;
-					-webkit-transition: .5s ease-in-out;
-					
+					-webkit-transition: .5s ease-in-out;	
 				}
 
 				.destination-title{
@@ -178,28 +188,55 @@
 					padding-top: 20px;
 					padding-bottom: 20px;
 					background: transparent;
-					border-bottom: 4px solid #aa4b41;
+					border: none;
+				}
+
+				.destination-title-underline{
+					opacity: 1;
+					-webkit-transition: .5s ease-in-out;
 				}
 			}
 		}
 			
 		.destination-description{
 			-webkit-transition: .5s ease-in-out;
-			min-height: 300px;
+			min-height: 360px;
 			border: 8px solid transparent;
 			border-left: none;
+			border-right: none;
 
 			.destination-title{
 				font-family: proxima_bold;
 				font-size: 3em;
 				color: #fff;
 				text-align: center;
-				margin-top: 20px;
+				margin-top: 60px;
 				right: 20px;
 				background: rgba(170,75,65,0.85);
 				max-width: 330px;
 				-webkit-transition: .5s ease-in-out;
 				border-bottom: 0px solid #aa4b41;
+			}
+
+			.destination-title-underline{
+				border-bottom: 4px solid #aa4b41;
+				max-width: 150px;
+				margin: auto;
+				opacity: 0;
+				-webkit-transition: .5s ease-in-out;
+			}
+
+			.destination-subtitle{
+				font-family: proxima_bold;
+				font-size: 1.4em;
+				color: #fff;
+				text-align: center;
+				right: 20px;
+				max-width: 330px;
+				-webkit-transition: .5s ease-in-out;
+				opacity: 0;
+				max-width: 550px;
+				padding-top: 20px;
 			}
 
 			.destination-body{
@@ -210,7 +247,7 @@
 				padding-left: 12px;
 				padding-right: 12px;
 				padding-top: 20px;
-				padding-bottom: 20px;
+				padding-bottom: 40px;
 				max-width: 550px;
 				margin: auto;
 				opacity: 0;
@@ -664,6 +701,14 @@
 	.location-details .destination-container .basecamps-title{
 		font-size: 2.2em;
 		max-width: 300px;
+	}
+
+	.location-details .destination-container .destination-image{
+		min-height: 310px;
+	}
+
+	.location-details .destination-container .destination-description{
+		min-height: 310px;
 	}
 
 	.location-details .location-how .location-how-header{

@@ -14,7 +14,7 @@
 		margin-bottom: 40px;
 
 		.modal-title{
-			font-family: proxima_black;
+			font-family: proxima_thin;
 			font-size: 2.5em;
 			color: #212326;
 		}
@@ -23,6 +23,9 @@
 	.modal-img {
 		width: 100%;
 		margin: auto;
+		background-repeat: no-repeat;
+		background-size: cover;
+	    background-position: center center;
 	}
 
 	.modal-body{
@@ -65,5 +68,14 @@
 		font-size: 1.4em !important;
 		padding-left: 4px !important;
 		padding-right: 4px !important;
+	}
+
+	.basecamp-content .modal-body{
+		margin-top: 100px;
+		padding-top: 0px;
+	}
+
+	.basecamp-content .modal-img{
+		height: 320px;
 	}
 }

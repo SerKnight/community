@@ -61,7 +61,7 @@ a:hover {
 	position: absolute;
 	top: 400px;
 	left: -80px;
-  cursor: pointer;
+  	cursor: pointer;
 	font-size: 65px;
 	color: #fff;
 
@@ -73,7 +73,7 @@ a:hover {
 .fa-chevron-right {
   position: absolute;
   top: 400px;
-	right: -80px;
+  right: -80px;
   cursor: pointer;
   font-size: 65px;
   color: #fff;
@@ -87,10 +87,11 @@ a:hover {
 	color: #fff;
 	z-index: 9999999;
 	opacity: 1.0;
-	font-size: 55px;
-  right: 0px;
-  position: fixed;
-	margin: 2%;
+	font-size: 24px;
+  	right: 0px;
+  	position: fixed;
+	margin-top: 4px;
+	margin-right: 8px; 
 
 }
 
@@ -130,10 +131,16 @@ a:hover {
 	}
 
 	.fa-chevron-left{
-		display: none !important;
+		padding-top: 70px;
+		left: 36%;
+		font-size: 40px;
+		color: #212326;
 	}
 
 	.fa-chevron-right{
-		display: none !important;
+		padding-top: 70px;
+		right: 36%;
+		font-size: 40px;
+		color: #212326;
 	}
 }

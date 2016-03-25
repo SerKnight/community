@@ -1,10 +1,7 @@
-
-.col-md-12.location-inclusions{style: "background: url('#{asset_path("background/vietnampath.jpeg")}') center center no-repeat"}
-  .location-inclusions-header
-    Adventure Made
-  .location-date
+.col-md-12.apply-hero{style: "background: url('#{asset_path("background/gapcliffs.jpeg")}') center center no-repeat"}
+  .apply-header
     - if params[:type] == 'adventure'
-      Lead a Trip
+      What's your dream trip?
 
     - elsif params[:type]
       Reserve your Spot:
@@ -13,38 +10,29 @@
     - else
       Contact Us
 
-  .col-md-10.col-md-offset-1.inclusions-container
-    .col-md-10.col-md-offset-1
-      %br        
-      %br        
-      %br        
-      = form_for :contact, url: {:controller => "contacts", :action => "create"}, method: "post", remote: true do |f|
-        %input{:name => "contact[contact_type]", :type => "hidden", value: params[:type]}
+  .col-md-12.application-container
+    %br        
+    = form_for :contact, url: {:controller => "contacts", :action => "create"}, method: "post", remote: true do |f|
+      %input{:name => "contact[contact_type]", :type => "hidden", value: params[:type]}
 
-        .col-lg-6.col-md-offset-3
-          .well.well-sm
-            .form-group
-              .input-group
-                %span.input-group-addon
-                  %span.glyphicon.glyphicon-asterisk
-                %input#InputName.form-control{:name => "contact[name]", :placeholder => "Your Name", :required => "", :type => "text"}
-            .form-group
-              .input-group
-                %span.input-group-addon
-                  %span.glyphicon.glyphicon-asterisk
-                %input#InputEmailFirst.form-control{:name => "contact[email]", :placeholder => "Your Email", :required => "", :type => "email"}
-            
-            .form-group
-              .input-group
-                %span.input-group-addon
-                  %span.glyphicon.glyphicon-asterisk
-                %textarea#InputMessage.form-control{:name => "contact[message]", :required => "", :rows => "5"}
+      .col-lg-12
+        .well.well-sm.apply-form-box
+          .form-group
+            .input-group.apply-form-field-container
+              %input#InputName.form-control.form-field-box{:name => "contact[name]", :placeholder => "Your Name", :required => "", :type => "text"}
+          .form-group
+            .input-group.apply-form-field-container
+              %input#InputEmailFirst.form-control.form-field-box{:name => "contact[email]", :placeholder => "Your Email", :required => "", :type => "email"}
+          
+          .form-group
+            .input-group.apply-form-field-container
+              %textarea#InputMessage.form-control.form-field-box{:name => "contact[message]", :required => "", :rows => "5"}
 
-            .form-group.text-center
-              %input#submit.btn.btn-success{:name => "submit", :type => "submit", :value => "Lets do this"}
+          .form-group.text-center
+            %input#submit.btn.btn-success.application-form-btn{:name => "submit", :type => "submit", :value => "Send it !"}
 
 
-      .thanks
-        Thanks so much for applying. We will be in touch as soon as possible. 
-        %br
-          Looking forward for you to become Adventure Made!
+    .thanks
+      Thanks so much for applying. We will be in touch as soon as possible. 
+      %br
+        Looking forward for you to become Adventure Made!
