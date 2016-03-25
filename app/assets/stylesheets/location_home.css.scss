@@ -41,7 +41,7 @@
 		#created-by{
 			font-size: 1.2em;
 			font-family: proxima_bold;
-			padding-top: 12px;
+			padding-top: 20px;
 		}
 	}
 }  
@@ -247,7 +247,7 @@
 				padding-left: 12px;
 				padding-right: 12px;
 				padding-top: 20px;
-				padding-bottom: 40px;
+				padding-bottom: 30px;
 				max-width: 550px;
 				margin: auto;
 				opacity: 0;
@@ -567,7 +567,7 @@
 		display: block;
 		font-family: proxima_black;
 		font-size: 3em;
-		color: #fff;
+		color: #212326;
 		text-align: center;
 		line-height: 40px;
 	}
@@ -576,7 +576,7 @@
 		display: block;
 		font-family: proxima_light;
 		font-size: 1.6em;
-		color: #fff;
+		color: #212326;
 		text-align: center;
 		max-width: 400px;
 		margin: auto;
@@ -623,9 +623,18 @@
 
 @media screen and (max-width: 771px){
 
+	.location-details .destination-container .destination-image{
+		&:hover{
+			.destination-subtitle{
+				margin-top: 10px;
+				padding-bottom: 30px;
+			}
+		}
+	}
+
 	.destination-description .destination-title{
 		margin: auto !important;
-		margin-top: 75px !important;
+		margin-top: 90px !important;
 	}
 
 	.destination-body-mobile{
@@ -638,7 +647,7 @@
 
 	.destination-button{
 		opacity: 1 !important;
-		margin-top: 40px !important;
+		margin-top: 20px !important;
 	}
 
 	.location-details .location-join .who-join{
@@ -753,5 +762,10 @@
 	.location-details .location-join .who-join-description{
 		font-size: 1.3em;
 		padding-top: 18px;
+	}
+
+	.destination-button{
+		opacity: 1 !important;
+		margin-top: 0px !important;
 	}
 }
