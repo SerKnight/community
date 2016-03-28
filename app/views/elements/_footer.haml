@@ -1,0 +1,22 @@
+#footer
+  .container.text-center
+    .footer_text
+      .row
+        .footer-text
+          %a{href: "/adventure"}
+            Build a Trip
+          .dash= " | " 
+          %a{href: "/vietnam"}
+            The Long Road South
+          .dash= " | " 
+          %a{href: "/colombia"}
+            Whitewater Colombia
+
+      .row
+        .col-md-12.social-row
+          %a{href: "https://www.facebook.com/MadebyAdventures/", target: "_blank"}
+            = image_tag asset_url('icons/facebookicon.png')
+          %a{href: "https://twitter.com/adventuremade", target: "_blank"}
+            = image_tag asset_url('icons/twittericon.png')
+          %a{href: "https://www.instagram.com/madebyadventure/", target: "_blank"}
+            = image_tag asset_url('icons/instagramicon.png')

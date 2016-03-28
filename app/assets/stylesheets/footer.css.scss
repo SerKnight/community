@@ -1,0 +1,62 @@
+#footer {
+	width: 100%;
+	position: relative;
+	background-color: #212326;
+	overflow-y: hidden !important;
+	padding: 8px 0 2px 0;
+
+	.container {
+		font-size: 1.2em;
+
+		.footer_text {
+			color: #fff;
+			padding-top: 30px;
+			padding-bottom: 20px;
+			padding-left: 0px;
+			padding-right: 0px;
+
+			.col-md-6 {
+				padding-top: 2px;
+				font-family: 'proxima_thin';
+			}
+
+			.dash {
+				display: inline;
+			}
+
+			a {
+				text-decoration: none;
+				color: #fff;
+				font-family: proxima_thin;
+				font-size: 1.0em;
+
+				.fa {
+					margin-right: 30px;
+					font-size: 1.6em;
+					opacity: 0.5;
+					color: #fff;
+
+					&:hover {
+						color: #fff;
+						opacity: 1;
+					}
+				}
+			}
+
+			.social-row {
+				margin-top: 20px;
+				margin-bottom: 10px;
+
+				a:hover {
+					opacity: 0.5;
+				}
+			}	
+		}
+	}
+}
+
+@media screen and (max-width: 500px){
+	#footer .container .footer_text a{
+		font-size: 0.7em;
+	}
+}

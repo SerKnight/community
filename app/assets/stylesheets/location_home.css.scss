@@ -48,7 +48,6 @@
 
 
 .location-details{
-	position: absolute;
 	width: 100%;
 	background: #fff;
 
@@ -262,17 +261,36 @@
 				padding: 8px;
 				opacity: 0;
 				-webkit-transition: .3s ease-in-out;
-				background: rgba(33,35,38,0.8);
-				border: 2px solid #fff;
+				background: rgba(170,75,65,0.9);
 				width: 100%;
 				max-width: 140px;
 				margin: auto;
 
 				&:hover{
-					background: rgba(255,255,255,0.2);
-					border: 2px solid rgba(33,35,38,0.8);
+					background: rgba(170,75,65,0.5);
+					border-radius: 8px;
 				}
 			}
+		}
+
+		.destination-subtitle-mobile{
+			display: none;
+			font-family: proxima_bold;
+			font-size: 1.4em;
+			color: #fff;
+			text-align: center;
+			right: 20px;
+			-webkit-transition: .5s ease-in-out;
+			padding-top: 20px;
+		}
+
+		.destination-underline-mobile{
+			border-bottom: 4px solid #aa4b41;
+			max-width: 120px;
+			margin: auto;
+			-webkit-transition: .5s ease-in-out;
+			display: none;
+			margin-top: 20px;
 		}
 
 		.destination-body-mobile{
@@ -623,21 +641,40 @@
 
 @media screen and (max-width: 771px){
 
+	.location-details .destination-container .destination-description .destination-subtitle{
+		display: none;
+	}
+
 	.location-details .destination-container .destination-image{
 		&:hover{
-			.destination-subtitle{
-				margin-top: 10px;
-				padding-bottom: 30px;
+			.destination-title{
+				margin-top: 40px !important;
+				margin-bottom: 0px !important;
+			}
+
+			.destination-title-underline{
+				margin-bottom: 30px !important;
 			}
 		}
 	}
 
 	.destination-description .destination-title{
 		margin: auto !important;
-		margin-top: 90px !important;
+		margin-top: 100px !important;
+		background: transparent !important;
+		text-shadow: 1px 1px 2px #000;
+		margin-bottom: 24px !important;
 	}
 
 	.destination-body-mobile{
+		display: block !important;
+	}
+
+	.destination-underline-mobile{
+		display: block !important;
+	}
+
+	.destination-subtitle-mobile{
 		display: block !important;
 	}
 
@@ -648,6 +685,8 @@
 	.destination-button{
 		opacity: 1 !important;
 		margin-top: 20px !important;
+		box-shadow: 1px 1px 4px #333;
+		border: 1px solid #fff;
 	}
 
 	.location-details .location-join .who-join{
@@ -679,7 +718,7 @@
 	}
 
 	.location-details .location-description .description-title{
-		font-size: 2.2em;
+		font-size: 2.8em;
 		max-width: 300px;
 	}
 
@@ -718,6 +757,10 @@
 
 	.location-details .destination-container .destination-description{
 		min-height: 310px;
+	}
+
+	.location-details .destination-container .destination-description .destination-subtitle{
+		font-size: 1.1em;
 	}
 
 	.location-details .location-how .location-how-header{

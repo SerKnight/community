@@ -1,18 +1,21 @@
 !!!
 %html
-  %head
-    %title AdventureMade
-    = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true
-    = javascript_include_tag 'application', 'data-turbolinks-track' => true
-    = csrf_meta_tags
-    %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}
-    / Prelang: Analytics / Google Analytics
-    = analytics_init if Rails.env.production? or Rails.env.development?
-    = favicon_link_tag 'advlo_favicon.ico'
-  %body
-    = render partial: "elements/navbar"
-    = render partial: "devise/shared/basecamp_modal"
+    %head
+        %title AdventureMade
+        = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true
+        = javascript_include_tag 'application', 'data-turbolinks-track' => true
+        = csrf_meta_tags
+        %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}
+        / Prelang: Analytics / Google Analytics
+        = analytics_init if Rails.env.production? or Rails.env.development?
+        = favicon_link_tag 'adventuremade_favicon.ico'
+    %body
+        = render partial: "elements/navbar"
+        = render partial: "devise/shared/basecamp_modal"
+        
 
-    = bootstrap_flash
-    = yield
+        = bootstrap_flash
+        = yield
+    %footer
+        = render partial: "elements/footer"
 
