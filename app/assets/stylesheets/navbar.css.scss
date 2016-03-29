@@ -56,6 +56,7 @@
 		font-size: 14px;
 		margin-top: 2px;
 		margin-right: 8px;
+		text-shadow: 1px 1px 1px #333;
 
 
 		&:hover{
@@ -68,6 +69,7 @@
 		min-width: 178px;
 		margin-right: 22px;
 		padding: 0px 0;
+		border: none;
 
 		.trip-dropdown-title{
 			color: #fff;
@@ -158,6 +160,7 @@
 		font-size: 18px;
 		color: #212326 !important;
 		text-align: center;
+		text-shadow: none;
 
 		&:hover{
 			color: rgba(33,35,38,0.8);
