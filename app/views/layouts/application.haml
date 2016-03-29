@@ -7,6 +7,7 @@
     = csrf_meta_tags
     %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}
     / Prelang: Analytics / Google Analytics
+    = display_meta_tags
     = analytics_init if Rails.env.production? or Rails.env.development?
     = favicon_link_tag 'adventuremade_favicon.ico'
   %body
