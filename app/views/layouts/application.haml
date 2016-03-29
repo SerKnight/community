@@ -4,14 +4,14 @@
         - if content_for?(:meta_og)
             = yield :meta_og
         - else
-            %meta{:content => "AdventureMade - One of a Kind Collaborative Group Adventures", :property => "og:title"}/
-            %meta{:content => "AdventureMade", :property => "og:site_name"}/
-            %meta{:content => "Discover unique group adventures created by travelers with local guides.", :property => "og:description"}/
-            %meta{:content => "website", :property => "og:type"}/
-            %meta{:content => "http://www.madebyadventure.com/", :property => "og:url"}/
-            %meta{:content => "http://i.imgur.com/u3vGbYZ.jpg", :property => "og:image"}/
-            %meta{:content => "1450", :property => "og:image:width"}/
-            %meta{:content => "760", :property => "og:image:height"}/
+            %meta{:content => "AdventureMade - One of a Kind Collaborative Group Adventures", :property => "og:title"} /
+            %meta{:content => "AdventureMade", :property => "og:site_name"} /
+            %meta{:content => "Discover unique group adventures created by travelers with local guides.", :property => "og:description"} /
+            %meta{:content => "website", :property => "og:type"} /
+            %meta{:content => "http://www.madebyadventure.com/", :property => "og:url"} /
+            %meta{:content => "http://i.imgur.com/u3vGbYZ.jpg", :property => "og:image"} /
+            %meta{:content => "1450", :property => "og:image:width"} /
+            %meta{:content => "760", :property => "og:image:height"} /
 
         %title AdventureMade
         = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true
