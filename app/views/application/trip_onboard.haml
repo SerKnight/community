@@ -1,3 +1,13 @@
+- content_for(:meta_og) do
+	%meta{:content => "Create Your Adventure - AdventureMade", :property => "og:title"}/
+	%meta{:content => "AdventureMade", :property => "og:site_name"}/
+	%meta{:content => "Create an adventure with a local guide and get rewarded when others book your trip.", :property => "og:description"}/
+	%meta{:content => "website", :property => "og:type"}/
+	%meta{:content => "http://www.madebyadventure.com/adventure/", :property => "og:url"}/
+	%meta{:content => "http://i.imgur.com/KIgtPXf.png", :property => "og:image"}/
+	%meta{:content => "1305", :property => "og:image:width"}/
+	%meta{:content => "798", :property => "og:image:height"}/
+
 .hero-image.hero-image-fix{style: "background: url('#{asset_path("background/homepagesnow.jpg")}') center center no-repeat"}
 
 .hero-image.hero-image-fix-mobile{style: "background: url('#{asset_path("background/homepagesnowmobile.jpg")}') center center no-repeat"}
