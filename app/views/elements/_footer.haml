@@ -2,21 +2,30 @@
   .container.text-center
     .footer_text
       .row
+        .footer-logo
         .footer-text
-          %a{href: "/adventure"}
-            Build a Trip
-          .dash= " | " 
+          #footer-text-title
+            Upcoming Trips
           %a{href: "/vietnam"}
             The Long Road South
-          .dash= " | " 
+          .dash= " || " 
           %a{href: "/colombia"}
             Whitewater Colombia
+          <br>
+          <br>
+          #footer-text-title
+            Create your Adventure
+          %a{href: "/adventure"}
+            Build a Trip
+          <br>
 
       .row
         .col-md-12.social-row
-          %a{href: "https://www.facebook.com/MadebyAdventures/", target: "_blank"}
-            = image_tag asset_url('icons/facebookicon.png')
-          %a{href: "https://twitter.com/adventuremade", target: "_blank"}
+          #footer-text-title
+            Connect with Us
+          %a{href: "https://www.facebook.com/MadebyAdventures/", target: "_blank", style: "text-decoration: none !important"}
+            = image_tag asset_url('icons/facebookicon.png', )
+          %a{href: "https://twitter.com/adventuremade", target: "_blank", style: "text-decoration: none !important"}
             = image_tag asset_url('icons/twittericon.png')
-          %a{href: "https://www.instagram.com/madebyadventure/", target: "_blank"}
+          %a{href: "https://www.instagram.com/madebyadventure/", target: "_blank", style: "text-decoration: none !important"}
             = image_tag asset_url('icons/instagramicon.png')

@@ -5,7 +5,7 @@
 .location-hero-fix {
 	min-height: 750px;
 	background-size: cover !important;
-	margin-top: -60px;
+	margin-top: -68px;
 }
 
 .location-slow-scroll {
@@ -145,7 +145,7 @@
 
 		.destination-image{
 			min-height: 360px;
-			max-width: 500px;
+			max-width: 590px;
 			border: 8px solid #212326;
 			padding: 0px;
 			margin: auto;
@@ -188,6 +188,8 @@
 					padding-bottom: 20px;
 					background: transparent;
 					border: none;
+					margin-left: 0px;
+					box-shadow: none;
 				}
 
 				.destination-title-underline{
@@ -215,6 +217,8 @@
 				max-width: 330px;
 				-webkit-transition: .5s ease-in-out;
 				border-bottom: 0px solid #aa4b41;
+				margin-left: -12px;
+				box-shadow: -2px 2px 4px #000;
 			}
 
 			.destination-title-underline{
@@ -664,6 +668,7 @@
 		background: transparent !important;
 		text-shadow: 1px 1px 2px #000;
 		margin-bottom: 24px !important;
+		box-shadow: none !important;
 	}
 
 	.destination-body-mobile{

@@ -13,7 +13,7 @@ module ApplicationHelper
 	      :type           => 'website',
 	      :url            => "#{root_url}",
 	      :description    => 'Discover unique group adventures created by travelers with local guides.',
-	      :image          => 'http://imgur.com/cE77vwg'
+	      :image          => 'http://imgur.com/de8OFWc'
 	    }
 	end
 
@@ -24,7 +24,7 @@ module ApplicationHelper
 	      :title          => 'AdventureMade - One of a Kind Collaborative Group Adventures',
 	      :description    => 'Discover unique group adventures created by travelers with local guides.',
 	      :image          => {
-	                          :_ => 'http://imgur.com/cE77vwg'
+	                          :_ => 'http://imgur.com/de8OFWc'
 	                        }
 	    }
 	end

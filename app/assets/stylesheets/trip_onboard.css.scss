@@ -5,7 +5,7 @@
 .hero-image-fix {
 	min-height: 700px;
 	background-size: cover !important;
-  	margin-top: -60px;
+  	margin-top: -68px;
 }
 
 .hero-image-fix-mobile{
@@ -75,7 +75,7 @@
 	background-size: cover !important;
 	background-repeat: no-repeat;
 	background-position: center center;
-	background-image: asset-url("background/SurfLight.jpeg");
+	background-image: asset-url("background/surferaerial.jpeg");
 
 	.creator-hiw-box{
 
@@ -246,13 +246,13 @@
 @media screen and (max-width: 991px){
 
 	.creator-hiw{
-		padding-top: 0px;
+		padding-top: 24px;
 		padding-bottom: 80px;
 		height: 800px;
 		background-size: cover !important;
 		background-repeat: no-repeat;
 		background-position: center center;
-		background-image: asset-url("background/SurfLightMobile.jpeg");
+		background-image: asset-url("background/surferaerialmobile.jpeg");
 	}
 
 	.creator-hiw .creator-hiw-box .creator-hiw-box-text{
@@ -293,9 +293,9 @@
 	}
 
 	.hero-image-fix-mobile{
-		min-height: 500px;
+		min-height: 550px;
 		background-size: cover !important;
-	  	margin-top: -60px;
+	  	margin-top: -68px;
 	  	display: block;
 	}
 
