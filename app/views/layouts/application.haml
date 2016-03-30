@@ -9,9 +9,9 @@
             %meta{:content => "Discover one of a kind group adventures created by travelers with local guides.", :property => "og:description"}/
             %meta{:content => "website", :property => "og:type"}/
             %meta{:content => "http://www.madebyadventure.com/", :property => "og:url"}/
-            %meta{:content => "http://i.imgur.com/woO4W7H.png", :property => "og:image"}/
-            %meta{:content => "1303", :property => "og:image:width"}/
-            %meta{:content => "703", :property => "og:image:height"}/
+            %meta{:content => "http://i.imgur.com/hShb0MO.png", :property => "og:image"}/
+            %meta{:content => "1326", :property => "og:image:width"}/
+            %meta{:content => "700", :property => "og:image:height"}/
 
         %title AdventureMade
         = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true
@@ -20,6 +20,7 @@
         / Prelang: Analytics / Google Analytics
         = analytics_init if Rails.env.production? or Rails.env.development?
         = favicon_link_tag 'adventuremade_favicon.ico'
+        = csrf_meta_tags
 
     %body
         = render partial: "elements/navbar"

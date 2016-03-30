@@ -19,7 +19,7 @@
 		text-align: center;
 		width: 100%;
 		margin-bottom: 12px;
-		color: #212326;
+		color: #fff;
 		background: transparent;
 		padding-bottom: 20px;
 		max-width: 1000px;
@@ -589,7 +589,6 @@
 		display: block;
 		font-family: proxima_black;
 		font-size: 3em;
-		color: #212326;
 		text-align: center;
 		line-height: 40px;
 	}
@@ -598,7 +597,6 @@
 		display: block;
 		font-family: proxima_light;
 		font-size: 1.6em;
-		color: #212326;
 		text-align: center;
 		max-width: 400px;
 		margin: auto;
@@ -707,10 +705,6 @@
 	
 	.location-hero-fix{
 		min-height: 600px;
-	}
-
-	.location-slow-scroll{
-		margin-top: 140px;
 	}
 
 	#location-header-mobile{
