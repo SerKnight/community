@@ -1,6 +1,5 @@
 source 'https://rubygems.org'
 
-
 gem 'rails', '4.1.4'
 gem 'pg'
 gem 'sass-rails', '~> 4.0.3'
@@ -44,3 +43,4 @@ gem 'rails_12factor', group: :production
 gem 'haml'
 gem "font-awesome-rails"
 gem 'rails_admin'
+gem 'geocoder'
