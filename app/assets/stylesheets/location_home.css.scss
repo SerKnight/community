@@ -367,7 +367,7 @@
 		padding-top: 80px;
 		padding-bottom: 80px;
 		min-height: 600px;
-		background: #fff;
+		background: whitesmoke;
 
 		.location-who-header{
 			font-family: proxima_black;
@@ -386,7 +386,7 @@
 			&:hover{
 
 				.who-image{
-					border: 0px solid #fff;
+					border: 0px solid whitesmoke;
 					-webkit-transition: .3s ease-in-out;
 					-moz-transition: .3s ease-in-out;
 					-o-transition: .3s ease-in-out;
@@ -407,7 +407,7 @@
 				width: 260px;
 				margin: auto;
 				float: none;
-				border: 10px solid #fff;
+				border: 10px solid whitesmoke;
 
 				-webkit-transition: .3s ease-in-out;
 				-moz-transition: .3s ease-in-out;
@@ -528,22 +528,40 @@
 		margin-bottom: 40px;
 	}
 
-	.location-date{
-		font-family: proxima_bold;
-		font-size: 3em;
-		color: #fff;
-		text-align: center;
-		border-bottom: 4px solid #aa4b41;
-		max-width: 550px;
-		margin: auto;
-		background: #aa4b41;
-		margin-bottom: 40px;
-	}
-
 	.inclusions-container{
 		background: rgba(33,35,38,0.7);
 		min-height: 440px;
 		border-radius: 4px;
+		padding-right: 0px;
+		padding-left: 0px;
+
+		.priceanddate_container{
+			background: rgba(0,0,0,0.5);
+			margin: auto;	
+			border-top-left-radius: 4px;
+			border-top-right-radius: 4px;	
+
+			.location-date{
+				font-family: proxima_thin;
+				font-size: 2.2em;
+				color: #fff;
+				text-align: center;
+				border-bottom: 2px solid #fff;
+				max-width: 440px;
+				margin: auto;
+				padding-bottom: 10px;
+				padding-top: 10px;
+			}
+
+			.trip-price{
+				font-family: proxima_thin;
+				font-size: 2.2em;
+				color: #fff;
+				text-align: center;
+				padding-top: 10px;
+				padding-bottom: 10px;
+			}
+		}
 
 		.inclusions-title{
 			font-family: proxima_bold;
@@ -795,6 +813,15 @@
 	.location-details .location-inclusions .inclusions-container .inclusions-description{
 		font-size: 15px;
 		padding-bottom: 20px;
+	}
+
+	.location-inclusions .inclusions-container .priceanddate_container .location-date{
+		font-size: 1.6em;
+		max-width: 320px;
+	}
+
+	.location-inclusions .inclusions-container .priceanddate_container .trip-price{
+		font-size: 1.6em;
 	}
 
 	.location-details .location-join .who-join{
