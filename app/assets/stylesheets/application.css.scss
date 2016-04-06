@@ -18,7 +18,41 @@
 @import "bootstrap";
 @import "font-awesome";
 
-//->Prelang (ui_framework:twitter_bootstrap)
+#loader-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0,0,0,0.6);
+	z-index: 999;
+	display: none;
+
+	.fa {
+		font-size: 60px;
+    position: static;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    margin-top: 21%;
+	}
+}
+
+
+#email-signup-now {
+	cursor: pointer;
+	position: fixed;
+  bottom: 0;
+  margin: 10px;
+  z-index: 99999;
+
+  &:hover{
+  	opacity: 0.75;
+  }
+	
+	.fa-stack {
+	}
+}
 
 // Give everything in 'yield' margin to separate it.
 .yield {

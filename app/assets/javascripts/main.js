@@ -1,7 +1,22 @@
 
 function mainInit(){
 	baseCampModal();
+	ajaxLoader();
 }
+
+
+function ajaxLoader(){
+	$(document).ajaxStart(function(){ 
+	  $('#loader-overlay').show()
+	})
+
+	$(document).ajaxStop(function(){ 
+		setTimeout(function(){
+			$('#loader-overlay').fadeOut() 
+		},250)
+	})
+}
+
 
 var activeCamp = 0;
 
@@ -51,3 +66,4 @@ function replaceDiv(element){
 	}
 	console.log(activeCamp)
 }
+
