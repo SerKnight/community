@@ -39,21 +39,6 @@
 }
 
 
-#email-signup-now {
-	cursor: pointer;
-	position: fixed;
-  bottom: 0;
-  margin: 10px;
-  z-index: 99999;
-
-  &:hover{
-  	opacity: 0.75;
-  }
-	
-	.fa-stack {
-	}
-}
-
 // Give everything in 'yield' margin to separate it.
 .yield {
   margin: 30px;
