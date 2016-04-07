@@ -1,0 +1,32 @@
+.apply-form{
+	background: transparent;
+	border: none;
+}
+
+#email-signup-now {
+	cursor: pointer;
+	position: fixed;
+  bottom: 0;
+  margin: 10px;
+  z-index: 99999;
+  right: 0;
+
+  &:hover{
+  	opacity: 0.75;
+  }
+	
+	.fa-stack {
+	}
+}
+
+.email-capture{
+	color: transparent;
+}
+
+.email-capture-container{
+	background: rgb(170, 75, 65);
+	max-width: 300px;
+}
+
+.email-capture-button{
+}

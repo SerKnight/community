@@ -32,13 +32,13 @@
     / Modal
     
 
-    - if !current_user && controller_name != 'registrations'
-      #email-signup-now{"data-target" => "#singupModal", "data-toggle" => "modal", :type => "button"}
-        %span.fa-stack.fa-3x
-          %i.fa.fa-circle.fa-stack-2x.text-primary
-          %i.fa.fa.fa-envelope-o.fa-stack-1x.fa-inverse
+    /- if !current_user && controller_name != 'registrations'
+    /  #email-signup-now{"data-target" => "#signupModal", "data-toggle" => "modal", :type => "button"}
+    /    %span.fa-stack.fa-2x.email-capture
+    /      %i.fa.fa-circle.fa-stack-2x.email-capture-container
+    /      %i.fa.fa.fa-angle-left.fa-stack-1x.fa-inverse.email-capture-button
 
-      = render partial: "devise/shared/signup_modal"
+    /  = render partial: "devise/shared/signup_modal"
 
 
     = render partial: "elements/navbar"

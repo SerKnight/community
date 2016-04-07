@@ -1,19 +1,21 @@
-#singupModal.modal.fade{"aria-labelledby" => "singupModal", :role => "dialog", :tabindex => "-1"}
+#signupModal.modal.fade{"aria-labelledby" => "signupModal", :role => "dialog", :tabindex => "-1"}
   = form_for :contact, url: {:controller => "contacts", :action => "create"}, method: "post", remote: true do |f|
     %input{:name => "contact[contact_type]", :type => "hidden", value: 'contact-modal'}
 
-    .col-lg-12
-      .well.well-sm.apply-form-box
-        .form-group
-          .input-group.apply-form-field-container
-            %input#InputName.form-control.form-field-box{:name => "contact[name]", :placeholder => "Your Name", :required => "", :type => "text"}
+    .col-md-12
+      .apply-form-box.apply-form
         .form-group
           .input-group.apply-form-field-container
             %input#InputEmailFirst.form-control.form-field-box{:name => "contact[email]", :placeholder => "Your Email", :required => "", :type => "email"}
-        
-        .form-group
-          .input-group.apply-form-field-container
-            %textarea#InputMessage.form-control.form-field-box{:name => "contact[message]", :placeholder => "Introduce yourself", :required => "", :rows => "5"}
 
         .form-group.text-center
           %input#submit.btn.btn-success.application-form-btn{:name => "submit", :type => "submit", :value => "Send it !"}
+
+
+/        .form-group
+/          .input-group.apply-form-field-container
+/            %input#InputName.form-control.form-field-box{:name => "contact[name]", :placeholder => "Your Name", :required => "", :type => "text"}
+
+/        .form-group
+/          .input-group.apply-form-field-container
+/            %textarea#InputMessage.form-control.form-field-box{:name => "contact[message]", :placeholder => "Introduce yourself", :required => "", :rows => "5"}
