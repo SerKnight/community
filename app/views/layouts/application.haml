@@ -48,4 +48,5 @@
     = yield
 
   %footer
-    = render partial: "elements/footer"
+    - if controller_name != 'registrations'
+      = render partial: "elements/footer"
