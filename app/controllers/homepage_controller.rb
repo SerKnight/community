@@ -16,4 +16,8 @@ class HomepageController < ApplicationController
 
   end
 
+  def india
+
+  end
+
 end

@@ -11,6 +11,7 @@ Rails.application.routes.draw do
   get 'adventure' =>  'homepage#trip_onboard'
   get 'vietnam'   =>  'homepage#vietnam'
   get 'colombia'   =>  'homepage#colombia'
+  get 'india'   =>    'homepage#india'
 
   get '/apply' => 'contacts#new'
   get '/apply/:type' => 'contacts#new'
