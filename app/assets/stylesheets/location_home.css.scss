@@ -28,20 +28,25 @@
 
     #location-header{
 			font-family: proxima_black;
-			font-size: 3.8em;
+			font-size: 5em;
+			text-transform: uppercase;
 		}
 
 		#location-explanation {
 			max-width: 570px;
 			margin: 0 auto;
-			font-size: 1.6em;
-			font-family: proxima_light;
+			font-size: 1.4em;
+			font-family: proxima_bold;
 		}
 
 		#created-by{
-			font-size: 1.2em;
+			font-size: 1.6em;
 			font-family: proxima_bold;
 			padding-top: 20px;
+			border-top: 4px solid #aa4b41;
+			max-width: 300px;
+			margin: auto;
+			margin-top: 20px;
 		}
 	}
 }  
@@ -606,15 +611,16 @@
 	#location-header-mobile{
 		display: block;
 		font-family: proxima_black;
-		font-size: 3em;
+		font-size: 4em;
 		text-align: center;
-		line-height: 40px;
+		line-height: 50px;
+		text-transform: uppercase;
 	}
 
 	#location-explanation-mobile{
 		display: block;
-		font-family: proxima_light;
-		font-size: 1.6em;
+		font-family: proxima_bold;
+		font-size: 1.2em;
 		text-align: center;
 		max-width: 400px;
 		margin: auto;
@@ -720,13 +726,19 @@
 }
 
 @media screen and (max-width: 500px){
+
+	#location-header-mobile{
+		font-size: 3em;
+		line-height: 40px;
+	}
+
+	.location-slow-scroll #location-text #created-by{
+		font-size: 1.4em;
+		max-width: 260px;
+	}
 	
 	.location-hero-fix{
 		min-height: 600px;
-	}
-
-	#location-header-mobile{
-		font-size: 2em;
 	}
 
 	#location-explanation-mobile{

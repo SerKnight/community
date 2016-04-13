@@ -20,4 +20,8 @@ class HomepageController < ApplicationController
 
   end
 
+  def socaltrifecta
+
+  end
+
 end
