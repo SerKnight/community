@@ -147,29 +147,29 @@
   		font-size: 3em;
   		text-align: center;
   		padding-top: 130px;
-  		text-transform: uppercase;
 	}
 
 	.your-adventure-body{
 		font-family: proxima_thin;
-  		color: rgba(255,255,255,0.9);
+  		color: #fff;
   		font-size: 1.4em;
   		text-align: center;
 	}
 
 	.your-adventure-btn{
-		font-family: proxima_thin;
+		font-family: proxima_bold;
 		text-align: center;
 		font-size: 1.2em;
 		color: #fff;
 		min-height: 40px;
 		max-width: 170px;
 		margin: auto;
-		padding-top: 8px;
+		padding-top: 7px;
 		-webkit-transition: all 0.7s ease;
 		transition: all 0.7s ease;
 		border-radius: 100px;
-		background-color: rgba(170,75,65,0.7);
+		background-color: transparent;
+		border: 2px solid rgba(170, 75, 65, 1);
 		margin-top: 20px;
 
 		&:hover{
@@ -189,15 +189,16 @@
 
 @media screen and (max-width: 600px){
 	.your-adventure .your-adventure-header{
-		padding-top: 88px;
+		padding-top: 120px;
 		line-height: 60px;
 		max-width: 340px;
 		margin: auto;
 		line-height: 50px;
+		font-size: 1.9em;
 	}
 
 	.your-adventure .your-adventure-body{
-		padding-top: 20px;
+		padding-top: 12px;
 		padding-bottom: 10px;
 		max-width: 280px;
 		margin: auto;

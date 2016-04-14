@@ -1,9 +1,9 @@
 - content_for(:meta_og) do
-	%meta{:content => "50+ Miles of Colombian Whitewater - By Max J.", :property => "og:title"}/
+	%meta{:content => "The So-Cal Trifecta - By Casey S.", :property => "og:title"}/
 	%meta{:content => "AdventureMade", :property => "og:site_name"}/
-	%meta{:content => "We're tackling the mighty Rio Verde and Rio Samana, from the Colombian highlands to the dense jungles of the tropical rainforest.", :property => "og:description"}/
+	%meta{:content => "Exploring the ocean, the desert and the mountains all in one trip.", :property => "og:description"}/
 	%meta{:content => "website", :property => "og:type"}/
-	%meta{:content => "http://www.madebyadventure.com/colombia", :property => "og:url"}/
+	%meta{:content => "http://www.madebyadventure.com/socaltrifecta", :property => "og:url"}/
 	%meta{:content => "http://i.imgur.com/eegZ8J1.png", :property => "og:image"}/
 	%meta{:content => "1437", :property => "og:image:width"}/
 	%meta{:content => "752", :property => "og:image:height"}/
@@ -26,100 +26,98 @@
 
 .location-details
 	.col-md-12.location-itinerary
-		.col-md-6.mission-block
-			.itinerary-header
+		.col-md-12.mission-block
+			.mission-header
 				The Mission
-			.itinerary-body
+			.mission-body
 				The SoCal Trifecta: Exploring the ocean, the desert and the mountains all in one trip. California is one of the only places in the world you can do it in such a close proximity. We're going to tackle the waves on Zuma Beach, trek into the mountains for some trad climbing, spend the night under the stars and explore the desert the following day. I don't think we can fit more adventure into a weekend...
-
-		.col-md-6.map-block
-			.route-map{style: "background: url('#{asset_path("background/QuinnBeach.jpg")}') center center no-repeat"}
 
 	.col-md-12.location-description
 		.description-title
 			About our Guide
+		.description-guide-image{style: "background: url('#{asset_path("background/Quinnprofile.jpg")}') center center no-repeat"}
 		.description-body
-			I've partnered with Quinn from Eat Sleep Surf to plan a unique trip for us. Founder and instructor Quinn Carson surfs, snowboards, skateboards, wakeboards, rock climbs, and climbs mountains. He grew up in Chicago and at a young age his passion pushed him westward. 
+			Quinn is the founder and lead instructor at Eat, Sleep, Surf in LA. Quinn surfs, snowboards, skateboards, wakeboards, rock climbs and climbs mountains. He grew up in Chicago and at a young age his passion pushed him westward. 
 			<br>
 			<br>
-			Months after moving to California, Quinn became a surf instructor working for three different surf schools. He became popular because his teaching approach was light-hearted, passionate and effective.  Quinn has since taught surfing in California, Florida, Hawaii, England and Costa Rica.
+			Months after moving to California, Quinn became a surf instructor working for three different surf schools. He became popular because his teaching approach was light-hearted, passionate and effective.  Quinn has since taught surfing in California, Florida, Hawaii, England and Costa Rica. Quinn is a certified rock climbing and surf guide.
 
 	.col-md-12.destination-container
 		.basecamps-title
 			A Few Highlights
 		.row.col-md-6
-			.destination-image{style: "background: url('#{asset_path("background/medellinthumbnail.jpg")}') center center no-repeat"}
+			.destination-image{style: "background: url('#{asset_path("background/joshuatreenp.jpg")}') center center no-repeat"}
 				.destination-description
 					.destination-title
-						Medellín
+						Joshua Tree
 					.destination-title-underline
 					.destination-subtitle
-						Bikes & Beers in the City of Eternal Spring
+						Camping Under the Stars
 					.destination-body
-						Three glorious days in Medellín. Soak up the abundant sunshine, cheap food and friendly vibes. A delicious combination of nightlife, music, history, and culture, capped off by a full-day 5,000ft mountain bike descent...
+						We'll all meet up in LA and head out to Joshua Tree National Park to camp cowboy style, under the night's stars.
 					%a
-						.destination-button{"data-num" => 1, "data-target" => "#myModal", "data-toggle" => "modal", 'data-name' => 'Basecamp1', 'data-title' => 'Biking and Beer in the City of Eternal Spring', 'data-body' => 'Jet lag is all in your head. Shake it off and get funky at our welcome party. Get to know everyone else in the crew and check out the legendary Colombian nightlife. <br><br>What you do on the second day is totally up to you. Depending on our group size, I’m looking to get a nice big private home in the historic center of the city. We will have a good basecamp to explore the city from and a quiet place to return home and relax. Medellín is chalked full of interesting historical sites, hiking trails, cheap food, and shopping.<br><br>It’s crazy to think that 20 years ago, Medellín was considered one of the most dangerous cities in the world. Through some really innovative programs, this sprawling mountain metropolis has flipped the script and now ranks consistently as one of the top cities in the world to vitis.<br><br>Medellín’s main form of public transportation is a system of aerial tram cars, which if you ask me is pretty neat. For just a couple bucks you can get anywhere in the city from above. Other potential activities include: catching some sun at Parque Avri, taking a Pablo Escobar tour, watching a soccer match, or learning how to salsa dance. We can plan group activities or figure it out on arrival.<br><br>The big event for Medellín is a full day mountain bike ride that drops 5,000 feet from a cloud forest to a small colonial village outside Medellín. We’ll have high quality mountain bikes, support vehicle, and a guide to show us down the maze of mountain trails. The way down has technical single track for experienced riders and single lane dirt roads for beginners. Either way it’s going to be a blast. We’ll finish off with beers, dinner, and some swimming in the historical village of Santa Fe de Antioquia.<br><br>On the 4th day, we take off towards the mountains for the main event: 5 days of rafting!', 'data-img-src' => "#{asset_url("background/medellinthumbnail.jpg")}"}
+						.destination-button{"data-num" => 1, "data-target" => "#myModal", "data-toggle" => "modal", 'data-name' => 'Basecamp1', 'data-title' => 'Camping Under the Stars', 'data-body' => 'Jet lag is all in your head. Shake it off and get funky at our welcome party. Get to know everyone else in the crew and check out the legendary Colombian nightlife. <br><br>What you do on the second day is totally up to you. Depending on our group size, I’m looking to get a nice big private home in the historic center of the city. We will have a good basecamp to explore the city from and a quiet place to return home and relax. Medellín is chalked full of interesting historical sites, hiking trails, cheap food, and shopping.<br><br>It’s crazy to think that 20 years ago, Medellín was considered one of the most dangerous cities in the world. Through some really innovative programs, this sprawling mountain metropolis has flipped the script and now ranks consistently as one of the top cities in the world to vitis.<br><br>Medellín’s main form of public transportation is a system of aerial tram cars, which if you ask me is pretty neat. For just a couple bucks you can get anywhere in the city from above. Other potential activities include: catching some sun at Parque Avri, taking a Pablo Escobar tour, watching a soccer match, or learning how to salsa dance. We can plan group activities or figure it out on arrival.<br><br>The big event for Medellín is a full day mountain bike ride that drops 5,000 feet from a cloud forest to a small colonial village outside Medellín. We’ll have high quality mountain bikes, support vehicle, and a guide to show us down the maze of mountain trails. The way down has technical single track for experienced riders and single lane dirt roads for beginners. Either way it’s going to be a blast. We’ll finish off with beers, dinner, and some swimming in the historical village of Santa Fe de Antioquia.<br><br>On the 4th day, we take off towards the mountains for the main event: 5 days of rafting!', 'data-img-src' => "#{asset_url("background/joshuatreenp.jpg")}"}
 							View Checkpoint
 			.destination-subtitle-mobile
-				Bikes & Beers in the City of Eternal Spring
+				Camping Under the Stars
 			.destination-underline-mobile
 			.destination-body-mobile
-				Three glorious days in Medellín. Soak up the abundant sunshine, cheap food and friendly vibes. A delicious combination of nightlife, music, history, and culture, capped off by a full-day 5,000ft mountain bike descent...
+				We'll all meet up in LA and head out to Joshua Tree National Park to camp cowboy style, under the night's stars.
 
 		.row.col-md-6
-			.destination-image{style: "background: url('#{asset_path("background/rioverdethumbnail.jpg")}') center center no-repeat"}
+			.destination-image{style: "background: url('#{asset_path("background/stockmaleclimber.jpeg")}') center center no-repeat"}
 				.destination-description
 					.destination-title
-						Rio Verde
+						Trad Climbing
 					.destination-title-underline
 					.destination-subtitle
-						Testing the Waters on the Rio Verde
+						Climb the Walls of Joshua Tree
 					.destination-body
-						Trace the Rio Verde from high mountain stream to rushing river. One part adrenaline, one part immersion, we’ll pass through rural villages, river fisherman and traditional gold miners along the way...
+						Spend the day climbing in the National Park before we drive to Mt. San Jacinto, where we'll ride the Aerial Tramway to 8,500ft. We'll finally hike and camp under the stars in Round Valley.
 						
 					%a
-						.destination-button{"data-num" => 2, "data-target" => "#myModal", "data-toggle" => "modal", 'data-name' => 'Basecamp1', 'data-title' => 'Testing the Waters on the Rio Verde', 'data-body' => 'If you don’t like getting wet, you’ve made a mistake and should turn back now. Day 4 marks the beginning of what I hope to be a ridiculous adventure and lifelong memory. To say you’re traveling to Colombia is cool. To say you’re traveling to Colombia for a whitewater rafting expedition is really really cool.<br><br>Our young, adventurous, and knowledgable guide Jules will pick us up from Medellín and drive us several hours to the source of the Rio Verde. With the help of some mules, we’ll hike down into the canyon and set up camp for the night. It won’t be “glamping”, but it also won’t be Bear Grylls-ing it . Accommodation for most of the journey is a hammock shelter with a mosquito net. In the most cliche way possible, we’ll bond around a glowing campfire, beer in hand, swapping stories of past adventures and revelling in the excitement of the day ahead.<br><br>As the name suggests, the Rio Verde is a beautiful shade of Emerald Green. It snakes its way through through lush mountain valleys, picking up steam as it merges with smaller streams along the way. We’ll spend 2 full days on the river passing small towns, hiking in the canyon, and swimming under waterfalls. Slightly more mellow than the second leg of our journey, the Rio Verde is a good opportunity to get comfortable with #RaftLife.', 'data-img-src' => "#{asset_url("background/rioverdethumbnail.jpg")}"}
+						.destination-button{"data-num" => 2, "data-target" => "#myModal", "data-toggle" => "modal", 'data-name' => 'Basecamp1', 'data-title' => 'Climb the Walls of Joshua Tree', 'data-body' => 'If you don’t like getting wet, you’ve made a mistake and should turn back now. Day 4 marks the beginning of what I hope to be a ridiculous adventure and lifelong memory. To say you’re traveling to Colombia is cool. To say you’re traveling to Colombia for a whitewater rafting expedition is really really cool.<br><br>Our young, adventurous, and knowledgable guide Jules will pick us up from Medellín and drive us several hours to the source of the Rio Verde. With the help of some mules, we’ll hike down into the canyon and set up camp for the night. It won’t be “glamping”, but it also won’t be Bear Grylls-ing it . Accommodation for most of the journey is a hammock shelter with a mosquito net. In the most cliche way possible, we’ll bond around a glowing campfire, beer in hand, swapping stories of past adventures and revelling in the excitement of the day ahead.<br><br>As the name suggests, the Rio Verde is a beautiful shade of Emerald Green. It snakes its way through through lush mountain valleys, picking up steam as it merges with smaller streams along the way. We’ll spend 2 full days on the river passing small towns, hiking in the canyon, and swimming under waterfalls. Slightly more mellow than the second leg of our journey, the Rio Verde is a good opportunity to get comfortable with #RaftLife.', 'data-img-src' => "#{asset_url("background/stockmaleclimber.jpeg")}"}
 							View Checkpoint
 			.destination-subtitle-mobile
-				Testing the Waters on the Rio Verde
+				Trad Climbing
 			.destination-underline-mobile
 			.destination-body-mobile
-				Trace the Rio Verde from high mountain stream to rushing river. One part adrenaline, one part immersion, we’ll pass through rural villages, river fisherman and traditional gold miners along the way... 
+				Spend the day climbing in the National Park before we drive to Mt. San Jacinto, where we'll ride the Aerial Tramway to 8,500ft. We'll finally hike and camp under the stars in Round Valley.
 
 		.row.col-md-6
-			.destination-image{style: "background: url('#{asset_path("background/riosamanathumbnail.jpg")}') center center no-repeat"}
+			.destination-image{style: "background: url('#{asset_path("background/san-jacinto.jpg")}') center center no-repeat"}
 				.destination-description
 					.destination-title
-						Rio Samana
+						Mt. San Jacinto
 					.destination-title-underline
 					.destination-subtitle
-						Graduating to the Big Leagues of Whitewater
+						Reaching the 11,000ft Summit
 					.destination-body
-						Tragically, our adventure might be one of the last on the Rio Samana, as a pending government proposal looks to dam this mighty river. We’ll learn from Jules about the political and environmental climate...
+						Start the day by summiting Mt. San Jacinto's 10,833ft peak. We'll then head from the mountians to the coast.
 					%a
-						.destination-button{"data-num" => 3, "data-target" => "#myModal", "data-toggle" => "modal", 'data-name' => 'Basecamp2', 'data-title' => 'Graduating to the Big Leagues of Whitewater', 'data-body' => "This mother of a river chews up and spits out inexperienced rafters on the daily. That is the line you’re expected to use when recounting the trip to friends when it’s over. In reality, the Rio Samana is bigger and badder than the Rio Verde, but still safe.<br><br>We’ll meet the Rio Samana after three days on the Rio Verde. Here is how Jules describes the river: “She is the mighty and powerful local river queen. Thousands of crystal clear creeks drop from high mountain peaks to cleanse the river basin and flow into pristine, iridescent blue swimming pools and cascading waterfalls. An awe-inspiring diversity of rare birds and butterflies can be observed at all times in her lowland tropical rainforest.” Sounds pretty cool to me...<br><br>We’ll go another 2 days on the Samana, spending the night in the home of a local friend and another night in a remote jungle camp. We can arrange to fish on the river or pan for gold. There will be plenty of hiking, swimming, card playing, and eating to round out the experience.", 'data-img-src' => "#{asset_url("background/riosamanathumbnail.jpg")}"}
+						.destination-button{"data-num" => 3, "data-target" => "#myModal", "data-toggle" => "modal", 'data-name' => 'Basecamp2', 'data-title' => 'Reaching the 11,000ft Summit', 'data-body' => "This mother of a river chews up and spits out inexperienced rafters on the daily. That is the line you’re expected to use when recounting the trip to friends when it’s over. In reality, the Rio Samana is bigger and badder than the Rio Verde, but still safe.<br><br>We’ll meet the Rio Samana after three days on the Rio Verde. Here is how Jules describes the river: “She is the mighty and powerful local river queen. Thousands of crystal clear creeks drop from high mountain peaks to cleanse the river basin and flow into pristine, iridescent blue swimming pools and cascading waterfalls. An awe-inspiring diversity of rare birds and butterflies can be observed at all times in her lowland tropical rainforest.” Sounds pretty cool to me...<br><br>We’ll go another 2 days on the Samana, spending the night in the home of a local friend and another night in a remote jungle camp. We can arrange to fish on the river or pan for gold. There will be plenty of hiking, swimming, card playing, and eating to round out the experience.", 'data-img-src' => "#{asset_url("background/san-jacinto.jpg")}"}
 							View Checkpoint
 			.destination-subtitle-mobile
-				Graduating to the Big Leagues of Whitewater
+				Reaching the 11,000ft Summit
 			.destination-underline-mobile
 			.destination-body-mobile
-				Tragically, our adventure might be one of the last on the Rio Samana, as a pending government proposal looks to dam this might river. We’ll learn from Jules about the political and environmental climate...
+				Start the day by summiting Mt. San Jacinto's 10,833ft peak. We'll then head from the mountains to the coast.
 
 		.row.col-md-6
-			.destination-image{style: "background: url('#{asset_path("background/guatapethumbnail.jpeg")}') center center no-repeat"}
+			.destination-image{style: "background: url('#{asset_path("background/stocksurf.jpeg")}') center center no-repeat"}
 				.destination-description
 					.destination-title
-						Guatapé
+						Sunset Surf
 					.destination-title-underline
 					.destination-subtitle
-						Rock Climbing in the Lake Country
+						Surfing Sunset Until the Sunset
 					.destination-body
-						Several days of relaxation in the idyllic lake side village. Test your rock climbing skills on a  guided ascent of El Peñol, a 10,000,000 ton rock, which juts from a grassy hillside a few miles away...
+						Finishing up our Trifecta with the ocean, we'll hit the waves along the coast. Whether you're a pro or need some help from Quinn, we'll be sure to end our adventure weekend with a few good rides.
 					%a
-						.destination-button{"data-num" => 4, "data-target" => "#myModal", "data-toggle" => "modal", 'data-name' => 'Basecamp3', 'data-title' => 'Rock Climbing in the Lake Country', 'data-body' => 'This glistening lake side town, will act as our base camp for several days. Formerly the summer retreat of Pablo Escobar and the cartel, this small town offers plenty of culture as well as adventure. Guatapé is a quaint village with colorful buildings and street side cafes. We’ll have the chance to kick back after a week of mostly adrenaline.<br><br>Other optional activities include a cocktail cruise on the expansive lake, renting scooters and riding through the countryside, or “playing paintball in one of Pablo Escobar’s bombed out country estates” (according to a hostel owner I chatted with). Point is, there are plenty of options individually or for us as a group.<br><br>The one activity we’re scheduled to do is rock climbing El Peñol. El Peñol is a 10,000,000 ton rock that juts out of the hillside behind Guatapé. It is typically submitted by a set of 747 steps, but I figured it would be more appropriate to climb it instead. We’ll watch the sunset at the top and take a cheesy group picture, which years from now you’ll look at, smile, and think to yourself, “damn... that was a great trip.”<br><br>Anyway, Guatape is our final stop and a flexible departure point. Rides are just an hour to the airport and can be arranged via bus or taxi. For those, who want to continue the adventure, buses run directly to Medellín which is another 30 minutes past the airport.', 'data-img-src' => "#{asset_url("background/guatapethumbnail.jpeg")}"}
+						.destination-button{"data-num" => 4, "data-target" => "#myModal", "data-toggle" => "modal", 'data-name' => 'Basecamp3', 'data-title' => 'Surfing Sunset Until the Sunset', 'data-body' => 'This glistening lake side town, will act as our base camp for several days. Formerly the summer retreat of Pablo Escobar and the cartel, this small town offers plenty of culture as well as adventure. Guatapé is a quaint village with colorful buildings and street side cafes. We’ll have the chance to kick back after a week of mostly adrenaline.<br><br>Other optional activities include a cocktail cruise on the expansive lake, renting scooters and riding through the countryside, or “playing paintball in one of Pablo Escobar’s bombed out country estates” (according to a hostel owner I chatted with). Point is, there are plenty of options individually or for us as a group.<br><br>The one activity we’re scheduled to do is rock climbing El Peñol. El Peñol is a 10,000,000 ton rock that juts out of the hillside behind Guatapé. It is typically submitted by a set of 747 steps, but I figured it would be more appropriate to climb it instead. We’ll watch the sunset at the top and take a cheesy group picture, which years from now you’ll look at, smile, and think to yourself, “damn... that was a great trip.”<br><br>Anyway, Guatape is our final stop and a flexible departure point. Rides are just an hour to the airport and can be arranged via bus or taxi. For those, who want to continue the adventure, buses run directly to Medellín which is another 30 minutes past the airport.', 'data-img-src' => "#{asset_url("background/stocksurf.jpeg")}"}
 							View Checkpoint
 			.destination-body-mobile
-				Several days of relaxation in the idyllic lake side village. Test your rock climbing skills on a  guided ascent of El Peñol, a 10,000,000 ton rock, which juts from a grassy hillside a few miles away...
+				Finishing up our Trifecta with the ocean, we'll hit the waves along the coast. Whether you're a pro or need some help from Quinn, we'll be sure to end our adventure weekend with a few good rides.
 	.col-md-10.col-md-offset-1.location-who
 		.location-who-header
 			Who's Going?
@@ -139,14 +137,14 @@
 
 
 		.col-md-6.who-container
-			.who-image{style: "background: url('#{asset_path("background/RachelProfile.jpg")}') center center no-repeat"}
+			.who-image{style: "background: url('#{asset_path("background/lagunastockman.jpeg")}') center center no-repeat"}
 			.who-text
 				.who-name
-					Rachel
+					Tyler
 				.who-title
 					From
 				.who-description
-					Boston, MA
+					San Diego
 				.who-title
 					Last Adventure
 				.who-description
@@ -198,15 +196,18 @@
 					Surfboards & Wetsuits
 					<br>
 					<br>
-					Surf Instruction
+					Climbing Gear
 					<br>
-					(Food, Guide, Gear, Transport)
+					<br>
+					Surf Instruction
 					<br>
 					<br>
 					3 Prepared Meals
 					<br>
 					<br>
 					Transportation
+					<br>
+					<br>
 			.col-md-6.inclusions-title
 				What to bring
 				.inclusions-description
@@ -225,6 +226,6 @@
 			Do you have what it takes?
 		.who-join-description
 			Join the SoCal Trifecta!
-		%a{href:'/apply/SoCal-Trifecta'}
+		%a{href:'/apply/So-Cal'}
 			.join-button.btn
-				Contact Casey
+				Contact Us

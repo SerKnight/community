@@ -70,8 +70,17 @@
 			margin: auto;
 		}
 
+		.description-guide-image{
+			border-radius: 50%;
+			min-height: 260px;
+			width: 260px;
+			margin: auto;
+			float: none;
+			margin-top: 40px;
+		}
+
 		.description-body{
-			font-family: proxima_thin;
+			font-family: proxima_regular;
 			font-size: 1.4em;
 			color: #212326;
 			text-align: center;
@@ -102,13 +111,35 @@
 			}
 
 			.itinerary-body{
-				font-family: proxima_thin;
+				font-family: proxima_regular;
 				font-size: 1.4em;
 				color: #fff;
 				text-align: center;
 				max-width: 520px;
 				margin: auto;
 				padding-top: 40px;
+			}
+
+			.mission-header{
+				font-family: proxima_black;
+				font-size: 3.2em;
+				color: #fff;
+				text-align: center;
+				border-bottom: 4px solid #aa4b41;
+				max-width: 300px;
+				margin: auto;
+				margin-top: 80px;
+			}
+
+			.mission-body{
+				font-family: proxima_regular;
+				font-size: 1.4em;
+				color: #fff;
+				text-align: center;
+				max-width: 600px;
+				margin: auto;
+				padding-top: 40px;
+				padding-bottom: 80px;
 			}
 
 			.final-sentence{
@@ -243,7 +274,7 @@
 				max-width: 330px;
 				-webkit-transition: .5s ease-in-out;
 				opacity: 0;
-				max-width: 550px;
+				max-width: 100%;
 				padding-top: 20px;
 			}
 
@@ -578,7 +609,7 @@
 
 		.inclusions-description{
 			font-family: proxima_thin;
-			font-size: 20px;
+			font-size: 15px;
 			color: #fff;
 			text-align: center;
 			padding-top: 20px;
@@ -769,6 +800,10 @@
 		font-size: 1.2em;
 		max-width: 350px;
 	}	
+
+	.location-details .location-itinerary .mission-block .mission-body{
+		font-size: 1.1em;
+	}
 
 	.destination-description .destination-title{
 		margin-top: 90px !important;
