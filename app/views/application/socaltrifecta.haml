@@ -34,13 +34,91 @@
 
 	.col-md-12.location-description
 		.description-title
-			About our Guide
-		.description-guide-image{style: "background: url('#{asset_path("background/Quinnprofile.jpg")}') center center no-repeat"}
-		.description-body
-			Quinn is the founder and lead instructor at Eat, Sleep, Surf in LA. Quinn surfs, snowboards, skateboards, wakeboards, rock climbs and climbs mountains. He grew up in Chicago and at a young age his passion pushed him westward. 
-			<br>
-			<br>
-			Months after moving to California, Quinn became a surf instructor working for three different surf schools. He became popular because his teaching approach was light-hearted, passionate and effective.  Quinn has since taught surfing in California, Florida, Hawaii, England and Costa Rica. Quinn is a certified rock climbing and surf guide.
+			The Adventure Team
+		.col-md-6	
+			.description-guide-image{style: "background: url('#{asset_path("background/Quinnprofile.jpg")}') center center no-repeat"}
+			.guide-name
+				Quinn C.
+			.guide-border
+			.guide-title
+				Adventure Leader
+			
+			.guide-description
+				Quinn is the founder and lead instructor at Eat, Sleep, Surf in LA. Quinn surfs, snowboards, skateboards, wakeboards, rock climbs and climbs mountains. He grew up in Chicago and at a young age his passion pushed him westward. 
+				<br>
+				<br>
+				Months after moving to California, Quinn became a surf instructor working for three different surf schools. He became popular because his teaching approach was light-hearted, passionate and effective.  Quinn has since taught surfing in California, Florida, Hawaii, England and Costa Rica. Quinn is a certified rock climbing and surf guide.
+		.col-md-6	
+			.description-guide-image{style: "background: url('#{asset_path("background/CaseyProfile.jpg")}') center center no-repeat"}
+			.guide-name
+				Casey S.
+			.guide-border
+			.guide-title
+				Adventure Ambassador
+			
+			.guide-description
+				Currently, I live, work and play in LA. When not surfing, I work with a mix of graphic design, motion graphics, video, and photography - and therefore enjoy all forms of design and creativity.
+				<br>
+				<br>
+				Travel and adventures have always been a huge part of my life but I've realized there are so many amazing adventures around LA that I have yet to explore. Quinn has arranged what will be a seriously fun weekend; including my love of surfing with climbing and camping in the mountians. Feel free to reach out with the apply link if you have questions. Looking forward to adventuring with you!
+
+	.col-md-10.col-md-offset-1.location-who
+		.col-md-6.who-container
+			.who-image{style: "background: url('#{asset_path("background/stockgirlprofile.jpeg")}') center center no-repeat"}
+			.who-text
+				.who-name
+					Jessie
+				.who-title
+					From
+				.who-description
+					San Francisco, CA
+				.who-title
+					Biggest Adventure
+				.who-description
+					Shot a short film in Haiti
+
+
+		.col-md-6.who-container
+			.who-image{style: "background: url('#{asset_path("background/lagunastockman.jpeg")}') center center no-repeat"}
+			.who-text
+				.who-name
+					Tyler
+				.who-title
+					From
+				.who-description
+					San Diego, CA
+				.who-title
+					Last Adventure
+				.who-description
+					Biked the Atlas Mountains in Morocco
+
+		.col-md-6.who-container
+			.who-image{style: "background: url('#{asset_path("background/fakeguy.jpg")}') center center no-repeat"}
+			.who-text
+				.who-name
+					Jon
+				.who-title
+					From
+				.who-description
+					Santa Monica, CA
+				.who-title
+					Favorite Adventure
+				.who-description
+					Paddle boarding from LA to San Diego
+
+		.col-md-6.who-container
+			.who-image{style: "background: url('#{asset_path("background/fakegirl.jpg")}') center center no-repeat"}
+			.who-text
+				.who-name
+					Sara
+				.who-title
+					From
+				.who-description
+					Washington, DC
+				.who-title
+					Past Travel Experience	
+				.who-description
+					Lived and studied in New Zealand
 
 	.col-md-12.destination-container
 		.basecamps-title
@@ -118,65 +196,6 @@
 							View Checkpoint
 			.destination-body-mobile
 				Finishing up our Trifecta with the ocean, we'll hit the waves along the coast. Whether you're a pro or need some help from Quinn, we'll be sure to end our adventure weekend with a few good rides.
-	.col-md-10.col-md-offset-1.location-who
-		.location-who-header
-			Who's Going?
-		.col-md-6.who-container
-			.who-image{style: "background: url('#{asset_path("background/CaseyProfile.jpg")}') center center no-repeat"}
-			.who-text
-				.who-name
-					Casey
-				.who-title
-					From
-				.who-description
-					Philadelphia, PA
-				.who-title
-					Biggest Adventure
-				.who-description
-					Circumnavigated the globe on a ship
-
-
-		.col-md-6.who-container
-			.who-image{style: "background: url('#{asset_path("background/lagunastockman.jpeg")}') center center no-repeat"}
-			.who-text
-				.who-name
-					Tyler
-				.who-title
-					From
-				.who-description
-					San Diego
-				.who-title
-					Last Adventure
-				.who-description
-					Biked the Atlas Mountains in Morocco
-
-		.col-md-6.who-container
-			.who-image{style: "background: url('#{asset_path("background/fakeguy.jpg")}') center center no-repeat"}
-			.who-text
-				.who-name
-					Jon
-				.who-title
-					From
-				.who-description
-					Santa Monica, CA
-				.who-title
-					Favorite Adventure
-				.who-description
-					Paddle boarding from LA to San Diego
-
-		.col-md-6.who-container
-			.who-image{style: "background: url('#{asset_path("background/fakegirl.jpg")}') center center no-repeat"}
-			.who-text
-				.who-name
-					Sara
-				.who-title
-					From
-				.who-description
-					Washington, DC
-				.who-title
-					Past Travel Experience	
-				.who-description
-					Lived and studied in New Zealand
 
 	.col-md-12.location-inclusions{style: "background: url('#{asset_path("background/SantaMonicaWaves.jpeg")}') center center no-repeat"}
 		.location-inclusions-header
@@ -223,9 +242,9 @@
 
 	.col-md-12.location-join
 		.who-join
-			Do you have what it takes?
+			Interested in joining?
 		.who-join-description
-			Join the SoCal Trifecta!
-		%a{href:'/apply/So-Cal'}
+			Drop us a line or apply
+		%a{href:'/apply/socaltrifecta'}
 			.join-button.btn
-				Contact Us
+				Reach Out!
