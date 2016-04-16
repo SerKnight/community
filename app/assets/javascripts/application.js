@@ -19,11 +19,24 @@
 //= require_tree .
 
 
+// before turbo
+
+// var ready;
+// ready = function() {
+//   mainInit();
+// };
+
+// $(document).ready(ready);
+// $(document).on('page:load', ready);
+
+
 var ready;
 ready = function() {
   mainInit();
 };
 
-$(document).ready(ready);
-$(document).on('page:load', ready);
 
+document.addEventListener("turbolinks:load", function() {
+	$(document).ready(ready);
+	$(document).on('page:load', ready);
+})
