@@ -24,4 +24,16 @@ class HomepageController < ApplicationController
 
   end
 
+  def kyrgyzstan
+
+  end
+
+  def bajabus
+
+  end
+
+  def morocco
+
+  end  
+
 end

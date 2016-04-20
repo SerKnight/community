@@ -12,7 +12,7 @@
   position: absolute;
   width: 100%;
   top: 0px;
-  margin-top: 246px;
+  margin-top: 306px;
 
   #homepage-text {
     position: relative;
@@ -25,6 +25,7 @@
     max-width: 700px;
     border-radius: 12px;
     margin: auto;
+    opacity: 0;
 
     #adventure-local{
       font-family: proxima_black;
@@ -54,7 +55,7 @@
   }
 
   .scroll-slow{
-    margin-top: 180px;
+    margin-top: 250px;
   }
 
   .scroll-slow #homepage-text #adventure-local{

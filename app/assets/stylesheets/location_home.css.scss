@@ -51,7 +51,6 @@
 	}
 }  
 
-
 .location-details{
 	width: 100%;
 	background: #fff;
@@ -77,6 +76,7 @@
 			margin: auto;
 			float: none;
 			margin-top: 40px;
+			border: 4px solid #aa4b41;
 		}
 
 		.description-body{
@@ -128,7 +128,7 @@
 				border-bottom: 4px solid #aa4b41;
 				max-width: 300px;
 				margin: auto;
-				margin-top: 80px;
+				margin-top: 60px;
 			}
 
 			.mission-body{
@@ -578,7 +578,7 @@
 			border-top-right-radius: 4px;	
 
 			.location-date{
-				font-family: proxima_thin;
+				font-family: proxima_bold;
 				font-size: 2.2em;
 				color: #fff;
 				text-align: center;
@@ -590,7 +590,7 @@
 			}
 
 			.trip-price{
-				font-family: proxima_thin;
+				font-family: proxima_bold;
 				font-size: 2.2em;
 				color: #fff;
 				text-align: center;
@@ -659,7 +659,7 @@
 	}
 
 	.location-slow-scroll{
-		margin-top: 200px;
+		margin-top: 260px;
 	}
 
 	.location-details .location-itinerary{

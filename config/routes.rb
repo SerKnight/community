@@ -13,6 +13,10 @@ Rails.application.routes.draw do
   get 'colombia'   =>  'homepage#colombia'
   get 'india'   =>    'homepage#india'
   get 'socaltrifecta' => 'homepage#socaltrifecta'
+  get 'kyrgyzstan'   =>    'homepage#kyrgyzstan'
+  get 'bajabus'   =>    'homepage#bajabus'
+  get 'morocco'   =>    'homepage#morocco'
+
 
   get '/apply' => 'contacts#new'
   get '/apply/:type' => 'contacts#new'
