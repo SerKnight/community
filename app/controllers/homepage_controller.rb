@@ -16,6 +16,10 @@ class HomepageController < ApplicationController
 
   end
 
+  def peru
+    
+  end
+
   def india
 
   end

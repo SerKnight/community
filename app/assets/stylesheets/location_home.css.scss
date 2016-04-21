@@ -28,8 +28,9 @@
 
     #location-header{
 			font-family: proxima_black;
-			font-size: 5em;
+			font-size: 4em;
 			text-transform: uppercase;
+			line-height: 60px;
 		}
 
 		#location-explanation {
@@ -244,7 +245,7 @@
 
 			.destination-title{
 				font-family: proxima_bold;
-				font-size: 3em;
+				font-size: 2.4em;
 				color: #fff;
 				text-align: center;
 				margin-top: 50px;
@@ -672,10 +673,12 @@
 	#location-header-mobile{
 		display: block;
 		font-family: proxima_black;
-		font-size: 4em;
+		font-size: 3em;
 		text-align: center;
 		line-height: 50px;
 		text-transform: uppercase;
+		max-width: 600px;
+		margin: auto;
 	}
 
 	#location-explanation-mobile{
@@ -789,7 +792,7 @@
 @media screen and (max-width: 500px){
 
 	#location-header-mobile{
-		font-size: 3em;
+		font-size: 2.4em;
 		line-height: 40px;
 	}
 
@@ -837,7 +840,7 @@
 
 	.destination-description .destination-title{
 		margin-top: 90px !important;
-		font-size: 2.2em !important;
+		font-size: 2.4em !important;
 	}
 
 	.location-details .destination-container .basecamps-title{

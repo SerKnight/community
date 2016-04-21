@@ -12,6 +12,7 @@ Rails.application.routes.draw do
   get 'vietnam'   =>  'homepage#vietnam'
   get 'colombia'   =>  'homepage#colombia'
   get 'india'   =>    'homepage#india'
+  get 'peru'   =>    'homepage#peru'
   get 'socaltrifecta' => 'homepage#socaltrifecta'
   get 'kyrgyzstan'   =>    'homepage#kyrgyzstan'
   get 'bajabus'   =>    'homepage#bajabus'
