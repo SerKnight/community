@@ -1,68 +1,142 @@
 #hiw_grid
 
-	.container.grid_background
-		.row
-			.col-md-12.grid-one
-				.grid-one-img
-				.col-md-12.locationtext
-					.grid-title-one.text-center
-						The Long 
-						<br>
-						Road South
+	.grid_background
+		.col-md-12.mobile-grid
+			.mobile-grid-img{style: "background: url('#{asset_path("background/vietnampath.jpeg")}') center center no-repeat; background-size: cover;"}
+				.locationtext
+					.mobile-grid-title.text-center
+						The Long Road South
+					.mobile-grid-dates
+						.fa.fa-calendar
+						May 28th - June 12th, 2016
+					.mobile-grid-location
+						.fa.fa-map-marker
+						Vietnam
+					.mobile-grid-description
+						A 2,400km adventure across Vietnam from Hanoi to Ho Chi Minh City on a souped up dirt bike. No set routes, GPS cheats or guides to lead the way.
 					%a{href: "/vietnam"}
-						.col-md-4.col-md-offset-4.grid-one-btn.btn
+						.col-md-4.col-md-offset-4.mobile-grid-btn.btn
 							View Adventure
-		.row
-			.col-md-12.grid-two
-				.grid-two-img
-				.grid-two-overlay
-					Volcanos, rainforests, oceans and rivers...
-				.col-md-12.locationtext
-					.grid-title-two.text-center
-						Expedition
-						<br>
-						Samana
+
+		.col-md-12.mobile-grid
+			.mobile-grid-img{style: "background: url('#{asset_path("background/WhiteWaterColombialong.jpg")}') center center no-repeat; background-size: cover;"}
+				.locationtext
+					.mobile-grid-title.text-center
+						Expedition Samana
+					.mobile-grid-dates
+						.fa.fa-calendar
+						May 14th - 23rd, 2016
+					.mobile-grid-location
+						.fa.fa-map-marker
+						Colombia
+					.mobile-grid-description
+						Tackle the mighty Rio Verde and Rio Samana, from the Colombian highlands to the dense jungles of the tropical rainforest. Cliff jumping, hammock camping, swimming in waterfalls, a lot of coffee, and nights under the stars.
 					%a{href: "/colombia"}
-						.col-md-4.col-md-offset-4.grid-two-btn.btn
+						.col-md-4.col-md-offset-4.mobile-grid-btn.btn
 							View Adventure
-			
-		.row
-			.col-md-12.grid-three
-				.grid-three-img
-				.grid-three-overlay
-					Ride motorcycles through the Himalayas...
-				.col-md-12.locationtext
-					.grid-title-three.text-center
-						India's Far North
-					.grid-title-underline
-					.grid-title-three-sub
-						(Coming Soon)
 
-		.row
-			.col-md-12.grid-five
-				.grid-five-img
-				.grid-five-overlay
-					One of the most unexplored areas...
-				.col-md-12.locationtext
-					.grid-title-five.text-center
-						Packrafting the Amazon 
-					.grid-title-underline
-					.grid-title-five-sub
-						(Coming Soon)
+		.col-md-12.mobile-grid
+			.mobile-grid-img{style: "background: url('#{asset_path("background/IndiaMountains.jpg")}') center center no-repeat; background-size: cover;"}
+				.locationtext
+					.mobile-grid-title.text-center
+						RIDING THE ROOF OF THE WORLD
+					.mobile-grid-dates
+						.fa.fa-calendar
+						Late Summer 2016
+					.mobile-grid-location
+						.fa.fa-map-marker
+						India
+					.mobile-grid-description
+						Conquer one of the most challenging motorcycle routes in the world. We'll endure the highest roads in the world while taking in the scenic valleys, lakes, moutains and faces of the beautiful Himalayan Plateau.
+					%a{href: "/india"}
+						.col-md-4.col-md-offset-4.mobile-grid-btn.btn
+							View Adventure
 
-		.row
-			.col-md-12.grid-four
-				.grid-four-img
-				.grid-four-overlay
-					One of the most unexplored mountain ranges...
-				.col-md-12.locationtext
-					.grid-title-four.text-center
-						Climbing Tajikistan
-					.grid-title-underline
-					.grid-title-four-sub
-						(Coming Soon)
+		.col-md-12.mobile-grid
+			.mobile-grid-img{style: "background: url('#{asset_path("background/packraftjunglemain.jpg")}') center center no-repeat; background-size: cover;"}
+				.locationtext
+					.mobile-grid-title.text-center
+						ADVENTURE & CONFLICT IN THE AMAZON
+					.mobile-grid-dates
+						.fa.fa-calendar
+						Late Fall 2016
+					.mobile-grid-location
+						.fa.fa-map-marker
+						Western Amazon, Peru
+					.mobile-grid-description
+						With a team of local guides and a fleet of ultra-portable packrafts, trek along remote logging roads, follow animal trails, and paddle unnamed tributaries through one of the most ecologically diverse places on earth; the upper Amazon.
+					%a{href: "/peru"}
+						.col-md-4.col-md-offset-4.mobile-grid-btn.btn
+							View Adventure
 
-		.row
+		.col-md-12.mobile-grid
+			.mobile-grid-img{style: "background: url('#{asset_path("background/TrestlesBeachsmall.jpeg")}') center center no-repeat; background-size: cover;"}
+				.locationtext
+					.mobile-grid-title.text-center
+						The SoCal Trifecta
+					.mobile-grid-dates
+						.fa.fa-calendar
+						June 2016
+					.mobile-grid-location
+						.fa.fa-map-marker
+						Los Angeles, CA
+					.mobile-grid-description
+						Exploring the ocean, the desert and the mountains all in one weekend. This trip will take you rock climbing in Joshua Tree National Park, hiking and camping in the giant pine forests of San Jacinto State Park, and surfing the waves and watching the sunset on the Malibu coast.
+					%a{href: "/socaltrifecta"}
+						.col-md-4.col-md-offset-4.mobile-grid-btn.btn
+							View Adventure
+
+		.col-md-12.mobile-grid
+			.mobile-grid-img{style: "background: url('#{asset_path("background/kyrgyzmainsmall.jpg")}') center center no-repeat; background-size: cover;"}
+				.locationtext
+					.mobile-grid-title.text-center
+						EAGLES, HORSES AND YURTS
+					.mobile-grid-dates
+						.fa.fa-calendar
+						Fall 2016
+					.mobile-grid-location
+						.fa.fa-map-marker
+						Kyrgyzstan
+					.mobile-grid-description
+						Experience a complete cultural expedition as we explore the Kyrgyz mountains by horseback, eat only what we hunt with eagles and falcons and stay in traditional, high altitude villages in yurts.
+					%a{href: "/apply/kyrgyzstan"}
+						.col-md-4.col-md-offset-4.mobile-grid-btn.btn
+							View Adventure
+
+		.col-md-12.mobile-grid
+			.mobile-grid-img{style: "background: url('#{asset_path("background/moroccocoversmall.jpeg")}') center center no-repeat; background-size: cover;"}
+				.locationtext
+					.mobile-grid-title.text-center
+						THE BERBER TRAVERSE
+					.mobile-grid-dates
+						.fa.fa-calendar
+						Late Summer 2016
+					.mobile-grid-location
+						.fa.fa-map-marker
+						Morocco
+					.mobile-grid-description
+						An epic, all-girls ride from the Berber mountain country to the Atlantic coast along single track, trading routes, cart paths, goat trails, dry riverbeds... We'll ride for nearly a week until reaching our surf haven on the coast.
+					%a{href: "/apply/morocco"}
+						.col-md-4.col-md-offset-4.mobile-grid-btn.btn
+							View Adventure
+
+		.col-md-12.mobile-grid
+			.mobile-grid-img{style: "background: url('#{asset_path("background/bajabussmall.png")}') center center no-repeat; background-size: cover;"}
+				.locationtext
+					.mobile-grid-title.text-center
+						The Baja Escape
+					.mobile-grid-dates
+						.fa.fa-calendar
+						Late Summer 2016
+					.mobile-grid-location
+						.fa.fa-map-marker
+						Baja California, Mexico
+					.mobile-grid-description
+						Explore Baja California in a souped up, 4WD school bus that runs on vegetable oil. We'll scour the rugged pacific coast hunting down the best seafood stands, remote beaches, and desert oasis swimming holes.
+					%a{href: "/apply/baja"}
+						.col-md-4.col-md-offset-4.mobile-grid-btn.btn
+							View Adventure
+
 			.col-md-12.your-adventure
 				.your-adventure-header
 					What's your adventure?
