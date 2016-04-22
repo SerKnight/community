@@ -1,28 +1,27 @@
 - content_for(:meta_og) do
-	%meta{:content => "The So-Cal Trifecta - By Casey S.", :property => "og:title"}/
+	%meta{:content => "Crocs and Conflict - By Max J.", :property => "og:title"}/
 	%meta{:content => "AdventureMade", :property => "og:site_name"}/
-	%meta{:content => "Exploring the ocean, the desert and the mountains all in one trip.", :property => "og:description"}/
+	%meta{:content => "We're tackling the mighty Rio Verde and Rio Samana, from the Colombian highlands to the dense jungles of the tropical rainforest.", :property => "og:description"}/
 	%meta{:content => "website", :property => "og:type"}/
-	%meta{:content => "http://www.madebyadventure.com/socaltrifecta", :property => "og:url"}/
+	%meta{:content => "http://www.madebyadventure.com/colombia", :property => "og:url"}/
 	%meta{:content => "http://i.imgur.com/eegZ8J1.png", :property => "og:image"}/
 	%meta{:content => "1437", :property => "og:image:width"}/
 	%meta{:content => "752", :property => "og:image:height"}/
 
-.location-hero.location-hero-fix{style: "background: url('#{asset_path("background/TrestlesBeach.jpeg")}') center center no-repeat"}
+.location-hero.location-hero-fix{style: "background: url('#{asset_path("background/moroccocover.jpeg")}') center center no-repeat"}
 
 .location-slow-scroll
-	#location-text
+	#location-text{style: "text-shadow: 1px 1px 5px rgba(0,0,0,1);"}
 		#location-header
-			Morocck'in Adventure
+			The Berber Traverse
 		#location-explanation
-			From the ocean, to the desert, to the mountains in one trip
+			A high adrenaline mountain bike crossing of Morocco, from the Atlas mountains to the Atlantic Ocean.
 		#location-header-mobile
-			<br>
-			The So-Cal Trifecta
+			The Berber Traverse
 		#location-explanation-mobile
-			From the ocean, to the desert, to the mountains in one trip
+			A high adrenaline mountain bike crossing of Morocco, from the Atlas mountains to the Atlantic Ocean.
 		#created-by
-			Made by: Casey S.
+			Made by: Laurie T.
 
 .location-details
 	.col-md-12.location-itinerary
@@ -30,207 +29,157 @@
 			.mission-header
 				The Mission
 			.mission-body
-				The SoCal Trifecta: Exploring the ocean, the desert and the mountains all in one trip. California is one of the only places in the world you can do it in such a close proximity. We're going to tackle the waves on Zuma Beach, trek into the mountains for some trad climbing, spend the night under the stars and explore the desert the following day. I don't think we can fit more adventure into a weekend...
+				Tackle Morocco’s legendary single track riding and soak up the friendly vibes of Berber mountain country. Dipping in and out of rust colored hillsides, palm carpeted desert canyons, and high mountain passes, we’ll ride for 5-6 glorious days. It promises to feel both familiar and wildy different than your rides back home. On the comfort of a full suspension bike, we’ll hit up old trading routes, cart paths, goat trails, dry riverbeds, flowing single track, and coastal roads. Anything it takes to get from the mountain to the coast.
+				<br>
+				<br>
+				All great challenges have a glorious reward. For us, that reward is the sparkling blue waters of the Atlantic Ocean and the chilled-out surf camp waiting at the end of the road. Soak your bones in the cool waters of the Atlantic, paddle out for a quiet SUP yoga session, or just lay around like a lazy bum. Your call. Our journey will start and end in the gem of the desert, the walled city of Marrakech.
+				<br>
+				<br>
+				%i Oh, and this a ladies only trip. Apologies to any guys who’ve gotten to this point and just had their hopes crushed. Sincerely sorry.
+
 
 	.col-md-12.location-description
 		.description-title
 			The Adventure Team
 		.col-md-6	
-			.description-guide-image{style: "background: url('#{asset_path("background/Quinnprofile.jpg")}') center center no-repeat"}
+			.description-guide-image{style: "background: url('#{asset_path("background/paul-guide.png")}') center center no-repeat"}
 			.guide-name
-				Quinn C.
+				Paul R.
 			.guide-border
 			.guide-title
 				Adventure Leader
-			
 			.guide-description
-				Quinn is the founder and lead instructor at Eat, Sleep, Surf in LA. Quinn surfs, snowboards, skateboards, wakeboards, rock climbs and climbs mountains. He grew up in Chicago and at a young age his passion pushed him westward. 
-				<br>
-				<br>
-				Months after moving to California, Quinn became a surf instructor working for three different surf schools. He became popular because his teaching approach was light-hearted, passionate and effective.  Quinn has since taught surfing in California, Florida, Hawaii, England and Costa Rica. Quinn is a certified rock climbing and surf guide.
+				Our adopted jungle family is headed by 
+				%a{href: 'http://paulrosolie.com/' , target: '_blank', style: "font-weight: bold;"} Paul Rosolie, 
+				conservationist and borderline wild man. Paul authored the award winning book Mother of God: An Extraordinary Journey into the Uncharted Tributaries of the Western Amazon and has explored parts of the jungle, few have dreamed of visiting. He is part of the larger Tamandua Jungle team that includes the Duran family, an indigenous Ese-Eja family, and several others who man the research station.
+
+				
 		.col-md-6	
-			.description-guide-image{style: "background: url('#{asset_path("background/CaseyProfile.jpg")}') center center no-repeat"}
+			%a{href:'/apply/Morocco'}
+				.description-guide-image{style: "background: url('#{asset_path("background/laurieprofile.jpg")}') center center no-repeat"}
 			.guide-name
-				Casey S.
+				Laurie T.
 			.guide-border
 			.guide-title
 				Adventure Ambassador
 			
 			.guide-description
-				Currently, I live, work and play in LA. When not surfing, I work with a mix of graphic design, motion graphics, video, and photography - and therefore enjoy all forms of design and creativity.
-				<br>
-				<br>
-				Travel and adventures have always been a huge part of my life but I've realized there are so many amazing adventures around LA that I have yet to explore. Quinn has arranged what will be a seriously fun weekend; including my love of surfing with climbing and camping in the mountians. Feel free to reach out with the apply link if you have questions. Looking forward to adventuring with you!
+				Paul has created a one-time trip that is sure to be one hell of an experience. We're looking for the most adventurous traveler to be the trip ambassador. This means, you get to craft the team and go on the trip for free. Send us a note and tell us why you're the best candidate!
 
-	.col-md-10.col-md-offset-1.location-who
-		.col-md-6.who-container
-			.who-image{style: "background: url('#{asset_path("background/stockgirlprofile.jpeg")}') center center no-repeat"}
-			.who-text
-				.who-name
-					Jessie
-				.who-title
-					From
-				.who-description
-					San Francisco, CA
-				.who-title
-					Biggest Adventure
-				.who-description
-					Shot a short film in Haiti
-
-
-		.col-md-6.who-container
-			.who-image{style: "background: url('#{asset_path("background/lagunastockman.jpeg")}') center center no-repeat"}
-			.who-text
-				.who-name
-					Tyler
-				.who-title
-					From
-				.who-description
-					San Diego, CA
-				.who-title
-					Last Adventure
-				.who-description
-					Biked the Atlas Mountains in Morocco
-
-		.col-md-6.who-container
-			.who-image{style: "background: url('#{asset_path("background/fakeguy.jpg")}') center center no-repeat"}
-			.who-text
-				.who-name
-					Jon
-				.who-title
-					From
-				.who-description
-					Santa Monica, CA
-				.who-title
-					Favorite Adventure
-				.who-description
-					Paddle boarding from LA to San Diego
-
-		.col-md-6.who-container
-			.who-image{style: "background: url('#{asset_path("background/fakegirl.jpg")}') center center no-repeat"}
-			.who-text
-				.who-name
-					Sara
-				.who-title
-					From
-				.who-description
-					Washington, DC
-				.who-title
-					Past Travel Experience	
-				.who-description
-					Lived and studied in New Zealand
 
 	.col-md-12.destination-container
 		.basecamps-title
 			A Few Highlights
 		.row.col-md-6
-			.destination-image{style: "background: url('#{asset_path("background/joshuatreenp.jpg")}') center center no-repeat"}
+			.destination-image{style: "background: url('#{asset_path("background/marrakech.jpg")}') center center no-repeat"}
 				.destination-description
-					<br>
 					.destination-title
-						Joshua Tree
+						Marrakech
 					.destination-title-underline
 					.destination-subtitle
-						Camping Under the Stars
+						Your Jungle Homebase
 					.destination-body
-						We'll all meet up in LA and head out to Joshua Tree National Park to camp cowboy style, under the night's stars.
+						The ancient walled city of Marrakech explodes with life and color. A literal maze of a city, this UNESCO world heritage site, will be homebase for our first few days. Get lost in the souks, sip on mint tea, or mingle in the smoky night market, Jemma el fna.  
 			.destination-subtitle-mobile
-				Camping Under the Stars
+				Your Jungle Homebase
 			.destination-underline-mobile
 			.destination-body-mobile
-				We'll all meet up in LA and head out to Joshua Tree National Park to camp cowboy style, under the night's stars.
+				The ancient walled city of Marrakech explodes with life and color. A literal maze of a city, this UNESCO world heritage site, will be homebase for our first few days. Get lost in the souks, sip on mint tea, or mingle in the smoky night market, Jemma el fna.   
 
 		.row.col-md-6
-			.destination-image{style: "background: url('#{asset_path("background/stockmaleclimber.jpeg")}') center center no-repeat"}
+			.destination-image{style: "background: url('#{asset_path("background/highatlasmtns.jpg")}') center center no-repeat"}
 				.destination-description
-					<br>
 					.destination-title
-						Trad Climbing
+						High Atlas Mountains
 					.destination-title-underline
 					.destination-subtitle
-						Climb the Walls of Joshua Tree
+						The Best Way to Navigate the Amazon
 					.destination-body
-						Spend the day climbing in the National Park before we drive to Mt. San Jacinto, where we'll ride the Aerial Tramway to 8,500ft. We'll finally hike and camp under the stars in Round Valley.
+						Under the shadow of the snow capped Mount Toubkal, we start our journey. Crisp air, mountain streams, and a chorus of goats produce the soundtrack for several days of flowing single track through this pristine high desert paradise.  
 			.destination-subtitle-mobile
-				Trad Climbing
+				The Best Way to Navigate the Amazon
 			.destination-underline-mobile
 			.destination-body-mobile
-				Spend the day climbing in the National Park before we drive to Mt. San Jacinto, where we'll ride the Aerial Tramway to 8,500ft. We'll finally hike and camp under the stars in Round Valley.
+				Under the shadow of the snow capped Mount Toubkal, we start our journey. Crisp air, mountain streams, and a chorus of goats produce the soundtrack for several days of flowing single track through this pristine high desert paradise.
 
 		.row.col-md-6
-			.destination-image{style: "background: url('#{asset_path("background/san-jacinto.jpg")}') center center no-repeat"}
+			.destination-image{style: "background: url('#{asset_path("background/berbervillage.jpg")}') center center no-repeat"}
 				.destination-description
-					<br>
 					.destination-title
-						Mt. San Jacinto
+						Berber Villages
 					.destination-title-underline
 					.destination-subtitle
-						Reaching the 11,000ft Summit
+						Las Piedras Watershed
 					.destination-body
-						Start the day by summiting Mt. San Jacinto's 10,833ft peak. We'll then head from the mountians to the coast.
+						Experience legendary Berber hospitality, spending our nights in local guesthouses. Indulge in homemade tangier dishes and stroll the quiet dusty streets at dusk. Like glamping, but better. Prep your pearly whites, as a passing smile is an accepted currency in the region. 
+ 
 			.destination-subtitle-mobile
-				Reaching the 11,000ft Summit
+				Las Piedras Watershed
 			.destination-underline-mobile
 			.destination-body-mobile
-				Start the day by summiting Mt. San Jacinto's 10,833ft peak. We'll then head from the mountains to the coast.
+				Experience legendary Berber hospitality, spending our nights in local guesthouses. Indulge in homemade tangier dishes and stroll the quiet dusty streets at dusk. Like glamping, but better. Prep your pearly whites, as a passing smile is an accepted currency in the region. 
+
 
 		.row.col-md-6
-			.destination-image{style: "background: url('#{asset_path("background/stocksurf.jpeg")}') center center no-repeat"}
+			.destination-image{style: "background: url('#{asset_path("background/moroccocoastal.jpg")}') center center no-repeat"}
 				.destination-description
-					<br>
 					.destination-title
-						Sunset Surf
+						Tamraght Surf Camp
 					.destination-title-underline
 					.destination-subtitle
-						Surfing Sunset Until the Sunset
+						The Frontiers of Conservation
 					.destination-body
-						Finishing up our Trifecta with the ocean, we'll hit the waves along the coast. Whether you're a pro or need some help from Quinn, we'll be sure to end our adventure weekend with a few good rides.
+						I bet you didn’t know there is a thriving surf culture on the far western reaches of the African continent, but there is. Post up at the hip Magic Surf Camp, swapping surf reports with expat surf bros, settling in for a morning yoga session, or reading a book on the Riad balcony.
 			.destination-subtitle-mobile
-				Surfing Sunset Until the Sunset
+				The Frontiers of Conservation
 			.destination-underline-mobile
 			.destination-body-mobile
-				Finishing up our Trifecta with the ocean, we'll hit the waves along the coast. Whether you're a pro or need some help from Quinn, we'll be sure to end our adventure weekend with a few good rides.
+				I bet you didn’t know there is a thriving surf culture on the far western reaches of the African continent, but there is. Post up at the hip Magic Surf Camp, swapping surf reports with expat surf bros, settling in for a morning yoga session, or reading a book on the Riad balcony.
 
-	.col-md-12.location-inclusions{style: "background: url('#{asset_path("background/SantaMonicaWaves.jpeg")}') center center no-repeat"}
-		.location-inclusions-header
+	.col-md-12.location-inclusions{style: "background: whitesmoke;"}
+		.location-inclusions-header{style: "color: #212326;"}
 			Reserve your Spot
-		.col-md-10.col-md-offset-1.inclusions-container
+		.col-md-10.col-md-offset-1.inclusions-container{style: "background: transparent;"}
 			.priceanddate_container
-				.location-date
-					May 13th - 15th, 2016
-				.trip-price
-					Entry Fee - $500
-			.col-md-6.inclusions-title
-				What this gets you
-				.inclusions-description
-					Camping Gear and Park Entry
+				.location-date{style: "border:none; color: #212326;"}
+					Launching Late Summer 2016
+				.trip-price{style: "color: #212326; padding-bottom: 40px;"}
+					Entry Fee - TBD
+			.col-md-6.inclusions-title{style: "color: #aa4b41;"}
+				What's Included
+				<br>
+				%i.fa.fa-angle-double-down{style: "color: #aa4b41;"}
+				.inclusions-description-hidden{style: "color: #212326;"}
+					All Accommodations
 					<br>
 					<br>
-					Surfboards & Wetsuits
+					All Meals on Bike Trip
 					<br>
 					<br>
-					Climbing Gear
+					Lead Guide
 					<br>
 					<br>
-					Surf Instruction
+					Full Suspension Bike Rental
 					<br>
 					<br>
-					3 Prepared Meals
+					Mechanic and Support Vehicle
 					<br>
 					<br>
-					Transportation
+					Transfer to and from Marrakech
 					<br>
 					<br>
-			.col-md-6.inclusions-title
-				What to bring
-				.inclusions-description
-					Swimwear
+			.col-md-6.exclusions-title{style: "color: #aa4b41;"}
+				Not Included
+				<br>
+				%i.fa.fa-angle-double-down{style: "color: #aa4b41;"}
+				.exclusions-description-hidden{style: "color: #212326;"}
+					International Flights
 					<br>
 					<br>
-					Hiking Gear
+					Meals in Tamraght and Marrakech
 					<br>
 					<br>
-					Good  Vibes
+					Travel Insurance
 					<br>
 					<br>
 
@@ -239,7 +188,7 @@
 			Interested in joining?
 		.who-join-description
 			Drop us a line or apply
-		%a{href:'/apply/socaltrifecta'}
+		%a{href:'/apply/Morocco'}
 			.join-button.btn
 				Reach Out!
 
@@ -276,4 +225,14 @@
 					}
 			}); 
 		});
+	});;
+
+	$(".inclusions-title").click(function () {
+	$(".inclusions-description-hidden").stop().slideToggle();
+		return false;
+	});
+
+	$(".exclusions-title").click(function () {
+	$(".exclusions-description-hidden").stop().slideToggle();
+		return false;
 	});

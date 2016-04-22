@@ -1,28 +1,25 @@
 - content_for(:meta_og) do
-	%meta{:content => "The So-Cal Trifecta - By Casey S.", :property => "og:title"}/
+	%meta{:content => "Crocs and Conflict - By Max J.", :property => "og:title"}/
 	%meta{:content => "AdventureMade", :property => "og:site_name"}/
-	%meta{:content => "Exploring the ocean, the desert and the mountains all in one trip.", :property => "og:description"}/
+	%meta{:content => "We're tackling the mighty Rio Verde and Rio Samana, from the Colombian highlands to the dense jungles of the tropical rainforest.", :property => "og:description"}/
 	%meta{:content => "website", :property => "og:type"}/
-	%meta{:content => "http://www.madebyadventure.com/socaltrifecta", :property => "og:url"}/
+	%meta{:content => "http://www.madebyadventure.com/colombia", :property => "og:url"}/
 	%meta{:content => "http://i.imgur.com/eegZ8J1.png", :property => "og:image"}/
 	%meta{:content => "1437", :property => "og:image:width"}/
 	%meta{:content => "752", :property => "og:image:height"}/
 
-.location-hero.location-hero-fix{style: "background: url('#{asset_path("background/TrestlesBeach.jpeg")}') center center no-repeat"}
+.location-hero.location-hero-fix{style: "background: url('#{asset_path("background/bajacover.png")}') center center no-repeat"}
 
 .location-slow-scroll
-	#location-text
+	#location-text{style: "text-shadow: 1px 1px 5px rgba(0,0,0,1);"}
 		#location-header
-			The Magic Baja Bus
+			The Baja Escape
 		#location-explanation
-			From the ocean, to the desert, to the mountains in one trip
+			A 4WD converted school bus, filled with your friends, down Baja Mexico for 4 days of sun, camping and surfing.
 		#location-header-mobile
-			<br>
-			The So-Cal Trifecta
+			The Baja Escape
 		#location-explanation-mobile
-			From the ocean, to the desert, to the mountains in one trip
-		#created-by
-			Made by: Casey S.
+			A 4WD converted school bus, filled with your friends, down Baja Mexico for 4 days of sun, camping and surfing.
 
 .location-details
 	.col-md-12.location-itinerary
@@ -30,207 +27,146 @@
 			.mission-header
 				The Mission
 			.mission-body
-				The SoCal Trifecta: Exploring the ocean, the desert and the mountains all in one trip. California is one of the only places in the world you can do it in such a close proximity. We're going to tackle the waves on Zuma Beach, trek into the mountains for some trad climbing, spend the night under the stars and explore the desert the following day. I don't think we can fit more adventure into a weekend...
+				Road trip Baja California in a souped up, 4WD school bus that runs on vegetable oil. I bet that grabbed your attention. Looking for 15 other adventurers to fill “Gus” the bus and check out this nearly forgotten desert playground south of the border.
+				<br>
+				<br>
+				Once a surf mecca for Cali surf bros and those looking to escape the hectic life of LA and San Diego, the Baja is now neglected by most tourists. We’ll scour the rugged pacific coast hunting down the best seafood stands, remote beaches, and desert oasis swimming holes.
+
 
 	.col-md-12.location-description
 		.description-title
 			The Adventure Team
 		.col-md-6	
-			.description-guide-image{style: "background: url('#{asset_path("background/Quinnprofile.jpg")}') center center no-repeat"}
+			.description-guide-image{style: "background: url('#{asset_path("background/paul-guide.png")}') center center no-repeat"}
 			.guide-name
-				Quinn C.
+				Kally C.
 			.guide-border
 			.guide-title
 				Adventure Leader
-			
 			.guide-description
-				Quinn is the founder and lead instructor at Eat, Sleep, Surf in LA. Quinn surfs, snowboards, skateboards, wakeboards, rock climbs and climbs mountains. He grew up in Chicago and at a young age his passion pushed him westward. 
-				<br>
-				<br>
-				Months after moving to California, Quinn became a surf instructor working for three different surf schools. He became popular because his teaching approach was light-hearted, passionate and effective.  Quinn has since taught surfing in California, Florida, Hawaii, England and Costa Rica. Quinn is a certified rock climbing and surf guide.
+				Operating Gus the bus and making sure we don’t get lost in the wilds of the Baja Peninsula is Kally and the Baja Trek team. In addition to getting us from point A to point B and cooking delicious camp meals, Kally has many years experience in the area and will take us to the best camping and surf spots.
+				
 		.col-md-6	
-			.description-guide-image{style: "background: url('#{asset_path("background/CaseyProfile.jpg")}') center center no-repeat"}
+			%a{href:'/apply/Peru'}
+				.description-guide-image{style: "background: #aa4b41;"}
+					%i.fa.fa-plus{style: "color: #fff; font-size: 6em; margin-top: 92px; margin-left: 92px;"}
 			.guide-name
-				Casey S.
+				Apply to be the
 			.guide-border
 			.guide-title
 				Adventure Ambassador
 			
 			.guide-description
-				Currently, I live, work and play in LA. When not surfing, I work with a mix of graphic design, motion graphics, video, and photography - and therefore enjoy all forms of design and creativity.
-				<br>
-				<br>
-				Travel and adventures have always been a huge part of my life but I've realized there are so many amazing adventures around LA that I have yet to explore. Quinn has arranged what will be a seriously fun weekend; including my love of surfing with climbing and camping in the mountians. Feel free to reach out with the apply link if you have questions. Looking forward to adventuring with you!
+				Paul has created a one-time trip that is sure to be one hell of an experience. We're looking for a passionate adventure ambassador to spread the word and assemble a team. Recruit others to join the trip and go on the trip for free.
 
-	.col-md-10.col-md-offset-1.location-who
-		.col-md-6.who-container
-			.who-image{style: "background: url('#{asset_path("background/stockgirlprofile.jpeg")}') center center no-repeat"}
-			.who-text
-				.who-name
-					Jessie
-				.who-title
-					From
-				.who-description
-					San Francisco, CA
-				.who-title
-					Biggest Adventure
-				.who-description
-					Shot a short film in Haiti
-
-
-		.col-md-6.who-container
-			.who-image{style: "background: url('#{asset_path("background/lagunastockman.jpeg")}') center center no-repeat"}
-			.who-text
-				.who-name
-					Tyler
-				.who-title
-					From
-				.who-description
-					San Diego, CA
-				.who-title
-					Last Adventure
-				.who-description
-					Biked the Atlas Mountains in Morocco
-
-		.col-md-6.who-container
-			.who-image{style: "background: url('#{asset_path("background/fakeguy.jpg")}') center center no-repeat"}
-			.who-text
-				.who-name
-					Jon
-				.who-title
-					From
-				.who-description
-					Santa Monica, CA
-				.who-title
-					Favorite Adventure
-				.who-description
-					Paddle boarding from LA to San Diego
-
-		.col-md-6.who-container
-			.who-image{style: "background: url('#{asset_path("background/fakegirl.jpg")}') center center no-repeat"}
-			.who-text
-				.who-name
-					Sara
-				.who-title
-					From
-				.who-description
-					Washington, DC
-				.who-title
-					Past Travel Experience	
-				.who-description
-					Lived and studied in New Zealand
 
 	.col-md-12.destination-container
 		.basecamps-title
 			A Few Highlights
 		.row.col-md-6
-			.destination-image{style: "background: url('#{asset_path("background/joshuatreenp.jpg")}') center center no-repeat"}
+			.destination-image{style: "background: url('#{asset_path("background/packraft2.png")}') center center no-repeat"}
 				.destination-description
-					<br>
 					.destination-title
-						Joshua Tree
+						Ensenada
 					.destination-title-underline
 					.destination-subtitle
-						Camping Under the Stars
+						Your Jungle Homebase
 					.destination-body
-						We'll all meet up in LA and head out to Joshua Tree National Park to camp cowboy style, under the night's stars.
+						You may have forgotten humans live in the Baja after traversing some of it’s more remote sections. Ensenada is a great opportunity to mingle with the local folk. Like most towns, there are shops, great restaurants, and bars to check out. Unlike most towns, Ensenada is home to a designated world surfing reserve, for those who haven’t gotten enough of the water.
+  
 			.destination-subtitle-mobile
-				Camping Under the Stars
+				Your Jungle Homebase
 			.destination-underline-mobile
 			.destination-body-mobile
-				We'll all meet up in LA and head out to Joshua Tree National Park to camp cowboy style, under the night's stars.
+				You may have forgotten humans live in the Baja after traversing some of it’s more remote sections. Ensenada is a great opportunity to mingle with the local folk. Like most towns, there are shops, great restaurants, and bars to check out. Unlike most towns, Ensenada is home to a designated world surfing reserve, for those who haven’t gotten enough of the water.
 
 		.row.col-md-6
-			.destination-image{style: "background: url('#{asset_path("background/stockmaleclimber.jpeg")}') center center no-repeat"}
+			.destination-image{style: "background: url('#{asset_path("background/packraft3.jpg")}') center center no-repeat"}
 				.destination-description
-					<br>
 					.destination-title
-						Trad Climbing
+						Pristine Beaches
 					.destination-title-underline
 					.destination-subtitle
-						Climb the Walls of Joshua Tree
+						The Best Way to Navigate the Amazon
 					.destination-body
-						Spend the day climbing in the National Park before we drive to Mt. San Jacinto, where we'll ride the Aerial Tramway to 8,500ft. We'll finally hike and camp under the stars in Round Valley.
+						Surf, swim, tan, read, play volleyball, organize a game of spikeball, drink. Typical beach stuff. We’ll park the bus right on the beach and set up camp. With 15 people and a beach to ourselves, shouldn’t be hard to come up with fun things to do. Bonus points to those who pack a beach volleyball net, football, skim board, or any other beach-y toys.
+  
 			.destination-subtitle-mobile
-				Trad Climbing
+				The Best Way to Navigate the Amazon
 			.destination-underline-mobile
 			.destination-body-mobile
-				Spend the day climbing in the National Park before we drive to Mt. San Jacinto, where we'll ride the Aerial Tramway to 8,500ft. We'll finally hike and camp under the stars in Round Valley.
+				Surf, swim, tan, read, play volleyball, organize a game of spikeball, drink. Typical beach stuff. We’ll park the bus right on the beach and set up camp. With 15 people and a beach to ourselves, shouldn’t be hard to come up with fun things to do. Bonus points to those who pack a beach volleyball net, football, skim board, or any other beach-y toys.
 
 		.row.col-md-6
-			.destination-image{style: "background: url('#{asset_path("background/san-jacinto.jpg")}') center center no-repeat"}
+			.destination-image{style: "background: url('#{asset_path("background/packraft4.png")}') center center no-repeat"}
 				.destination-description
-					<br>
 					.destination-title
-						Mt. San Jacinto
+						Gus the Bus
 					.destination-title-underline
 					.destination-subtitle
-						Reaching the 11,000ft Summit
+						Las Piedras Watershed
 					.destination-body
-						Start the day by summiting Mt. San Jacinto's 10,833ft peak. We'll then head from the mountians to the coast.
+						An eco-friendly, vegetable oil-powered Baja Beach bus, retrofitted for extended road trips. Really not much to say beyond that. Pretty neat.
+ 
 			.destination-subtitle-mobile
-				Reaching the 11,000ft Summit
+				Las Piedras Watershed
 			.destination-underline-mobile
 			.destination-body-mobile
-				Start the day by summiting Mt. San Jacinto's 10,833ft peak. We'll then head from the mountains to the coast.
+				An eco-friendly, vegetable oil-powered Baja Beach bus, retrofitted for extended road trips. Really not much to say beyond that. Pretty neat.
+
 
 		.row.col-md-6
-			.destination-image{style: "background: url('#{asset_path("background/stocksurf.jpeg")}') center center no-repeat"}
+			.destination-image{style: "background: url('#{asset_path("background/packrafting1.jpg")}') center center no-repeat"}
 				.destination-description
-					<br>
 					.destination-title
-						Sunset Surf
+						Camaraderie
 					.destination-title-underline
 					.destination-subtitle
-						Surfing Sunset Until the Sunset
+						The Frontiers of Conservation
 					.destination-body
-						Finishing up our Trifecta with the ocean, we'll hit the waves along the coast. Whether you're a pro or need some help from Quinn, we'll be sure to end our adventure weekend with a few good rides.
+						Did we mention you’ll be in a van traversing the Baja with 15-20 other like minded explorers? You’d have to be some sort of crazy person not to have a great time and make new friends. Think of this like the most elaborate field trip you’ve ever taken...and you’re allowed to drink beer. No teachers, no rules. (Except maybe a few rules)
 			.destination-subtitle-mobile
-				Surfing Sunset Until the Sunset
+				The Frontiers of Conservation
 			.destination-underline-mobile
 			.destination-body-mobile
-				Finishing up our Trifecta with the ocean, we'll hit the waves along the coast. Whether you're a pro or need some help from Quinn, we'll be sure to end our adventure weekend with a few good rides.
+				Did we mention you’ll be in a van traversing the Baja with 15-20 other like minded explorers? You’d have to be some sort of crazy person not to have a great time and make new friends. Think of this like the most elaborate field trip you’ve ever taken...and you’re allowed to drink beer. No teachers, no rules. (Except maybe a few rules)
 
-	.col-md-12.location-inclusions{style: "background: url('#{asset_path("background/SantaMonicaWaves.jpeg")}') center center no-repeat"}
-		.location-inclusions-header
+	.col-md-12.location-inclusions{style: "background: whitesmoke;"}
+		.location-inclusions-header{style: "color: #212326;"}
 			Reserve your Spot
-		.col-md-10.col-md-offset-1.inclusions-container
+		.col-md-10.col-md-offset-1.inclusions-container{style: "background: transparent;"}
 			.priceanddate_container
-				.location-date
-					May 13th - 15th, 2016
-				.trip-price
-					Entry Fee - $500
-			.col-md-6.inclusions-title
-				What this gets you
-				.inclusions-description
-					Camping Gear and Park Entry
+				.location-date{style: "border:none; color: #212326;"}
+					Launching Late Summer 2016
+				.trip-price{style: "color: #212326; padding-bottom: 40px;"}
+					Entry Fee - TBD
+			.col-md-6.inclusions-title{style: "color: #aa4b41;"}
+				What's Included
+				<br>
+				%i.fa.fa-angle-double-down{style: "color: #aa4b41;"}
+				.inclusions-description-hidden{style: "color: #212326;"}
+					Bus Driver and Guide
 					<br>
 					<br>
-					Surfboards & Wetsuits
+					Most Meals
 					<br>
 					<br>
-					Climbing Gear
+					Camping and Park Fees
 					<br>
 					<br>
-					Surf Instruction
+
+			.col-md-6.exclusions-title{style: "color: #aa4b41;"}
+				Not Included
+				<br>
+				%i.fa.fa-angle-double-down{style: "color: #aa4b41;"}
+				.exclusions-description-hidden{style: "color: #212326;"}
+					Transportation to the Border
 					<br>
 					<br>
-					3 Prepared Meals
+					Alcohol
 					<br>
 					<br>
-					Transportation
-					<br>
-					<br>
-			.col-md-6.inclusions-title
-				What to bring
-				.inclusions-description
-					Swimwear
-					<br>
-					<br>
-					Hiking Gear
-					<br>
-					<br>
-					Good  Vibes
+					Sleeping Bag and Tent
 					<br>
 					<br>
 
@@ -239,7 +175,7 @@
 			Interested in joining?
 		.who-join-description
 			Drop us a line or apply
-		%a{href:'/apply/socaltrifecta'}
+		%a{href:'/apply/Peru'}
 			.join-button.btn
 				Reach Out!
 
@@ -276,4 +212,14 @@
 					}
 			}); 
 		});
+	});;
+
+	$(".inclusions-title").click(function () {
+	$(".inclusions-description-hidden").stop().slideToggle();
+		return false;
+	});
+
+	$(".exclusions-title").click(function () {
+	$(".exclusions-description-hidden").stop().slideToggle();
+		return false;
 	});
