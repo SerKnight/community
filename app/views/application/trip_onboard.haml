@@ -8,95 +8,94 @@
 	%meta{:content => "1326", :property => "og:image:width"}/
 	%meta{:content => "700", :property => "og:image:height"}/
 
-.hero-image.hero-image-fix{style: "background: url('#{asset_path("background/homepagesnow.jpg")}') center center no-repeat"}
+.hero-image.hero-image-fix{style: "background: url('#{asset_path("background/clifflaunch.jpeg")}') center center no-repeat"}
 
-.hero-image.hero-image-fix-mobile{style: "background: url('#{asset_path("background/homepagesnowmobile.jpg")}') center center no-repeat"}
+.hero-image.hero-image-fix-mobile{style: "background: url('#{asset_path("background/clifflaunchmobile.jpeg")}') center center no-repeat"}
 
 .banner-scroll
 	#landing-text  
 		#landing-header
 			CREATE YOUR ADVENTURE
 		#landing-body
-			Build your dream adventure and find others to join you
+			Connect with those who can make your trip idea a reality
 
 
-.col-md-12.onboard-mission	
+.col-md-12.onboard-mission
+	.onboard-mission-header	
+		AdventureMade is...
 	.onboard-mission-body
-		Our mission is to make your wildest travel idea a reality. We connect you with the best local adventure guides, who work alongside you to craft a one of a kind travel experience. For each friend that books your experience, you get rewarded.
-	.onboard-mission-body-underline
+		A community of travelers, guides and local connectors working together to make memorable adventures come to life. Harnessing the power of travel as a force for good.
 
 .col-md-12.creator-hiw
-	.col-md-3.creator-hiw-box
+	.creator-hiw-header
+		How it Works
+	.col-md-4.creator-hiw-box
 		.creator-hiw-box-text
 			.creator-hiw-box-title
-				Propose your Adventure
+				Choose your Adventure
+			.creator-hiw-box-underline
 			.creator-hiw-box-body
-				Tell us why you’re the best traveler to create the trip and lead the charge
+				Pitch us on an adventure proposal or select from one of our curated adventure ideas. Collaborate with the guide to tweak the details of the experience to fit your preferences.
 
-	.col-md-3.creator-hiw-box
+	.col-md-4.creator-hiw-box
 		.creator-hiw-box-text
 			.creator-hiw-box-title
-				Collaborate with Guides
+				Rally your Team
+			.creator-hiw-box-underline
 			.creator-hiw-box-body
-				Work with local guides to fine tune the details and logistics of your trip
+				Share your personal adventure page with your friends and the AdventureMade community. Inspire, recruit, and communicate with others in a central place. When the trip reaches capacity, you travel for free.
 
-	.col-md-3.creator-hiw-box
+	.col-md-4.creator-hiw-box
 		.creator-hiw-box-text
 			.creator-hiw-box-title
-				Share and Recruit
+				Explore the World
+			.creator-hiw-box-underline
 			.creator-hiw-box-body
-				Share your custom trip page with the world and get rewarded when others join your crew
-
-	.col-md-3.creator-hiw-box
-		.creator-hiw-box-text
-			.creator-hiw-box-title
-				Launch your Adventure
-			.creator-hiw-box-body
-				When capacity is reached, we handle bookings while you take on your adventure
+				Pack your bags and embark on your once in a lifetime shared adventure. Supported by a trusted local guide, you’re left to enjoy the experience with your team.
 
 .col-md-12.we-are-seeking
 	.we-are-seeking-header
-		Adventure Expectations
+		Who We're Seeking:
 	.we-are-seeking-title
-		Creativity
+		The Travel Junky
 	.we-are-seeking-body
-		Create something that isn’t offered anywhere else. Work with a local guide to make your crazy idea into an actual marketable trip. 
+		<br>
+		Those who jump at any chance to get a snag a cheap flight or hitch a ride to unexplored places. We want travelers who travel not to get from point A to B but to experience new cultures, smells, faces, adventures... Most importantly, we're looking for those who don't wait for a trip to land in their lap but are always planning the next trip.
 	.we-are-seeking-title
-		Mindfulness
+		The Social Influencer
 	.we-are-seeking-body
-		Act in the best interest of your group and local communities. Spend locally, eat locally, sleep locally. Always follow Leave No Trace principles.
+		<br>
+		Your Instgram feed seeds your friend's jealousy. Your social feeds house your past trips like an adventure resume. Proving online, that you're a badass offline. Friends and family go to you for travel advice and many would jump at the opportunity to travel with you. Whether it's your pictures, stories, personality or lack of all three, you're doing something right and spreading travel is spreading happiness.
 	.we-are-seeking-title
-		Adaptability
+		The Travel Buddy
 	.we-are-seeking-body
-		All true adventures have some level of uncertainty. Be transparent about what is fully planned and what is flexible.
-	.we-are-seeking-title
-		Companionship
-	.we-are-seeking-body
-		Desire to find 4-8 friends, family, or other travelers to share this incredible opportunity.
+		<br>
+		No matter what, you figure things out when traveling. Whether you have to cross a deserted country to make a train or fix a car high in the mountains, you take it as a challenge not a problem. You understand over-planning is a flaw and when uncertainty strikes, the adventure begins. 
 
 .col-md-12.adventure-creator-container
 	.col-md-6.adventure-creator-block
 		.adventure-creator-image{style: "background: url('#{asset_path("background/QuinnSmiles.jpg")}') center center no-repeat"}
 	.col-md-6.adventure-creator-text
 		.adventure-creator-header
-			Perfect if you...
+			Claimable Trips:
 		.adventure-creator-body
-			%ul
-				%li Are confident others will join you on a trip
-				<br>
-				%li	Get uncontrollably excited when planning travel
-				<br>
-				%li	Are an influencer or can offer unique skills to fellow travelers
-				<br>
-				%li	Look to maps and forums for off the beaten path trips
-
+			%a{href: '/india' , target: '_blank', style: "font-weight: bold;"} Riding the Roof of the World
+			<br>
+			<br>
+			%a{href: '/peru' , target: '_blank', style: "font-weight: bold;"}Adventure & Conflict in the Amazon
+			<br>
+			<br>
+			%a{href: '/socaltrifecta' , target: '_blank', style: "font-weight: bold;"}The SoCal Trifecta
+			<br>
+			<br>
+			%a{href: '/apply/kyrgyzstan' , target: '_blank', style: "font-weight: bold;"}Eagles, Horses & Yurts
 
 .col-md-12.creation-apply
 	.creation-apply-box
 		.creation-apply-header
 			Think you're ready?
 		.creation-apply-body
-			Apply with your adventure proposal
+			Let's set up your next adventure.
 		%a{href: "/apply/adventure"}
 			.creation-apply-btn
 				Introduce Yourself
