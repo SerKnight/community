@@ -7,7 +7,7 @@
 
 	.container {
 		font-size: 1.2em;
-		padding-bottom: 30px;
+		padding-bottom: 72px;
 
 		.footer-logo{
 		    background-repeat: no-repeat;
@@ -19,7 +19,7 @@
 		    background-image: asset-url("logos/headerlogo.png");
 		    margin: auto;
 		    margin-bottom: 20px;
-		    margin-top: 24px;
+		    margin-top: 42px;
  		}
 
 		.footer_text {
@@ -30,11 +30,11 @@
 			padding-right: 0px;
 
 			.footer-contact-section{
-				padding-top: 24px;
+				padding-top: 50px;
 			}
 
 			.footer-upcoming-trips{
-				padding-top: 42px;
+				padding-top: 24px;
 			}
 
 			#footer-text-title{
@@ -42,6 +42,21 @@
 				color: #212326;
 				font-family: proxima_bold;
 				font-size: 1.2em;
+				padding-bottom: 8px;
+			}
+
+			.footer-header-underline{
+				border-bottom: 2px solid #aa4b41;
+				max-width: 80px;
+				margin: auto;
+				margin-bottom: 8px;
+			}
+
+			.footer-trip-link{
+				text-decoration: none;
+				color: #212326;
+				font-family: proxima_regular;
+				font-size: 1.0em;
 				padding-bottom: 8px;
 			}
 
@@ -57,8 +72,6 @@
 			a {
 				text-decoration: none;
 				color: #212326;
-				font-family: proxima_thin;
-				font-size: 1.2em;
 
 				&:hover{
 					text-decoration: underline;
@@ -88,7 +101,7 @@
 		}
 
 		.footer-email-container{
-			border: 2px solid #212326;
+			border: 2px solid #aa4b41;
 			border-radius: 20px;
 			width: 280px;
 			margin: auto;
@@ -104,12 +117,12 @@
 
 			.email-form-button{
 				border: none;
-				background-color: rgba(170, 75, 65, 1);
+				background-color: #aa4b41;
 				font-family: proxima_bold; 
 				-webkit-transition: all 0.4s ease;
 				transition: all 0.4s ease;
 				width: 60px;
-				border-radius: 20px;
+				border-radius: 14px;
 				border-top-left-radius: 0px;
 				border-bottom-left-radius: 0px;
 
