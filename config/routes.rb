@@ -17,7 +17,7 @@ Rails.application.routes.draw do
   get 'kyrgyzstan'   =>    'homepage#kyrgyzstan'
   get 'bajabus'   =>    'homepage#bajabus'
   get 'morocco'   =>    'homepage#morocco'
-
+  get 'lakepowell'   =>    'homepage#lakepowell'
 
   get '/apply' => 'contacts#new'
   get '/apply/:type' => 'contacts#new'

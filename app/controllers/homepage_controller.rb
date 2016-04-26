@@ -40,4 +40,8 @@ class HomepageController < ApplicationController
 
   end  
 
+  def lakepowell
+
+  end
+
 end
