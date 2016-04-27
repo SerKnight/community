@@ -77,7 +77,6 @@
 			margin: auto;
 			float: none;
 			margin-top: 40px;
-			border: 4px solid #aa4b41;
 		}
 
 		.description-body{
@@ -336,7 +335,7 @@
 
 		.destination-body-mobile{
 			display: none;
-			font-family: proxima_thin;
+			font-family: proxima_regular;
 			text-align: center;
 			color: #fff;
 			font-size: 1.2em;
@@ -811,8 +810,8 @@
 	}
 
 	.location-details .location-description .description-title{
-		font-size: 2.8em;
-		max-width: 300px;
+		font-size: 2em;
+		max-width: 200px;
 	}
 
 	.location-details .location-description .description-body{
@@ -834,22 +833,46 @@
 		max-width: 350px;
 	}	
 
+	.location-details .location-itinerary .mission-block .mission-header{
+		font-size: 2em;
+		max-width: 200px;
+	}
+
 	.location-details .location-itinerary .mission-block .mission-body{
-		font-size: 1.1em;
+		font-size: 1em;
+	}
+
+	.guide-description{
+		font-size: 1em !important;
+	}
+
+	.guide-title{
+		font-size: 1.6em !important;
+	}
+
+	.guide-name{
+		font-size: 2em !important;
+	}
+
+	.guide-border{
+		max-width: 100px !important;
 	}
 
 	.destination-description .destination-title{
-		margin-top: 90px !important;
+		margin-top: 112px !important;
 		font-size: 2.4em !important;
 	}
 
 	.location-details .destination-container .basecamps-title{
-		font-size: 2.2em;
-		max-width: 300px;
+		font-size: 2em;
+		max-width: 225px;
 	}
 
 	.location-details .destination-container .destination-image{
 		min-height: 310px;
+		margin-left: -15px;
+		margin-right: -15px;
+		border: none !important;
 	}
 
 	.location-details .destination-container .destination-description{
@@ -858,6 +881,10 @@
 
 	.location-details .destination-container .destination-description .destination-subtitle{
 		font-size: 1.1em;
+	}
+
+	.location-details .destination-container .destination-body-mobile{
+		font-size: 1em;
 	}
 
 	.location-details .location-how .location-how-header{
@@ -879,7 +906,8 @@
 	}
 
 	.location-details .location-inclusions .location-inclusions-header{
-		font-size: 2.4em;
+		font-size: 2em;
+		max-width: 240px;
 	}
 
 	.location-details .location-inclusions .location-date{
