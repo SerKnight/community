@@ -45,7 +45,7 @@
 			position: relative;
 			margin-bottom: 24px;
 
-			&:hover{
+			&:hover, &:focus{
 
 				.upcoming-trip:focus { 
 					cursor:pointer;
@@ -198,42 +198,6 @@
 @media screen and (max-width: 771px){
 	#upcoming-trips .upcoming-trips-container .upcoming-trip .see-more-btn{
 		display: block;
-	}
-
-	.upcoming-trip{
-		overflow: hidden;
-		position: relative;
-		margin-bottom: 24px;
-
-		&:hover, &:focus { 
-			cursor:pointer;
-
-			.upcoming-title-dates{
-				-webkit-transition: all 0.5s ease-in-out;
-				transition: all 0.5s ease-in-out;
-			}
-			.upcoming-description{
-				-webkit-transition: all 0.5s ease-in-out;
-				transition: all 0.5s ease-in-out;
-			}
-
-			.upcoming-text{
-				padding-top: 20px !important;
-				background-color: rgba(0,0,0,0.4);
-				bottom: 0px;
-				-webkit-transition: all 0.5s ease-in-out;
-				transition: all 0.5s ease-in-out;
-			}
-
-			.upcoming-trip-btn{
-				-webkit-transition: all 0.5s ease-in-out;
-				transition: all 0.5s ease-in-out;
-			}
-
-			.see-more-btn{
-				display: none;
-			}
-		}
 	}
 }
 
