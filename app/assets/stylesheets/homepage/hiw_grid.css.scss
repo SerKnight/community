@@ -5,12 +5,40 @@
 		width: 100%;
 	}
 
+	.grid_header{
+		min-height: 60px;
+		padding-top: 40px;
+		padding-bottom: 20px;
+	
+
+		.grid_title{
+			font-family: proxima_bold;
+			font-size: 1.8em;
+			color: #fff;
+			text-align: left;
+	
+
+			.grid_subtitle{
+				font-family: proxima_thin;
+				font-size: 18px;
+				color: rgba(255,255,255,0.9);
+				text-align: left;
+			}
+		}
+
+		.grid-title-underline{
+			max-width: 100px;
+			border-bottom: 4px solid #aa4b41;
+			margin-top: 20px;
+		}
+	}
+
 	.mobile-grid{
 		min-height: 500px;
 		position: relative;
-		padding-left: 10px;
-		padding-right: 10px;
 		padding-bottom: 20px;
+		padding-right: 0px;
+		padding-left: 0px;
 
 		.mobile-grid-img{
 		    background-repeat: no-repeat;
