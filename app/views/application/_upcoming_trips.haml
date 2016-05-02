@@ -1,0 +1,87 @@
+#upcoming-trips
+
+	.container
+		.upcoming-trips-header
+			.upcoming-trips-title
+				Available Trips
+				<br>
+				%b.upcoming-trips-subtitle
+					Unique trips created by adventure guides and travelers like you.
+			.upcoming-trips-underline
+
+	.col-md-10.col-md-offset-1.upcoming-trips-container
+		
+		.col-md-6.upcoming-trip-block
+			.upcoming-trip
+				.upcoming-img{style: "background: url('#{asset_path("background/IndiaMountains.jpg")}') center center no-repeat; background-size: cover;"}
+				.fa.fa-plus.see-more-btn{style:"color:#fff;"}
+				.upcoming-text{style: "float: right;"}
+					.upcoming-title
+						Riding the Roof of the World
+					.upcoming-title-location
+						.fa.fa-map-marker{style:"color:#aa4b41;"}
+						Indian Himalayas
+					.upcoming-details
+						.upcoming-title-dates
+							.fa.fa-calendar{style:"color:#aa4b41;"} |
+							Early Fall 2016
+							.fa.fa-users{style:"color:#aa4b41;"} |
+							5-8 travelers
+						.upcoming-description
+							Traverse the Indian Himalayas on a Royal Enfield motorcycle. Endure challenging climbs and harsh weather as you notch the world's highest roads...
+						%a{href: "/india"}
+							.upcoming-trip-btn.btn
+								Unlock this Trip
+
+		.col-md-6.upcoming-trip-block
+			.upcoming-trip
+				.upcoming-img{style: "background: url('#{asset_path("background/packraftjunglemain.jpg")}') center center no-repeat; background-size: cover;"}
+				.fa.fa-plus.see-more-btn{style:"color:#fff;"}
+				.upcoming-text{style: "float: right;"}
+					.upcoming-title
+						Adventure & Conflict in the Amazon
+					.upcoming-title-location
+						.fa.fa-map-marker{style:"color:#aa4b41;"}
+						Western Amazon, Peru
+					.upcoming-details
+						.upcoming-title-dates
+							.fa.fa-calendar{style:"color:#aa4b41;"} |
+							Late Fall 2016	
+							.fa.fa-users{style:"color:#aa4b41;"} |
+							6-9 travelers
+						.upcoming-description
+							With local guides and a fleet of ultra-portable packrafts, trek along remote logging roads, follow animal trails, and paddle unnamed tributaries through the upper Amazon...
+						%a{href: "/peru"}
+							.upcoming-trip-btn.btn
+								Unlock this Trip
+
+		.col-md-6.upcoming-trip-block
+			.upcoming-trip
+				.upcoming-img{style: "background: url('#{asset_path("background/TrestlesBeachhomepage.jpeg")}') center center no-repeat; background-size: cover;"}
+				.fa.fa-plus.see-more-btn{style:"color:#fff;"}
+				.upcoming-text{style: "float: right;"}
+					.upcoming-title
+						The SoCal Trifecta
+					.upcoming-title-location
+						.fa.fa-map-marker{style:"color:#aa4b41;"}
+						Los Angeles, CA
+					.upcoming-details
+						.upcoming-title-dates
+							.fa.fa-calendar{style:"color:#aa4b41;"} |
+							June 2016
+							.fa.fa-users{style:"color:#aa4b41;"} |
+							3-7 travelers
+						.upcoming-description
+							Exploring southern California's ocean, desert and mountains all in one weekend. Go from rock climbing and camping in Joshua Tree National Park, to surfing the waves of Malibu...
+						%a{href: "/socaltrifecta"}
+							.upcoming-trip-btn.btn
+								Unlock this Trip
+
+	.col-md-12.your-adventure
+		.your-adventure-header
+			What's your adventure?
+		.your-adventure-body
+			Propose or claim a trip and we could send you on it.
+		%a{href: "/adventure"}
+			.your-adventure-btn
+				Learn More

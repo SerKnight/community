@@ -1,14 +1,66 @@
 #trips_grid{
-	background: rgba(33,35,38,0.9);
+	background: black;
 
 	.grid_background{
 		width: 100%;
+		padding-bottom: 60px;
+	}
+
+	.grid_header{
+		min-height: 60px;
+		padding-top: 40px;
+		padding-bottom: 20px;
+	
+
+		.grid_title{
+			font-family: proxima_bold;
+			font-size: 1.8em;
+			color: #fff;
+			text-align: left;
+	
+
+			.grid_subtitle{
+				font-family: proxima_thin;
+				font-size: 18px;
+				color: rgba(255,255,255,0.9);
+				text-align: left;
+				padding-left: 20px;
+			}
+		}
+
+		.grid-title-underline{
+			max-width: 100px;
+			border-bottom: 4px solid #aa4b41;
+			margin-top: 20px;
+		}
+	}
+
+	.grid-row{
+		margin-left: 15px;
+		margin-right: 15px;
 	}
 
 	.grid-container{
 		position: relative;
 		padding-left: 0px;
 		padding-right: 0px;
+
+		-moz-transition:-moz-transform 0.5s ease-in-out; 
+		-webkit-transition:-webkit-transform 0.5s ease-in-out; 
+		-o-transition:-o-transform 0.5s ease-in-out;
+
+		&:hover  {
+			-moz-transform:scale(1.03); 
+			-webkit-transform:scale(1.03);
+			-o-transform:scale(1.03);
+
+			.grid-btn{
+				background-color: rgba(89,39,34,0.8);
+				-webkit-transition: all 0.4s ease;
+				transition: all 0.5s ease;
+				max-width: 200px;
+			}
+		}
 
 		.grid-img{
 		    position: relative;
@@ -24,7 +76,7 @@
 
 	.grid-text{
 		padding-top: 72px;
-		min-width: 410px;
+		max-width: 410px;
 		padding-left: 30px;
 		padding-right: 30px;
 		background: rgba(0,0,0,0.6);
@@ -42,7 +94,6 @@
 	  		padding-bottom: 10px;
 	  		-webkit-transition: all 0.7s ease;
 			transition: all 0.7s ease;
-			text-transform: uppercase;
 	  	}
 
 	  	.grid-title-location{
@@ -52,6 +103,7 @@
 	  		text-align: left;
 	  		border: none;
 	  		padding-bottom: 10px;
+	  		padding-left: 6px;
 	  		margin-right: auto;
 	  		margin-left: auto;
 	  		-webkit-transition: all 0.7s ease;
@@ -71,15 +123,27 @@
 			transition: all 0.7s ease;
 	  	}
 
-	  	.grid-title-creator{
+	  	.grid-title-unlocked-by{
 	  		font-family: proxima_bold;
 	  		color: #FFF;
-	  		font-size: 1.4em;
+	  		font-size: 1.2em;
 	  		text-align: left;
 	  		border: none;
 	  		margin-right: auto;
 	  		margin-left: auto;
-	  		max-width: 360px;
+	  		padding-bottom: 10px;
+	  		-webkit-transition: all 0.7s ease;
+			transition: all 0.7s ease;
+	  	}
+
+	  	.grid-title-unlock{
+	  		font-family: proxima_bold;
+	  		color: #FFF;
+	  		font-size: 1.2em;
+	  		text-align: left;
+	  		border: none;
+	  		margin-right: auto;
+	  		margin-left: auto;
 	  		padding-bottom: 10px;
 	  		-webkit-transition: all 0.7s ease;
 			transition: all 0.7s ease;
@@ -106,8 +170,8 @@
 			margin: auto;
 			color: #fff;
 			min-height: 40px;
-			-webkit-transition: all 0.7s ease;
-			transition: all 0.7s ease;
+			-webkit-transition: all 0.5s ease;
+			transition: all 0.5s ease;
 			border-radius: 100px;
 			background-color: rgba(0,0,0,0.6);
 			box-shadow: 1px 1px 2px #333333;
@@ -115,9 +179,9 @@
 			border: 2px solid rgb(170, 75, 65);
 
 			&:hover{
-				background-color: rgba(89,39,34,0.8);
-				-webkit-transition: all 0.4s ease;
-				transition: all 0.4s ease;
+				background-color: rgba(89,39,34,0.6);
+				-webkit-transition: all 0.5s ease-in-out;
+				transition: all 0.5s ease-in-out;
 				max-width: 200px;
 			}
 		}
@@ -137,7 +201,7 @@
 	}
 
 	.your-adventure-body{
-		font-family: proxima_thin;
+		font-family: proxima_regular;
   		color: #fff;
   		font-size: 1.4em;
   		text-align: center;
@@ -185,11 +249,9 @@
 	}
 
 	.your-adventure .your-adventure-body{
-		padding-top: 12px;
-		padding-bottom: 10px;
-		max-width: 280px;
+		max-width: 260px;
 		margin: auto;
-		font-size: 1.4em;
+		font-size: 1.2em;
 	}
 }
 

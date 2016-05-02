@@ -1,0 +1,223 @@
+#upcoming-trips{
+	background: whitesmoke;
+
+	.upcoming-trips-background{
+		width: 100%;
+	}
+
+	.upcoming-trips-container{
+		padding-bottom: 40px;
+	}
+
+	.upcoming-trips-header{
+		min-height: 60px;
+		padding-top: 40px;
+		padding-bottom: 40px;
+	
+
+		.upcoming-trips-title{
+			font-family: proxima_bold;
+			font-size: 1.8em;
+			color: #17181B;
+			text-align: left;
+	
+
+			.upcoming-trips-subtitle{
+				font-family: proxima_thin;
+				font-size: 18px;
+				color: rgba(0,0,0,0.9);
+				text-align: left;
+			}
+		}
+
+		.upcoming-trips-underline{
+			max-width: 100px;
+			border-bottom: 4px solid #aa4b41;
+			margin-top: 20px;
+		}
+	}
+
+	.upcoming-trips-container{
+
+		.upcoming-trip{
+			overflow: hidden;
+			position: relative;
+			margin-bottom: 24px;
+
+			&:hover{
+
+				.upcoming-title-dates{
+					-webkit-transition: all 0.5s ease-in-out;
+					transition: all 0.5s ease-in-out;
+				}
+				.upcoming-description{
+					-webkit-transition: all 0.5s ease-in-out;
+					transition: all 0.5s ease-in-out;
+				}
+
+				.upcoming-text{
+					padding-top: 20px !important;
+					background-color: rgba(0,0,0,0.4);
+					bottom: 0px;
+					-webkit-transition: all 0.5s ease-in-out;
+					transition: all 0.5s ease-in-out;
+				}
+
+				.upcoming-trip-btn{
+					-webkit-transition: all 0.5s ease-in-out;
+					transition: all 0.5s ease-in-out;
+				}
+
+				.see-more-btn{
+					display: none;
+				}
+			}
+
+			.upcoming-img{
+				width: 100%;
+				height: 300px;
+			}
+
+			.see-more-btn{
+				display: none;
+				border: 2px solid #fff;
+				font-size: 18px;
+				margin-bottom: 5px;
+				margin-right: 5px;
+				border-radius: 50%;
+				height: 24px;
+				width: 24px;
+				bottom: 0;
+				right: 0;
+				position: absolute;
+				padding-top: 2px;
+				padding-left: 3px;
+				z-index: 1;
+				background: #aa4b41;
+			}
+
+			.upcoming-text{
+				width: 100%;
+				bottom: -214px;
+				position: absolute;
+				-webkit-transition: all 0.5s ease;
+				transition: all 0.5s ease;
+				background-color: rgba(0,0,0,0.4);
+
+				.upcoming-title{
+					padding-top: 12px;
+					padding-left: 20px;
+					padding-right: 20px;
+					font-family: proxima_bold;
+					color: #fff;
+					text-align: left;
+					font-size: 1.45em;
+					line-height: 24px;
+				}
+
+				.upcoming-title-location{
+					font-family: proxima_regular;
+					color: #fff;
+					padding-left: 24px;
+					padding-right: 20px;
+					text-align: left;
+					font-size: 1.1em;
+					padding-bottom: 12px;
+					padding-top: 6px;
+				}
+
+				.upcoming-details{
+					background-color: rgba(245,245,245,0.65);
+					height: 214px;
+
+					.upcoming-title-dates{
+						-webkit-transition: all 0.5s ease;
+						transition: all 0.5s ease;
+						font-family: proxima_regular;
+						color: #fff;
+						padding-top: 10px;
+						padding-bottom: 10px;
+						padding-left: 20px;
+						padding-right: 20px;
+						text-align: center;
+						font-size: 1.1em;
+						background: rgba(0,0,0,0.8);
+					}
+
+					.upcoming-description{
+						-webkit-transition: all 0.5s ease;
+						transition: all 0.5s ease;
+						font-family: proxima_regular;
+						color: #17181B;
+						padding-left: 20px;
+						padding-right: 20px;
+						text-align: left;
+						font-size: 1.0em;
+						padding-top: 20px;
+						max-width: 440px;
+						margin: auto;
+						line-height: 18px;
+					}
+
+					.upcoming-trip-btn{
+						font-family: proxima_bold;
+						text-align: center;
+						font-size: 1.1em;
+						max-width: 160px;
+						margin: auto;
+						display: block;
+						margin-top: 12px;
+						color: #17181B;
+						min-height: 40px;
+						-webkit-transition: all 0.5s ease;
+						transition: all 0.5s ease;
+						background-color: transparent;
+						padding-top: 7px;
+						border-radius: 0px;
+						border: 2px solid #17181B;
+
+						&:hover{
+							background-color: rgba(89,39,34,0.6);
+							-webkit-transition: all 0.5s ease-in-out;
+							transition: all 0.5s ease-in-out;
+							max-width: 200px;
+							color: #fff;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 771px){
+	#upcoming-trips .upcoming-trips-container .upcoming-trip .see-more-btn{
+		display: block;
+	}
+}
+
+@media screen and (max-width: 500px){
+
+	.upcoming-trips-container .upcoming-trip-block{
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+
+	#upcoming-trips .upcoming-trips-container .upcoming-trip .upcoming-text .upcoming-title{
+		font-size: 1.2em;
+		line-height: 20px;
+		max-width: 90%;
+	}
+
+	#upcoming-trips .upcoming-trips-container .upcoming-trip .upcoming-text .upcoming-details .upcoming-title-dates{
+		font-size: 0.9em;
+		padding-top: 8px;
+		padding-bottom: 8px;
+		min-height: 0px;
+	}
+
+	#upcoming-trips .upcoming-trips-container .upcoming-trip .upcoming-text .upcoming-title-location{
+		padding-bottom: 8px;
+		padding-top: 6px;
+	}
+}

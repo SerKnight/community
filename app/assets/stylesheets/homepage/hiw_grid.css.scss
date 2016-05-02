@@ -1,5 +1,5 @@
 #hiw_grid{
-	background: #00293c;
+	background: #000;
 
 	.mobile_grid_background{
 		width: 100%;
@@ -8,8 +8,9 @@
 	.mobile-grid{
 		min-height: 500px;
 		position: relative;
-		padding-left: 0px;
-		padding-right: 0px;
+		padding-left: 10px;
+		padding-right: 10px;
+		padding-bottom: 20px;
 
 		.mobile-grid-img{
 		    background-repeat: no-repeat;
@@ -50,7 +51,6 @@
 	  		max-width: 670px;
 	  		-webkit-transition: all 0.7s ease;
 			transition: all 0.7s ease;
-			text-transform: uppercase;
 			line-height: 50px;
 	  	}
 

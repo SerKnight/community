@@ -1,12 +1,18 @@
 - content_for(:meta_og) do
-	%meta{:content => "Crocs and Conflict - By Max J.", :property => "og:title"}/
+	%meta{:content => "The Berber Traverse - By Laurie T.", :property => "og:title"}/
 	%meta{:content => "AdventureMade", :property => "og:site_name"}/
-	%meta{:content => "We're tackling the mighty Rio Verde and Rio Samana, from the Colombian highlands to the dense jungles of the tropical rainforest.", :property => "og:description"}/
+	%meta{:content => "A high adrenaline mountain bike crossing of Morocco, from the Atlas mountains to the Atlantic Ocean.", :property => "og:description"}/
 	%meta{:content => "website", :property => "og:type"}/
-	%meta{:content => "http://www.madebyadventure.com/colombia", :property => "og:url"}/
-	%meta{:content => "http://i.imgur.com/eegZ8J1.png", :property => "og:image"}/
+	%meta{:content => "http://www.madebyadventure.com/morocco", :property => "og:url"}/
+	%meta{:content => "	", :property => "og:image"}/
 	%meta{:content => "1437", :property => "og:image:width"}/
 	%meta{:content => "752", :property => "og:image:height"}/
+
+	%meta{:content => "summary_large_image", :name => "twitter:card"}
+	%meta{:content => "@AdventureMade", :name => "twitter:site"}
+	%meta{:content => "The Berber Traverse - By Laurie T.", :name => "twitter:title"}
+	%meta{:content => "A high adrenaline mountain bike crossing of Morocco, from the Atlas mountains to the Atlantic Ocean. http://goo.gl/YXDo0l", :name => "twitter:description"}
+	%meta{:content => "http://i.imgur.com/h0gotty.png", :name => "twitter:image:src"}/
 
 .location-hero.location-hero-fix{style: "background: url('#{asset_path("background/moroccocover.jpeg")}') center center no-repeat"}
 
@@ -21,7 +27,6 @@
 		#location-explanation-mobile
 			A high adrenaline mountain bike crossing of Morocco, from the Atlas mountains to the Atlantic Ocean.
 		#created-by
-			Made by: Laurie T.
 
 .location-details
 	.col-md-12.location-itinerary
@@ -32,26 +37,23 @@
 				Tackle Morocco’s legendary single track riding and soak up the friendly vibes of Berber mountain country. Dipping in and out of rust colored hillsides, palm carpeted desert canyons, and high mountain passes, we’ll ride for 5-6 glorious days. It promises to feel both familiar and wildy different than your rides back home. On the comfort of a full suspension bike, we’ll hit up old trading routes, cart paths, goat trails, dry riverbeds, flowing single track, and coastal roads. Anything it takes to get from the mountain to the coast.
 				<br>
 				<br>
-				All great challenges have a glorious reward. For us, that reward is the sparkling blue waters of the Atlantic Ocean and the chilled-out surf camp waiting at the end of the road. Soak your bones in the cool waters of the Atlantic, paddle out for a quiet SUP yoga session, or just lay around like a lazy bum. Your call. Our journey will start and end in the gem of the desert, the walled city of Marrakech.
+				All great challenges have a glorious reward. For us, that reward is the sparkling blue waters of the Atlantic Ocean and the chilled-out surf camp waiting at the end of the road. Soak your bones in the cool waters of the Atlantic, paddle out for a quiet SUP yoga session, or just lay around like a lazy bum. Your call. Our journey will start and end in the gem of the desert, the walled city of Marrakech. 
 				<br>
 				<br>
 				%i Oh, and this a ladies only trip. Apologies to any guys who’ve gotten to this point and just had their hopes crushed. Sincerely sorry.
-
 
 	.col-md-12.location-description
 		.description-title
 			The Team
 		.col-md-6	
-			.description-guide-image{style: "background: url('#{asset_path("background/paul-guide.png")}') center center no-repeat"}
+			.description-guide-image{style: "background: url('#{asset_path("background/MoroccoGuide.jpg")}') center center no-repeat"}
 			.guide-name
-				Paul R.
+				Lahcen
 			.guide-border
 			.guide-title
 				Adventure Leader
 			.guide-description
-				Our adopted jungle family is headed by 
-				%a{href: 'http://paulrosolie.com/' , target: '_blank', style: "font-weight: bold;"} Paul Rosolie, 
-				conservationist and borderline wild man. Paul authored the award winning book Mother of God: An Extraordinary Journey into the Uncharted Tributaries of the Western Amazon and has explored parts of the jungle, few have dreamed of visiting. He is part of the larger Tamandua Jungle team that includes the Duran family, an indigenous Ese-Eja family, and several others who man the research station.
+				A 15 year mountain bike veteran in the Atlas region, Lahcen will show us the way from the peaks of the Atlas to the Sea. Like a walking rosetta stone, he is fluent in French, English, Arabic, Berber, and single track descents. His knowledge of the Atlas Mountains and Sahara Desert is unrivaled. His team includes a support driver and private chef, who whips up a mean tagine, and Houssain who helps run the show behind the scenes, organizing accommodation and transportation.
 
 				
 		.col-md-6	
@@ -62,63 +64,68 @@
 			.guide-border
 			.guide-title
 				Adventure Ambassador
-			
 			.guide-description
-				Paul has created a one-time trip that is sure to be one hell of an experience. We're looking for the most adventurous traveler to be the trip ambassador. This means, you get to craft the team and go on the trip for free. Send us a note and tell us why you're the best candidate!
+				Laurie is an adventure-loving lady who calls Boulder, CO her home/basecamp. She spends every weekend exploring the Rocky Mountains by bike, snowboard, or foot. Whenever she’s not unplugged in the mountains, she works with Outdoor Women’s Alliance—a worldwide media and adventure collective nonprofit whose mission is to get other adventure-loving ladies outside.
 
 
 	.col-md-12.destination-container
 		.basecamps-title
 			A Few Highlights
 		.row.col-md-6
-			.destination-image{style: "background: url('#{asset_path("background/moroccowater.jpg")}') center center no-repeat"}
+			.destination-image{style: "background: url('#{asset_path("background/MoroccoMarrakech3.jpeg")}') bottom center no-repeat"}
 				.destination-description
 					.destination-title
 						Marrakech
 					.destination-title-underline
 					.destination-subtitle
-						Your Jungle Homebase
+						Secrets of the Walled City
 					.destination-body
-						The ancient walled city of Marrakech explodes with life and color. A literal maze of a city, this UNESCO world heritage site, will be homebase for our first few days. Get lost in the souks, sip on mint tea, or mingle in the smoky night market, Jemma el fna.  
+						We'll be spending the night in the capital city surrounded by endless nightlife and food, non-stop culture shock...
+					%a
+						.destination-button{"data-num" => 1, "data-target" => "#myModal", "data-toggle" => "modal", 'data-name' => 'Basecamp1', 'data-title' => 'Secrets of the Walled City', 'data-body' => "Marrakech explodes with life and color. A literal maze of a city, this UNESCO world heritage site will be our homebase for the first two days. Get lost in the souks, sip on mint tea, or mingle in the smoky night market, Jemma el Fna.<br><br>Upon arrival in Marrakech, you’ll be transferred from the airport to our Riad, where you can drop off your bags and relax. A riad is essentially a traditional Moroccan mansion that centers around a courtyard with a pool or fountains. Typically several stories high, these ancient structures are the preferred form of accommodation in Marrakech. Kick back on the breezy patio of the riad and look out over the vast buzzing city that is Marrakech. With the soundtrack of children playing in the streets below, motorcycles whizzing by, and the solemn song of the call to prayer, relax and get to know the group who you’ll be riding for the next week.<br><br>Our 2 days in Marrakech are loosely structured. The city is easily navigable by foot without a guide. As a group, or independently, explore the bustling markets, check out the street food, or even charter a private camel trek for the day through the nearby desert. Marrakech is a magical city that holds a surprise around every corner. You may find yourself getting lost in the most enjoyable way. Raw and refined, exotic and glamorous, ancient and modern. It is a city alive with history and buzzing with energy.", 'data-img-src' => "#{asset_url("background/MoroccoMarrakech.jpeg")}"}
+							View Highlight
 			.destination-subtitle-mobile
-				Your Jungle Homebase
+				Secrets of the Walled City
 			.destination-underline-mobile
 			.destination-body-mobile
-				The ancient walled city of Marrakech explodes with life and color. A literal maze of a city, this UNESCO world heritage site, will be homebase for our first few days. Get lost in the souks, sip on mint tea, or mingle in the smoky night market, Jemma el fna.   
-
+				This city-maze and UNESCO world heritage site, will be our homebase for the first two days. Get lost in the souks, sip on mint tea...
 		.row.col-md-6
-			.destination-image{style: "background: url('#{asset_path("background/highatlasmtns.jpg")}') center center no-repeat"}
+			.destination-image{style: "background: url('#{asset_path("background/MoroccoAtlasMtns.jpeg")}') center center no-repeat"}
 				.destination-description
 					.destination-title
-						High Atlas Mountains
+						High Atlas MTB
 					.destination-title-underline
 					.destination-subtitle
-						The Best Way to Navigate the Amazon
+						Desert Single Track Paradise
 					.destination-body
-						Under the shadow of the snow capped Mount Toubkal, we start our journey. Crisp air, mountain streams, and a chorus of goats produce the soundtrack for several days of flowing single track through this pristine high desert paradise.  
+						We'll be spending the night in the capital city surrounded by endless nightlife and food, non-stop culture shock...
+					%a
+						.destination-button{"data-num" => 2, "data-target" => "#myModal", "data-toggle" => "modal", 'data-name' => 'Basecamp2', 'data-title' => 'Desert Single Track Paradise', 'data-body' => "Under the shadow of the snow capped Mount Toubkal, we start our journey. Crisp air, mountain streams, and a chorus of goats produce the soundtrack for several days of flowing single track across this high mountain expanse.<br><br>Our journey takes us from the base of Mount Toubkal, at over 13,000 ft, to the sunny coast of western Morocco. Most days on the ride start and end in the same way, smiles and conversation around a cup of tea and a freshly cooked Moroccan meal. What happens in between is highly variable and is what makes riding in Morocco so unique. From the rust colored hillsides to the forested mountain tops every hour is different than the last. With our trusted guide, Lahcen, in the lead, we’ll follow winding ribbons of single track through this peaceful land.<br><br>Our route takes us through rugged gorges, rocky plateaus, and palm shaded valleys. Through the last several hundred years, the people of the Atlas Mountains have unintentionally built one of the greatest mountain biking networks in the world. Ancient cart paths, meandering animal trails, and seasonal river beds provide a system of trails that is unmatched. Our daily rides range from 35 km to 50 km, with typically 500 m of total daily ascents. With a support vehicle trailing us for much of the journey, it is possible to opt out of certain ascents. The goal of this trip is to be challenging, but not exclusive. Sitting around the dinner table each night, you should have a great feeling of accomplishment.<br><br>Highlights of the ride include Mount Toubkal, a towering snow covered peak, home to a ski area, and paradise valley, a desert gorge with baby blue waters to swim in, among many others.   ", 'data-img-src' => "#{asset_url("background/Moroccotrailinmtns.jpg")}"}
+							View Highlight
 			.destination-subtitle-mobile
-				The Best Way to Navigate the Amazon
+				Desert Single Track Paradise
 			.destination-underline-mobile
 			.destination-body-mobile
-				Under the shadow of the snow capped Mount Toubkal, we start our journey. Crisp air, mountain streams, and a chorus of goats produce the soundtrack for several days of flowing single track through this pristine high desert paradise.
+				Under the shadow of the snow capped Mount Toubkal, we start our journey. Crisp air, mountain streams, and a chorus...
 
 		.row.col-md-6
-			.destination-image{style: "background: url('#{asset_path("background/berbervillage.jpg")}') center center no-repeat"}
+			.destination-image{style: "background: url('#{asset_path("background/MoroccoBerber.jpg")}') center center no-repeat"}
 				.destination-description
 					.destination-title
-						Berber Villages
+						Berber Village Stay
 					.destination-title-underline
 					.destination-subtitle
-						Las Piedras Watershed
+						Rustic Nights in the Atlas
 					.destination-body
-						Experience legendary Berber hospitality, spending our nights in local guesthouses. Indulge in homemade tangier dishes and stroll the quiet dusty streets at dusk. Like glamping, but better. Prep your pearly whites, as a passing smile is an accepted currency in the region. 
- 
+						Experience legendary Berber culture, indulge in homemade tangier dishes and explore the unique region...
+					%a
+						.destination-button{"data-num" => 3, "data-target" => "#myModal", "data-toggle" => "modal", 'data-name' => 'Basecamp3', 'data-title' => 'Rustic Nights in the Atlas', 'data-body' => "Experience legendary Berber hospitality and culture by spending each night in a local guesthouse, indulge in homemade tangier dishes and strolling the quiet dusty streets at dusk. Like glamping, but better. Prep your pearly whites, as a passing smile is an accepted currency in the region.<br><br>The Berbers are an ancient Moroccan culture that have called the Atlas Mountains of Morocco home for more than 4,000 years. Historically traders, many modern Berber families have settled in the mountains as shepherds, farmers, craftspeople and even tour guides. The accommodations during our bike ride will be a combination of local B&B’s and Berber guesthouses so we can further experience the culture of the region.<br><br>We’ll arrive in a new village at the end of each ride with time to relax, take a nap in the sun, or explore the surroundings by foot. Life moves at a much slower pace here than in the bustling streets of Marrakech. You’ll find the people in this region are friendly, open and willing to share a piece of their lifestyle. Seeing far less tourists than other parts of Morocco, many of these villages host weekly markets, which present an opportunity to witness the commerce and culture of the region.", 'data-img-src' => "#{asset_url("background/MoroccoBerber.jpg")}"}
+							View Highlight
 			.destination-subtitle-mobile
-				Las Piedras Watershed
+				Rustic Nights in the Atlas
 			.destination-underline-mobile
 			.destination-body-mobile
-				Experience legendary Berber hospitality, spending our nights in local guesthouses. Indulge in homemade tangier dishes and stroll the quiet dusty streets at dusk. Like glamping, but better. Prep your pearly whites, as a passing smile is an accepted currency in the region. 
-
+				Experience legendary Berber culture, indulge in homemade tangier dishes and explore the unique region...
 
 		.row.col-md-6
 			.destination-image{style: "background: url('#{asset_path("background/moroccocoastal.jpg")}') center center no-repeat"}
@@ -127,14 +134,17 @@
 						Tamraght Surf Camp
 					.destination-title-underline
 					.destination-subtitle
-						The Frontiers of Conservation
+						Heaven on Africa’s Western Shores
 					.destination-body
-						I bet you didn’t know there is a thriving surf culture on the far western reaches of the African continent, but there is. Post up at the hip Magic Surf Camp, swapping surf reports with expat surf bros, settling in for a morning yoga session, or reading a book on the Riad balcony.
+						Surf, SUP, Sip, and relax in our coastal haven filled with salty air, cold beers, yoga sessions and homemade meals...
+					%a
+						.destination-button{"data-num" => 4, "data-target" => "#myModal", "data-toggle" => "modal", 'data-name' => 'Basecamp4', 'data-title' => 'Heaven on Africa’s Western Shores', 'data-body' => "Most people have no idea there’s a thriving surf culture on the far western reaches of the African continent, but there is. Post up at the hip Magic Surf Camp, swapping surf reports with expat surf bros, settle in for a morning yoga session, or read a book on the shady Riad balcony.<br><br>The smell of cool salty air announces our arrival at the coast on the 5th day of riding. After several days of challenging riding on dusty trails, the calming breeze of the ocean will breathe life into our group. There’s a relaxing vibe to Morocco's coastal surf towns, but also an unexpected youthful exuberance, generated by the surf explorers and adventure enthusiasts that have come to settle here.<br><br>Our host, Sabine, and her team at Magic Surf Camp have helped plan the perfect retreat. This is the beach holiday you dream of while sitting at your desk in the dead of winter, except way cooler. There will be plenty of time to relax on the beach, sip beers at the beach side restaurants, and catch up on your reading list, but there will also be a healthy dose of activity.<br><br>Included in our surf camp stay is breakfast and a yoga session each morning. The highlight of each afternoon is a guided surf (or SUP) expedition, where a surf instructor will take the group to a different surf location on the coast and provide a lesson if you need it. A perfect opportunity to finally learn how to surf and also experience the different beaches and breaks along the coast. Daily yoga and surf expeditions are included, but totally optional. Your stay at the surf camp is what you make of it. You won’t want to miss the home cooked family style meals served nightly. ", 'data-img-src' => "#{asset_url("background/moroccocoastal.jpg")}"}
+							View Highlight
 			.destination-subtitle-mobile
-				The Frontiers of Conservation
+				Heaven on Africa’s Western Shores
 			.destination-underline-mobile
 			.destination-body-mobile
-				I bet you didn’t know there is a thriving surf culture on the far western reaches of the African continent, but there is. Post up at the hip Magic Surf Camp, swapping surf reports with expat surf bros, settling in for a morning yoga session, or reading a book on the Riad balcony.
+				Surf, SUP, Sip, and relax in our coastal haven filled with salty air, cold beers, yoga sessions and homemade meals...
 
 	.col-md-12.location-inclusions{style: "background: whitesmoke;"}
 		.location-inclusions-header{style: "color: #212326;"}
@@ -142,7 +152,7 @@
 		.col-md-10.col-md-offset-1.inclusions-container{style: "background: transparent;"}
 			.priceanddate_container
 				.location-date{style: "border:none; color: #212326;"}
-					Launching Late Summer 2016
+					September 2016
 				.trip-price{style: "color: #212326; padding-bottom: 40px;"}
 					Entry Fee - TBD
 			.col-md-6.inclusions-title{style: "color: #aa4b41;"}
@@ -153,19 +163,25 @@
 					All Accommodations
 					<br>
 					<br>
-					All Meals on Bike Trip
+					Guide and Support Vehicle
 					<br>
 					<br>
-					Lead Guide
+					Surf Lessons and Yoga
+					<br>
+					<br>
+					Surf and SUP Equipment
 					<br>
 					<br>
 					Full Suspension Bike Rental
 					<br>
 					<br>
-					Mechanic and Support Vehicle
+					Meals on Bike Trip and at Surf Camp
 					<br>
 					<br>
-					Transfer to and from Marrakech
+					Private Transportation from Start and End Points
+					<br>
+					<br>
+					Airport Transfers
 					<br>
 					<br>
 			.col-md-6.exclusions-title{style: "color: #aa4b41;"}
@@ -173,13 +189,16 @@
 				<br>
 				%i.fa.fa-angle-double-down{style: "color: #aa4b41;"}
 				.exclusions-description-hidden{style: "color: #212326;"}
-					International Flights
-					<br>
-					<br>
-					Meals in Tamraght and Marrakech
-					<br>
-					<br>
 					Travel Insurance
+					<br>
+					<br>
+					Meals Not Specified
+					<br>
+					<br>
+					Entrance Fees and Tips
+					<br>
+					<br>
+					Drinks (Alcohol, Soda, etc...)
 					<br>
 					<br>
 
