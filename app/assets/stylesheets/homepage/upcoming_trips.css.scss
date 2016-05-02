@@ -205,7 +205,7 @@
 		position: relative;
 		margin-bottom: 24px;
 
-		&:focus { 
+		&:hover, &:focus { 
 			cursor:pointer;
 
 			.upcoming-title-dates{
