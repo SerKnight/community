@@ -188,7 +188,7 @@
 					.how-box-title
 						What You'll Need
 					.how-box-body	
-						This trip isn't for amatuer riders... You'll need to prove your riding experience, valid motorcycle license and apply for an international drivers permit (very easy to do through AAA).
+						This trip isn't for amatuer riders... You'll need to prove your riding experience, have a valid motorcycle license and international drivers permit (very easy to get through AAA).
 	.col-md-12.location-who
 		.location-who-header
 			Who's Going?
@@ -262,6 +262,8 @@
 					<br>
 					<br>
 					HCMC Finish Party
+					<br>
+					<br>
 			.col-md-6.inclusions-title
 				What's Not Included?
 				.inclusions-description
@@ -288,3 +290,38 @@
 		%a{href:'/apply/vietnam'}
 			.join-button.btn
 				Contact Jon
+
+:javascript
+
+	$(document).ready(function() {
+	$('.location-slow-scroll').show();
+	$('.location-slow-scroll').animate({ opacity: 1, top: "-60px" }, 'slow');
+	});
+
+	$(document).ready(function() {
+		
+		$('body *').each( function(){
+		   
+			var top_of_object = $(this).position().top;
+			var bottom_of_window = $(window).scrollTop() + $(window).height();
+		   
+			if( bottom_of_window < top_of_object  ){
+			
+				$(this).addClass('hideme').css({'opacity':'0'});	
+			}	
+		});
+		
+		$(window).scroll( function(){
+			
+			$('.hideme').each( function(i){
+				
+				var bottom_of_window = $(window).scrollTop() + $(window).height();
+				var top_of_object = $(this).position().top;
+				
+					if( bottom_of_window > ( top_of_object + 100 )  ){
+					
+						$(this).removeClass('hideme').animate({'opacity':'1'},800);	
+					}
+			}); 
+		});
+	});

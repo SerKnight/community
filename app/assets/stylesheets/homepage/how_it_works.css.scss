@@ -1,37 +1,48 @@
 #how_it_works {
 	background: #17181B;
-	padding-bottom: 50px;
-	padding-top: 100px;
 	min-height: 400px;
 
 	.mission-statement{
+		padding-top: 40px;	
 
-		.mission-header{
-			font-family: proxima_bold;
-			font-size: 2.4em;
-			color: #fff;
-			text-align: center;
-			max-width: 700px;
-			margin: auto;
-			padding-bottom: 30px;
-			letter-spacing: -1px;
-		}
+		.mission-block{
+			
+			.mission-block-content{
+				max-width: 550px;
+				margin: auto;
 
-		.mission-underline{
-			border-bottom: 2px solid #aa4b41;
-			max-width: 150px;
-			margin: auto;
-			margin-bottom: 30px;
+				.mission-title{
+					font-family: proxima_bold;
+					font-size: 2.4em;
+					color: #fff;
+					text-align: center;
+					padding-top: 50px;
+					margin-bottom: 20px;
+				}
 
-		}
+				.mission-title-underline{
+					border-bottom: 4px solid #aa4b41;
+					max-width: 100px;
+					margin-top: 20px;
+					margin: auto;
+				}
 
-		.mission-description{
-			font-family: proxima_thin;
-			font-size: 1.3em;
-			color: rgba(255,255,255,0.8);
-			text-align: center;
-			max-width: 600px;
-			margin: auto;
+				.mission-description{
+					font-family: proxima_regular;
+					font-size: 1.2em;
+					color: rgba(255,255,255,0.9);
+					text-align: center;
+					margin-top: 20px;
+				}
+
+				.mission-block-image{
+					width: 100%;
+					min-height: 380px;
+					margin: auto;
+					opacity: 0.8;
+					border: 4px solid #fff;
+				}
+			}
 		}
 	}
 
@@ -84,27 +95,35 @@
 	}
 }
 
+
+@media screen and (max-width: 991px){
+
+	#how_it_works .mission-statement .mission-block .mission-block-content .mission-title{
+		padding-top: 30px;
+	}
+
+	#how_it_works .mission-statement .mission-block .mission-block-content .mission-block-image{
+		margin-top: 50px;
+	}
+}
+
 @media screen and (max-width: 771px){
-	#how_it_works .mission-statement .mission-header{
+	#how_it_works .mission-statement .mission-block .mission-block-content .mission-title{
 		font-size: 1.8em;
 	}
 
-	#how_it_works .mission-statement .mission-description{
-		max-width: 450px;
+	#how_it_works .mission-statement .mission-block .mission-block-content .mission-description{
+		font-size: 1.1em;
+	}
+
+	#how_it_works .mission-statement .mission-block .mission-block-content .mission-block-image{
+		min-height: 330px;
 	}
 }
 
 @media screen and (max-width: 500px){
 
-	#how_it_works{
-		padding-top: 58px;
-	}
-
 	#how_it_works .mission-statement .mission-header{
-		max-width: 200px;
-	}
-
-	#how_it_works .mission-statement .mission-description{
-		font-size: 1.1em;
+		max-width: 300px;
 	}
 }

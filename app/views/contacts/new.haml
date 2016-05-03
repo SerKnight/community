@@ -1,10 +1,22 @@
 .col-md-12.apply-hero{style: "background: url('#{asset_path("background/gapcliffs.jpeg")}') center center no-repeat"}
-  .apply-header
+  .apply-header{style: "max-width: 500px; margin: auto;"}
     - if params[:type] == 'adventure'
-      What's your dream trip?
+      Drop us a line.
 
-    - if params[:type] == 'socaltrifecta'
+    - elsif params[:type] == 'socaltrifecta'
       Try the Trifecta!
+
+    - elsif params[:type] == 'morocco'
+      Keep me updated on the Morocco Trip!
+
+    - elsif params[:type] == 'kyrgyzstan'
+      Keep me updated on the Kyrgyz Trip!
+
+    - elsif params[:type] == 'baja'
+      Keep me updated on the Baja Trip!
+
+    - elsif params[:type] == 'lakepowell'
+      Keep me updated on the Utah Trip!
 
     - elsif params[:type]
       Reserve your Spot:

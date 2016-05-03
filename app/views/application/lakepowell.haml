@@ -1,0 +1,196 @@
+- content_for(:meta_og) do
+	%meta{:content => "Adventure & Conflict in the Amazon", :property => "og:title"}/
+	%meta{:content => "AdventureMade", :property => "og:site_name"}/
+	%meta{:content => "Explore the upper Amazon with a team of local guides and a fleet of ultra-portable packrafts. Trek along remote logging roads, follow animal trails, and paddle unnamed tributaries through one of the most ecologically diverse places on earth.", :property => "og:description"}/
+	%meta{:content => "website", :property => "og:type"}/
+	%meta{:content => "http://www.madebyadventure.com/peru", :property => "og:url"}/
+	%meta{:content => "http://i.imgur.com/cIFtIad.png", :property => "og:image"}/
+	%meta{:content => "1200", :property => "og:image:width"}/
+	%meta{:content => "628", :property => "og:image:height"}/
+
+.location-hero.location-hero-fix{style: "background: url('#{asset_path("background/LakePowellCover.jpg")}') center center no-repeat"}
+
+.location-slow-scroll
+	#location-text{style: "text-shadow: 1px 1px 5px rgba(0,0,0,1);"}
+		#location-header
+			Slot Canyons of 
+			<br>
+			Lake Powell
+		#location-explanation
+			Exploring the labyrinth of Lake Powell’s backcountry canyons
+		#location-header-mobile
+			Slot Canyons of Lake Powell
+		#location-explanation-mobile
+			Exploring the labyrinth of Lake Powell’s backcountry canyons
+		#created-by
+
+.location-details
+	.col-md-12.location-itinerary
+		.col-md-12.mission-block
+			.mission-header
+				The Mission
+			.mission-body
+				Most people who visit Lake Powell flock to the same busy section of the lake, leaving the rest of this desert-bound behemoth nearly untouched. Aided by jet skis and transport boats, we’ll head into the quieter backcountry, camping on sandbars, exploring slot canyons by day and stargazing at night. Uncharted routes and continuous problem solving, make this a climber's paradise.  
+				<br>
+				<br>
+				Described as a natural, water park obstacle course, the slot canyons of Powell combine cliff jumping, swimming, rappelling, and climbing. Basically, playing around in one of the most majestic and remote places in the western US, with a first class team of badass canyoneers.
+
+	.col-md-12.location-description
+		.description-title
+			The Team
+		.col-md-6	
+			.description-guide-image{style: "background: url('#{asset_path("background/BrettSutter.jpg")}') center center no-repeat"}
+			.guide-name
+				Brett S.
+			.guide-border
+			.guide-title
+				Adventure Leader
+			.guide-description
+				Some of the world’s best desert canyoneers, Brett and his team are constantly checking off first descent trips around Lake Powell. The master of fun and keeper of safety, Brett can take you places people rarely see and has the know-how to ensure you stay safe.
+
+				
+		.col-md-6	
+			%a{href:'/apply/Peru'}
+				.description-guide-image{style: "background: #aa4b41;"}
+					%i.fa.fa-plus{style: "color: #fff; font-size: 6em; margin-top: 95px; margin-left: 95px;"}
+			.guide-name
+				Apply to be the
+			.guide-border
+			.guide-title
+				Adventure Ambassador
+			
+			.guide-description
+				Brett has created this custom trip, which is sure to be one hell of an experience. We're looking for a passionate adventure ambassador to spread the word and assemble a team. Recruit others to join the trip and go on the trip for free.
+
+
+	.col-md-12.destination-container
+		.basecamps-title
+			A Few Highlights
+		.row.col-md-6
+			.destination-image{style: "background: url('#{asset_path("background/LakePowellJetski.jpg")}') center center no-repeat"}
+				.destination-description
+					.destination-title
+						Canyoneering
+					.destination-title-underline
+					.destination-subtitle
+						Into the Desert Playground
+					.destination-body
+						Canyoneering is the sport your crazy friend got into when he decided rock climbing and hiking wasn’t exciting enough. It’s a strange mix of rock climbing, swimming, navigation, cliff jumping, and hiking, that mixes to form the perfect day for thrill seekers.
+			.destination-subtitle-mobile
+				Into the Desert Playground
+			.destination-underline-mobile
+			.destination-body-mobile
+				Canyoneering is the sport your crazy friend got into when he decided rock climbing and hiking wasn’t exciting enough. It’s a strange mix of rock climbing, swimming, navigation, cliff jumping, and hiking, that mixes to form the perfect day for thrill seekers.  
+
+		.row.col-md-6
+			.destination-image{style: "background: url('#{asset_path("background/LakePowellSun.jpg")}') center center no-repeat"}
+				.destination-description
+					.destination-title
+						Boating
+					.destination-title-underline
+					.destination-subtitle
+						Backcountry Water Taxis
+					.destination-body
+						The only way to access the slot canyons is by boat. Although, only a small part of the total experience, who doesn’t enjoy sunny boat rides, and jet skiing for a few hours.  
+			.destination-subtitle-mobile
+				Backcountry Water Taxis
+			.destination-underline-mobile
+			.destination-body-mobile
+				The only way to access the slot canyons is by boat. Although, only a small part of the total experience, who doesn’t enjoy sunny boat rides, and jet skiing for a few hours.
+
+		.row.col-md-6
+			.destination-image{style: "background: url('#{asset_path("background/LakePowellStars.jpg")}') center center no-repeat"}
+				.destination-description
+					.destination-title
+						Backcountry Camping
+					.destination-title-underline
+					.destination-subtitle
+						Quiet Nights and Brilliant Stars
+					.destination-body
+						We’ll set up camp in some of the most Pinterest-worthy spots known to man--lakeside cliffs, island sand bars, and private beaches. Nothing compares to sitting around the campfire with good friends, sipping a beer, and watching the sun set over the red rocks of Powell. 
+			.destination-subtitle-mobile
+				Quiet Nights and Brilliant Stars
+			.destination-underline-mobile
+			.destination-body-mobile
+				We’ll set up camp in some of the most Pinterest-worthy spots known to man--lakeside cliffs, island sand bars, and private beaches. Nothing compares to sitting around the campfire with good friends, sipping a beer, and watching the sun set over the red rocks of Powell. 
+
+
+		.row.col-md-6
+			.destination-image{style: "background: url('#{asset_path("background/LakePowellWalking.jpg")}') center center no-repeat"}
+				.destination-description
+					.destination-title
+						Wilderness Training
+					.destination-title-underline
+					.destination-subtitle
+						Learning from the Best
+					.destination-body
+						Consider this your training course in all things desert adventure. With his seemingly limitless toolbox of outdoor skills, Brett is happy to pass along some of his knowledge. Learn how to rappel, navigate in the backcountry, and practice leave no trace principles. Your chance to level up in a serious way!
+			.destination-subtitle-mobile
+				Learning from the Best
+			.destination-underline-mobile
+			.destination-body-mobile
+				Consider this your training course in all things desert adventure. With his seemingly limitless toolbox of outdoor skills, Brett is happy to pass along some of his knowledge. Learn how to rappel, navigate in the backcountry, and practice leave no trace principles. Your chance to level up in a serious way!
+
+	.col-md-12.location-inclusions{style: "background: whitesmoke;"}
+		.location-inclusions-header{style: "color: #212326;"}
+			Reserve your Spot
+		.col-md-10.col-md-offset-1.inclusions-container{style: "background: transparent;"}
+			.priceanddate_container
+				.location-date{style: "border:none; color: #212326;"}
+					Launching August 2016
+				.trip-price{style: "color: #212326; padding-bottom: 40px;"}
+					Entry Fee - TBD
+
+	.col-md-12.location-join
+		.who-join
+			Interested in joining?
+		.who-join-description
+			Drop us a line or apply
+		%a{href:'/apply/Peru'}
+			.join-button.btn
+				Reach Out!
+
+:javascript
+
+	$(document).ready(function() {
+	$('.location-slow-scroll').show();
+	$('.location-slow-scroll').animate({ opacity: 1, top: "-60px" }, 'slow');
+	});
+
+	$(document).ready(function() {
+		
+		$('body *').each( function(){
+		   
+			var top_of_object = $(this).position().top;
+			var bottom_of_window = $(window).scrollTop() + $(window).height();
+		   
+			if( bottom_of_window < top_of_object  ){
+			
+				$(this).addClass('hideme').css({'opacity':'0'});	
+			}	
+		});
+		
+		$(window).scroll( function(){
+			
+			$('.hideme').each( function(i){
+				
+				var bottom_of_window = $(window).scrollTop() + $(window).height();
+				var top_of_object = $(this).position().top;
+				
+					if( bottom_of_window > ( top_of_object + 100 )  ){
+					
+						$(this).removeClass('hideme').animate({'opacity':'1'},800);	
+					}
+			}); 
+		});
+	});;
+
+	$(".inclusions-title").click(function () {
+	$(".inclusions-description-hidden").stop().slideToggle();
+		return false;
+	});
+
+	$(".exclusions-title").click(function () {
+	$(".exclusions-description-hidden").stop().slideToggle();
+		return false;
+	});

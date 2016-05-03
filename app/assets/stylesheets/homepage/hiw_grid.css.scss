@@ -1,17 +1,46 @@
 #hiw_grid{
-	background: #00293c;
+	background: #000;
 
-	.grid_background{
+	.mobile_grid_background{
 		width: 100%;
 	}
 
-	.grid-one{
+	.grid_header{
+		min-height: 60px;
+		padding-top: 40px;
+		padding-bottom: 20px;
+	
+
+		.grid_title{
+			font-family: proxima_bold;
+			font-size: 1.8em;
+			color: #fff;
+			text-align: left;
+	
+
+			.grid_subtitle{
+				font-family: proxima_thin;
+				font-size: 18px;
+				color: rgba(255,255,255,0.9);
+				text-align: left;
+			}
+		}
+
+		.grid-title-underline{
+			max-width: 100px;
+			border-bottom: 4px solid #aa4b41;
+			margin-top: 20px;
+		}
+	}
+
+	.mobile-grid{
 		min-height: 500px;
 		position: relative;
-		padding-left: 0px;
+		padding-bottom: 20px;
 		padding-right: 0px;
+		padding-left: 0px;
 
-		.grid-one-img{
+		.mobile-grid-img{
 		    background-repeat: no-repeat;
 		    background-size: cover;
 		    background-position: center center;
@@ -19,15 +48,9 @@
 		    min-height: 500px;
 		    width: 100%;
 		    background-image: asset-url("background/vietnampathsmall.jpeg");
-			-moz-transition:opacity 0.3s ease-in-out; 
-			-webkit-transition:opacity 0.3s ease-in-out;
-			-o-transition:opacity 0.3s ease-in-out;
-			-ms-transition: opacity 0.3s ease-in-out;
-			transition: opacity 0.3s ease-in-out;
-			opacity: 0.5;
 		}
 
-		.grid-one-overlay{
+		.mobile-grid-overlay{
 			font-family: proxima_thin;
 			text-align: center;
 			font-size: 3em;
@@ -44,9 +67,10 @@
 			transition: all 0.7s ease;
 		}
 
-		.grid-title-one{
+		.mobile-grid-title{
 	  		font-family: proxima_black;
 	  		color: #FFF;
+	  		text-shadow: 1px 1px 5px rgba(0,0,0,1);
 	  		font-size: 4em;
 	  		text-align: center;
 	  		border: none;
@@ -55,12 +79,53 @@
 	  		max-width: 670px;
 	  		-webkit-transition: all 0.7s ease;
 			transition: all 0.7s ease;
-			text-transform: uppercase;
 			line-height: 50px;
 	  	}
 
-		.grid-one-btn{
-			font-family: proxima_thin;
+	  	.mobile-grid-dates{
+			font-family: proxima_bold;
+	  		color: #FFF;
+	  		font-size: 1.2em;
+	  		text-shadow: 1px 1px 5px rgba(0,0,0,1);
+	  		text-align: center;
+	  		border: none;
+	  		margin-right: auto;
+	  		margin-left: auto;
+	  		padding-bottom: 10px;
+	  		-webkit-transition: all 0.7s ease;
+			transition: all 0.7s ease;
+	  	}
+
+	  	.mobile-grid-location{
+	  		font-family: proxima_bold;
+	  		color: #FFF;
+	  		font-size: 1.2em;
+	  		text-shadow: 1px 1px 5px rgba(0,0,0,1);
+	  		text-align: center;
+	  		border: none;
+	  		padding-bottom: 10px;
+	  		margin-right: auto;
+	  		margin-left: auto;
+	  		-webkit-transition: all 0.7s ease;
+			transition: all 0.7s ease;
+	  	}
+
+	  	.mobile-grid-description{
+	  		font-family: proxima_regular;
+	  		color: #fff;
+	  		font-size: 1.2em;
+	  		text-shadow: 1px 1px 5px rgba(0,0,0,1);
+	  		text-align: center;
+	  		border: none;
+	  		margin-right: auto;
+	  		margin-left: auto;
+	  		max-width: 430px;
+	  		line-height: 24px;
+	  		padding-bottom: 20px
+	  	}
+
+		.mobile-grid-btn{
+			font-family: proxima_bold;
 			text-align: center;
 			font-size: 1.2em;
 			color: #fff;
@@ -69,12 +134,11 @@
 			opacity:0;
 			-webkit-transition: all 0.7s ease;
 			transition: all 0.7s ease;
-			border: 2px solid rgba(255,255,255,0.5);
+			border: 2px solid rgb(170, 75, 65);
 			border-radius: 100px;
-			background-color: rgba(170,75,65,0.6);
+			background-color: rgba(0,0,0,0.6);
 			box-shadow: 1px 1px 2px #333333;
-			text-transform: uppercase;
-			padding-top: 9px;
+			padding-top: 8px;
 
 			&:hover{
 				background-color: rgba(89,39,34,0.8);
@@ -84,10 +148,12 @@
 		}
 
 		.locationtext{
-			margin-top: -356px;
+			padding-top: 70px;
+			min-height: 500px;
+			background: rgba(0,0,0,0.3);
 		}
 
-		.grid_one_text{
+		.mobile-grid-text{
 	  		font-family: proxima_thin;
 	  		color: #FFF;
 	  		font-size: 1.4em;
@@ -99,321 +165,6 @@
 			transition: all 0.7s ease;
 	  	}
 	}
-
-	.grid-two{
-		min-height: 500px;
-		position: relative;
-		padding-left: 0px;
-		padding-right: 0px;
-
-		.grid-two-img{
-		    background-repeat: no-repeat;
-		    background-size: cover;
-		    background-position: center center;
-		    position: relative;
-		    min-height: 500px;
-		    width: 100%;
-		    background-image: asset-url("background/WhiteWaterColombiaMain.jpg");
-			-moz-transition:opacity 0.3s ease-in-out; 
-			-webkit-transition:opacity 0.3s ease-in-out;
-			-o-transition:opacity 0.3s ease-in-out;
-			-ms-transition: opacity 0.3s ease-in-out;
-			transition: opacity 0.3s ease-in-out;
-			opacity: 0.5;
-		}
-
-		.grid-two-overlay{
-			font-family: proxima_thin;
-			text-align: center;
-			font-size: 3em;
-			color: #fff;
-			text-align: center;
-			width:100%;
-			min-height:400px;
-			position:absolute;
-			margin-top: 160px;
-			top:0;
-			left:0;
-			opacity:0;
-			-webkit-transition: all 0.7s ease;
-			transition: all 0.7s ease;
-		}
-
-		.grid-title-two{
-	  		font-family: proxima_black;
-	  		color: #FFF;
-	  		font-size: 4em;
-	  		text-align: center;
-	  		border: none;
-	  		margin-right: auto;
-	  		margin-left: auto;
-	  		max-width: 700px;
-	  		-webkit-transition: all 0.7s ease;
-			transition: all 0.7s ease;
-			text-transform: uppercase;
-			line-height: 50px;
-	  	}
-
-		.grid-two-btn{
-			font-family: proxima_thin;
-			text-align: center;
-			font-size: 1.2em;
-			color: #fff;
-			min-height: 40px;
-			margin-top: -10px;
-			opacity:0;
-			-webkit-transition: all 0.7s ease;
-			transition: all 0.7s ease;
-			border: 2px solid rgba(255,255,255,0.5);
-			border-radius: 100px;
-			background-color: rgba(170,75,65,0.8);
-			box-shadow: 1px 1px 2px #333333;
-			text-transform: uppercase;
-			padding-top: 9px;
-
-			&:hover{
-				background-color: rgba(89,39,34,0.8);
-				-webkit-transition: all 0.4s ease;
-				transition: all 0.4s ease;
-			}
-		}
-
-		.locationtext{
-			margin-top: -356px;
-		}
-	}
-
-	.grid-three{
-		min-height: 500px;
-		position: relative;
-		padding-left: 0px;
-		padding-right: 0px;
-
-		.grid-three-img{
-		    background-repeat: no-repeat;
-		    background-size: cover;
-		    background-position: center center;
-		    position: relative;
-		    min-height: 500px;
-		    width: 100%;
-		    background-image: asset-url("background/IndiaMountainssmall.jpg");
-			-moz-transition:opacity 0.3s ease-in-out; 
-			-webkit-transition:opacity 0.3s ease-in-out;
-			-o-transition:opacity 0.3s ease-in-out;
-			-ms-transition: opacity 0.3s ease-in-out;
-			transition: opacity 0.3s ease-in-out;
-			opacity: 0.5;
-		}
-
-		.grid-three-overlay{
-			font-family: proxima_thin;
-			text-align: center;
-			font-size: 4.5em;
-			color: #fff;
-			text-align: center;
-			width:100%;
-			min-height:400px;
-			position:absolute;
-			margin-top: 200px;
-			top:0;
-			left:0;
-			opacity:0;
-			-webkit-transition: all 0.7s ease;
-			transition: all 0.7s ease;
-		}
-
-		.grid-title-three{
-	  		font-family: proxima_black;
-	  		color: #FFF;
-	  		font-size: 4em;
-	  		text-align: center;
-	  		border: none;
-	  		margin-right: auto;
-	  		margin-left: auto;
-	  		max-width: 480px;
-	  		-webkit-transition: all 0.7s ease;
-			transition: all 0.7s ease;
-			text-transform: uppercase;
-	  	}
-
-	  	.grid-title-three-sub{
-	  		font-family: proxima_light;
-	  		color: #FFF;
-	  		font-size: 1.6em;
-	  		text-align: center;
-	  		border: none;
-	  		margin-right: auto;
-	  		margin-left: auto;
-	  		max-width: 480px;
-	  		-webkit-transition: all 0.7s ease;
-			transition: all 0.7s ease;
-	  	}
-
-	  	.grid-title-underline{
-	  		border-bottom: 3px solid #aa4b41;
-	  		max-width: 100px;
-	  		margin: auto;
-	  		margin-bottom: 10px;
-	  	}
-
-		.locationtext{
-			margin-top: -330px;
-		}
-	}
-
-	.grid-four{
-		min-height: 500px;
-		position: relative;
-		padding-left: 0px;
-		padding-right: 0px;
-
-		.grid-four-img{
-		    background-repeat: no-repeat;
-		    background-size: cover;
-		    background-position: center center;
-		    position: relative;
-		    min-height: 500px;
-		    width: 100%;
-		    background-image: asset-url("background/tajikmainthumbnail.jpg");
-			-moz-transition:opacity 0.3s ease-in-out; 
-			-webkit-transition:opacity 0.3s ease-in-out;
-			-o-transition:opacity 0.3s ease-in-out;
-			-ms-transition: opacity 0.3s ease-in-out;
-			transition: opacity 0.3s ease-in-out;
-			opacity: 0.5;
-		}
-
-		.grid-four-overlay{
-			font-family: proxima_thin;
-			text-align: center;
-			font-size: 4.5em;
-			color: #fff;
-			text-align: center;
-			width:100%;
-			position:absolute;
-			margin-top: 200px;
-			top:0;
-			left:0;
-			opacity:0;
-			-webkit-transition: all 0.7s ease;
-			transition: all 0.7s ease;
-		}
-
-		.grid-title-four{
-	  		font-family: proxima_black;
-	  		color: #FFF;
-	  		font-size: 4em;
-	  		text-align: center;
-	  		border: none;
-	  		margin-right: auto;
-	  		margin-left: auto;
-	  		max-width: 480px;
-	  		-webkit-transition: all 0.7s ease;
-			transition: all 0.7s ease;
-			text-transform: uppercase;
-	  	}
-
-	  	.grid-title-four-sub{
-	  		font-family: proxima_light;
-	  		color: #FFF;
-	  		font-size: 1.6em;
-	  		text-align: center;
-	  		border: none;
-	  		margin-right: auto;
-	  		margin-left: auto;
-	  		max-width: 480px;
-	  		-webkit-transition: all 0.7s ease;
-			transition: all 0.7s ease;
-	  	}
-
-	  	.grid-title-underline{
-	  		border-bottom: 3px solid #aa4b41;
-	  		max-width: 100px;
-	  		margin: auto;
-	  		margin-bottom: 10px;
-	  	}
-
-		.locationtext{
-			margin-top: -330px;
-		}
-	}
-
-	.grid-five{
-		min-height: 500px;
-		position: relative;
-		padding-left: 0px;
-		padding-right: 0px;
-
-		.grid-five-img{
-		    background-repeat: no-repeat;
-		    background-size: cover;
-		    background-position: center center;
-		    position: relative;
-		    min-height: 500px;
-		    width: 100%;
-		    background-image: asset-url("background/packraftjungle.jpg");
-			-moz-transition:opacity 0.3s ease-in-out; 
-			-webkit-transition:opacity 0.3s ease-in-out;
-			-o-transition:opacity 0.3s ease-in-out;
-			-ms-transition: opacity 0.3s ease-in-out;
-			transition: opacity 0.3s ease-in-out;
-			opacity: 0.5;
-		}
-
-		.grid-five-overlay{
-			font-family: proxima_thin;
-			text-align: center;
-			font-size: 4.5em;
-			color: #fff;
-			text-align: center;
-			width:100%;
-			position:absolute;
-			margin-top: 200px;
-			top:0;
-			left:0;
-			opacity:0;
-			-webkit-transition: all 0.7s ease;
-			transition: all 0.7s ease;
-		}
-
-		.grid-title-five{
-	  		font-family: proxima_black;
-	  		color: #FFF;
-	  		font-size: 4em;
-	  		text-align: center;
-	  		border: none;
-	  		margin-right: auto;
-	  		margin-left: auto;
-	  		max-width: 480px;
-	  		-webkit-transition: all 0.7s ease;
-			transition: all 0.7s ease;
-			text-transform: uppercase;
-	  	}
-
-	  	.grid-title-five-sub{
-	  		font-family: proxima_light;
-	  		color: #FFF;
-	  		font-size: 1.6em;
-	  		text-align: center;
-	  		border: none;
-	  		margin-right: auto;
-	  		margin-left: auto;
-	  		max-width: 480px;
-	  		-webkit-transition: all 0.7s ease;
-			transition: all 0.7s ease;
-	  	}
-
-	  	.grid-title-underline{
-	  		border-bottom: 3px solid #aa4b41;
-	  		max-width: 100px;
-	  		margin: auto;
-	  		margin-bottom: 10px;
-	  	}
-
-		.locationtext{
-			margin-top: -330px;
-		}
-	}
 }
 
 @media screen and (min-width: 992px){
@@ -424,146 +175,52 @@
 
 @media screen and (max-width: 991px){
 
-	#hiw_grid .grid-one .grid-title-one{
+	#hiw_grid .mobile-grid .mobile-grid-title{
 		font-size: 3em;
-		max-width: 470px;
+		max-width: 550px;
 		margin-bottom: 20px;
 	}
 
-	#hiw_grid .grid-two .grid-title-two{
-		font-size: 3em;
-		max-width: 470px;
-		margin-bottom: 20px;
-	}
-
-	#hiw_grid .grid-three .grid-title-three{
-		font-size: 3em;
-		max-width: 400px;
-	}
-
-	#hiw_grid .grid-four .grid-title-four{
-		font-size: 3em;
-		max-width: 400px;
-	}
-
-	#hiw_grid .grid-five .grid-title-five{
-		font-size: 3em;
-		max-width: 400px;
-	}
-
-	#hiw_grid .grid-one .grid-one-overlay{
+	#hiw_grid .mobile-grid .mobile-grid-overlay{
 		display: none;
 	}
 
-	#hiw_grid .grid-two .grid-two-overlay{
-		display: none;
-	}
-
-	#hiw_grid .grid-three .grid-three-overlay{
-		display: none;
-	}
-
-	#hiw_grid .grid-four .grid-four-overlay{
-		display: none;
-	}
-
-	#hiw_grid .grid-five .grid-five-overlay{
-		display: none;
-	}
-
-	#hiw_grid .grid-one .grid-one-btn{
+	#hiw_grid .mobile-grid .mobile-grid-btn{
 		opacity: 1;
 		margin-top: 12px;
 		display: block;
 		max-width: 240px;
 		margin: auto;
-		border: none;
-		background-color: rgba(170,75,65,1);
+	}
+}
+
+@media screen and (max-width: 600px){
+	#hiw_grid .mobile-grid .mobile-grid-title{
+		font-size: 2em;
+		max-width: 300px;
+		line-height: 30px;
 	}
 
-	#hiw_grid .grid-two .grid-two-btn{
-		opacity: 1;
-		margin-top: 12px;
-		display: block;
-		max-width: 240px;
-		margin: auto;
-		border: none;
-		background-color: rgba(170,75,65,1);
+	#hiw_grid .mobile-grid .mobile-grid-description{
+		font-size: 1.0em;
+		max-width: 300px;
+		line-height: 18px;
 	}
 }
 
 @media screen and (max-width: 500px){
-	#hiw_grid .grid-one{
+	#hiw_grid .mobile-grid{
 		min-height: 400px;
 	}
 
-	#hiw_grid .grid-two{
+	#hiw_grid .mobile-grid .mobile-grid-img{
 		min-height: 400px;
 	}
 
-	#hiw_grid .grid-three{
-		min-height: 420px;
-	}
-
-	#hiw_grid .grid-four{
-		min-height: 420px;
-	}
-
-	#hiw_grid .grid-five{
-		min-height: 420px;
-	}
-
-	#hiw_grid .grid-one .grid-one-img{
-		min-height: 400px;
-	}
-
-	#hiw_grid .grid-two .grid-two-img{
-		min-height: 400px;
-	}
-
-	#hiw_grid .grid-three .grid-three-img{
-		min-height: 420px;
-	}
-
-	#hiw_grid .grid-four .grid-four-img{
-		min-height: 420px;
-	}
-
-	#hiw_grid .grid-five .grid-five-img{
-		min-height: 420px;
-	}
-
-	#hiw_grid .grid-one .locationtext{
-		margin-top: -290px;
-	}
-
-	#hiw_grid .grid-two .locationtext{
-		margin-top: -290px;
-	}
-
-	#hiw_grid .grid-three .locationtext{
-		margin-top: -290px;
-	}
-
-	#hiw_grid .grid-four .locationtext{
-		margin-top: -290px;
-	}
-
-	#hiw_grid .grid-five .locationtext{
-		margin-top: -290px;
-	}
-
-	#hiw_grid .grid-one .grid-one-btn{
+	#hiw_grid .mobile-grid .mobile-grid-btn{
 		max-width: 180px;
 		max-height: 40px;
 		font-size: 1em;
-		padding-top: 10px;
-	}
-
-	#hiw_grid .grid-two .grid-two-btn{
-		max-width: 180px;
-		max-height: 40px;
-		font-size: 1em;
-		padding-top: 10px;
+		padding-top: 8px;
 	}
 }

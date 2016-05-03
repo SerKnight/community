@@ -16,11 +16,31 @@ class HomepageController < ApplicationController
 
   end
 
+  def peru
+    
+  end
+
   def india
 
   end
 
   def socaltrifecta
+
+  end
+
+  def kyrgyzstan
+
+  end
+
+  def bajabus
+
+  end
+
+  def morocco
+
+  end  
+
+  def lakepowell
 
   end
 

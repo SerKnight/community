@@ -1,0 +1,225 @@
+- content_for(:meta_og) do
+	%meta{:content => "The Baja Escape", :property => "og:title"}/
+	%meta{:content => "AdventureMade", :property => "og:site_name"}/
+	%meta{:content => "A 4WD converted school bus, filled with your friends, down Baja Mexico for 4 days of sun, camping and surfing.", :property => "og:description"}/
+	%meta{:content => "website", :property => "og:type"}/
+	%meta{:content => "http://www.madebyadventure.com/colombia", :property => "og:url"}/
+	%meta{:content => "http://i.imgur.com/eegZ8J1.png", :property => "og:image"}/
+	%meta{:content => "1437", :property => "og:image:width"}/
+	%meta{:content => "752", :property => "og:image:height"}/
+
+.location-hero.location-hero-fix{style: "background: url('#{asset_path("background/bajacover.png")}') center center no-repeat"}
+
+.location-slow-scroll
+	#location-text{style: "text-shadow: 1px 1px 5px rgba(0,0,0,1);"}
+		#location-header
+			The Baja Escape
+		#location-explanation
+			A 4WD converted school bus, filled with your friends, down Baja Mexico for 4 days of sun, camping and surfing.
+		#location-header-mobile
+			The Baja Escape
+		#location-explanation-mobile
+			A 4WD converted school bus, filled with your friends, down Baja Mexico for 4 days of sun, camping and surfing.
+
+.location-details
+	.col-md-12.location-itinerary
+		.col-md-12.mission-block
+			.mission-header
+				The Mission
+			.mission-body
+				Road trip Baja California in a souped up, 4WD school bus that runs on vegetable oil. I bet that grabbed your attention. Looking for 15 other adventurers to fill “Gus” the bus and check out this nearly forgotten desert playground south of the border.
+				<br>
+				<br>
+				Once a surf mecca for Cali surf bros and those looking to escape the hectic life of LA and San Diego, the Baja is now neglected by most tourists. We’ll scour the rugged pacific coast hunting down the best seafood stands, remote beaches, and desert oasis swimming holes.
+
+
+	.col-md-12.location-description
+		.description-title
+			The Team
+		.col-md-6	
+			.description-guide-image{style: "background: url('#{asset_path("background/paul-guide.png")}') center center no-repeat"}
+			.guide-name
+				Kally C.
+			.guide-border
+			.guide-title
+				Adventure Leader
+			.guide-description
+				Operating Gus the bus and making sure we don’t get lost in the wilds of the Baja Peninsula is Kally and the Baja Trek team. In addition to getting us from point A to point B and cooking delicious camp meals, Kally has many years experience in the area and will take us to the best camping and surf spots.
+				
+		.col-md-6	
+			%a{href:'/apply/Peru'}
+				.description-guide-image{style: "background: #aa4b41;"}
+					%i.fa.fa-plus{style: "color: #fff; font-size: 6em; margin-top: 95px; margin-left: 95px;"}
+			.guide-name
+				Apply to be the
+			.guide-border
+			.guide-title
+				Adventure Ambassador
+			
+			.guide-description
+				Paul has created a one-time trip that is sure to be one hell of an experience. We're looking for a passionate adventure ambassador to spread the word and assemble a team. Recruit others to join the trip and go on the trip for free.
+
+
+	.col-md-12.destination-container
+		.basecamps-title
+			A Few Highlights
+		.row.col-md-6
+			.destination-image{style: "background: url('#{asset_path("background/packraft2.png")}') center center no-repeat"}
+				.destination-description
+					.destination-title
+						Ensenada
+					.destination-title-underline
+					.destination-subtitle
+						Your Jungle Homebase
+					.destination-body
+						You may have forgotten humans live in the Baja after traversing some of it’s more remote sections. Ensenada is a great opportunity to mingle with the local folk. Like most towns, there are shops, great restaurants, and bars to check out. Unlike most towns, Ensenada is home to a designated world surfing reserve, for those who haven’t gotten enough of the water.
+  
+			.destination-subtitle-mobile
+				Your Jungle Homebase
+			.destination-underline-mobile
+			.destination-body-mobile
+				You may have forgotten humans live in the Baja after traversing some of it’s more remote sections. Ensenada is a great opportunity to mingle with the local folk. Like most towns, there are shops, great restaurants, and bars to check out. Unlike most towns, Ensenada is home to a designated world surfing reserve, for those who haven’t gotten enough of the water.
+
+		.row.col-md-6
+			.destination-image{style: "background: url('#{asset_path("background/packraft3.jpg")}') center center no-repeat"}
+				.destination-description
+					.destination-title
+						Pristine Beaches
+					.destination-title-underline
+					.destination-subtitle
+						The Best Way to Navigate the Amazon
+					.destination-body
+						Surf, swim, tan, read, play volleyball, organize a game of spikeball, drink. Typical beach stuff. We’ll park the bus right on the beach and set up camp. With 15 people and a beach to ourselves, shouldn’t be hard to come up with fun things to do. Bonus points to those who pack a beach volleyball net, football, skim board, or any other beach-y toys.
+  
+			.destination-subtitle-mobile
+				The Best Way to Navigate the Amazon
+			.destination-underline-mobile
+			.destination-body-mobile
+				Surf, swim, tan, read, play volleyball, organize a game of spikeball, drink. Typical beach stuff. We’ll park the bus right on the beach and set up camp. With 15 people and a beach to ourselves, shouldn’t be hard to come up with fun things to do. Bonus points to those who pack a beach volleyball net, football, skim board, or any other beach-y toys.
+
+		.row.col-md-6
+			.destination-image{style: "background: url('#{asset_path("background/thegusbus.jpg")}') center center no-repeat"}
+				.destination-description
+					.destination-title
+						Gus the Bus
+					.destination-title-underline
+					.destination-subtitle
+						Las Piedras Watershed
+					.destination-body
+						An eco-friendly, vegetable oil-powered Baja Beach bus, retrofitted for extended road trips. Really not much to say beyond that. Pretty neat.
+ 
+			.destination-subtitle-mobile
+				Las Piedras Watershed
+			.destination-underline-mobile
+			.destination-body-mobile
+				An eco-friendly, vegetable oil-powered Baja Beach bus, retrofitted for extended road trips. Really not much to say beyond that. Pretty neat.
+
+
+		.row.col-md-6
+			.destination-image{style: "background: url('#{asset_path("background/packrafting1.jpg")}') center center no-repeat"}
+				.destination-description
+					.destination-title
+						Camaraderie
+					.destination-title-underline
+					.destination-subtitle
+						The Frontiers of Conservation
+					.destination-body
+						Did we mention you’ll be in a van traversing the Baja with 15-20 other like minded explorers? You’d have to be some sort of crazy person not to have a great time and make new friends. Think of this like the most elaborate field trip you’ve ever taken...and you’re allowed to drink beer. No teachers, no rules. (Except maybe a few rules)
+			.destination-subtitle-mobile
+				The Frontiers of Conservation
+			.destination-underline-mobile
+			.destination-body-mobile
+				Did we mention you’ll be in a van traversing the Baja with 15-20 other like minded explorers? You’d have to be some sort of crazy person not to have a great time and make new friends. Think of this like the most elaborate field trip you’ve ever taken...and you’re allowed to drink beer. No teachers, no rules. (Except maybe a few rules)
+
+	.col-md-12.location-inclusions{style: "background: whitesmoke;"}
+		.location-inclusions-header{style: "color: #212326;"}
+			Reserve your Spot
+		.col-md-10.col-md-offset-1.inclusions-container{style: "background: transparent;"}
+			.priceanddate_container
+				.location-date{style: "border:none; color: #212326;"}
+					Launching Late Summer 2016
+				.trip-price{style: "color: #212326; padding-bottom: 40px;"}
+					Entry Fee - TBD
+			.col-md-6.inclusions-title{style: "color: #aa4b41;"}
+				What's Included
+				<br>
+				%i.fa.fa-angle-double-down{style: "color: #aa4b41;"}
+				.inclusions-description-hidden{style: "color: #212326;"}
+					Bus Driver and Guide
+					<br>
+					<br>
+					Most Meals
+					<br>
+					<br>
+					Camping and Park Fees
+					<br>
+					<br>
+
+			.col-md-6.exclusions-title{style: "color: #aa4b41;"}
+				Not Included
+				<br>
+				%i.fa.fa-angle-double-down{style: "color: #aa4b41;"}
+				.exclusions-description-hidden{style: "color: #212326;"}
+					Transportation to the Border
+					<br>
+					<br>
+					Alcohol
+					<br>
+					<br>
+					Sleeping Bag and Tent
+					<br>
+					<br>
+
+	.col-md-12.location-join
+		.who-join
+			Interested in joining?
+		.who-join-description
+			Drop us a line or apply
+		%a{href:'/apply/Peru'}
+			.join-button.btn
+				Reach Out!
+
+:javascript
+
+	$(document).ready(function() {
+	$('.location-slow-scroll').show();
+	$('.location-slow-scroll').animate({ opacity: 1, top: "-60px" }, 'slow');
+	});
+
+	$(document).ready(function() {
+		
+		$('body *').each( function(){
+		   
+			var top_of_object = $(this).position().top;
+			var bottom_of_window = $(window).scrollTop() + $(window).height();
+		   
+			if( bottom_of_window < top_of_object  ){
+			
+				$(this).addClass('hideme').css({'opacity':'0'});	
+			}	
+		});
+		
+		$(window).scroll( function(){
+			
+			$('.hideme').each( function(i){
+				
+				var bottom_of_window = $(window).scrollTop() + $(window).height();
+				var top_of_object = $(this).position().top;
+				
+					if( bottom_of_window > ( top_of_object + 100 )  ){
+					
+						$(this).removeClass('hideme').animate({'opacity':'1'},800);	
+					}
+			}); 
+		});
+	});;
+
+	$(".inclusions-title").click(function () {
+	$(".inclusions-description-hidden").stop().slideToggle();
+		return false;
+	});
+
+	$(".exclusions-title").click(function () {
+	$(".exclusions-description-hidden").stop().slideToggle();
+		return false;
+	});

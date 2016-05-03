@@ -28,8 +28,9 @@
 
     #location-header{
 			font-family: proxima_black;
-			font-size: 5em;
+			font-size: 4em;
 			text-transform: uppercase;
+			line-height: 60px;
 		}
 
 		#location-explanation {
@@ -51,7 +52,6 @@
 	}
 }  
 
-
 .location-details{
 	width: 100%;
 	background: #fff;
@@ -66,7 +66,7 @@
 			color: #212326;
 			text-align: center;
 			border-bottom: 4px solid #aa4b41;
-			max-width: 480px;
+			max-width: 240px;
 			margin: auto;
 		}
 
@@ -128,7 +128,7 @@
 				border-bottom: 4px solid #aa4b41;
 				max-width: 300px;
 				margin: auto;
-				margin-top: 80px;
+				margin-top: 60px;
 			}
 
 			.mission-body{
@@ -244,13 +244,13 @@
 
 			.destination-title{
 				font-family: proxima_bold;
-				font-size: 3em;
+				font-size: 2.4em;
 				color: #fff;
 				text-align: center;
 				margin-top: 50px;
 				right: 20px;
 				background: rgba(170,75,65,0.85);
-				max-width: 330px;
+				max-width: 350px;
 				-webkit-transition: .5s ease-in-out;
 				border-bottom: 0px solid #aa4b41;
 				margin-left: -12px;
@@ -335,7 +335,7 @@
 
 		.destination-body-mobile{
 			display: none;
-			font-family: proxima_thin;
+			font-family: proxima_regular;
 			text-align: center;
 			color: #fff;
 			font-size: 1.2em;
@@ -565,20 +565,18 @@
 	}
 
 	.inclusions-container{
-		background: rgba(33,35,38,0.7);
-		min-height: 440px;
+		background: rgba(33,35,38,0.85);
 		border-radius: 4px;
 		padding-right: 0px;
 		padding-left: 0px;
 
 		.priceanddate_container{
-			background: rgba(0,0,0,0.5);
 			margin: auto;	
 			border-top-left-radius: 4px;
 			border-top-right-radius: 4px;	
 
 			.location-date{
-				font-family: proxima_thin;
+				font-family: proxima_bold;
 				font-size: 2.2em;
 				color: #fff;
 				text-align: center;
@@ -590,7 +588,7 @@
 			}
 
 			.trip-price{
-				font-family: proxima_thin;
+				font-family: proxima_bold;
 				font-size: 2.2em;
 				color: #fff;
 				text-align: center;
@@ -605,16 +603,48 @@
 			color: #fff;
 			text-align: center;
 			padding-top: 20px;
+			cursor: pointer;
+		}
+
+		.exclusions-title{
+			font-family: proxima_bold;
+			font-size: 2.4em;
+			color: #fff;
+			text-align: center;
+			padding-top: 20px;
+			cursor: pointer;
 		}
 
 		.inclusions-description{
-			font-family: proxima_thin;
+			font-family: proxima_regular;
 			font-size: 15px;
 			color: #fff;
 			text-align: center;
 			padding-top: 20px;
 			max-width: 400px;
 			margin: auto;
+		}
+
+		.inclusions-description-hidden{
+			font-family: proxima_regular;
+			font-size: 15px;
+			color: #fff;
+			text-align: center;
+			padding-top: 20px;
+			max-width: 400px;
+			margin: auto;
+			display: none;
+		}
+
+		.exclusions-description-hidden{
+			font-family: proxima_regular;
+			font-size: 15px;
+			color: #fff;
+			text-align: center;
+			padding-top: 20px;
+			max-width: 400px;
+			margin: auto;
+			display: none;
 		}
 	}
 }
@@ -642,10 +672,12 @@
 	#location-header-mobile{
 		display: block;
 		font-family: proxima_black;
-		font-size: 4em;
+		font-size: 3em;
 		text-align: center;
 		line-height: 50px;
 		text-transform: uppercase;
+		max-width: 600px;
+		margin: auto;
 	}
 
 	#location-explanation-mobile{
@@ -659,7 +691,7 @@
 	}
 
 	.location-slow-scroll{
-		margin-top: 200px;
+		margin-top: 260px;
 	}
 
 	.location-details .location-itinerary{
@@ -759,7 +791,7 @@
 @media screen and (max-width: 500px){
 
 	#location-header-mobile{
-		font-size: 3em;
+		font-size: 2.4em;
 		line-height: 40px;
 	}
 
@@ -778,8 +810,8 @@
 	}
 
 	.location-details .location-description .description-title{
-		font-size: 2.8em;
-		max-width: 300px;
+		font-size: 2em;
+		max-width: 200px;
 	}
 
 	.location-details .location-description .description-body{
@@ -801,22 +833,46 @@
 		max-width: 350px;
 	}	
 
+	.location-details .location-itinerary .mission-block .mission-header{
+		font-size: 2em;
+		max-width: 200px;
+	}
+
 	.location-details .location-itinerary .mission-block .mission-body{
-		font-size: 1.1em;
+		font-size: 1em;
+	}
+
+	.guide-description{
+		font-size: 1em !important;
+	}
+
+	.guide-title{
+		font-size: 1.6em !important;
+	}
+
+	.guide-name{
+		font-size: 2em !important;
+	}
+
+	.guide-border{
+		max-width: 100px !important;
 	}
 
 	.destination-description .destination-title{
-		margin-top: 90px !important;
-		font-size: 2.2em !important;
+		margin-top: 112px !important;
+		font-size: 2.4em !important;
 	}
 
 	.location-details .destination-container .basecamps-title{
-		font-size: 2.2em;
-		max-width: 300px;
+		font-size: 2em;
+		max-width: 225px;
 	}
 
 	.location-details .destination-container .destination-image{
 		min-height: 310px;
+		margin-left: -15px;
+		margin-right: -15px;
+		border: none !important;
 	}
 
 	.location-details .destination-container .destination-description{
@@ -825,6 +881,10 @@
 
 	.location-details .destination-container .destination-description .destination-subtitle{
 		font-size: 1.1em;
+	}
+
+	.location-details .destination-container .destination-body-mobile{
+		font-size: 1em;
 	}
 
 	.location-details .location-how .location-how-header{
@@ -846,7 +906,8 @@
 	}
 
 	.location-details .location-inclusions .location-inclusions-header{
-		font-size: 2.4em;
+		font-size: 2em;
+		max-width: 240px;
 	}
 
 	.location-details .location-inclusions .location-date{
@@ -854,6 +915,10 @@
 	}
 
 	.location-details .location-inclusions .inclusions-container .inclusions-title{
+		font-size: 1.6em;
+	}
+
+	.location-details .location-inclusions .inclusions-container .exclusions-title{
 		font-size: 1.6em;
 	}
 
