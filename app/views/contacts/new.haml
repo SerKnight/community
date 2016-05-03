@@ -2,6 +2,10 @@
   .apply-header
     - if params[:type] == 'adventure'
       What's your dream trip?
+
+    - if params[:type] == 'socaltrifecta'
+      Try the Trifecta!
+
     - elsif params[:type]
       Reserve your Spot:
       %br

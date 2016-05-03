@@ -16,4 +16,12 @@ class HomepageController < ApplicationController
 
   end
 
+  def india
+
+  end
+
+  def socaltrifecta
+
+  end
+
 end
