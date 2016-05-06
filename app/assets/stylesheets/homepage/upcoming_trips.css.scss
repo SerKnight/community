@@ -46,6 +46,7 @@
 			overflow: hidden;
 			position: relative;
 			margin-bottom: 24px;
+			border-radius: 12px;
 
 			&:hover {
 
@@ -206,6 +207,10 @@
 	.upcoming-trips-container .upcoming-trip-block{
 		padding-left: 0px;
 		padding-right: 0px;
+	}
+
+	#upcoming-trips .upcoming-trips-container .upcoming-trip{
+		border-radius: 0px;
 	}
 
 	#upcoming-trips .upcoming-trips-container .upcoming-trip .upcoming-text .upcoming-title{
