@@ -1,22 +1,28 @@
 #how_it_works {
-	background: #17181B;
-	min-height: 400px;
+	background: rgb(245, 245, 245);
+	min-height: 700px;
+	padding-bottom: 40px;
 
 	.mission-statement{
-		padding-top: 40px;	
+		padding-top: 40px;
+		border-top: 8px solid #00293c;	
 
 		.mission-block{
 			
 			.mission-block-content{
-				max-width: 550px;
+				max-width: 800px;
+				min-height: 400px;
 				margin: auto;
+				background-color: #fff;
+				padding: 40px;
+				margin-top: -100px;
+				border-top: 8px solid #00293c;
 
 				.mission-title{
 					font-family: proxima_bold;
-					font-size: 2.4em;
-					color: #fff;
+					font-size: 2.0em;
+					color: #17181B;
 					text-align: center;
-					padding-top: 50px;
 					margin-bottom: 20px;
 				}
 
@@ -30,9 +36,11 @@
 				.mission-description{
 					font-family: proxima_regular;
 					font-size: 1.2em;
-					color: rgba(255,255,255,0.9);
+					color: #17181B;
 					text-align: center;
-					margin-top: 20px;
+					margin-top: 20px !important;
+					max-width: 600px;
+					margin: auto;
 				}
 
 				.mission-block-image{
@@ -42,6 +50,67 @@
 					opacity: 0.8;
 					border: 4px solid #fff;
 				}
+			}
+		}
+	}
+
+	.explainer_steps{
+		margin-top: -164px;
+		padding-left: 10px;
+		padding-right: 10px;
+
+		.explainer_step_container{
+			margin: auto;
+
+			.explainer_step_image{
+				margin: auto;
+				border-radius: 12px;
+				max-width: 520px;
+				border-bottom-right-radius: 0px;
+				border-bottom-left-radius: 0px;
+			}
+
+			.explainer_step_text_background{
+				opacity: 0;
+				height: 300px;
+				background: rgba(0,0,0,0.8);
+				-webkit-transition: all 0.3s ease-in-out;
+				transition: all 0.3s ease-in-out;
+
+
+				.explainer_step_text{
+					font-family: proxima_regular;
+					color: #fff;
+					padding-top: 150px;
+					max-width: 360px;
+					margin: auto;
+					font-size: 1.2em;
+					text-align: center;
+					-webkit-transition: all 0.3s ease-in-out;
+					transition: all 0.3s ease-in-out;
+				}
+			}
+
+			.explainer_step_mobile{
+				max-width: 520px;
+				margin: auto;
+				background: #fff;
+				border-radius: 12px;
+				border-top-left-radius: 0px;
+				border-top-right-radius: 0px;
+				background: #00293c;
+
+				.explainer_step_mobile_text{
+					font-family: proxima_regular;
+					color: #fff;
+					max-width: 360px;
+					margin: auto;
+					font-size: 1.2em;
+					text-align: center;
+					margin-top: 14px;
+					padding: 12px;
+				}
+
 			}
 		}
 	}
@@ -93,13 +162,67 @@
 		margin-top: 20px;
 		padding-bottom: 20px;
 	}
+
+
+	.which_stage_btn{
+		font-family: proxima_bold;
+		text-align: center;
+		font-size: 1.2em;
+		color: rgba(170, 75, 65, 1);
+		height: 40px;
+		max-width: 180px;
+		margin: auto;
+		-webkit-transition: all 0.7s ease;
+		transition: all 0.7s ease;
+		border-radius: 100px;
+		background-color: transparent;
+		border: 2px solid rgba(170, 75, 65, 1);
+		margin-top: 40px;
+		padding-top: 6px;
+
+		&:hover{
+			background-color: rgba(89,39,34,0.8);
+			color: #fff;
+			-webkit-transition: all 0.4s ease;
+			transition: all 0.4s ease;
+			max-width: 220px;
+		}
+	}
 }
 
 
 @media screen and (max-width: 991px){
 
+	#how_it_works .explainer_steps{
+		margin-top: 50px;
+	}
+
+	#how_it_works .explainer_steps .explainer_step_container{
+		margin-top: 40px;
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+
+	#how_it_works .explainer_steps .explainer_step_container .explainer_step_text_background{
+		opacity: 0 !important;
+	}
+
+	#how_it_works .explainer_steps .explainer_step_container .explainer_step_mobile .explainer_step_mobile_text{
+		font-size: 1.0em;
+	}
+
+	#how_it_works .mission-statement .mission-block .mission-block-content{
+		max-width: 600px;
+		padding: 25px;
+		min-height: 0px;
+	}
+
 	#how_it_works .mission-statement .mission-block .mission-block-content .mission-title{
-		padding-top: 30px;
+		font-size: 1.75em;
+	}
+
+	#how_it_works .mission-statement .mission-block .mission-block-content .mission-description{
+		font-size: 1.05em;
 	}
 
 	#how_it_works .mission-statement .mission-block .mission-block-content .mission-block-image{
@@ -108,22 +231,19 @@
 }
 
 @media screen and (max-width: 771px){
-	#how_it_works .mission-statement .mission-block .mission-block-content .mission-title{
-		font-size: 1.8em;
-	}
-
-	#how_it_works .mission-statement .mission-block .mission-block-content .mission-description{
-		font-size: 1.1em;
-	}
 
 	#how_it_works .mission-statement .mission-block .mission-block-content .mission-block-image{
 		min-height: 330px;
 	}
 }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 600px){
 
-	#how_it_works .mission-statement .mission-header{
-		max-width: 300px;
+	#how_it_works .mission-statement .mission-block .mission-block-content{
+		padding: 15px;
+	}
+
+	#how_it_works .mission-statement .mission-block .mission-block-content .mission-title{
+		font-size: 1.5em;
 	}
 }

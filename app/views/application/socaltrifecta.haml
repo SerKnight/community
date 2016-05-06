@@ -124,49 +124,55 @@
 			.destination-body-mobile
 				Getting into the Pacific ocean is the perfect way to cleanse oneself after getting dirty in the desert. We will arrive at the Malibu coast in the afternoon just in time to enjoy a beautiful sunset surf session. 
 
-	.col-md-12.location-inclusions{style: "background: url('#{asset_path("background/SantaMonicaWaves.jpeg")}') center center no-repeat"}
-		.location-inclusions-header
+	.col-md-12.location-inclusions{style: "background: whitesmoke;"}
+		.location-inclusions-header{style: "color: #212326;"}
 			Reserve your Spot
-		.col-md-10.col-md-offset-1.inclusions-container
+		.col-md-10.col-md-offset-1.inclusions-container{style: "background: transparent;"}
 			.priceanddate_container
-				.location-date
+				.location-date{style: "border:none; color: #212326;"}
 					June 2016
-				.trip-price
-					Entry Fee - $450
-			.col-md-6.inclusions-title
-				What this gets you
-				.inclusions-description
-					Camping Equipment
+				.trip-price{style: "color: #212326; padding-bottom: 40px;"}
+					Entry Fee - $400
+			.col-md-6.inclusion-exclusion-box
+				.inclusions-title{style: "color: #00293c;"}
+					What's Included
 					<br>
+					%i.fa.fa-angle-double-down{style: "color: #aa4b41;"}
+					.inclusions-description-hidden{style: "color: #212326;"}
+						Camping Equipment
+						<br>
+						<br>
+						Surf Gear
+						<br>
+						<br>
+						Climbing Gear
+						<br>
+						<br>
+						Surf Instruction
+						<br>
+						<br>
+						Transportation
+						<br>
+						<br>
+						Food
+						<br>
+						<br>
+			.col-md-6.inclusion-exclusion-box
+				.exclusions-title{style: "color: #00293c;"}
+					Not Included
 					<br>
-					Surf Gear
-					<br>
-					<br>
-					Climbing Gear
-					<br>
-					<br>
-					Surf Instruction
-					<br>
-					<br>
-					Transportation
-					<br>
-					<br>
-					Food
-					<br>
-					<br>
-			.col-md-6.inclusions-title
-				What to bring
-				.inclusions-description
-					Swimwear
-					<br>
-					<br>
-					Hiking Gear
-					<br>
-					<br>
-					Good Vibes
-					<br>
-					<br>
-
+					%i.fa.fa-angle-double-down{style: "color: #aa4b41;"}
+					.exclusions-description-hidden{style: "color: #212326;"}
+						Swimwear
+						<br>
+						<br>
+						Hiking Gear
+						<br>
+						<br>
+						Good Vibes
+						<br>
+						<br>
+	
 	.col-md-12.location-join
 		.who-join
 			Interested in joining?
@@ -209,4 +215,14 @@
 					}
 			}); 
 		});
+	});
+
+	$(".inclusions-title").click(function () {
+	$(".inclusions-description-hidden").stop().slideToggle();
+		return false;
+	});
+
+	$(".exclusions-title").click(function () {
+	$(".exclusions-description-hidden").stop().slideToggle();
+		return false;
 	});

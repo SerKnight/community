@@ -7,6 +7,8 @@
 
 	.upcoming-trips-container{
 		padding-bottom: 40px;
+		padding-left: 0px;
+		padding-right: 0px;
 	}
 
 	.upcoming-trips-header{
@@ -132,7 +134,7 @@
 				}
 
 				.upcoming-details{
-					background-color: rgba(245,245,245,0.65);
+					background-color: rgba(245,245,245,0.8);
 					height: 214px;
 
 					.upcoming-title-dates{
@@ -146,7 +148,7 @@
 						padding-right: 20px;
 						text-align: center;
 						font-size: 1.1em;
-						background: rgba(0,0,0,0.8);
+						background: rgba(0, 41, 60, 0.8);
 					}
 
 					.upcoming-description{
@@ -182,7 +184,7 @@
 						border: 2px solid #17181B;
 
 						&:hover{
-							background-color: rgba(89,39,34,0.6);
+							background-color: rgba(0,0,0,0.5);
 							-webkit-transition: all 0.5s ease-in-out;
 							transition: all 0.5s ease-in-out;
 							max-width: 200px;

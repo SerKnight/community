@@ -11,6 +11,19 @@
 		background-repeat: no-repeat;
 		background-size: 100%;
 		width: 58px !important;
+		background-color: rgba(245, 245, 245, 0.8);
+		height: 60px;
+		margin-top: -12px;
+		margin-left: -30px !important;
+		-webkit-transition: all 0.2s ease;
+		transition: all 0.2s ease;
+
+		&:hover{
+			height: 62px;
+			box-shadow: 1px 1px 2px #000;
+			background-color: #fff;
+			width: 62px !important;
+		}
 	}
 
 	.header-button{
@@ -30,36 +43,44 @@
 
 	.btn.btn-default {
 		color: #fff;
-		border: 2px solid #fff;
-		border-radius: 25px;
+		margin-top: 10px;
+		border: none;
+		border-radius: 0px;
+		border-left: 1px solid #fff;
 		background-color: transparent;
 		font-family: proxima_bold;
-		background: rgba(0,0,0,0.7);
-		margin-top: 8px;	
 		font-size: 14px;
+		text-shadow: 1px 1px 1px #333;
+		padding-left: 15px;
+
 
 		-webkit-transition: .2s ease-in-out;
 		-moz-transition: .2s ease-in-out;
 		-o-transition: .2s ease-in-out;
 
 		&:hover {
-			background: rgba(255,255,255,0.6);
-			border-color: rgba(255,255,255,0.3);
-			color: #000;
+			text-decoration: underline;
 		}
+	}
+
+	.header-barrier{
+		color: #fff;
+		font-family: proxima_thin;
+		font-size: 2em;
 	}
 
 	.trip-dropdown{
 		background: transparent !important;
 		color: #fff !important;
 		font-size: 14px;
-		margin-top: 2px;
-		margin-right: 8px;
+		margin-top: 1px;
+		margin-right: 2px;
 		text-shadow: 1px 1px 1px #333;
 
 
 		&:hover{
 			color: rgba(255,255,255,0.8);
+			text-decoration: underline;
 		}
 	}
 
@@ -128,13 +149,27 @@
 @media screen and (max-width: 767px){
 	.navbar.logged-out .navbar-brand{
 		margin-top: -6px;
-		margin-left: 5px;
-		margin-bottom: 11px;
+		margin-left: 5px !important;
+		margin-bottom: 0px;
+		width: 44px !important;
+		height: 48px;
+		background-color: transparent !important;
+
+		&:hover{
+			height: 48px;
+			box-shadow: none;
+			background-color: transparent;
+			width: 44px !important;
+		}
+	}
+
+	.navbar.logged-out .mobile-navbar-navigation{
+		margin-top: 0px;
 	}
 
 	.navbar-default .navbar-collapse, .navbar-default .navbar-form{
 		background: #fff;
-		box-shadow: 0px 26px 30px #000 !important
+		box-shadow: 0px 9px 9px #222 !important;
 	}
 
 	.navbar.logged-out{
@@ -148,6 +183,7 @@
 		font-size: 18px;
 		color: #212326;
 		border: none;
+		text-shadow: none;
 
 		&:hover{
 			background: transparent;

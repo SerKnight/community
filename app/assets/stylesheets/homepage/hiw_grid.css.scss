@@ -1,5 +1,5 @@
 #hiw_grid{
-	background: #000;
+	background: #00293c;
 
 	.mobile_grid_background{
 		width: 100%;
@@ -34,7 +34,7 @@
 	}
 
 	.mobile-grid{
-		min-height: 500px;
+		min-height: 420px;
 		position: relative;
 		padding-bottom: 20px;
 		padding-right: 0px;
@@ -45,7 +45,7 @@
 		    background-size: cover;
 		    background-position: center center;
 		    position: relative;
-		    min-height: 500px;
+		    min-height: 420px;
 		    width: 100%;
 		    background-image: asset-url("background/vietnampathsmall.jpeg");
 		}
@@ -68,7 +68,7 @@
 		}
 
 		.mobile-grid-title{
-	  		font-family: proxima_black;
+	  		font-family: proxima_bold;
 	  		color: #FFF;
 	  		text-shadow: 1px 1px 5px rgba(0,0,0,1);
 	  		font-size: 4em;
@@ -83,7 +83,7 @@
 	  	}
 
 	  	.mobile-grid-dates{
-			font-family: proxima_bold;
+			font-family: proxima_regular;
 	  		color: #FFF;
 	  		font-size: 1.2em;
 	  		text-shadow: 1px 1px 5px rgba(0,0,0,1);
@@ -97,7 +97,7 @@
 	  	}
 
 	  	.mobile-grid-location{
-	  		font-family: proxima_bold;
+	  		font-family: proxima_regular;
 	  		color: #FFF;
 	  		font-size: 1.2em;
 	  		text-shadow: 1px 1px 5px rgba(0,0,0,1);
@@ -149,8 +149,8 @@
 
 		.locationtext{
 			padding-top: 70px;
-			min-height: 500px;
-			background: rgba(0,0,0,0.3);
+			min-height: 420px;
+			background: rgba(0,41,60,0.1);
 		}
 
 		.mobile-grid-text{

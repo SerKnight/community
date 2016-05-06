@@ -1,5 +1,5 @@
 #trips_grid{
-	background: black;
+	background: #00293c;
 
 	.grid_background{
 		width: 100%;
@@ -24,7 +24,6 @@
 				font-size: 18px;
 				color: rgba(255,255,255,0.9);
 				text-align: left;
-				padding-left: 20px;
 			}
 		}
 
@@ -55,36 +54,80 @@
 			-o-transform:scale(1.03);
 
 			.grid-btn{
-				background-color: rgba(89,39,34,0.8);
-				-webkit-transition: all 0.4s ease;
-				transition: all 0.5s ease;
-				max-width: 200px;
+				border-radius: 100px;
+			}
+
+			.grid-img-overlay-left{
+				opacity: 1 !important;
+			}
+
+			.grid-img-overlay-right{
+				opacity: 1 !important;
 			}
 		}
 
-		.grid-img{
+		.grid-img-left{
 		    position: relative;
+		    padding-right: 0px;
+			padding-left: 0px;
 		    min-height: 448px;
-		    width: 100%;
-			-moz-transition:opacity 0.3s ease-in-out; 
-			-webkit-transition:opacity 0.3s ease-in-out;
-			-o-transition:opacity 0.3s ease-in-out;
-			-ms-transition: opacity 0.3s ease-in-out;
-			transition: opacity 0.3s ease-in-out;
+		    border-radius: 12px;
+		    border-top-right-radius: 0px;
+		    border-bottom-right-radius: 0px;
+		    -webkit-transition: all 0.5s ease;
+			transition: all 0.5s ease;
+
+
+			.grid-img-overlay-left{
+				opacity: 0;
+				background-color: rgba(255,255,255,0.2);
+				width: 100%;
+				height: 448px;
+		   		border-top-left-radius: 12px;
+		    	border-bottom-left-radius: 12px;
+		    	-webkit-transition: all 0.5s ease;
+				transition: all 0.5s ease;
+			}
+		}
+
+		.grid-img-right{
+			position: relative;
+			padding-right: 0px;
+			padding-left: 0px;
+		    min-height: 448px;
+		    border-radius: 12px;
+		    border-top-left-radius: 0px;
+		    border-bottom-left-radius: 0px;
+		    -webkit-transition: all 0.5s ease;
+			transition: all 0.5s ease;
+		
+			.grid-img-overlay-right{
+				opacity: 0;
+				background-color: rgba(255,255,255,0.2);
+				width: 100%;
+				height: 448px;
+		    	border-top-right-radius: 12px;
+		    	border-bottom-right-radius: 12px;
+		    	-webkit-transition: all 0.5s ease;
+				transition: all 0.5s ease;
+			}
 		}
 	}
 
 	.grid-text{
-		padding-top: 72px;
+		padding-top: 5%;
 		max-width: 410px;
 		padding-left: 30px;
 		padding-right: 30px;
-		background: rgba(0,0,0,0.6);
+		background: #fff;
 		min-height: 448px;
+		border-radius: 12px;
+		border-top-left-radius: 0px;
+		border-bottom-left-radius: 0px;
 
 		.grid-title{
-	  		font-family: proxima_black;
-	  		color: #FFF;
+	  		font-family: proxima_bold;
+	  		color: #17181B;
 	  		font-size: 2.0em;
 	  		text-align: left;
 	  		border: none;
@@ -92,13 +135,13 @@
 	  		margin-left: auto;
 	  		max-width: 460px;
 	  		padding-bottom: 10px;
-	  		-webkit-transition: all 0.7s ease;
-			transition: all 0.7s ease;
+	  		-webkit-transition: all 0.5s ease;
+			transition: all 0.5s ease;
 	  	}
 
 	  	.grid-title-location{
-	  		font-family: proxima_bold;
-	  		color: #FFF;
+	  		font-family: proxima_regular;
+	  		color: #17181B;
 	  		font-size: 1.2em;
 	  		text-align: left;
 	  		border: none;
@@ -111,34 +154,8 @@
 	  	}
 
 	  	.grid-title-dates{
-			font-family: proxima_bold;
-	  		color: #FFF;
-	  		font-size: 1.2em;
-	  		text-align: left;
-	  		border: none;
-	  		margin-right: auto;
-	  		margin-left: auto;
-	  		padding-bottom: 10px;
-	  		-webkit-transition: all 0.7s ease;
-			transition: all 0.7s ease;
-	  	}
-
-	  	.grid-title-unlocked-by{
-	  		font-family: proxima_bold;
-	  		color: #FFF;
-	  		font-size: 1.2em;
-	  		text-align: left;
-	  		border: none;
-	  		margin-right: auto;
-	  		margin-left: auto;
-	  		padding-bottom: 10px;
-	  		-webkit-transition: all 0.7s ease;
-			transition: all 0.7s ease;
-	  	}
-
-	  	.grid-title-unlock{
-	  		font-family: proxima_bold;
-	  		color: #FFF;
+			font-family: proxima_regular;
+	  		color: #17181B;
 	  		font-size: 1.2em;
 	  		text-align: left;
 	  		border: none;
@@ -151,8 +168,8 @@
 
 	  	.grid-description{
 	  		font-family: proxima_regular;
-	  		color: #fff;
-	  		font-size: 1.1em;
+	  		color: #17181B;
+	  		font-size: 1.0em;
 	  		text-align: left;
 	  		border: none;
 	  		margin-right: auto;
@@ -167,29 +184,26 @@
 			text-align: center;
 			font-size: 1.1em;
 			max-width: 160px;
+			min-width: 150px;
 			margin: auto;
-			color: #fff;
+			color: #17181B;
+			border-radius: 0px;
 			min-height: 40px;
-			-webkit-transition: all 0.5s ease;
-			transition: all 0.5s ease;
-			border-radius: 100px;
-			background-color: rgba(0,0,0,0.6);
-			box-shadow: 1px 1px 2px #333333;
 			padding-top: 7px;
-			border: 2px solid rgb(170, 75, 65);
+			border: 2px solid #17181B;
+			-webkit-transition: all 0.7s ease-in-out;
+			transition: all 0.7s ease-in-out;
 
 			&:hover{
-				background-color: rgba(89,39,34,0.6);
-				-webkit-transition: all 0.5s ease-in-out;
-				transition: all 0.5s ease-in-out;
-				max-width: 200px;
+				background: rgba(0,0,0,0.6);
+				color: #fff;
 			}
 		}
 	}
 }
 
 .your-adventure{
-	background: #17181B;
+	background: #00293c;
 	height: 448px;
 
 	.your-adventure-header{
@@ -219,8 +233,7 @@
 		-webkit-transition: all 0.7s ease;
 		transition: all 0.7s ease;
 		border-radius: 100px;
-		background-color: transparent;
-		border: 2px solid rgba(170, 75, 65, 1);
+		background-color: #aa4b41;
 		margin-top: 20px;
 
 		&:hover{
