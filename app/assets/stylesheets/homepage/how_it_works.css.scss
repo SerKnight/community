@@ -11,9 +11,8 @@
 			
 			.mission-block-content{
 				max-width: 800px;
-				min-height: 400px;
 				margin: auto;
-				background-color: #fff;
+				background-color: whitesmoke;
 				padding: 40px;
 				margin-top: -100px;
 				border-top: 8px solid #00293c;
@@ -55,7 +54,7 @@
 	}
 
 	.explainer_steps{
-		margin-top: -164px;
+		margin-top: 40px;
 		padding-left: 10px;
 		padding-right: 10px;
 
@@ -64,10 +63,10 @@
 
 			.explainer_step_image{
 				margin: auto;
-				border-radius: 12px;
-				max-width: 520px;
-				border-bottom-right-radius: 0px;
-				border-bottom-left-radius: 0px;
+				border-radius: 70px;
+				max-width: 600px;
+				min-height: 412px;
+				background-color: #fff !important;
 			}
 
 			.explainer_step_text_background{
@@ -92,13 +91,13 @@
 			}
 
 			.explainer_step_mobile{
-				max-width: 520px;
+				max-width: 600px;
 				margin: auto;
-				background: #fff;
-				border-radius: 12px;
+				border-radius: 70px;
 				border-top-left-radius: 0px;
 				border-top-right-radius: 0px;
-				background: #00293c;
+				background: rgba(0,41,60,0.5);
+				margin-top: -84px;
 
 				.explainer_step_mobile_text{
 					font-family: proxima_regular;
@@ -205,6 +204,16 @@
 
 	#how_it_works .explainer_steps .explainer_step_container .explainer_step_text_background{
 		opacity: 0 !important;
+	}
+
+	#how_it_works .explainer_steps .explainer_step_container .explainer_step_image{
+		border-radius: 0px;
+		background-color: transparent !important;
+	}
+
+	#how_it_works .explainer_steps .explainer_step_container .explainer_step_mobile{
+		border-radius: 0px;
+		margin-top: -78px;
 	}
 
 	#how_it_works .explainer_steps .explainer_step_container .explainer_step_mobile .explainer_step_mobile_text{
