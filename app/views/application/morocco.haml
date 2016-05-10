@@ -17,7 +17,7 @@
 .location-hero.location-hero-fix{style: "background: url('#{asset_path("background/moroccocover.jpeg")}') center center no-repeat"}
 
 .location-slow-scroll
-	#location-text{style: "text-shadow: 1px 1px 5px rgba(0,0,0,1);"}
+	#location-text
 		#location-header
 			The Berber Traverse
 		#location-explanation
@@ -45,7 +45,7 @@
 	.col-md-12.location-description
 		.description-title
 			The Team
-		.col-md-6	
+		.col-md-6.team-leader-container
 			.description-guide-image{style: "background: url('#{asset_path("background/MoroccoGuide.jpg")}') center center no-repeat"}
 			.guide-name
 				Lahcen
@@ -56,7 +56,7 @@
 				A 15 year mountain bike veteran in the Atlas region, Lahcen will show us the way from the peaks of the Atlas to the Sea. Like a walking rosetta stone, he is fluent in French, English, Arabic, Berber, and single track descents. His knowledge of the Atlas Mountains and Sahara Desert is unrivaled. His team includes a support driver and private chef, who whips up a mean tagine, and Houssain who helps run the show behind the scenes, organizing accommodation and transportation.
 
 				
-		.col-md-6	
+		.col-md-6.team-leader-container	
 			%a{href:'/apply/Morocco'}
 				.description-guide-image{style: "background: url('#{asset_path("background/laurieprofile.jpg")}') center center no-repeat"}
 			.guide-name
@@ -71,7 +71,7 @@
 	.col-md-12.destination-container
 		.basecamps-title
 			A Few Highlights
-		.row.col-md-6
+		.col-md-6
 			.destination-image{style: "background: url('#{asset_path("background/MoroccoMarrakech3.jpeg")}') bottom center no-repeat"}
 				.destination-description
 					.destination-title
@@ -80,7 +80,7 @@
 					.destination-subtitle
 						Secrets of the Walled City
 					.destination-body
-						We'll be spending the night in the capital city surrounded by endless nightlife and food, non-stop culture shock...
+						This city-maze and UNESCO world heritage site, will be our homebase for the first two days. Get lost in the souks, sip on mint tea...
 					%a
 						.destination-button{"data-num" => 1, "data-target" => "#myModal", "data-toggle" => "modal", 'data-name' => 'Basecamp1', 'data-title' => 'Secrets of the Walled City', 'data-body' => "Marrakech explodes with life and color. A literal maze of a city, this UNESCO world heritage site will be our homebase for the first two days. Get lost in the souks, sip on mint tea, or mingle in the smoky night market, Jemma el Fna.<br><br>Upon arrival in Marrakech, you’ll be transferred from the airport to our Riad, where you can drop off your bags and relax. A riad is essentially a traditional Moroccan mansion that centers around a courtyard with a pool or fountains. Typically several stories high, these ancient structures are the preferred form of accommodation in Marrakech. Kick back on the breezy patio of the riad and look out over the vast buzzing city that is Marrakech. With the soundtrack of children playing in the streets below, motorcycles whizzing by, and the solemn song of the call to prayer, relax and get to know the group who you’ll be riding for the next week.<br><br>Our 2 days in Marrakech are loosely structured. The city is easily navigable by foot without a guide. As a group, or independently, explore the bustling markets, check out the street food, or even charter a private camel trek for the day through the nearby desert. Marrakech is a magical city that holds a surprise around every corner. You may find yourself getting lost in the most enjoyable way. Raw and refined, exotic and glamorous, ancient and modern. It is a city alive with history and buzzing with energy.", 'data-img-src' => "#{asset_url("background/MoroccoMarrakech.jpeg")}"}
 							View Highlight
@@ -89,7 +89,7 @@
 			.destination-underline-mobile
 			.destination-body-mobile
 				This city-maze and UNESCO world heritage site, will be our homebase for the first two days. Get lost in the souks, sip on mint tea...
-		.row.col-md-6
+		.col-md-6
 			.destination-image{style: "background: url('#{asset_path("background/MoroccoAtlasMtns.jpeg")}') center center no-repeat"}
 				.destination-description
 					.destination-title
@@ -98,7 +98,7 @@
 					.destination-subtitle
 						Desert Single Track Paradise
 					.destination-body
-						We'll be spending the night in the capital city surrounded by endless nightlife and food, non-stop culture shock...
+						Under the shadow of the snow capped Mount Toubkal, we start our journey. Crisp air, mountain streams, and a chorus...
 					%a
 						.destination-button{"data-num" => 2, "data-target" => "#myModal", "data-toggle" => "modal", 'data-name' => 'Basecamp2', 'data-title' => 'Desert Single Track Paradise', 'data-body' => "Under the shadow of the snow capped Mount Toubkal, we start our journey. Crisp air, mountain streams, and a chorus of goats produce the soundtrack for several days of flowing single track across this high mountain expanse.<br><br>Our journey takes us from the base of Mount Toubkal, at over 13,000 ft, to the sunny coast of western Morocco. Most days on the ride start and end in the same way, smiles and conversation around a cup of tea and a freshly cooked Moroccan meal. What happens in between is highly variable and is what makes riding in Morocco so unique. From the rust colored hillsides to the forested mountain tops every hour is different than the last. With our trusted guide, Lahcen, in the lead, we’ll follow winding ribbons of single track through this peaceful land.<br><br>Our route takes us through rugged gorges, rocky plateaus, and palm shaded valleys. Through the last several hundred years, the people of the Atlas Mountains have unintentionally built one of the greatest mountain biking networks in the world. Ancient cart paths, meandering animal trails, and seasonal river beds provide a system of trails that is unmatched. Our daily rides range from 35 km to 50 km, with typically 500 m of total daily ascents. With a support vehicle trailing us for much of the journey, it is possible to opt out of certain ascents. The goal of this trip is to be challenging, but not exclusive. Sitting around the dinner table each night, you should have a great feeling of accomplishment.<br><br>Highlights of the ride include Mount Toubkal, a towering snow covered peak, home to a ski area, and paradise valley, a desert gorge with baby blue waters to swim in, among many others.   ", 'data-img-src' => "#{asset_url("background/Moroccotrailinmtns.jpg")}"}
 							View Highlight
@@ -108,7 +108,7 @@
 			.destination-body-mobile
 				Under the shadow of the snow capped Mount Toubkal, we start our journey. Crisp air, mountain streams, and a chorus...
 
-		.row.col-md-6
+		.col-md-6
 			.destination-image{style: "background: url('#{asset_path("background/MoroccoBerber.jpg")}') center center no-repeat"}
 				.destination-description
 					.destination-title
@@ -127,7 +127,7 @@
 			.destination-body-mobile
 				Experience legendary Berber culture, indulge in homemade tangier dishes and explore the unique region...
 
-		.row.col-md-6
+		.col-md-6
 			.destination-image{style: "background: url('#{asset_path("background/moroccocoastal.jpg")}') center center no-repeat"}
 				.destination-description
 					.destination-title
@@ -219,6 +219,8 @@
 		%a{href:'/colombia'}
 			.col-md-4.similar-trip-container
 				.similar-trip-image{style: "background: url('#{asset_path("background/WhiteWaterColombiaMain-mini.jpg")}') bottom center no-repeat"}
+					.similar-trip-title
+						EXPEDITION SAMANA
 				.similar-trip-guide{style: "background: url('#{asset_path("background/julesguide-mini.jpg")}') center center no-repeat"}
 				.similar-trip-textbox
 					.similar-trip-text
@@ -230,6 +232,8 @@
 		%a{href:'/peru'}
 			.col-md-4.similar-trip-container
 				.similar-trip-image{style: "background: url('#{asset_path("background/packraftjunglemain-mini.jpg")}') bottom center no-repeat"}
+					.similar-trip-title
+						PACKRAFT THE AMAZON
 				.similar-trip-guide{style: "background: url('#{asset_path("background/paul-mini.png")}') center center no-repeat"}
 				.similar-trip-textbox
 					.similar-trip-text
@@ -241,6 +245,8 @@
 		%a{href:'/socaltrifecta'}
 			.col-md-4.similar-trip-container
 				.similar-trip-image{style: "background: url('#{asset_path("background/TrestlesBeach-mini.jpeg")}') center center no-repeat"}
+					.similar-trip-title
+						SOCAL TRIFECTA
 				.similar-trip-guide{style: "background: url('#{asset_path("background/QuinnSmiles-mini.jpg")}') center center no-repeat"}
 				.similar-trip-textbox
 					.similar-trip-text

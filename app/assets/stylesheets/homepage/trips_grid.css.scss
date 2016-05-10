@@ -211,7 +211,7 @@
   		color: #fff;
   		font-size: 3em;
   		text-align: center;
-  		padding-top: 130px;
+  		padding-top: 100px;
 	}
 
 	.your-adventure-body{
@@ -257,8 +257,7 @@
 
 @media screen and (max-width: 600px){
 	.your-adventure .your-adventure-header{
-		padding-top: 120px;
-		line-height: 60px;
+		padding-top: 90px;
 		max-width: 340px;
 		margin: auto;
 		line-height: 50px;
@@ -266,9 +265,9 @@
 	}
 
 	.your-adventure .your-adventure-body{
-		max-width: 260px;
+		max-width: none;
 		margin: auto;
-		font-size: 1.2em;
+		font-size: 1.0em;
 	}
 }
 
