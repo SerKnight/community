@@ -170,7 +170,11 @@
 	.col-md-12.location-who
 		.location-who-header
 			Who's Going?
+
 		.col-md-4.who-container
+			- @adventure.users.each do |user|
+				= image_tag "#{user.avatar_url}?type=large"
+				= user.inspect
 			.who-image{style: "background: url('#{asset_path("background/banosbiking.jpg")}') center center no-repeat"}
 			.who-text
 				.who-name
@@ -296,6 +300,12 @@
 		%a{href:'/apply/vietnam'}
 			.join-button.btn
 				Contact Jon
+		/ %a{href:'/vietnam/users/auth/facebook'}
+		%a{href: omniauth_authorize_path(:user, :facebook, adventure: 'vietnam' )}
+		
+			.join-button.btn
+				Interested in joining?
+				
 
 :javascript
 

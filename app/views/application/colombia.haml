@@ -128,6 +128,9 @@
 		.location-who-header
 			Who's Going?
 		.col-md-6.who-container
+			- @adventure.users.each do |user|
+				= image_tag "#{user.avatar_url}?type=large"
+				= user.inspect
 			.who-image{style: "background: url('#{asset_path("background/JamokeOnADune.jpg")}') center center no-repeat"}
 			.who-text
 				.who-name
@@ -256,9 +259,12 @@
 			Do you have what it takes?
 		.who-join-description
 			Join the 50-mile river adventure!
-		%a{href:'/apply/Colombia'}
+		/ %a{href:'/apply/Colombia'}
+		/ 	.join-button.btn
+		/ 		Contact Max
+		%a{href: omniauth_authorize_path(:user, :facebook, adventure: 'columbia' )}
 			.join-button.btn
-				Contact Max
+				Lets fuckn party
 
 :javascript
 

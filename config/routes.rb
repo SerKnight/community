@@ -22,6 +22,8 @@ Rails.application.routes.draw do
   get '/apply' => 'contacts#new'
   get '/apply/:type' => 'contacts#new'
   post '/contact' => 'contacts#create'
+
+  
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
@@ -75,7 +77,7 @@ Rails.application.routes.draw do
   devise_scope :user do
     get    "login"   => "users/sessions#new",         as: :new_user_session
     post   "login"   => "users/sessions#create",      as: :user_session
-    delete "signout" => "users/sessions#destroy",     as: :destroy_user_session
+    get    "signout" => "users/sessions#destroy",     as: :destroy_user_session
     
     get    "signup"  => "users/registrations#new",    as: :new_user_registration
     post   "signup"  => "users/registrations#create", as: :user_registration

@@ -11,7 +11,7 @@ RailsAdmin.config do |config|
     end    
   end
 
-  config.included_models = %w[ Contact User ]
+  config.included_models = %w[ Contact User Adventure ]
 
   config.actions do
     dashboard                     # mandatory

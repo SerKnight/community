@@ -1,49 +1,62 @@
-%h1
-  Lets get to know a little about you..
-%h6
-  this is where we can put logic.. 
-  based on which adventure they were on, we can connect them to either a vietnam / ecuador list
-  and people can start to see what other people are interested, with their facebook data..
-  from there you could start email drip campaigns for each set of people to complete the typeform 
-  onboarding page that could be integrated with stripe to take a down payment? 
 
-= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f|
-  = devise_error_messages!
-  .field
-    = f.label :email
-    %br/
-    = f.email_field :email, autofocus: true
-  - if devise_mapping.confirmable? && resource.pending_reconfirmation?
-    %div
-      Currently waiting confirmation for: #{resource.unconfirmed_email}
+/ %h1
+/   Lets get to know a little about you..
+/ %h6
+/   this is where we can put logic.. 
+/   based on which adventure they were on, we can connect them to either a vietnam / ecuador list
+/   and people can start to see what other people are interested, with their facebook data..
+/   from there you could start email drip campaigns for each set of people to complete the typeform 
+/   onboarding page that could be integrated with stripe to take a down payment? 
 
-  %hr
-  %h4 
-    we can add more auto user info to be pulled form facebook. Lmk if you want me to show you where that is.
-  %br
-  %p
-    You can also prolly hide this in a div, and only show it when someone clicks a "Forgot Password?" btn or something?    
-  .field
-    = f.label :password
-    %i (leave blank if you don't want to change it)
-    %br/
-    = f.password_field :password, autocomplete: "off"
-  .field
-    = f.label :password_confirmation
-    %br/
-    = f.password_field :password_confirmation, autocomplete: "off"
-  .field
-    = f.label :current_password
-    %i (we need your current password to confirm your changes)
-    %br/
-    = f.password_field :current_password, autocomplete: "off"
-  .actions
-    = f.submit "Update"
-%h3 Cancel my account / i'm not interested anymore...
-%h7
-  This will delete the user, and from like rails admin or something where you can pull interested ppl's email lists, people can 'unsubscribe' from groups i guess? dont have to keep delete user in, but its here by default
+/ = image_tag "#{current_user.avatar_url}?type=large"
 
-%p
-  Unhappy? #{button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete}
-= link_to "Back", :back
+/ = form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f|
+/   = devise_error_messages!
+/   .field
+/     = f.label :email
+/     %br/
+/     = f.email_field :email, autofocus: true
+/   - if devise_mapping.confirmable? && resource.pending_reconfirmation?
+/     %div
+/       Currently waiting confirmation for: #{resource.unconfirmed_email}
 
+/   %hr
+/   %h4 
+/     we can add more auto user info to be pulled form facebook. Lmk if you want me to show you where that is.
+/   %br
+/   %p
+/     You can also prolly hide this in a div, and only show it when someone clicks a "Forgot Password?" btn or something?    
+/   .field
+/     = f.label :password
+/     %i (leave blank if you don't want to change it)
+/     %br/
+/     = f.password_field :password, autocomplete: "off"
+/   .field
+/     = f.label :password_confirmation
+/     %br/
+/     = f.password_field :password_confirmation, autocomplete: "off"
+/   .field
+/     = f.label :current_password
+/     %i (we need your current password to confirm your changes)
+/     %br/
+/     = f.password_field :current_password, autocomplete: "off"
+/   .actions
+/     = f.submit "Update"
+/ %h3 Cancel my account / i'm not interested anymore...
+/ %h7
+/   This will delete the user, and from like rails admin or something where you can pull interested ppl's email lists, people can 'unsubscribe' from groups i guess? dont have to keep delete user in, but its here by default
+
+/ %p
+/   Unhappy? #{button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete}
+/ = link_to "Back", :back
+
+
+.container
+  .panel.panel-default
+    .panel-body
+      %h1.text-center
+        Trips of interest
+        
+      - current_user.adventures.each do |adventure|
+        .adventure
+          = adventure.inspect

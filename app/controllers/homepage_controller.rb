@@ -9,11 +9,11 @@ class HomepageController < ApplicationController
   end
 
   def vietnam
-
+    @adventure = Adventure.find_by_slug('vietnam')
   end
 
   def colombia
-
+    @adventure = Adventure.find_by_slug('colombia')
   end
 
   def peru
