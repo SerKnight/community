@@ -59,11 +59,11 @@
 	.location-description{
 		padding-top: 80px;
 		padding-bottom: 80px;
-		background-color: whitesmoke;
+		background-color: #F5F5F5;
 
 		.team-leader-container{
 			background-color: #fff;
-			border: 30px solid whitesmoke;
+			border: 30px solid #F5F5F5;
 			min-height: 750px;
 		}
 
@@ -187,65 +187,110 @@
 			margin-bottom: 80px;
 		}
 
-		.destination-image{
-			min-height: 360px;
-			max-width: 550px;
-			padding: 0px;
+		.highlight-gallery{
 			margin: auto;
-			margin-bottom: 20px;
+			width: 90%;
+			max-width: 1200px;
 
+			.destination-highlight{
+				margin: auto;
+				padding: 0px;
+				background-color: #F5F5F5;
+				width: 50%;
+				border: 24px solid #00293c;
+				min-height: 528px;
 
-			-webkit-transition: .5s ease-in-out;
-			-moz-transition: .5s ease-in-out;
-			-o-transition: .5s ease-in-out;
+				&:hover{
+					.destination-description{
+						background: rgba(33,35,38,0.9);
+						-webkit-transition: .5s ease-in-out;
+					}
 
-			&:hover{
-			-webkit-transition: .5s ease-in-out;
-			-moz-transition: .5s ease-in-out;
-			-o-transition: .5s ease-in-out;
+					.destination-subtitle{
+						opacity: 1;
+						-webkit-transition: .5s ease-in-out;
+					}
 
-				.destination-description{
-					background: rgba(33,35,38,0.8);
-					-webkit-transition: .5s ease-in-out;
+					.destination-body{
+						opacity: 1;
+						-webkit-transition: .5s ease-in-out;
+					}
+
+					.destination-button{
+						cursor: pointer;
+						opacity: 1;
+						-webkit-transition: .5s ease-in-out;
+						margin-top: 50px;
+					}
+
+					.destination-title{
+						-webkit-transition: .5s ease-in-out;
+						max-width: 100%;
+						margin-top: 0px !important;
+						padding-top: 20px;
+						padding-bottom: 20px;
+						background: transparent;
+						border: none;
+						box-shadow: none;
+					}
+
+					.destination-title-underline{
+						opacity: 1;
+						-webkit-transition: .5s ease-in-out;
+					}
 				}
 
-				.destination-subtitle{
-					opacity: 1;
+				.destination-subtitle-mobile{
+					font-family: proxima_bold;
+					font-size: 1.4em;
+					color: #00293c;
+					text-align: left;
+					margin-left: 24px;
+					margin-right: 24px;
 					-webkit-transition: .5s ease-in-out;
+					padding-top: 20px;
 				}
 
-				.destination-body{
-					opacity: 1;
+				.destination-underline-mobile{
+					border-bottom: 4px solid #aa4b41;
+					max-width: 120px;
+					margin-left: 24px;
 					-webkit-transition: .5s ease-in-out;
+					margin-top: 20px;
 				}
 
-				.destination-button{
-					cursor: pointer;
-					opacity: 1;
-					-webkit-transition: .5s ease-in-out;	
-				}
-
-				.destination-title{
-					-webkit-transition: .5s ease-in-out;
-					max-width: 100%;
-					margin-top: 0px !important;
+				.destination-body-mobile{
+					font-family: proxima_regular;
+					text-align: left;
+					color: #00293c;
+					font-size: 1.1em;
+					padding-left: 24px;
+					padding-right: 24px;
 					padding-top: 20px;
 					padding-bottom: 20px;
-					background: transparent;
-					border: none;
-					box-shadow: none;
+					margin: auto;
 				}
 
-				.destination-title-underline{
-					opacity: 1;
+				.destination-image{
+					min-height: 300px;
+					padding: 0px;
+
 					-webkit-transition: .5s ease-in-out;
+					-moz-transition: .5s ease-in-out;
+					-o-transition: .5s ease-in-out;
+
+					&:hover{
+						-webkit-transition: .5s ease-in-out;
+						-moz-transition: .5s ease-in-out;
+						-o-transition: .5s ease-in-out;
+					}
 				}
 			}
 		}
 			
 		.destination-description{
 			-webkit-transition: .5s ease-in-out;
-			min-height: 360px;
+			min-height: 300px;
 			border: 8px solid transparent;
 			border-left: none;
 			border-right: none;
@@ -261,6 +306,7 @@
 				border-bottom: 0px solid #aa4b41;
 				letter-spacing: 1px;
 				text-transform: uppercase;
+				line-height: 30px;
 			}
 
 			.destination-title-underline{
@@ -309,47 +355,14 @@
 				width: 100%;
 				max-width: 140px;
 				margin: auto;
-				border: 2px solid #fff;
+				margin-top: 50px;
+				border: 4px solid #aa4b41;
 
 				&:hover{
 					background: rgba(170,75,65,0.3);
 					max-width: 160px;
 				}
 			}
-		}
-
-		.destination-subtitle-mobile{
-			display: none;
-			font-family: proxima_bold;
-			font-size: 1.4em;
-			color: #fff;
-			text-align: center;
-			right: 20px;
-			-webkit-transition: .5s ease-in-out;
-			padding-top: 20px;
-		}
-
-		.destination-underline-mobile{
-			border-bottom: 4px solid #aa4b41;
-			max-width: 120px;
-			margin: auto;
-			-webkit-transition: .5s ease-in-out;
-			display: none;
-			margin-top: 20px;
-		}
-
-		.destination-body-mobile{
-			display: none;
-			font-family: proxima_regular;
-			text-align: center;
-			color: #fff;
-			font-size: 1.2em;
-			padding-left: 12px;
-			padding-right: 12px;
-			padding-top: 20px;
-			padding-bottom: 20px;
-			max-width: 550px;
-			margin: auto;
 		}
 	}
 
@@ -408,7 +421,7 @@
 		padding-top: 80px;
 		padding-bottom: 80px;
 		min-height: 600px;
-		background: whitesmoke;
+		background: #F5F5F5;
 
 		.location-who-header{
 			font-family: proxima_black;
@@ -427,7 +440,7 @@
 			&:hover{
 
 				.who-image{
-					border: 0px solid whitesmoke;
+					border: 0px solid #F5F5F5;
 					-webkit-transition: .3s ease-in-out;
 					-moz-transition: .3s ease-in-out;
 					-o-transition: .3s ease-in-out;
@@ -448,7 +461,7 @@
 				width: 260px;
 				margin: auto;
 				float: none;
-				border: 10px solid whitesmoke;
+				border: 10px solid #F5F5F5;
 
 				-webkit-transition: .3s ease-in-out;
 				-moz-transition: .3s ease-in-out;
@@ -702,7 +715,7 @@
 
 			.location-date{
 				font-family: proxima_bold;
-				font-size: 2.2em;
+				font-size: 1.6em;
 				color: #fff;
 				text-align: center;
 				border-bottom: 2px solid #fff;
@@ -714,7 +727,7 @@
 
 			.trip-price{
 				font-family: proxima_bold;
-				font-size: 2.2em;
+				font-size: 1.6em;
 				color: #fff;
 				text-align: center;
 				padding-top: 10px;
@@ -864,6 +877,65 @@
 		padding-top: 0px;
 	}
 
+	.location-details .destination-container .highlight-gallery .destination-highlight{
+		min-width: 500px;
+		margin-bottom: 40px;
+		border: none;
+		min-height: 470px;
+	}
+
+	.location-details .destination-container .destination-description .destination-subtitle{
+		display: none;
+	}
+
+	.location-details .destination-container .destination-image{
+		&:hover{
+			.destination-title{
+				margin-top: 40px !important;
+				margin-bottom: 0px !important;
+			}
+
+			.destination-title-underline{
+				margin-bottom: 30px !important;
+				margin: auto;
+			}
+		}
+	}
+
+	.destination-description .destination-title{
+		margin: auto !important;
+		margin-top: 100px !important;
+		text-align: center !important;
+		background: transparent !important;
+		text-shadow: 1px 1px 2px #000;
+		margin-bottom: 24px !important;
+		box-shadow: none !important;
+	}
+
+	.destination-body-mobile{
+		display: block !important;
+	}
+
+	.destination-underline-mobile{
+		display: block !important;
+	}
+
+	.destination-subtitle-mobile{
+		display: block !important;
+	}
+
+	.destination-body{
+		display: none;
+	}
+
+	.destination-button{
+		opacity: 1 !important;
+		box-shadow: 1px 1px 4px #333;
+		background: rgba(0, 41, 60, 0.8);
+		margin-top: 24px !important;
+		border: 4px solid #fff !important;
+	}
+
 	.location-details .location-who .who-container .who-image{
 		margin-top: 50px !important;
 	}
@@ -905,61 +977,16 @@
 
 @media screen and (max-width: 771px){
 
-	.location-details .destination-container .destination-description .destination-subtitle{
-		display: none;
-	}
-
-	.location-details .destination-container .destination-image{
-		&:hover{
-			.destination-title{
-				margin-top: 40px !important;
-				margin-bottom: 0px !important;
-			}
-
-			.destination-title-underline{
-				margin-bottom: 30px !important;
-			}
-		}
-	}
-
-	.destination-description .destination-title{
-		margin: auto !important;
-		margin-top: 100px !important;
-		background: transparent !important;
-		text-shadow: 1px 1px 2px #000;
-		margin-bottom: 24px !important;
-		box-shadow: none !important;
-	}
-
-	.destination-body-mobile{
-		display: block !important;
-	}
-
-	.destination-underline-mobile{
-		display: block !important;
-	}
-
-	.destination-subtitle-mobile{
-		display: block !important;
-	}
-
-	.destination-body{
-		display: none;
-	}
-
-	.destination-button{
-		opacity: 1 !important;
-		margin-top: 20px !important;
-		box-shadow: 1px 1px 4px #333;
-		border: 1px solid #fff;
-	}
-
 	.location-details .location-join .who-join{
 		font-size: 2.4em;
 	}
 
 	.location-details .location-join .who-join-description{
 		font-size: 1.6em;
+	}
+
+	.location-details .destination-container .highlight-gallery .destination-highlight{
+		min-width: 450px;
 	}
 }
 
@@ -985,7 +1012,7 @@
 	}
 
 	.location-details .location-description .team-leader-container{
-		border: 4px solid whitesmoke;
+		border: 4px solid #F5F5F5;
 		padding-left: 0px;
 		padding-right: 0px;
 		padding-bottom: 40px;
@@ -994,6 +1021,11 @@
 	.location-details .location-description .description-guide-image{
 		min-height: 220px;
 		width: 220px;
+	}
+
+	.location-details .destination-container .highlight-gallery .destination-highlight{
+		width: 100%;
+		min-width: 250px;
 	}
 
 	.location-details .location-description .description-title{
@@ -1045,20 +1077,16 @@
 		max-width: 100px !important;
 	}
 
-	.destination-description .destination-title{
-		margin-top: 112px !important;
-		font-size: 2.4em !important;
-	}
-
 	.location-details .destination-container .basecamps-title{
 		font-size: 2em;
 		max-width: 225px;
 	}
 
+	.location-details .destination-container .highlight-gallery{	
+		width: 98%;
+	}
+
 	.location-details .destination-container .destination-image{
-		min-height: 310px;
-		margin-left: -15px;
-		margin-right: -15px;
 		border: none !important;
 	}
 
