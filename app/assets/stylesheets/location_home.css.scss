@@ -436,6 +436,10 @@
 
 		.who-container{
 			margin-top: 20px;
+			background: #fff;
+			padding: 20px;
+			min-height: 542px;
+			border: 8px solid #f5f5f5;
 
 			&:hover{
 
@@ -475,7 +479,7 @@
 				margin: auto;
 
 				.who-name{
-					font-family: proxima_thin;
+					font-family: proxima_bold;
 					color: #aa4b41;
 					font-size: 2.4em;
 					padding-top: 10px;
@@ -489,14 +493,14 @@
 				}
 
 				.who-title{
-					font-family: proxima_regular;
+					font-family: proxima_bold;
 					color: #212326;
 					font-size: 1.4em;
 					padding-top: 10px;
 				}
 
 				.who-description{
-					font-family: proxima_thin;
+					font-family: proxima_regular;
 					color: #212326;
 					font-size: 1.2em
 				}
