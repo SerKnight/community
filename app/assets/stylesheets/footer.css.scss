@@ -1,45 +1,116 @@
 #footer {
 	width: 100%;
 	position: relative;
-	background-color: #fff;
+	background-color: #212326;
 	overflow-y: hidden !important;
-	padding: 8px 0 2px 0;
+	padding: 0px 0 0px 0;
+
+	.footer-contact-section{
+		padding-top: 30px;
+		background: #aa4b41;
+		padding-bottom: 20px;
+
+		#footer-email-title{
+			color: #fff;
+			font-family: proxima_bold;
+			font-size: 1.4em;
+			padding-bottom: 8px;
+			text-align: center;
+		}
+
+		.footer-email-container{
+			border: 2px solid #aa4b41;
+			border-radius: 20px;
+			width: 280px;
+			margin: auto;
+			height: 36px;
+			padding-right: 6px;
+			margin-bottom: 20px;
+			border: 2px solid #fff;
+			background: #fff;
+
+			.enter-email-field{
+				border-radius: 4px;
+				display: block;
+				width: 220px;
+			}
+
+			.email-form-button{
+				border: none;
+				background-color: #aa4b41;
+				font-family: proxima_bold; 
+				-webkit-transition: all 0.4s ease;
+				transition: all 0.4s ease;
+				width: 60px;
+				border-radius: 14px;
+				border-top-left-radius: 0px;
+				border-bottom-left-radius: 0px;
+				border-left: 2px solid #fff;
+
+				&:hover{
+					background-color: rgba(170, 75, 65, 0.7);
+					-webkit-transition: all 0.4s ease;
+					transition: all 0.4s ease;
+				}
+			}
+		}
+	}
+
+	.footer-logo{
+	    background-repeat: no-repeat;
+	    background-size: cover;
+	    background-position: center center;
+	    position: relative;
+	    width: 200px;
+	    height: 200px;
+	    background-image: asset-url("logos/headerlogo.png");
+	    margin: auto;
+	    margin-bottom: -80px;
+	    margin-top: -110px;
+	    cursor: pointer;
+	}
+
+	.social-row{
+		background: #F5F5F5;
+		padding-top: 70px;
+
+		a:hover {
+			opacity: 0.5;
+		}
+
+		#footer-social-title{
+			color: #212326;
+			font-family: proxima_bold;
+			font-size: 1.4em;
+			padding-bottom: 8px;
+			text-align: center;
+			padding-top: 12px;
+		}
+
+		.footer-social-buttons{
+			margin: auto;
+			max-width: 200px;
+			padding-bottom: 20px;
+		}
+	}
 
 	.container {
 		font-size: 1.2em;
-		padding-bottom: 72px;
-
-		.footer-logo{
-		    background-repeat: no-repeat;
-		    background-size: cover;
-		    background-position: center center;
-		    position: relative;
-		    width: 200px;
-		    height: 200px;
-		    background-image: asset-url("logos/headerlogo.png");
-		    margin: auto;
-		    margin-bottom: 20px;
-		    margin-top: 42px;
- 		}
+		padding-bottom: 40px;
 
 		.footer_text {
-			color: #212326;
+			color: #fff;
 			padding-top: 30px;
 			padding-bottom: 20px;
 			padding-left: 0px;
 			padding-right: 0px;
 
-			.footer-contact-section{
-				padding-top: 50px;
-			}
-
 			.footer-upcoming-trips{
-				padding-top: 24px;
 			}
 
 			#footer-text-title{
 				text-decoration: none;
-				color: #212326;
+				color: #fff;
 				font-family: proxima_bold;
 				font-size: 1.2em;
 				padding-bottom: 8px;
@@ -54,7 +125,7 @@
 
 			.footer-trip-link{
 				text-decoration: none;
-				color: #212326;
+				color: rgba(255,255,255,0.8);
 				font-family: proxima_regular;
 				font-size: 1.0em;
 				padding-bottom: 8px;
@@ -89,56 +160,18 @@
 					}
 				}
 			}
-
-			.social-row {
-				margin-top: 10px;
-				margin-bottom: 10px;
-
-				a:hover {
-					opacity: 0.5;
-				}
-			}	
-		}
-
-		.footer-email-container{
-			border: 2px solid #aa4b41;
-			border-radius: 20px;
-			width: 280px;
-			margin: auto;
-			height: 36px;
-			padding-right: 3px;
-			margin-bottom: 20px;
-
-			.enter-email-field{
-				border-radius: 4px;
-				display: block;
-				width: 220px;
-			}
-
-			.email-form-button{
-				border: none;
-				background-color: #aa4b41;
-				font-family: proxima_bold; 
-				-webkit-transition: all 0.4s ease;
-				transition: all 0.4s ease;
-				width: 60px;
-				border-radius: 14px;
-				border-top-left-radius: 0px;
-				border-bottom-left-radius: 0px;
-
-				&:hover{
-					background-color: rgba(170, 75, 65, 0.7);
-					-webkit-transition: all 0.4s ease;
-					transition: all 0.4s ease;
-				}
-			}
 		}
 	}
 }
 
 @media screen and (max-width: 991px){
-	.footer-logo-section{
-		display: none;
+
+	.footer-upcoming-trips{
+		margin-bottom: 16px;
+	}
+
+	#footer .footer-logo{
+		margin-top: -60px;
 	}
 }
 

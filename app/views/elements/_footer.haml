@@ -1,10 +1,26 @@
 #footer
+  .row.footer-contact-section
+    #footer-email-title
+      Be first in line for upcoming trips.
+    #signupModal{"aria-labelledby" => "signupModal", :role => "dialog", :tabindex => "-1"}
+      = form_for :contact, url: {:controller => "contacts", :action => "create"}, method: "post", remote: true do |f|
+        %input{:name => "contact[contact_type]", :type => "hidden", value: 'Email Signup'}
+
+        .col-md-12
+          .apply-form-box.apply-form
+            .form-group.footer-email-container
+              .row
+                .input-group.enter-email-field
+                  %input#InputEmailFirst.form-control.form-field-box{:name => "contact[email]", :placeholder => "Your Email", style: "border: none; text-align: center; padding-left: 42px; background: transparent; box-shadow: none; font-family: proxima_regular;", :required => "", :type => "email"}
+
+                .form-group.text-center
+                  %input#submit.btn.btn-success.application-form-btn.email-form-button{:name => "submit", :type => "submit", :value => "Join"}
   .container.text-center
     .footer_text
       .col-md-4.footer-upcoming-trips
         .footer-text
           #footer-text-title
-            Upcoming Trips
+            Join a Trip
             <br>
           .footer-header-underline
           %a.footer-trip-link{href: "/vietnam"}
@@ -16,48 +32,51 @@
           %a.footer-trip-link{href: "/morocco"}
             The Berber Traverse
             <br>
-          %a.footer-trip-link{href: "/india"}
-            Riding the Roof of the World
-            <br>
-          %a.footer-trip-link{href: "/peru"}
-            Adventure & Conflict in the Amazon
-            <br>
-          %a.footer-trip-link{href: "/socaltrifecta"}
-            The SoCal Trifecta
-            <br>
-            <br>
-          #footer-text-title
-            Create your Adventure
+          #footer-text-title{style: "margin-top: 16px;"}
+            AdventureMade
           .footer-header-underline
           %a.footer-trip-link{href: "/adventure"}
-            Become an Ambassador
+            How it Works
+            <br>
+          %a.footer-trip-link{href: "/contact-us"}
+            Contact Us
+            <br>
+
+      .col-md-4
+
+      .col-md-4
+        #footer-text-title
+          Launch a Trip
+        .footer-header-underline
+        %a.footer-trip-link{href: "/india"}
+          Riding the Roof of the World
+          <br>
+        %a.footer-trip-link{href: "/peru"}
+          Adventure & Conflict in the Amazon
+          <br>
+        %a.footer-trip-link{href: "/socaltrifecta"}
+          The SoCal Trifecta
+          <br>
+        #footer-text-title{style: "margin-top: 16px;"}
+          Coming Soon
+        .footer-header-underline
+        %a.footer-trip-link{href: "/apply/kyrgyzstan"}
+          Kyrgyz Eagles & Yurts
+          <br>
+        %a.footer-trip-link{href: "/apply/baja"}
+          The Baja Escape
           <br>
 
-      .col-md-4.footer-logo-section
-        .footer-logo
+  .footer-logo-section
+    .footer-logo{href: "/india"}
 
-      .col-md-4.footer-contact-section
-        #footer-text-title
-          Send me new trip alerts
-        #signupModal{"aria-labelledby" => "signupModal", :role => "dialog", :tabindex => "-1"}
-          = form_for :contact, url: {:controller => "contacts", :action => "create"}, method: "post", remote: true do |f|
-            %input{:name => "contact[contact_type]", :type => "hidden", value: 'Email Signup'}
-
-            .col-md-12
-              .apply-form-box.apply-form
-                .form-group.footer-email-container
-                  .row
-                    .input-group.enter-email-field
-                      %input#InputEmailFirst.form-control.form-field-box{:name => "contact[email]", :placeholder => "Your Email", style: "border: none; text-align: center; padding-left: 42px; background: transparent;", :required => "", :type => "email"}
-
-                    .form-group.text-center
-                      %input#submit.btn.btn-success.application-form-btn.email-form-button{:name => "submit", :type => "submit", :value => "Join"}
-        .col-md-12.social-row
-          #footer-text-title
-            Connect with Us
-          %a{href: "https://www.facebook.com/MadebyAdventures/", target: "_blank", style: "text-decoration: none !important"}
-            = image_tag asset_url('icons/facebookicon.png', )
-          %a{href: "https://twitter.com/adventuremade", target: "_blank", style: "text-decoration: none !important"}
-            = image_tag asset_url('icons/twittericon.png')
-          %a{href: "https://www.instagram.com/madebyadventure/", target: "_blank", style: "text-decoration: none !important"}
-            = image_tag asset_url('icons/instagramicon.png')
+  .social-row
+    #footer-social-title
+      Connect with Us
+    .footer-social-buttons
+      %a{href: "https://www.facebook.com/MadebyAdventures/", target: "_blank", style: "text-decoration: none !important"}
+        = image_tag asset_url('icons/facebookicon.png', )
+      %a{href: "https://twitter.com/adventuremade", target: "_blank", style: "text-decoration: none !important"}
+        = image_tag asset_url('icons/twittericon.png')
+      %a{href: "https://www.instagram.com/madebyadventure/", target: "_blank", style: "text-decoration: none !important"}
+        = image_tag asset_url('icons/instagramicon.png')

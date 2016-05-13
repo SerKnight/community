@@ -58,5 +58,10 @@
         Trips of interest
         
       - current_user.adventures.each do |adventure|
-        .adventure
-          = adventure.inspect
+        .col-md-12.who-container.panel
+          .who-text
+            .who-name
+              = link_to adventure.title, adventure.slug
+            .who-title
+              = adventure.teaser
+            

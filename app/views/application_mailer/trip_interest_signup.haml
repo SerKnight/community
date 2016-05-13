@@ -1,0 +1,26 @@
+%div{:style => "color: rgb(76, 76, 76); font-family: 'Lucida Grande', Helvetica, Verdana, Arial, sans-serif; font-size: 13px;"}
+  %div
+    %strong
+      %i New Trip Interest
+
+  %div
+    %h1 Lead Details
+    %strong
+      %br
+    %div
+      %b Contact Name:
+      = @user.name
+
+    %div
+      %b Email:
+      = @user.email
+
+    %div
+      %b Message:
+      = image_tag "#{@user.avatar_url}?type=large"
+
+
+  %div
+    %br/
+  %div
+    %a{href: "www.travel-planet.herokuapp.com/admin/user/#{@user.id}/edit", target: '_blank'} Review Lead Here

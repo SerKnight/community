@@ -12,7 +12,7 @@
 			.mission-block-content{
 				max-width: 800px;
 				margin: auto;
-				background-color: whitesmoke;
+				background-color: #F5F5F5;
 				padding: 40px;
 				margin-top: -100px;
 				border-top: 8px solid #00293c;
@@ -65,8 +65,10 @@
 				margin: auto;
 				border-radius: 70px;
 				max-width: 600px;
-				min-height: 412px;
+				min-height: 330px;
 				background-color: #fff !important;
+				border-bottom-left-radius: 0px;
+				border-bottom-right-radius: 0px;
 			}
 
 			.explainer_step_text_background{
@@ -96,8 +98,8 @@
 				border-radius: 70px;
 				border-top-left-radius: 0px;
 				border-top-right-radius: 0px;
-				background: rgba(0,41,60,0.5);
-				margin-top: -84px;
+				background: rgb(0,41,60);
+				margin-top: -14px;
 
 				.explainer_step_mobile_text{
 					font-family: proxima_regular;
@@ -167,24 +169,23 @@
 		font-family: proxima_bold;
 		text-align: center;
 		font-size: 1.2em;
-		color: rgba(170, 75, 65, 1);
+		color: #fff;
 		height: 40px;
 		max-width: 180px;
 		margin: auto;
 		-webkit-transition: all 0.7s ease;
 		transition: all 0.7s ease;
 		border-radius: 100px;
-		background-color: transparent;
-		border: 2px solid rgba(170, 75, 65, 1);
+		background-color: rgba(170, 75, 65, 1);
 		margin-top: 40px;
-		padding-top: 6px;
+		padding-top: 8px;
 
 		&:hover{
-			background-color: rgba(89,39,34,0.8);
+			background-color: rgba(89,39,34,1);
 			color: #fff;
 			-webkit-transition: all 0.4s ease;
 			transition: all 0.4s ease;
-			max-width: 220px;
+			max-width: 200px;
 		}
 	}
 }

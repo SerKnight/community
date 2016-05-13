@@ -13,4 +13,10 @@ class ApplicationMailer < ActionMailer::Base
   end
 
 
+  def trip_interest_signup(user_id)
+  	@user = User.find(user_id)
+  	mail(to: 'info@advlo.com', subject: 'New trip interest')
+  end
+
+
 end

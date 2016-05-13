@@ -5,11 +5,10 @@ class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
 
     # Attempt to find the User
     @user = User.find_for_facebook_oauth(request.env["omniauth.auth"], current_user)
+    ApplicationMailer.trip_interest_signup(@user.id).deliver
 
     if !request.env['omniauth.params'].empty?
       adventure = Adventure.find_by_slug(request.env['omniauth.params']['adventure'])
-      @user.adventures << adventure
-      @user.save
       adventure.users << @user
       adventure.save
     end
