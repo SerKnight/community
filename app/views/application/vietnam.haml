@@ -192,7 +192,7 @@
       - @adventure.users.each do |user|
         - if @adventure.users.count == 1
           .col-md-12.text-center
-            = image_tag "#{user.avatar_url}?type=large"
+            = image_tag asset_url("#{user.avatar_url}?type=large")
             %hr
             .location-who-header= user.name.split(' ')[0]
         - if @adventure.users.count == 2
