@@ -48,8 +48,9 @@
 }
 
 .onboard-mission{
-	background: rgba(255,255,255,0.6);
-	border-top: 4px solid #aa4b41;
+	background: #212326;
+	border-top: 8px solid #00293c;
+	padding-bottom: 40px;
 
 	.onboard-mission-header{
 		font-family: proxima_bold;
@@ -75,9 +76,8 @@
 		margin-top: -120px;
 		padding-right: 8%;
 		padding-left: 8%;
-		border-top: 4px solid #aa4b41;
+		border-top: 8px solid #00293c;
 		line-height: 32px;
-		margin-bottom: 50px;
 	}
 }
 
@@ -95,14 +95,14 @@
 	background-image: asset-url("background/SEAsiaStock.jpeg");
 
 	.creator-hiw-header{
-		font-family: proxima_bold;
+		font-family: proxima_thin;
 		color: #212326;
-		font-size: 2.8em;
+		font-size: 2.4em;
 		text-align: center;
-		max-width: 420px;
+		max-width: 200px;
 		margin: auto;
 		border-bottom: 2px solid #aa4b41;
-		margin-bottom: 40px;
+		margin-bottom: 80px;
 	}
 
 	.creator-hiw-box{
@@ -111,7 +111,7 @@
 			padding: 20px;
 			padding-top: 40px;
 			padding-bottom: 40px;
-			background: rgba(33,35,38,0.8);
+			background: rgba(33,35,38,1);
 			box-shadow: 2px 2px 8px rgba(33,35,38,0.5);
 			max-width: 400px;
 			margin: auto;
@@ -137,10 +137,11 @@
 			.creator-hiw-box-body{
 				font-family: proxima_regular;
 				color: #fff;
-				font-size: 1.1em;
+				font-size: 1em;
 				text-align: center;
 				max-width: 400px;
 				margin: auto;
+				line-height: 24px;
 			}
 		}
 	}
@@ -152,11 +153,11 @@
 	padding-bottom: 80px;
 
 	.we-are-seeking-header{
-		font-family: proxima_bold;
+		font-family: proxima_thin;
 		color: #212326;
-		font-size: 2.8em;
+		font-size: 2.4em;
 		text-align: center;
-		max-width: 420px;
+		max-width: 284px;
 		margin: auto;
 		border-bottom: 2px solid #aa4b41;
 		margin-bottom: 50px;
@@ -175,7 +176,7 @@
 	.we-are-seeking-body{
 		font-family: proxima_regular;
 		color: #212326;
-		font-size: 1.2em;
+		font-size: 1em;
 		text-align: center;
 		max-width: 550px;
 		margin: auto;
@@ -203,11 +204,11 @@
 		background: #F5F5F5;
 
 		.adventure-creator-header{
-			font-family: proxima_bold;
+			font-family: proxima_thin;
 			color: #212326;
-			font-size: 2.8em;
+			font-size: 2.4em;
 			text-align: center;
-			max-width: 420px;
+			max-width: 200px;
 			margin: auto;
 			border-bottom: 2px solid #aa4b41;
 		}
@@ -228,7 +229,7 @@
 	padding-top: 50px;
 	padding-bottom: 50px;
 	height: 400px;
-	background: #aa4b41;
+	background: #00293c;
 
 	.creation-apply-box{
 		min-height: 240px;
@@ -256,12 +257,12 @@
 			margin: auto;
 			text-align: center;
 			height: 48px;
-			font-family: proxima_thin;
-			font-size: 1.4em;
+			font-family: proxima_bold;
+			font-size: 1.2em;
 			margin-top: 24px;
-			padding-top: 8px;
-			border: 2px solid rgba(255,255,255,1);
-			border-radius: 4px;
+			padding-top: 10px;
+			border: 2px solid #aa4b41;
+			border-radius: 100px;
 
 			-webkit-transition: .3s ease-in-out;
 			-moz-transition: .3s ease-in-out;
@@ -289,21 +290,15 @@
 		padding-top: 20px;
 		padding-bottom: 20px;
 		min-height: 0px;
+		padding-left: 8px;
+		padding-right: 8px;
+		line-height: 20px;
 	}
 
 	.creator-hiw .creator-hiw-box .creator-hiw-box-text .creator-hiw-box-title{
 		padding-bottom: 8px;
 		margin-bottom: 8px;
 		max-width: 300px;
-	}
-
-	.creator-hiw .creator-hiw-box .creator-hiw-box-text .creator-hiw-box-body{
-		max-width: 300px;
-		font-size: 1.1em;
-	}
-
-	.onboard-mission{
-		background: rgba(255,255,255,0.9);
 	}
 }
 
@@ -337,11 +332,6 @@
 		max-width: 300px;
 	}
 
-	.creator-hiw .creator-hiw-header{
-		font-size: 2em;
-		max-width: 300px;
-	}
-
 	.creator-hiw .creator-hiw-box .creator-hiw-box-text .creator-hiw-box-title{
 		font-size: 1.3em;
 		max-width: 260px;
@@ -349,12 +339,8 @@
 	}
 
 	.creator-hiw .creator-hiw-box .creator-hiw-box-text .creator-hiw-box-body{
-		font-size: 1.0em;
-	}
-
-	.we-are-seeking .we-are-seeking-header{
-		font-size: 2em;
-		max-width: 300px;
+		font-size: 0.9em;
+		line-height: 20px;
 	}
 
 	.adventure-creator-container .adventure-creator-text .adventure-creator-header{
@@ -389,6 +375,10 @@
 
 	.we-are-seeking .we-are-seeking-body{
 		font-size: 1.0em;
+	}
+
+	.creator-hiw .creator-hiw-header{
+		margin-bottom: 40px;
 	}
 
 	.adventure-creator-container .adventure-creator-text{
