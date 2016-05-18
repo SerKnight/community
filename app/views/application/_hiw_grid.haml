@@ -1,63 +1,115 @@
 #hiw_grid
 
-	.container
+	.container{style: "padding-left: 8px; padding-right: 8px;"}
 		.grid_header
 			.grid_title
 				Join a Trip
 				<br>
-				%b.grid_subtitle 
+				.grid_subtitle 
 					Find the trip that fits your vibe. Check out who’s going and chat with the ambassador or local guide coordinating the adventure.
 			.grid-title-underline	
-		.col-md-12.mobile-grid
-			.mobile-grid-img{style: "background: url('#{asset_path("background/vietnampath.jpeg")}') center center no-repeat; background-size: cover;"}
-				.locationtext
-					.mobile-grid-title.text-center
-						The Long Road South
-					.mobile-grid-dates
-						.fa.fa-calendar{style:"color:#aa4b41;"}
-						June 2016
-					.mobile-grid-location
-						.fa.fa-map-marker{style:"color:#aa4b41;"}
-						Vietnam
-					.mobile-grid-description
-						A 2,400km adventure across Vietnam from Hanoi to Ho Chi Minh City on a souped up dirt bike. No set routes, GPS cheats or guides to lead the way.
-					%a{href: "/vietnam"}
-						.col-md-4.col-md-offset-4.mobile-grid-btn.btn
-							View Adventure
 
-		.col-md-12.mobile-grid
-			.mobile-grid-img{style: "background: url('#{asset_path("background/WhiteWaterColombialong.jpg")}') center center no-repeat; background-size: cover;"}
+		%a{href: "/colombia"}
+			.col-md-4.mobile-grid
+				.mobile-grid-img{style: "background: url('#{asset_path("background/ExpeditionSamanaTitleSmall.jpg")}') bottom center no-repeat; background-size: cover;"}
 				.locationtext
-					.mobile-grid-title.text-center
-						Expedition Samana
 					.mobile-grid-dates
-						.fa.fa-calendar{style:"color:#aa4b41;"}
-						May 2016
-					.mobile-grid-location
-						.fa.fa-map-marker{style:"color:#aa4b41;"}
+						.fa.fa-calendar{style:"color:#aa4b41; font-size: 12px;"}
+						May 2016    ||  
+						.fa.fa-map-marker{style:"color:#aa4b41; font-size: 12px;"}
 						Colombia
 					.mobile-grid-description
 						Tackle the mighty Rio Verde and Rio Samana, from the Colombian highlands to the dense jungles of the tropical rainforest. Cliff jumping, hammock camping, swimming in waterfalls, a lot of coffee, and nights under the stars.
-					%a{href: "/colombia"}
-						.col-md-4.col-md-offset-4.mobile-grid-btn.btn
-							View Adventure
+				.mobile-grid-progress
+					.mobile-grid-travelers
+						.traveler-icon{style: "background: url('#{asset_path("background/maxprofileicon.jpg")}') bottom center no-repeat"}
+						.traveler-icon{style: "background: url('#{asset_path("background/RachelProfileicon.jpg")}') center center no-repeat"}
+						.traveler-icon{style: "background: url('#{asset_path("background/JonProfileicon.jpg")}') bottom center no-repeat"}
+						.traveler-icon{style: "background: url('#{asset_path("background/mitchprofileicon.jpg")}') center center no-repeat"}
+						.traveler-icon{style: "background: url('#{asset_path("background/JeffProfileicon.jpg")}') center center no-repeat"}
+					.mobile-grid-progress-bar
+						.progress-bar-status-vietnam
+					.trip-stats
+						.trip-stats-duration
+							10 Days
+							.trip-stats-body
+								trip length
+						.trip-stats-capacity
+							Completed
+							.trip-stats-body
+								status
+						.trip-stats-price
+							$1,500
+							.trip-stats-body
+								final price
 
-		.col-md-12.mobile-grid
-			.mobile-grid-img{style: "background: url('#{asset_path("background/moroccocoversmall.jpeg")}') center center no-repeat; background-size: cover;"}
+		%a{href: "/vietnam"}
+			.col-md-4.mobile-grid
+				.mobile-grid-img{style: "background: url('#{asset_path("background/TheLongRoadSouthTitleSmall.jpg")}') center center no-repeat; background-size: cover;"}
 				.locationtext
-					.mobile-grid-title.text-center
-						The Berber Traverse
 					.mobile-grid-dates
-						.fa.fa-calendar{style:"color:#aa4b41;"}
-						September 2016
-					.mobile-grid-location
-						.fa.fa-map-marker{style:"color:#aa4b41;"}
+						.fa.fa-calendar{style:"color:#aa4b41; font-size: 12px;"}
+						June 2016    ||  
+						.fa.fa-map-marker{style:"color:#aa4b41; font-size: 12px;"}
+						Vietnam
+					.mobile-grid-description
+						A 2,400km adventure across Vietnam from Hanoi to Ho Chi Minh City on a souped up dirt bike. No set routes, GPS cheats or guides to lead the way.
+				.mobile-grid-progress
+					.mobile-grid-travelers
+						.traveler-icon{style: "background: url('#{asset_path("background/banosbikingicon.jpg")}') center center no-repeat"}
+						.traveler-icon{style: "background: url('#{asset_path("background/Ryansfillerimageicon.jpeg")}') bottom center no-repeat"}
+						.traveler-icon{style: "background: url('#{asset_path("background/Chrisjumpingicon.jpg")}') center center no-repeat"}
+					.mobile-grid-progress-bar
+						.progress-bar-status-vietnam
+					.trip-stats
+						.trip-stats-duration
+							15 Days
+							.trip-stats-body
+								trip length
+						.trip-stats-capacity
+							Completed
+							.trip-stats-body
+								status
+						.trip-stats-price
+							$1,500
+							.trip-stats-body
+								final price
+
+		%a{href: "/morocco"}
+			.col-md-4.mobile-grid
+				.mobile-grid-img{style: "background: url('#{asset_path("background/TheBerberTraverseTitleTriangles.jpg")}') center center no-repeat; background-size: cover;"}
+				.locationtext
+					.mobile-grid-dates
+						.fa.fa-calendar{style:"color:#aa4b41; font-size: 12px;"}
+						September 2016    ||  
+						.fa.fa-map-marker{style:"color:#aa4b41; font-size: 12px;"}
 						Morocco
 					.mobile-grid-description
 						An epic, all-girls ride from the Berber mountain country to the Atlantic coast along single track, trading routes, cart paths, goat trails, dry riverbeds... We'll ride for nearly a week until reaching our surf haven on the coast.
-					%a{href: "/apply/morocco"}
-						.col-md-4.col-md-offset-4.mobile-grid-btn.btn
-							View Adventure
+				.mobile-grid-progress
+					.mobile-grid-travelers
+						.traveler-icon{style: "background: url('#{asset_path("background/laurieprofileicon.jpg")}') center center no-repeat"}
+						.traveler-icon{style: "background: #00293c;"}
+							.fa.fa-plus{style:"color:#fff; font-size: 24px; margin-left: 29px; margin-top: 12px;"}
+							.traveler-icon-additional
+								4 Travelers
+								<br>
+								Until Launch
+					.mobile-grid-progress-bar
+						.progress-bar-status-morocco
+					.trip-stats
+						.trip-stats-duration
+							12 Days
+							.trip-stats-body
+								trip length
+						.trip-stats-capacity
+							20%
+							.trip-stats-body
+								launched
+						.trip-stats-price
+							$1,735
+							.trip-stats-body
+								goal price
 
 :javascript
 

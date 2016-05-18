@@ -20,8 +20,8 @@
 	
 
 			.grid_subtitle{
-				font-family: proxima_thin;
-				font-size: 18px;
+				font-family: proxima_regular;
+				font-size: 16px;
 				color: rgba(255,255,255,0.9);
 				text-align: left;
 			}
@@ -49,10 +49,6 @@
 		-o-transition:-o-transform 0.5s ease-in-out;
 
 		&:hover  {
-			-moz-transform:scale(1.03); 
-			-webkit-transform:scale(1.03);
-			-o-transform:scale(1.03);
-
 			.grid-btn{
 				border-radius: 100px;
 			}
@@ -64,52 +60,127 @@
 			.grid-img-overlay-right{
 				opacity: 1 !important;
 			}
+
+			.grid-img-left{
+				-webkit-filter: blur(2px);
+				-moz-filter: blur(2px);
+				-o-filter: blur(2px);
+				-ms-filter: blur(2px);
+				filter: blur(2px);
+			}
+
+			.grid-img-right{
+				-webkit-filter: blur(2px);
+				-moz-filter: blur(2px);
+				-o-filter: blur(2px);
+				-ms-filter: blur(2px);
+				filter: blur(2px);
+			}
 		}
 
-		.grid-img-left{
-		    position: relative;
+		.grid-image-container{
+			position: relative;
 		    padding-right: 0px;
 			padding-left: 0px;
-		    min-height: 448px;
+		    min-height: 360px;
 		    border-radius: 12px;
 		    border-top-right-radius: 0px;
 		    border-bottom-right-radius: 0px;
 		    -webkit-transition: all 0.5s ease;
 			transition: all 0.5s ease;
 
+			.grid-img-left{
+			    position: relative;
+			    padding-right: 0px;
+				padding-left: 0px;
+			    min-height: 360px;
+			    border-radius: 12px;
+			    border-top-right-radius: 0px;
+			    border-bottom-right-radius: 0px;
+			    -webkit-transition: all 0.5s ease;
+				transition: all 0.5s ease;
+			}
 
 			.grid-img-overlay-left{
 				opacity: 0;
-				background-color: rgba(255,255,255,0.2);
 				width: 100%;
-				height: 448px;
 		   		border-top-left-radius: 12px;
 		    	border-bottom-left-radius: 12px;
 		    	-webkit-transition: all 0.5s ease;
 				transition: all 0.5s ease;
-			}
-		}
 
-		.grid-img-right{
-			position: relative;
-			padding-right: 0px;
-			padding-left: 0px;
-		    min-height: 448px;
-		    border-radius: 12px;
-		    border-top-left-radius: 0px;
-		    border-bottom-left-radius: 0px;
-		    -webkit-transition: all 0.5s ease;
-			transition: all 0.5s ease;
-		
+				.grid-btn{
+					font-family: proxima_regular;
+					text-align: center;
+					font-size: 1.1em;
+					display: block;
+					max-width: 160px;
+					min-width: 150px;
+					margin-top: -220px !important;
+					margin: auto;
+					color: #fff;
+					border-radius: 4px;
+					min-height: 40px;
+					padding-top: 7px;
+					border: 2px solid #fff;
+					-webkit-transition: all 0.5s ease-in-out;
+					transition: all 0.5s ease-in-out;
+					z-index: 1001;
+					position: relative;
+					background: rgba(0,0,0,0.6);
+
+					&:hover{
+						background: rgba(0,0,0,0.9);
+						color: #fff;
+					}
+				}
+			}
+
+			.grid-img-right{
+				position: relative;
+				padding-right: 0px;
+				padding-left: 0px;
+			    min-height: 360px;
+			    border-radius: 12px;
+			    border-top-left-radius: 0px;
+			    border-bottom-left-radius: 0px;
+			    -webkit-transition: all 0.5s ease;
+				transition: all 0.5s ease;
+			}
+			
 			.grid-img-overlay-right{
 				opacity: 0;
-				background-color: rgba(255,255,255,0.2);
 				width: 100%;
-				height: 448px;
 		    	border-top-right-radius: 12px;
 		    	border-bottom-right-radius: 12px;
 		    	-webkit-transition: all 0.5s ease;
 				transition: all 0.5s ease;
+
+				.grid-btn{
+					font-family: proxima_regular;
+					text-align: center;
+					font-size: 1.1em;
+					display: block;
+					max-width: 160px;
+					min-width: 150px;
+					margin-top: -220px !important;
+					margin: auto;
+					color: #fff;
+					border-radius: 4px;
+					min-height: 40px;
+					padding-top: 7px;
+					border: 2px solid #fff;
+					-webkit-transition: all 0.5s ease-in-out;
+					transition: all 0.5s ease-in-out;
+					z-index: 1001;
+					position: relative;
+					background: rgba(0,0,0,0.6);
+
+					&:hover{
+						background: rgba(0,0,0,0.9);
+						color: #fff;
+					}
+				}
 			}
 		}
 	}
@@ -120,7 +191,7 @@
 		padding-left: 30px;
 		padding-right: 30px;
 		background: #fff;
-		min-height: 448px;
+		min-height: 360px;
 		border-radius: 12px;
 		border-top-left-radius: 0px;
 		border-bottom-left-radius: 0px;
@@ -128,7 +199,7 @@
 		.grid-title{
 	  		font-family: proxima_bold;
 	  		color: #17181B;
-	  		font-size: 2.0em;
+	  		font-size: 1.2em;
 	  		text-align: left;
 	  		border: none;
 	  		margin-right: auto;
@@ -139,24 +210,10 @@
 			transition: all 0.5s ease;
 	  	}
 
-	  	.grid-title-location{
-	  		font-family: proxima_regular;
-	  		color: #17181B;
-	  		font-size: 1.2em;
-	  		text-align: left;
-	  		border: none;
-	  		padding-bottom: 10px;
-	  		padding-left: 6px;
-	  		margin-right: auto;
-	  		margin-left: auto;
-	  		-webkit-transition: all 0.7s ease;
-			transition: all 0.7s ease;
-	  	}
-
 	  	.grid-title-dates{
-			font-family: proxima_regular;
+			font-family: proxima_bold;
 	  		color: #17181B;
-	  		font-size: 1.2em;
+	  		font-size: 1.0em;
 	  		text-align: left;
 	  		border: none;
 	  		margin-right: auto;
@@ -178,27 +235,6 @@
 	  		line-height: 20px;
 	  		padding-bottom: 20px
 	  	}
-
-		.grid-btn{
-			font-family: proxima_bold;
-			text-align: center;
-			font-size: 1.1em;
-			max-width: 160px;
-			min-width: 150px;
-			margin: auto;
-			color: #17181B;
-			border-radius: 0px;
-			min-height: 40px;
-			padding-top: 7px;
-			border: 2px solid #17181B;
-			-webkit-transition: all 0.7s ease-in-out;
-			transition: all 0.7s ease-in-out;
-
-			&:hover{
-				background: rgba(0,0,0,0.6);
-				color: #fff;
-			}
-		}
 	}
 }
 
@@ -249,7 +285,7 @@
 	}
 }
 
-@media screen and (max-width: 991px){
+@media screen and (max-width: 992px){
 	#trips_grid{
 		display: none;
 	}

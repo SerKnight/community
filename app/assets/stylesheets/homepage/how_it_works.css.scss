@@ -1,11 +1,11 @@
 #how_it_works {
-	background: rgb(245, 245, 245);
-	min-height: 750px;
-	padding-bottom: 40px;
+	background: #212326;
+	min-height: 640px;
 
 	.mission-statement{
 		padding-top: 40px;
 		border-top: 8px solid #00293c;	
+		background: #212326;
 
 		.mission-block{
 			
@@ -16,6 +16,15 @@
 				padding: 40px;
 				margin-top: -100px;
 				border-top: 8px solid #00293c;
+
+				&:hover{
+					.which_stage_btn{
+						color: #fff;
+						-webkit-transition: all 0.4s ease;
+						transition: all 0.4s ease;
+						max-width: 200px;
+					}
+				}
 
 				.mission-title{
 					font-family: proxima_bold;
@@ -53,65 +62,45 @@
 		}
 	}
 
-	.explainer_steps{
-		margin-top: 40px;
-		padding-left: 10px;
-		padding-right: 10px;
+	.how-it-works-thumbnails{
+		background: #212326;
+		padding-bottom: 40px;
 
-		.explainer_step_container{
-			margin: auto;
+		.explainer_steps{
+			margin-top: 40px;
+			padding-left: 10px;
+			padding-right: 10px;
 
-			.explainer_step_image{
+			.explainer_step_container{
 				margin: auto;
-				border-radius: 70px;
-				max-width: 600px;
-				min-height: 330px;
-				background-color: #fff !important;
-				border-bottom-left-radius: 0px;
-				border-bottom-right-radius: 0px;
-			}
 
-			.explainer_step_text_background{
-				opacity: 0;
-				height: 300px;
-				background: rgba(0,0,0,0.8);
-				-webkit-transition: all 0.3s ease-in-out;
-				transition: all 0.3s ease-in-out;
-
-
-				.explainer_step_text{
-					font-family: proxima_regular;
-					color: #fff;
-					padding-top: 150px;
-					max-width: 360px;
+				.explainer_step_image{
 					margin: auto;
-					font-size: 1.2em;
-					text-align: center;
-					-webkit-transition: all 0.3s ease-in-out;
-					transition: all 0.3s ease-in-out;
-				}
-			}
-
-			.explainer_step_mobile{
-				max-width: 600px;
-				margin: auto;
-				border-radius: 70px;
-				border-top-left-radius: 0px;
-				border-top-right-radius: 0px;
-				background: rgb(0,41,60);
-				margin-top: -14px;
-
-				.explainer_step_mobile_text{
-					font-family: proxima_regular;
-					color: #fff;
-					max-width: 360px;
-					margin: auto;
-					font-size: 1.2em;
-					text-align: center;
-					margin-top: 14px;
-					padding: 12px;
+					max-width: 420px;
+					min-height: 240px;
+					background-color: #fff !important;
+					background-size: cover !important;
+					border-radius: 8px;
+					border: 6px solid #00293c;
 				}
 
+				.explainer_step_mobile{
+					max-width: 420px;
+					margin: auto;
+					margin-top: -14px;
+
+					.explainer_step_mobile_text{
+						font-family: proxima_regular;
+						color: #fff;
+						max-width: 360px;
+						margin: auto;
+						font-size: 1.1em;
+						text-align: center;
+						margin-top: 14px;
+						padding: 12px;
+					}
+
+				}
 			}
 		}
 	}
@@ -177,8 +166,9 @@
 		transition: all 0.7s ease;
 		border-radius: 100px;
 		background-color: rgba(170, 75, 65, 1);
-		margin-top: 40px;
 		padding-top: 8px;
+		margin-top: 20px;
+		margin-bottom: 40px;
 
 		&:hover{
 			background-color: rgba(89,39,34,1);
@@ -197,24 +187,27 @@
 		margin-top: 50px;
 	}
 
+	#how_it_works .which_stage_btn{
+		margin-bottom: -46px;
+	}
+
 	#how_it_works .explainer_steps .explainer_step_container{
 		margin-top: 40px;
 		padding-left: 0px;
 		padding-right: 0px;
-	}
-
-	#how_it_works .explainer_steps .explainer_step_container .explainer_step_text_background{
-		opacity: 0 !important;
+		max-width: 420px;
 	}
 
 	#how_it_works .explainer_steps .explainer_step_container .explainer_step_image{
 		border-radius: 0px;
 		background-color: transparent !important;
+		background-size: cover !important;
+		min-height: 200px;
 	}
 
 	#how_it_works .explainer_steps .explainer_step_container .explainer_step_mobile{
 		border-radius: 0px;
-		margin-top: -78px;
+		margin-top: -10px;
 	}
 
 	#how_it_works .explainer_steps .explainer_step_container .explainer_step_mobile .explainer_step_mobile_text{
@@ -242,8 +235,20 @@
 
 @media screen and (max-width: 771px){
 
+	#how_it_works{
+		min-height: 0px;
+	}
+
+	#how_it_works .mission-statement{
+		padding-bottom: 50px;
+	}
+
 	#how_it_works .mission-statement .mission-block .mission-block-content .mission-block-image{
 		min-height: 330px;
+	}
+
+	#how_it_works .how-it-works-thumbnails{
+		display: none;
 	}
 }
 
@@ -251,6 +256,10 @@
 
 	#how_it_works .mission-statement .mission-block .mission-block-content{
 		padding: 15px;
+	}
+
+	#how_it_works .which_stage_btn{
+		margin-bottom: -35px;
 	}
 
 	#how_it_works .mission-statement .mission-block .mission-block-content .mission-title{

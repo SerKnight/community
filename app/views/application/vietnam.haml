@@ -14,7 +14,7 @@
 .location-slow-scroll
   #location-text  
     #location-header
-      The Long Way South
+      The Long Road South
     #location-explanation
       Join us as we lose our sense of direction from North to South Vietnam on motorcycles...Why? Why not?
     #location-header-mobile
@@ -148,9 +148,9 @@
         .who-name
           Jon
         .who-title
-          Team
+          From
         .who-description
-          The Pho King
+          Denver, CO
         .who-title
           Pumped for
         .who-description
@@ -162,9 +162,9 @@
         .who-name
           Ryan
         .who-title
-          Team
+          From
         .who-description
-          The Pho King
+          Philadelphia, PA
         .who-title
           Only Strength
         .who-description
@@ -176,35 +176,13 @@
         .who-name
           Chris
         .who-title
-          Team
+          From
         .who-description
-          Aye Okie
+          Atlanta, GA
         .who-title
           Why I'll Win
         .who-description
           Short cuts, booby traps and bribes.
-
-  - if @adventure.users.count > 0
-    .col-md-12.location-who
-      .location-who-header{style: "width: 300px; font-size: 20px;"}
-        = "#{@adventure.users.count} Other People interested"
-
-      - @adventure.users.each do |user|
-        - if @adventure.users.count == 1
-          .col-md-12.text-center
-            = image_tag asset_url("#{user.avatar_url}?type=large")
-            %hr
-            .location-who-header= user.name.split(' ')[0]
-        - if @adventure.users.count == 2
-          .col-md-6.text-center
-            = image_tag "#{user.avatar_url}?type=large"
-            %hr
-            .location-who-header= user.name.split(' ')[0]
-        - elsif @adventure.users.count > 2
-          .col-md-4.text-center
-            = image_tag "#{user.avatar_url}?type=large"
-            %hr
-            .location-who-header= user.name.split(' ')[0]
 
   .col-md-12.location-how{style: "background: url('#{asset_path("background/vietnam40.jpg")}') center center no-repeat"}
     .location-how-header
@@ -289,12 +267,12 @@
       Join the Vietnamese traveling circus!
     %a{href:'/apply/vietnam'}
       .join-button.btn
-        Contact Jon
+        I'm Interested
     / %a{href:'/vietnam/users/auth/facebook'}
-    %a{href: omniauth_authorize_path(:user, :facebook, adventure: 'vietnam' )}
+/    %a{href: omniauth_authorize_path(:user, :facebook, adventure: 'vietnam' )}
     
-      .join-button.btn
-        Interested in joining?
+/      .join-button.btn
+/        Interested in joining?
         
 
 :javascript
@@ -341,3 +319,26 @@
   $(".exclusions-description-hidden").stop().slideToggle();
     return false;
   });
+
+
+/  - if @adventure.users.count > 0
+/    .col-md-12.location-who
+/      .location-who-header{style: "width: 300px; font-size: 20px;"}
+/        = "#{@adventure.users.count} Other People interested"
+
+/      - @adventure.users.each do |user|
+/        - if @adventure.users.count == 1
+/          .col-md-12.text-center
+/            = image_tag asset_url("#{user.avatar_url}?type=large")
+/            %hr
+/            .location-who-header= user.name.split(' ')[0]
+/        - if @adventure.users.count == 2
+/          .col-md-6.text-center
+/            = image_tag "#{user.avatar_url}?type=large"
+/            %hr
+/            .location-who-header= user.name.split(' ')[0]
+/        - elsif @adventure.users.count > 2
+/          .col-md-4.text-center
+/            = image_tag "#{user.avatar_url}?type=large"
+/            %hr
+/            .location-who-header= user.name.split(' ')[0]

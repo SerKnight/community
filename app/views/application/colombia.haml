@@ -182,28 +182,6 @@
         .who-description
           Puppies and greasy burgers
 
-  - if @adventure.users.count > 0
-    .col-md-12.location-who
-      .location-who-header{style: "width: 300px; font-size: 20px;"}
-        = "#{@adventure.users.count} Other People interested"
-
-      - @adventure.users.each do |user|
-        - if @adventure.users.count == 1
-          .col-md-12.text-center
-            = image_tag asset_url("#{user.avatar_url}?type=large")
-            %hr
-            .location-who-header= user.name.split(' ')[0]
-        - if @adventure.users.count == 2
-          .col-md-6.text-center
-            = image_tag "#{user.avatar_url}?type=large"
-            %hr
-            .location-who-header= user.name.split(' ')[0]
-        - elsif @adventure.users.count > 2
-          .col-md-4.text-center
-            = image_tag "#{user.avatar_url}?type=large"
-            %hr
-            .location-who-header= user.name.split(' ')[0]
-
   .col-md-12.location-inclusions{style: "background: #fff;"}
     .location-inclusions-header{style: "color: #212326;"}
       Reserve your Spot
@@ -264,11 +242,11 @@
       Join the 50-mile river adventure!
     %a{href:'/apply/Colombia'}
       .join-button.btn
-        Contact Max
+        I'm Interested.
 
-    %a{href: omniauth_authorize_path(:user, :facebook, adventure: 'colombia' )}
-      .join-button.btn
-        Interested in Joining?
+/    %a{href: omniauth_authorize_path(:user, :facebook, adventure: 'colombia' )}
+/      .join-button.btn
+/        Interested in Joining?
 
 :javascript
 
@@ -314,3 +292,26 @@
   $(".exclusions-description-hidden").stop().slideToggle();
     return false;
   });
+
+
+/  - if @adventure.users.count > 0
+/    .col-md-12.location-who
+/      .location-who-header{style: "width: 300px; font-size: 20px;"}
+/        = "#{@adventure.users.count} Other People interested"
+
+/      - @adventure.users.each do |user|
+/        - if @adventure.users.count == 1
+/          .col-md-12.text-center
+/            = image_tag asset_url("#{user.avatar_url}?type=large")
+/            %hr
+/            .location-who-header= user.name.split(' ')[0]
+/        - if @adventure.users.count == 2
+/          .col-md-6.text-center
+/            = image_tag "#{user.avatar_url}?type=large"
+/            %hr
+/            .location-who-header= user.name.split(' ')[0]
+/        - elsif @adventure.users.count > 2
+/          .col-md-4.text-center
+/            = image_tag "#{user.avatar_url}?type=large"
+/            %hr
+/            .location-who-header= user.name.split(' ')[0]
