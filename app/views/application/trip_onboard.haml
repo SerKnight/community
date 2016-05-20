@@ -74,22 +74,21 @@
 			Your mere presence on a trip makes it worthwhile for others to join. You have a unique skillset and the opportunity to share your knowledge and perspective through travel. Photographers, yoga instructors, biologists, foodies, language teachers, athletes...we’re talking to you! 
 
 .col-md-12.adventure-creator-container
-	.col-md-6.adventure-creator-block
-		.adventure-creator-image{style: "background: url('#{asset_path("background/QuinnSmiles.jpg")}') center center no-repeat"}
-	.col-md-6.adventure-creator-text
+	.col-md-10.col-md-offset-1.adventure-creator-text
 		.adventure-creator-header
 			Unlock a Trip
 		.adventure-creator-body
-			%a{href: '/india' , target: '_blank', style: "font-weight: bold;"} Riding the Roof of the World
-			<br>
-			<br>
-			%a{href: '/peru' , target: '_blank', style: "font-weight: bold;"}Adventure & Conflict in the Amazon
-			<br>
-			<br>
-			%a{href: '/socaltrifecta' , target: '_blank', style: "font-weight: bold;"}The SoCal Trifecta
-			<br>
-			<br>
-			%a{href: '/apply/kyrgyzstan' , target: '_blank', style: "font-weight: bold;"}Eagles, Horses & Yurts
+			%a{href: '/india' , target: '_blank'}
+				.adventure-creator-trip{style: "background: url('#{asset_path("background/IndiaTitle.jpeg")}') center center no-repeat; background-size: cover;"}
+
+			%a{href: '/peru' , target: '_blank'}
+				.adventure-creator-trip{style: "background: url('#{asset_path("background/AdventureandConflictintheAmazon.jpg")}') bottom center no-repeat; background-size: cover;"}
+
+			%a{href: '/socaltrifecta' , target: '_blank'}
+				.adventure-creator-trip{style: "background: url('#{asset_path("background/TheSoCalTrifectaTitleSmall.jpg")}') center center no-repeat; background-size: cover;"}
+
+			%a{href: '/apply/kyrgyzstan' , target: '_blank'}
+				.adventure-creator-trip{style: "background: url('#{asset_path("background/Eagles&YurtsTitleSmall.jpg")}') center center no-repeat; background-size: cover;"}
 
 .col-md-12.creation-apply
 	.creation-apply-box

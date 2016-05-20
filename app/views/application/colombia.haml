@@ -14,39 +14,46 @@
   #location-text
     #location-header
       Expedition Samana
-    #location-explanation
-      50+ miles of thunderous whitewater through remote jungle
     #location-header-mobile
       Expedition 
       <br>
       Samana
-    #location-explanation-mobile
-      50+ miles of thunderous whitewater through remote jungle
     #created-by
       Made by: Max J.
 
 .location-details
-  .col-md-12.location-itinerary{style:"background: #212326;"}
-    .col-md-6.mission-block
-      .itinerary-header
-        The Mission
-      .itinerary-body
-        Tackle the mighty Rio Verde and Rio Samana, from the Colombian highlands to the dense jungles of the tropical rainforest. Cliff jumping, hammock camping, swimming in waterfalls, a lot of coffee, and nights under the stars.
-      .final-sentence
-        <br>
-        Yes Mom, Colombia is a safe place to travel.
+  .col-md-12.location-itinerary
+    .mission-block
+      .mission-summary-title
+        50+ miles of thunderous whitewater through remote jungle
+      .col-md-3.mission-details-stats
+        .mission-details-content
+          .mission-details-title
+            .fa.fa-map-marker.mission-details-icon{style:"padding-left: 8px; padding-right: 8px;"}
+            Colombia
+          .mission-details-title
+            .fa.fa-calendar.mission-details-icon
+            May 14 - 23rd
+          .mission-details-title
+            .fa.fa-users.mission-details-icon
+            4-8 Travelers
+          .mission-details-title
+            .fa.fa-money.mission-details-icon
+            Locked at $1,500
+          %a{href:'/apply/Colombia'}
+            .mission-apply-button
+              Sign Up
+      .col-md-8.col-md-offset-1.mission-text-box
+        .mission-summary-subtitle
+          Expedition Samaná
+        .mission-body
+          I've partnered with Jules from Expedition Colombia in Medellín to chart a unique route for this expedition. We’ll start high in the mountains outside of Medellín and end in the Colombian lowlands; 5 days, 4 nights, and a lot of water. This is a 10 day trip, but the focus is undoubtedly the rafting adventure.
+          <br>
+          <br>
+          You will be a member on a purposeful expedition, not a guest on a tour. We’ll need 8 seriously adventurous travelers to get this journey off the ground. Bonus points to those who can speak spanish! We guarantee you'll end up with a few crazy stories to tell when the journey is over, and more than likely a few incredible friends.
 
-    .col-md-6.map-block
+    .col-md-12.map-block
       .route-map{style: "background: url('#{asset_path("background/ColombiaImageMap.png")}') center center no-repeat"}
-
-  .col-md-12.location-description
-    .description-title
-      Tell Me More
-    .description-body
-      I've partnered with Jules from Expedition Colombia in Medellín to chart a unique route for this expedition. We’ll start high in the mountains outside of Medellín and end in the Colombian lowlands; 5 days, 4 nights, and a lot of water. This is a 10 day trip, but the focus is undoubtedly the rafting adventure.
-      <br>
-      <br>
-      You will be a member on a purposeful expedition, not a guest on a tour. We’ll need 8 seriously adventurous travelers to get this journey off the ground. Bonus points to those who can speak spanish! We guarantee you'll end up with a few crazy stories to tell when the journey is over, and more than likely a few incredible friends.
 
   .col-md-12.destination-container
     .basecamps-title
@@ -64,7 +71,7 @@
           Bikes & Beers in the City of Eternal Spring
         .destination-underline-mobile
         .destination-body-mobile
-          Three glorious days in Medellín. Soak up the abundant sunshine, cheap food and friendly vibes. A delicious combination of nightlife, music, history, and culture, capped off by a full-day 5,000ft mountain bike descent...
+          Three glorious days in Medellín. Soak up the sunshine, cheap food and friendly vibes. A combination of nightlife, food, and culture, capped off by a 5,000ft mountain bike descent...
 
       .row.col-md-6.destination-highlight
         .destination-image{style: "background: url('#{asset_path("background/rioverdethumbnail.jpg")}') center center no-repeat"}
@@ -294,6 +301,14 @@
   });
 
 
+/  .col-md-12.location-description
+/    .description-title
+/      Tell Me More
+/    .description-body
+/      I've partnered with Jules from Expedition Colombia in Medellín to chart a unique route for this expedition. We’ll start high in the mountains outside of Medellín and end in the Colombian lowlands; 5 days, 4 nights, and a lot of water. This is a 10 day trip, but the focus is undoubtedly the rafting adventure.
+/      <br>
+/      <br>
+/      You will be a member on a purposeful expedition, not a guest on a tour. We’ll need 8 seriously adventurous travelers to get this journey off the ground. Bonus points to those who can speak spanish! We guarantee you'll end up with a few crazy stories to tell when the journey is over, and more than likely a few incredible friends.
 /  - if @adventure.users.count > 0
 /    .col-md-12.location-who
 /      .location-who-header{style: "width: 300px; font-size: 20px;"}
