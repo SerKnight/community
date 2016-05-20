@@ -8,6 +8,10 @@
   margin-top: -68px;
 }
 
+.jumbotron_fix_mobile{
+  display: none;
+}
+
 .scroll-slow {
   position: absolute;
   width: 100%;
@@ -48,10 +52,17 @@
   }
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 767px){
+
+  .jumbotron_fix_mobile{
+    display: block;
+    min-height: 375px;
+    background-size: cover !important;
+    margin-top: -0px;
+  }
 
   .jumbotron_fix{
-    min-height: 650px;
+    display: none;
   }
 
   .scroll-slow{
