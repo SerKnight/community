@@ -12,11 +12,9 @@ class ApplicationMailer < ActionMailer::Base
   	mail(to: @contact.email, subject: "Message from AdventureMade")
   end
 
-
   def trip_interest_signup(user_id)
   	@user = User.find(user_id)
   	mail(to: 'info@advlo.com', subject: 'New trip interest')
   end
-
 
 end
