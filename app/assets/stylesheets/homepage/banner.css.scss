@@ -16,7 +16,7 @@
   position: absolute;
   width: 100%;
   top: 0px;
-  margin-top: 306px;
+  margin-top: 290px;
 
   #homepage-text {
     position: relative;
@@ -39,7 +39,9 @@
     #adventure-local-explainer{
       font-family: proxima_regular;
       letter-spacing: 0px;
-      font-size: 1.7em;
+      font-size: 1.5em;
+      margin: auto;
+      max-width: 540px;
     }
 
     #adventure-local-mobile{
