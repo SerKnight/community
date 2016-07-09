@@ -8,137 +8,199 @@
 	%meta{:content => "1200", :property => "og:image:width"}/
 	%meta{:content => "628", :property => "og:image:height"}/
 
-.location-hero.location-hero-fix{style: "background: url('#{asset_path("background/packraftjunglemain.jpg")}') center center no-repeat"}
+
+.location-hero.location-hero-fix{style: "background: url('#{asset_path("background/piedrassunset.jpg")}') bottom center no-repeat"}
 
 .location-slow-scroll
-	#location-text{style: "text-shadow: 1px 1px 5px rgba(0,0,0,1);"}
+	#location-text
 		#location-header
 			Adventure & Conflict 
 			<br>
 			in the Amazon
 		#location-header-mobile
-			Adventure & Conflict in the Amazon
-		#location-explanation-mobile
+			Adventure & Conflict 
+			<br>
+			in the Amazon
+		#location-explanation
 			Packrafting earth's most sacred, yet endangered ecosystem
-		#created-by
 
 .location-details
 	.col-md-12.location-itinerary
 		.mission-block
-			.mission-summary-title
-				Packrafting earth's most sacred, yet endangered ecosystem
 			.col-md-3.mission-details-stats
 				.mission-details-content
 					.mission-details-title
 						.fa.fa-map-marker.mission-details-icon{style:"padding-left: 8px; padding-right: 8px;"}
-						Indian Himalayas
+						Peru
 					.mission-details-title
 						.fa.fa-calendar.mission-details-icon
-						Early Fall 2016
+						Nov. 18-29th, 2016
 					.mission-details-title
 						.fa.fa-users.mission-details-icon
-						5-8 Travelers
+						6-9 Travelers
 					.mission-details-title
 						.fa.fa-money.mission-details-icon
-						Starting at $1,899
-					%a{href:'/apply/Peru'}
+						As low as $3,110
+					%a{href:'/apply/peru'}
 						.mission-apply-button
-							Sign Up
+							Request Invite
+
+			.col-md-12.mobile-trip-stats
+				.mission-details-content
+					.mission-details-title
+						.fa.fa-map-marker.mission-details-icon{style:"padding-left: 8px; padding-right: 8px;"}
+						Peru
+					.mission-details-title
+						.fa.fa-calendar.mission-details-icon
+						Nov. 18-29th, 2016
+					.mission-details-title
+						.fa.fa-users.mission-details-icon
+						6-9 Travelers
+					.mission-details-title
+						.fa.fa-money.mission-details-icon
+						As low as $3,110
+					%a{href:'/apply/peru'}
+						.mission-apply-button
+							Request Invite
+
 			.col-md-8.col-md-offset-1.mission-text-box
-				.mission-summary-subtitle
-					Adventure & Conflict in the Amazon
 				.mission-body
 					Loggers versus Indians, gold miners versus helicopter commandos; oil companies, pipelines, new roads, secret genocide, corruption, greed, missionaries, bandits, politicians, and massive paradigm shifts unfolding at a dizzying pace.
 					<br>
 					<br>
-					Explore one of the most volatile and crucially important places on earth, the tributaries of the upper Amazon. With a team of local guides and a fleet of ultra-portable packrafts, trek along remote logging roads, follow animal trails, and paddle unnamed tributaries through one of the most ecologically diverse places on earth.
+					Explore one of the most volatile and crucially important places on earth, the Madre de Dios region of the upper Amazon. Venturing as far as permitted, you’ll be taken by boats to the jungle outpost of Monte Selvado, which borders the territory of the last uncontacted tribes in the world. Over the course of several days, you’ll return to the Las Piedras research station by packraft, experiencing the Amazon in the most personal and intimate way possible. One part adventure, one part research expedition, you’ll have the opportunity to participate in research by documenting wildlife densities, tracking apex predators, and searching for undocumented species.
+					<br>
+					<br>
+					This adventure is not for the faint of heart. You will be a member of a purposeful expedition, not a guest on a tour. True exploration of the Amazon is both a physical and mental challenge. You’ll be exposed to the elements, paddling/hiking for 6-8 hours a day and wilderness camping in tents at night. This journey will undoubtedly challenge you, but it will also draw from you a sense of pride, curiosity, and wonder. You’ll learn to love the Amazon, by fully immersing yourself in this spectacular place. 
 
-	.col-md-12.location-description
-		.description-title
-			The Team
-		.col-md-6.team-leader-container
-			.description-guide-image{style: "background: url('#{asset_path("background/paul-guide.png")}') center center no-repeat"}
-			.guide-name
-				Paul R.
-			.guide-border
-			.guide-title
-				Adventure Leader
-			.guide-description
-				Our adopted jungle family is headed by 
-				%a{href: 'http://paulrosolie.com/' , target: '_blank', style: "font-weight: bold;"} Paul Rosolie, 
-				conservationist and borderline wild man. Paul authored the award winning book
-				%i{style: "font-style: italic"} Mother of God: An Extraordinary Journey into the Uncharted Tributaries of the Western Amazon 
-				and has explored parts of the jungle, few have dreamed of visiting. He is part of the larger Tamandua Jungle team that includes the Duran family, an indigenous Ese-Eja family, and several others who man the research station.
 
-		.col-md-6.team-leader-container	
-			%a{href:'/apply/Peru'}
-				.description-guide-image{style: "background: #aa4b41;"}
-					+
-			.guide-name
-				Apply to be the
-			.guide-border
-			.guide-title
-				Adventure Ambassador
-			.guide-description
-				Paul has created a one-time trip that is sure to be one hell of an experience. We're looking for a passionate adventure ambassador to spread the word and assemble a team.
+	.col-md-12.location-description{style: "padding-top: 40px; min-height: 800px; background: url('#{asset_path("travelers/guideprofilepaul.jpg")}') bottom center no-repeat"}
+		.team-leader-container
+			.col-md-12
+				.guide-name{style: "font-size: 2.8em;"}
+					Paul Rosolie
+				.guide-title
+					Adventure Leader
+				.guide-description
+					This expedition is headed by 
+					%a{href: 'http://paulrosolie.com/' , target: '_blank', style: "font-weight: bold;"} Paul Rosolie,
+					conservationist and borderline wild man. Paul authored the award-winning book 
+					%i{style: "font-style: italic"} Mother of God: An Extraordinary Journey into the Uncharted Tributaries of the Western Amazon
+					and has explored parts of the jungle, few have dreamed of visiting. He has embedded with poachers to document the illegal trade of endangered species and spoke at the United Nations Forum on forests in 2013. He is part of the larger Tamandua Jungle team that includes the Duran family, an indigenous Ese-Eja family, and several others who maintain and protect the reserve.
+	.col-md-12.location-description-mobile{style: "min-height: 500px; background: url('#{asset_path("travelers/guideprofilepaulsmall.jpg")}') top center no-repeat"}
+		.team-leader-container
+			.col-md-12
+				.guide-name{style: "font-size: 2.8em;"}
+					Paul Rosolie
+				.guide-title
+					Adventure Leader
+				.guide-description
+					This expedition is headed by 
+					%a{href: 'http://paulrosolie.com/' , target: '_blank', style: "font-weight: bold;"} Paul Rosolie,
+					conservationist and borderline wild man. Paul authored the award-winning book 
+					%i{style: "font-style: italic"} Mother of God: An Extraordinary Journey into the Uncharted Tributaries of the Western Amazon
+					and has explored parts of the jungle, few have dreamed of visiting. He has embedded with poachers to document the illegal trade of endangered species and spoke at the United Nations Forum on forests in 2013. He is part of the larger Tamandua Jungle team that includes the Duran family, an indigenous Ese-Eja family, and several others who maintain and protect the reserve.
+
+	.col-md-12.location-who
+		.who-container
+			#meet-the-team
+				%a{href:'/apply/peru'}
+					.who-text{style: "padding-top: 50px;"}
+						.who-name
+							Apply to Join
+						.who-title
+							6 travelers needed to unlock trip!
+						.who-description
+			.who-travelers-container
+				.who-image-button.who-image-button{style: "background: url('#{asset_path("icons/Avatar1.png")}') center center no-repeat"}
+				.who-image-button{style: "background: url('#{asset_path("icons/Avatar2.png")}') center center no-repeat"}
+				.who-image-button{style: "background: url('#{asset_path("icons/Avatar3.png")}') center center no-repeat"}
+				.who-image-button{style: "background: url('#{asset_path("icons/Avatar4.png")}') center center no-repeat"}
+				.who-image-button{style: "background: url('#{asset_path("icons/Avatar5.png")}') center center no-repeat"}
+				.who-image-button{style: "background: url('#{asset_path("icons/Avatar6.png")}') center center no-repeat"}
+			.who-travelers-container
+				.who-image-button{style: "background: url('#{asset_path("icons/AvatarWhite7.png")}') center center no-repeat"}
+				.who-image-button{style: "background: url('#{asset_path("icons/AvatarWhite8.png")}') center center no-repeat"}
+				.who-image-button{style: "background: url('#{asset_path("icons/AvatarWhite9.png")}') center center no-repeat"}
 
 	.col-md-12.destination-container
 		.basecamps-title
 			A Few Highlights
 		.highlight-gallery
 			.row.col-md-6.destination-highlight
-				.destination-image{style: "background: url('#{asset_path("background/packraft2.png")}') center center no-repeat"}
+				.destination-image{style: "background: url('#{asset_path("background/perurivermini.jpg")}') bottom center no-repeat"}
 					.destination-description
 						.destination-title
-							Research Station
+							Monte Selvado 
+						%a
+							.destination-button{"data-num" => 1, "data-target" => "#myModal", "data-toggle" => "modal", 'data-name' => 'Basecamp1', 'data-title' => 'A Village on the Frontier', 'data-body' => "Your journey begins on arrival at the airport in Puerto Maldonado, a steamy jungle outpost.  Puerto Maldonado is the largest city in the region and home to the airport where you will arrive for your journey. Until recently, Puerto Maldonado was a quiet river town, but the recent completion of the trans-Amazonian highway, which connects the Amazon to the Pacific coast and lucrative Asian lumber markets has changed that.<br><br>Puerto Maldonado is the jumping off point and refueling station for the many legal and illegal businesses that operate in the surrounding jungle. You’ll spend your first night in a local hotel and begin the journey up river early the following day. There will be an informal briefing, where you’ll get to know everyone else in the group and stock up on last minute supplies for the journey.<br><br>Leaving behind this bustling town, you’ll be taken up the Las Piedras river by motorized boat to Monte Selvado, a small village bordering the territory of the world’s last uncontacted tribes. To access this distant village, you’ll be taken through the jungle on logging roads to the banks of the Las Piedras river, where you’ll travel for several days upstream by motor boat. <br><br>A truly remote outpost, Monte Selvado border the territory of the Mashco Piro tribes, a people who’ve retreated to this inaccessible corner of the Amazon. They remain entirely isolated from modern culture and protected by the Peruvian government. You’ll learn about their culture and battle to preserve a vastly different lifestyle.", 'data-img-src' => "#{asset_url("background/perurivermini.jpg")}"}
+								View Checkpoint
 				.destination-subtitle-mobile
-					Your Jungle Homebase
+					A Village on the Frontier 
 				.destination-underline-mobile
 				.destination-body-mobile
-					Our rustic basecamp from which to explore the surrounding jungle. Grab a field guide from the library and explore nearby game trails, kick back in a hammock, or paddle the quiet small tributaries that surround camp.
+					Your journey begins on arrival at the airport in Puerto Maldonado, a steamy jungle outpost.  Puerto Maldonado is the largest city...
 
 			.row.col-md-6.destination-highlight
 				.destination-image{style: "background: url('#{asset_path("background/packraft3.jpg")}') center center no-repeat"}
 					.destination-description
 						.destination-title
 							Packrafting
+						%a
+							.destination-button{"data-num" => 2, "data-target" => "#myModal", "data-toggle" => "modal", 'data-name' => 'Basecamp1', 'data-title' => 'The Ultimate Vehicle for Adventure', 'data-body' => "For those unfamiliar with this unusual watercraft, packrafts are a personal raft/kayak hybrid that can fit into a backpack and be inflated at any time. Weighing only a few pounds, they’re ultraportable and enable exploration of areas inaccessible by most boats. They are a particularly powerful tool for exploring the Amazon because they are stealthy, ultra-portable and allow for independent exploration. <br><br>The journey from Monte Selvado back to the research station will take full advantage of a packraft’s mobility, combining daily trekking and paddling over the course of several days. One of the last true wilderness areas in the world, the Las Piedras watershed is home to a wide range of birds, insects, and borderline mythical beasts, like giant anacondas and river otters. <br><br>You’ll have the rare privilege of experiencing this remarkable place in the most immersive way possible. Arduous days of trekking and rafting reveal surprises around every curve--a jaguar sipping at the river’s edge, colorful Macaws pecking at rich clay deposits, and black caymans prowling the still water. The stealth of a packraft affords you the opportunity to approach rare wildlife silently. Sprawl out in your tent after a long day and listen to the lively buzz of the jungle. Gather around the fire and re-fuel on freshly prepared camp meals, recalling the highlights of the past day.", 'data-img-src' => "#{asset_url("background/packraft3.jpg")}"}
+								View Checkpoint
 				.destination-subtitle-mobile
-					The Best Way to Navigate the Amazon
+					The Ultimate Vehicle for Adventure
 				.destination-underline-mobile
 				.destination-body-mobile
-					If you’ve never heard of a packrafting, prepare to have your mind blown. A packraft is a lightweight inflatable raft that weights less than a few pounds and compact enough to fit easily in a back pack. It is the ultimate jungle tool, allowing researchers to trek deep into jungle, explore small tributaries, and view wildlife with unprecedented stealth and silence.  
+					For those unfamiliar with this unusual watercraft, packrafts are a personal raft/kayak hybrid that can fit into a backpack and be inflated at any time...
 
 			.row.col-md-6.destination-highlight
-				.destination-image{style: "background: url('#{asset_path("background/packraft4.png")}') center center no-repeat"}
+				.destination-image{style: "background: url('#{asset_path("background/packraft2.png")}') center center no-repeat"}
 					.destination-description
 						.destination-title
-							Las Piedras
+							Research Station
+						%a
+							.destination-button{"data-num" => 3, "data-target" => "#myModal", "data-toggle" => "modal", 'data-name' => 'Basecamp2', 'data-title' => 'A Remote Jungle Retreat', 'data-body' => "You’ll appreciate the comfortable beds and laid-back vibes after adventuring for close to a week. The station is outfitted with running water, showers, flush toilets, and private rooms with comfortable beds. There is a vast open-air deck where you can relax in a hammock, listen to the sounds of the jungle, or read a book. <br><br>A rustic base camp from which to explore the surrounding jungle. Grab a field guide from the library and explore nearby game trails, kick back in a hammock, or paddle the quiet small tributaries that surround camp. <br><br>The Las Piedras Biodiversity Station is located in the Madre de Dios region of the Peruvian Amazon on the Las Piedras river. Nestled in the forest, not far from the river, the area houses an abundance of wildlife. Staying at the research station will place you in one of the most biodiverse regions on the planet. The research station acts as a base camp for day trips in the area, but more importantly, it is the headquarters for conservation efforts. Your stay at the research camp will fund efforts to conserve and purchase surrounding forest.<br><br>All meals are provided, with the majority of ingredients sourced on location, including papaya, mangoes, bananas, and pineapples. Dinners of fresh caught fish, rice, beans, and vegetables are served family style around a large wood table. All meals are cooked by indigenous chefs to ensure an authentic experience.<br><br>Your time at the research station is all yours. If you prefer lounging around and relaxing that is fine. If you prefer exploring the area, swimming, climbing to the canopy lookouts, or joining educational day trips, you can also do that. The station is staffed with employees who can teach and share their passion and way of life with you.", 'data-img-src' => "#{asset_url("background/packraft2.png")}"}
+								View Checkpoint
 				.destination-subtitle-mobile
-					Las Piedras Watershed
+					A Remote Jungle Retreat
 				.destination-underline-mobile
 				.destination-body-mobile
-					One of the last true wilderness frontiers in the world, the upper tributaries of the Peruvian Amazon are nearly untouched. Transported by boat miles up the river and dropped off, we’ll work our way back to camp over the course of several days, camping in the jungle, observing wildlife, and interacting with this wild and raw wilderness.
+					You’ll appreciate the comfortable beds and laid-back vibes after adventuring for close to a week. The station is outfitted with running water, showers...
 
 			.row.col-md-6.destination-highlight
-				.destination-image{style: "background: url('#{asset_path("background/packrafting1.jpg")}') center center no-repeat"}
+				.destination-image{style: "background: url('#{asset_path("background/perujunglewalkers.jpg")}') center center no-repeat"}
 					.destination-description
 						.destination-title
-							Puerto Maldonado
+							Conservation & Education
+						%a
+							.destination-button{"data-num" => 4, "data-target" => "#myModal", "data-toggle" => "modal", 'data-name' => 'Basecamp3', 'data-title' => 'Live in the Jungle to Learn about the Jungle', 'data-body' => "We want your experience to be both educational and impactful. You’ll learn from a team of passionate conservationists, who will explain the significance and context of the conflict in the Madre de Dios region. You’ll be personally guided by Paul Rosolie, who has worked and lived from the Amazon for the last decade. Paul is an award-winning author and filmmaker, who has advocated for the conservation of the world’s rainforest on the public stage, including a talk at the United Nations forum on Forests. Paul is supported by a small team of passionate conservationists including local indigenous families.<br><br>This adventure is structured to give you a real world look at the dynamics of deforestation. You’ll see first-hand the encroachment of human activity in places like Puerto Maldonado, but will also visit some of the most pristine, untouched forests in the world. You’ll witness wildlife and ecosystems that are both incredibly rare and fragile. Floating quietly in packrafts, you’ll travel from untouched ecosystems to the Las Piedras Research Station, which stands on the frontiers of deforestation. Participating in wildlife observation and date keeping, you’ll have an active role in protecting this region, while witnessing first hand the varying degrees of environmental destruction along the course of the Las Piedras River.<br><br>Tamandua Expeditions and sister organization, Jungle Keepers, are part of a combined effort to create a conservation concession in the Las Piedras watershed, which will link several key biospheres. Trip costs help cover the upkeep of the research station, fund land purchases, and pay for salaries of station workers and guards for the forest reserve.", 'data-img-src' => "#{asset_url("background/perujunglewalkers.jpg")}"}
+								View Checkpoint
 				.destination-subtitle-mobile
-					The Frontiers of Conservation
+					Live in the Jungle to Learn about the Jungle
 				.destination-underline-mobile
 				.destination-body-mobile
-					Until recently, Puerto Maldonado was a quiet river town, but the recent completion of the trans-Amazonian highway, which connects the Amazon to the Pacific coast and lucrative Asian lumber markets has changed that. Learn and witness first hand the complex conflict taking place in this steamy corner of the world.
+					We want your experience to be both educational and impactful. You’ll learn from a team of passionate conservationists, who will explain...
 
 	.col-md-12.location-inclusions{style: "background: #F5F5F5;"}
-		.location-inclusions-header{style: "color: #212326;"}
-			Reserve your Spot
 		.col-md-10.col-md-offset-1.inclusions-container{style: "background: transparent;"}
+			.location-inclusions-header{style: "color: #aa4b41;"}
+				9 Spots Left!
+			.location-inclusions-header{style: "color: #212326;"}
+				September 18-29th, 2016
+			.price-description
+				For each person that joins, everyone's price drops!
 			.priceanddate_container
-				.location-date{style: "border:none; color: #212326;"}
-					Late Fall 2016
-				.trip-price{style: "color: #212326; padding-bottom: 40px;"}
-					Entry Fee - TBD
+				.trip-price{style: "padding-bottom: 8px; padding-top: 40px; font-size: 2em;"}
+					6 People: $3,500
+				.trip-price{style: "padding-bottom: 8px; opacity: 0.8; font-size: 1.2em;"}
+					7 People: $3,400
+				.trip-price{style: "padding-bottom: 8px; opacity: 0.8; font-size: 1.2em;"}
+					8 People: $3,300
+				.trip-price{style: "padding-bottom: 8px; opacity: 0.8; font-size: 1.2em;"}
+					9 People: $3,200
+				
 			.col-md-6.inclusion-exclusion-box
 				.inclusions-title{style: "color: #00293c;"}
 					What's Included
@@ -185,11 +247,10 @@
 	.col-md-12.location-join
 		.who-join
 			Interested in joining?
-		.who-join-description
-			Drop us a line or apply
-		%a{href:'/apply/Peru'}
+		%a{href:'/apply/peru'}
 			.join-button.btn
-				Reach Out!
+				Request Invite
+
 
 :javascript
 
@@ -199,28 +260,28 @@
 	});
 
 	$(document).ready(function() {
-		
+
 		$('body *').each( function(){
-		   
+
 			var top_of_object = $(this).position().top;
 			var bottom_of_window = $(window).scrollTop() + $(window).height();
-		   
+
 			if( bottom_of_window < top_of_object  ){
-			
-				$(this).addClass('hideme').css({'opacity':'0'});	
-			}	
+
+				$(this).addClass('hideme').css({'opacity':'0'});  
+			} 
 		});
-		
+
 		$(window).scroll( function(){
-			
+
 			$('.hideme').each( function(i){
-				
+
 				var bottom_of_window = $(window).scrollTop() + $(window).height();
 				var top_of_object = $(this).position().top;
-				
+
 					if( bottom_of_window > ( top_of_object + 100 )  ){
-					
-						$(this).removeClass('hideme').animate({'opacity':'1'},800);	
+
+						$(this).removeClass('hideme').animate({'opacity':'1'},800); 
 					}
 			}); 
 		});
@@ -234,4 +295,16 @@
 	$(".exclusions-title").click(function () {
 	$(".exclusions-description-hidden").stop().slideToggle();
 		return false;
+	});
+                 
+	$(".who-image-button").on("click", function() {
+		$('.who-image-button').css('border', '0px solid #fff');
+		$(this).css('border','4px solid #fff');
+    
+		$('.who-name').html($(this).data('name'))
+		$('.who-title').html($(this).data('location'))
+		$('.who-description').html($(this).data('description'))
+		var img_url = $(this).data('image-url')
+			$('.traveler-image').attr('src', img_url);
+			console.log(img_url)
 	});

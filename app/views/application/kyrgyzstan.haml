@@ -1,221 +1,351 @@
 - content_for(:meta_og) do
-	%meta{:content => "The So-Cal Trifecta - By Casey S.", :property => "og:title"}/
-	%meta{:content => "AdventureMade", :property => "og:site_name"}/
-	%meta{:content => "Exploring the ocean, the desert and the mountains all in one trip.", :property => "og:description"}/
-	%meta{:content => "website", :property => "og:type"}/
-	%meta{:content => "http://www.madebyadventure.com/socaltrifecta", :property => "og:url"}/
-	%meta{:content => "http://i.imgur.com/eegZ8J1.png", :property => "og:image"}/
-	%meta{:content => "1437", :property => "og:image:width"}/
-	%meta{:content => "752", :property => "og:image:height"}/
+  %meta{:content => "The Berber Traverse", :property => "og:title"}/
+  %meta{:content => "AdventureMade", :property => "og:site_name"}/
+  %meta{:content => "A high-adrenaline women's surf & bike adventure across Morocco", :property => "og:description"}/
+  %meta{:content => "website", :property => "og:type"}/
+  %meta{:content => "http://www.madebyadventure.com/morocco", :property => "og:url"}/
+  %meta{:content => "http://i.imgur.com/dCEUfSb.jpg", :property => "og:image"}/
+  %meta{:content => "960", :property => "og:image:width"}/
+  %meta{:content => "545", :property => "og:image:height"}/
 
-.location-hero.location-hero-fix{style: "background: url('#{asset_path("background/kyrgyzmain.jpg")}') center center no-repeat"}
+  %meta{:content => "summary_large_image", :name => "twitter:card"}
+  %meta{:content => "@AdventureMade", :name => "twitter:site"}
+  %meta{:content => "The Berber Traverse", :name => "twitter:title"}
+  %meta{:content => "A high-adrenaline women's surf & bike adventure across Morocco http://goo.gl/YXDo0l", :name => "twitter:description"}
+  %meta{:content => "http://i.imgur.com/dCEUfSb.jpg", :name => "twitter:image:src"}/
+
+.location-hero.location-hero-fix{style: "background: url('#{asset_path("background/kyrgyzstanbanner.jpg")}') bottom center no-repeat"}
 
 .location-slow-scroll
-	#location-text{style: "text-shadow: 1px 1px 5px rgba(0,0,0,1);"}
-		#location-header
-			Eagles & Yurts
-		#location-explanation
-			Hunting with eagles in the Kyrgyz mountains
-		#location-header-mobile
-			Eagles & Yurts
-		#location-explanation-mobile
-			Hunting with eagles in the Kyrgyz mountains
-		#created-by
-			Made by: Ryan B.
+  #location-text
+    #location-header
+      The Kyrgyz Republic
+    #location-header-mobile
+      The Kyrgyz Republic
+    #location-explanation
+      Hunt with eagles. Sleep in yurts. Live the Tian Shan Mountains.
 
 .location-details
-	.col-md-12.location-itinerary
-		.col-md-12.mission-block.fadeinblock
-			.mission-header
-				The Mission
-			.mission-body
-				The SoCal Trifecta: Exploring the ocean, the desert and the mountains all in one trip. California is one of the only places in the world you can do it in such a close proximity. We're going to tackle the waves on Zuma Beach, trek into the mountains for some trad climbing, spend the night under the stars and explore the desert the following day. I don't think we can fit more adventure into a weekend...
+  .col-md-12.location-itinerary
+    .mission-block
+      .col-md-3.mission-details-stats
+        .mission-details-content
+          .mission-details-title
+            .fa.fa-map-marker.mission-details-icon{style:"padding-left: 8px; padding-right: 8px;"}
+            Kyrgyzstan
+          .mission-details-title
+            .fa.fa-calendar.mission-details-icon
+            September, 2016
+          .mission-details-title
+            .fa.fa-users.mission-details-icon
+            4-8 Travelers
+          .mission-details-title
+            .fa.fa-money.mission-details-icon
+            As low as $1,780
+          %a{href:'/apply/kyrgyzstan'}
+            .mission-apply-button
+              Request Invite
 
-	.col-md-12.location-description
-		.description-title
-			The Team
-		.col-md-6.guide-container
-			.description-guide-image{style: "background: url('#{asset_path("background/Quinnprofile.jpg")}') center center no-repeat"}
-			.guide-name
-				Quinn C.
-			.guide-border
-			.guide-title
-				Adventure Leader
-			
-			.guide-description
-				Quinn is the founder and lead instructor at Eat, Sleep, Surf in LA. Quinn surfs, snowboards, skateboards, wakeboards, rock climbs and climbs mountains. He grew up in Chicago and at a young age his passion pushed him westward. 
-				<br>
-				<br>
-				Months after moving to California, Quinn became a surf instructor working for three different surf schools. He became popular because his teaching approach was light-hearted, passionate and effective.  Quinn has since taught surfing in California, Florida, Hawaii, England and Costa Rica. Quinn is a certified rock climbing and surf guide.
-		.col-md-6.guide-container
-			.description-guide-image{style: "background: url('#{asset_path("background/CaseyProfile.jpg")}') center center no-repeat"}
-			.guide-name
-				Casey S.
-			.guide-border
-			.guide-title
-				Adventure Ambassador
-			
-			.guide-description
-				Currently, I live, work and play in LA. When not surfing, I work with a mix of graphic design, motion graphics, video, and photography - and therefore enjoy all forms of design and creativity.
-				<br>
-				<br>
-				Travel and adventures have always been a huge part of my life but I've realized there are so many amazing adventures around LA that I have yet to explore. Quinn has arranged what will be a seriously fun weekend; including my love of surfing with climbing and camping in the mountians. Feel free to reach out with the apply link if you have questions. Looking forward to adventuring with you!
+      .col-md-12.mobile-trip-stats
+        .mission-details-content
+          .mission-details-title
+            .fa.fa-map-marker.mission-details-icon{style:"padding-left: 8px; padding-right: 8px;"}
+            Kyrgyzstan
+          .mission-details-title
+            .fa.fa-calendar.mission-details-icon
+            September, 2016
+          .mission-details-title
+            .fa.fa-users.mission-details-icon
+            4-8 Travelers
+          .mission-details-title
+            .fa.fa-money.mission-details-icon
+            TBD
+          %a{href:'/apply/kyrgyzstan'}
+            .mission-apply-button
+              Request Invite
 
-	.col-md-12.destination-container
-		.basecamps-title
-			A Few Highlights
-		.row.col-md-6.highlight-container
-			.destination-image{style: "background: url('#{asset_path("background/joshuatreenp.jpg")}') center center no-repeat"}
-				.destination-description
-					<br>
-					.destination-title
-						Joshua Tree
-					.destination-title-underline
-					.destination-subtitle
-						Camping Under the Stars
-					.destination-body
-						We'll all meet up in LA and head out to Joshua Tree National Park to camp cowboy style, under the night's stars.
-			.destination-subtitle-mobile
-				Camping Under the Stars
-			.destination-underline-mobile
-			.destination-body-mobile
-				We'll all meet up in LA and head out to Joshua Tree National Park to camp cowboy style, under the night's stars.
+      .col-md-8.col-md-offset-1.mission-text-box
+        .mission-body
+          This adventure is not for those looking to relax or take it easy – this is an intense 10-day journey with the shepherds and horsemen of some of Asia’s most remote highlands.
+          <br>
+          <br>
+          The wild beauty of this landscape is the heritage of local Kyrgyz communities. They take pride in their snow-capped peaks, charging rivers, cavernous gorges, and deep-green valleys of fir and juniper forests. This is our time to soak up their culture and to live as they live, sleep as they sleep, trek as they trek, and to make new & lasting friendships. 
+          <br>
+          <br>
+          Most of our time will be spent on horseback and on foot as we navigate alpine meadows and lakes, traverse mountain passes (up to 13,000 ft.), and explore the high pastures of the local herdsmen. Our nights will be spent mostly in Kyrgyz yurts, mountain huts, and tents and our diet will mirror the fresh, seasonal dishes of the locals. Activities will include traditional hunting with Berkut eagles, high-alpine trekking to natural hot springs, horseback riding to remote shepherds camps, and ample opportunities to learn about the rich history of the Tian Shan Mountain Range. 
 
-		.row.col-md-6.highlight-container
-			.destination-image{style: "background: url('#{asset_path("background/stockmaleclimber.jpeg")}') center center no-repeat"}
-				.destination-description
-					<br>
-					.destination-title
-						Trad Climbing
-					.destination-title-underline
-					.destination-subtitle
-						Climb the Walls of Joshua Tree
-					.destination-body
-						Spend the day climbing in the National Park before we drive to Mt. San Jacinto, where we'll ride the Aerial Tramway to 8,500ft. We'll finally hike and camp under the stars in Round Valley.
-			.destination-subtitle-mobile
-				Trad Climbing
-			.destination-underline-mobile
-			.destination-body-mobile
-				Spend the day climbing in the National Park before we drive to Mt. San Jacinto, where we'll ride the Aerial Tramway to 8,500ft. We'll finally hike and camp under the stars in Round Valley.
+  .col-md-12.location-who
+    .who-container
+      #meet-the-team
+        .who-text
+          %img.traveler-image{style: "background: url('#{asset_path("travelers/profileryanb.jpg")}') center center no-repeat"}
+          .who-name
+            Meet the Team
+          .who-title
+            3 more travelers to unlock trip!
+          .who-description
+      .who-travelers-container
+        .who-image-button{"data-name" => "Ryan", "data-location" => "Salt Lake City, UT", "data-description" => "Husband, Father, Adventurer - Friend to remote mountain communities who are fighting poverty with ecotourism and hospitality. Utah is home.", "data-image-url" => "#{asset_url("travelers/profileryanb.jpg")}", style: "background: url('#{asset_path("travelers/profileryanbsmall.jpg")}') center center no-repeat"}
+        .who-image-button{style: "background: url('#{asset_path("icons/Avatar2.png")}') center center no-repeat"}
+        .who-image-button{style: "background: url('#{asset_path("icons/Avatar3.png")}') center center no-repeat"}
+        .who-image-button{style: "background: url('#{asset_path("icons/Avatar4.png")}') center center no-repeat"}
+      .who-travelers-container
+        .who-image-button{style: "background: url('#{asset_path("icons/AvatarWhite5.png")}') center center no-repeat"}
+        .who-image-button{style: "background: url('#{asset_path("icons/AvatarWhite6.png")}') center center no-repeat"}
+        .who-image-button{style: "background: url('#{asset_path("icons/AvatarWhite7.png")}') center center no-repeat"}
+        .who-image-button{style: "background: url('#{asset_path("icons/AvatarWhite8.png")}') center center no-repeat"}
 
-		.row.col-md-6.highlight-container
-			.destination-image{style: "background: url('#{asset_path("background/san-jacinto.jpg")}') center center no-repeat"}
-				.destination-description
-					<br>
-					.destination-title
-						Mt. San Jacinto
-					.destination-title-underline
-					.destination-subtitle
-						Reaching the 11,000ft Summit
-					.destination-body
-						Start the day by summiting Mt. San Jacinto's 10,833ft peak. We'll then head from the mountians to the coast.
-			.destination-subtitle-mobile
-				Reaching the 11,000ft Summit
-			.destination-underline-mobile
-			.destination-body-mobile
-				Start the day by summiting Mt. San Jacinto's 10,833ft peak. We'll then head from the mountains to the coast.
+  .col-md-12.location-description
+    .team-leader-container
+      .col-md-12
+        .description-guide-image{style: "background: url('#{asset_path("travelers/guideprofileruslan.jpg")}') center center no-repeat"}
+        .guide-name
+          Ruslan
+        .guide-title
+          Adventure Leader
+        .guide-description
+          Ruslan comes from a long line of traditional falconry & hunting. His ancestors used highly trained eagles, falcons, and other birds of prey to capture foxes, rabbits, and other animals, both for the meat and for the pelts.
+          <br>
+          <br>
+          Today the countless hours Ruslan spends training his eagles not only provide food and furs for his family, but also 50% of his annual income is generated by taking foreigners on backcountry hunting expeditions with his eagles and by doing raptor shows and demonstrations for tourists visiting his beautiful country.
 
-		.row.col-md-6.highlight-container
-			.destination-image{style: "background: url('#{asset_path("background/stocksurf.jpeg")}') center center no-repeat"}
-				.destination-description
-					<br>
-					.destination-title
-						Sunset Surf
-					.destination-title-underline
-					.destination-subtitle
-						Surfing Sunset Until the Sunset
-					.destination-body
-						Finishing up our Trifecta with the ocean, we'll hit the waves along the coast. Whether you're a pro or need some help from Quinn, we'll be sure to end our adventure weekend with a few good rides.
-			.destination-subtitle-mobile
-				Surfing Sunset Until the Sunset
-			.destination-underline-mobile
-			.destination-body-mobile
-				Finishing up our Trifecta with the ocean, we'll hit the waves along the coast. Whether you're a pro or need some help from Quinn, we'll be sure to end our adventure weekend with a few good rides.
+  .col-md-12.destination-container
+    .basecamps-title
+      A Few Highlights
+    .highlight-gallery
+      .row.col-md-6.destination-highlight
+        .destination-image{style: "background: url('#{asset_path("background/eaglehunting.jpg")}') bottom center no-repeat"}
+          .destination-description
+            .destination-title
+              Hunting with Eagles
+            %a
+              .destination-button{"data-num" => 1, "data-target" => "#myModal", "data-toggle" => "modal", 'data-name' => 'Basecamp1', 'data-title' => 'A Fading Nomadic Tradition', 'data-body' => "Hunting with golden eagles is an ancient tradition that was born on the Eurasian steppe. A thousand-year-old practice, this form of sustenance hunting has been passed from generation to generation. A Kyrgyz cultural symbol, this once common form of hunting has slowly started to disappear. You’ll learn about their way of life and the cultural legacy passed down to them by their ancestors.", 'data-img-src' => "#{asset_url("background/eaglehunting.jpg")}"}
+                View Checkpoint
+        .destination-subtitle-mobile
+          A Fading Nomadic Tradition
+        .destination-underline-mobile
+        .destination-body-mobile
+          Join Kyrgyz eagle hunters and falconers on a three-day trek. Witness the ancient tradition and the raw power of these massive birds.
+  
+      .row.col-md-6.destination-highlight
+        .destination-image{style: "background: url('#{asset_path("background/kyrgyzhorses.jpg")}') center center no-repeat"}
+          .destination-description
+            .destination-title
+              Horseback Exploration
+            %a
+              .destination-button{"data-num" => 2, "data-target" => "#myModal", "data-toggle" => "modal", 'data-name' => 'Basecamp1', 'data-title' => 'Desert Single Track Paradise', 'data-body' => "The ideal way to see Kyrgyzstan is from the saddle. The nomadic people of central Asia have long relied on horses to navigate the region. Hearty, strong, and loyal, horses have enabled the Kyrgyz culture to flourish in this mountainous landscape. <br><br>Your horse will be your best friend for much of this journey. You’ll learn to adapt and embrace a slower pace of life.  Moving slowly affords you the opportunity to experience Kyrgyzstan in a very personal way. You’ll pass through small towns, shepherds camps (known as “jialoo”), and vast unpopulated landscapes. Exposed to the elements, you’ll breathe the crisp air, marvel at the jagged, snow-covered peaks, and feel the change in the air, as people and animals prepare for winter. Along the way, you’ll pass glaciated peaks, lunch with local shepherds, and camp in mountain pastures at an elevation of 4,050m (13,287ft). ", 'data-img-src' => "#{asset_url("background/kyrgyzhorses.jpg")}"}
+                View Checkpoint
+        .destination-subtitle-mobile
+          Desert Single Track Paradise
+        .destination-underline-mobile
+        .destination-body-mobile
+          Cross the Tian Shan mountain range by horse, experiencing the breathtaking scenery and rich culture of the region.
 
-	.col-md-12.location-inclusions{style: "background: url('#{asset_path("background/SantaMonicaWaves.jpeg")}') center center no-repeat"}
-		.location-inclusions-header
-			Reserve your Spot
-		.col-md-10.col-md-offset-1.inclusions-container
-			.priceanddate_container
-				.location-date
-					May 13th - 15th, 2016
-				.trip-price
-					Entry Fee - $500
-			.col-md-6.inclusions-title
-				What this gets you
-				.inclusions-description
-					Camping Gear and Park Entry
-					<br>
-					<br>
-					Surfboards & Wetsuits
-					<br>
-					<br>
-					Climbing Gear
-					<br>
-					<br>
-					Surf Instruction
-					<br>
-					<br>
-					3 Prepared Meals
-					<br>
-					<br>
-					Transportation
-					<br>
-					<br>
-			.col-md-6.inclusions-title
-				What to bring
-				.inclusions-description
-					Swimwear
-					<br>
-					<br>
-					Hiking Gear
-					<br>
-					<br>
-					Good  Vibes
-					<br>
-					<br>
+      .row.col-md-6.destination-highlight
+        .destination-image{style: "background: url('#{asset_path("background/ryanskyrgyzstanpic.jpg")}') center center no-repeat"}
+          .destination-description
+            .destination-title
+              High Altitude Trekking
+            %a
+              .destination-button{"data-num" => 3, "data-target" => "#myModal", "data-toggle" => "modal", 'data-name' => 'Basecamp2', 'data-title' => 'Across the Roof of Central Asia', 'data-body' => "Kyrgyzstan is a dream destination for mountain lovers. Sitting high on the central Asian plateau it is home to dramatic craggy peaks, fresh alpine lakes, and idyllic pastoral valleys. The landscape is rugged and diverse. You’ll cover a variety of geographies and historical sites, including ancient petroglyphs, magnificent rock formations, and glacial waterfalls. The days will be long and strenuous, but undoubtedly rewarding. Nothing compares to relaxing in a natural outdoor thermal bath after trekking all day. These simple moments and the camaraderie of traveling as a team for over a week, make this experience a lasting memory. ", 'data-img-src' => "#{asset_url("background/ryanskyrgyzstanpic.jpg")}"}
+                View Checkpoint
+        .destination-subtitle-mobile
+          Across the Roof of Central Asia
+        .destination-underline-mobile
+        .destination-body-mobile
+          Trek through the 13,000 ft peaks of the Tian Shan mountains and around the glimmering waters of Lake Issyk Kul, known as the “blue pearl”.
 
-	.col-md-12.location-join
-		.who-join
-			Interested in joining?
-		.who-join-description
-			Drop us a line or apply
-		%a{href:'/apply/socaltrifecta'}
-			.join-button.btn
-				Reach Out!
+      .row.col-md-6.destination-highlight
+        .destination-image{style: "background: url('#{asset_path("background/yurtlife.jpg")}') center center no-repeat"}
+          .destination-description
+            .destination-title
+              Yurt and Village Stays
+            %a
+              .destination-button{"data-num" => 4, "data-target" => "#myModal", "data-toggle" => "modal", 'data-name' => 'Basecamp3', 'data-title' => 'Tents and Home Cooked Meals', 'data-body' => "The entirety of the 10-day adventure will be spent in local homestays, guest houses, and yurts. While luxury hotels do exist in many parts of Kyrgyzstan, a lack of large-scale tourism means that accommodation in rural Kyrgyzstan remains fairly undeveloped. Accommodation will be rustic, but welcoming. This trip focuses strongly on cultural exchange. You’ll have ample opportunity to learn about Kyrgyz heritage, culture, and food by participating directly in a household setting.<br><br>Some nights will be spent in remote alpine valleys, while others will be spent in towns and villages. You’ll visit ancient mosques, Russian orthodox churches, and a Kyrgyz carpet maker in addition to the many natural attractions.", 'data-img-src' => "#{asset_url("background/yurtlife.jpg")}"}
+                View Checkpoint
+        .destination-subtitle-mobile
+          Tents and Home Cooked Meals
+        .destination-underline-mobile
+        .destination-body-mobile
+          Rest easy, after a long day of trekking in a traditional Kyrgyz tent. Re-fuel on home cooked meals and swap stories around the fire.
+    
+  .col-md-12.location-inclusions{style: "background: #F5F5F5;"}
+    .col-md-10.col-md-offset-1.inclusions-container{style: "background: transparent;"}
+      .location-inclusions-header{style: "color: #aa4b41;"}
+        7 Spots Left!
+      .location-inclusions-header{style: "color: #212326;"}
+        September, 2016
+      .price-description
+        For each person that joins, everyone's price drops!
+      .priceanddate_container
+        .trip-price{style: "padding-bottom: 8px; padding-top: 24px; font-size: 2em;"}
+          4 People: $2,299
+        .trip-price{style: "padding-bottom: 8px; opacity: 0.8; font-size: 1.2em;"}
+          5 People: $2,225
+        .trip-price{style: "padding-bottom: 8px; opacity: 0.8; font-size: 1.2em;"}
+          6 People: $2,025
+        .trip-price{style: "padding-bottom: 8px; opacity: 0.8; font-size: 1.2em;"}
+          7 People: $1,950
+        .trip-price{style: "padding-bottom: 8px; opacity: 0.8; font-size: 1.2em;"}
+          8 People: $1,780
+      .col-md-6.inclusion-exclusion-box
+        .inclusions-title{style: "color: #00293c;"}
+          What's Included
+          <br>
+          %i.fa.fa-angle-double-down{style: "color: #aa4b41;"}
+          .inclusions-description-hidden{style: "color: #212326;"}
+            All accommodations (yurts, tents, local homestays)
+            <br>
+            <br>
+            All in-country transportation
+            <br>
+            <br>
+            All meals
+            <br>
+            <br>
+            Horse
+            <br>
+            <br>
+            8-day horseback trek with local shepherds
+            <br>
+            <br>
+            3-day hunting adventure with traditional Berkut eagles
+            <br>
+            <br>
+            3-day mountain trek with local shepherds
+            <br>
+            <br>
+      .col-md-6.inclusion-exclusion-box
+        .exclusions-title{style: "color: #00293c;"}
+          Not Included
+          <br>
+          %i.fa.fa-angle-double-down{style: "color: #aa4b41;"}
+          .exclusions-description-hidden{style: "color: #212326;"}
+            Travel insurance
+            <br>
+            <br>
+            International flights
+            <br>
+            <br>
+            Additional meals or drinks
+            <br>
+            <br>
+
+  .col-md-12.location-join
+    .who-join
+      Interested in joining?
+    %a{href:'/apply/Morocco'}
+      .join-button.btn
+        Request Invite
+
+/  .col-md-12.similar-trips
+/    .similar-trips-header
+/      Why stop with Morocco?
+/    %a{href:'/colombia'}
+/      .col-md-4.similar-trip-container
+/        .similar-trip-image{style: "background: url('#{asset_path("background/WhiteWaterColombiaMain-mini.jpg")}') bottom center no-repeat"}
+/          .similar-trip-title
+/            EXPEDITION SAMANA
+/        .similar-trip-guide{style: "background: url('#{asset_path("background/julesguide-mini.jpg")}') center center no-repeat"}
+/        .similar-trip-textbox
+/          .similar-trip-text
+/            Expedition Samana
+/          .similar-trip-guide-text
+/            with Jules D.
+/        .similar-trip-btn
+/          View Trip
+/    %a{href:'/peru'}
+/      .col-md-4.similar-trip-container
+/        .similar-trip-image{style: "background: url('#{asset_path("background/packraftjunglemain-mini.jpg")}') bottom center no-repeat"}
+/          .similar-trip-title
+/            PACKRAFT THE AMAZON
+/        .similar-trip-guide{style: "background: url('#{asset_path("background/paul-mini.png")}') center center no-repeat"}
+/        .similar-trip-textbox
+/          .similar-trip-text
+/            Adventure & Conflict in the Amazon
+/          .similar-trip-guide-text
+/            with Paul R.
+/        .similar-trip-btn
+/          View Trip
+/    %a{href:'/socaltrifecta'}
+/      .col-md-4.similar-trip-container
+/        .similar-trip-image{style: "background: url('#{asset_path("background/TrestlesBeach-mini.jpeg")}') center center no-repeat"}
+/          .similar-trip-title
+/            SOCAL TRIFECTA
+/        .similar-trip-guide{style: "background: url('#{asset_path("background/QuinnSmiles-mini.jpg")}') center center no-repeat"}
+/        .similar-trip-textbox
+/          .similar-trip-text
+/            The SoCal Trifecta
+/          .similar-trip-guide-text
+/            with Quinn C.
+/        .similar-trip-btn
+/          View Trip
+/   %a{href:'/india'}
+/     .col-md-4.similar-trip-container
+/       .similar-trip-image{style: "background: url('#{asset_path("background/IndiaMountains-mini.jpg")}') bottom center no-repeat"}
+/       .similar-trip-guide{style: "background: url('#{asset_path("background/manojprofile-mini.jpg")}') center center no-repeat"}
+/       .similar-trip-textbox
+/         .similar-trip-text
+/           Riding the Roof of the World
+/         .similar-trip-guide-text
+/           with Manoj K.
 
 
 :javascript
 
-	$(document).ready(function() {
-	$('.location-slow-scroll').show();
-	$('.location-slow-scroll').animate({ opacity: 1, top: "-60px" }, 'slow');
-	});
+  $(document).ready(function() {
+  $('.location-slow-scroll').show();
+  $('.location-slow-scroll').animate({ opacity: 1, top: "-60px" }, 'slow');
+  });
 
-	$(document).ready(function() {
-		
-		$('body *').each( function(){
-		   
-			var top_of_object = $(this).position().top;
-			var bottom_of_window = $(window).scrollTop() + $(window).height();
-		   
-			if( bottom_of_window < top_of_object  ){
-			
-				$(this).addClass('hideme').css({'opacity':'0'});	
-			}	
-		});
-		
-		$(window).scroll( function(){
-			
-			$('.hideme').each( function(i){
-				
-				var bottom_of_window = $(window).scrollTop() + $(window).height();
-				var top_of_object = $(this).position().top;
-				
-					if( bottom_of_window > ( top_of_object + 100 )  ){
-					
-						$(this).removeClass('hideme').animate({'opacity':'1'},800);	
-					}
-			}); 
-		});
-	});
+  $(document).ready(function() {
+    
+    $('body *').each( function(){
+       
+      var top_of_object = $(this).position().top;
+      var bottom_of_window = $(window).scrollTop() + $(window).height();
+       
+      if( bottom_of_window < top_of_object  ){
+      
+        $(this).addClass('hideme').css({'opacity':'0'});  
+      } 
+    });
+    
+    $(window).scroll( function(){
+      
+      $('.hideme').each( function(i){
+        
+        var bottom_of_window = $(window).scrollTop() + $(window).height();
+        var top_of_object = $(this).position().top;
+        
+          if( bottom_of_window > ( top_of_object + 100 )  ){
+          
+            $(this).removeClass('hideme').animate({'opacity':'1'},800); 
+          }
+      }); 
+    });
+  });;
+
+  $(".inclusions-title").click(function () {
+  $(".inclusions-description-hidden").stop().slideToggle();
+    return false;
+  });
+
+  $(".exclusions-title").click(function () {
+  $(".exclusions-description-hidden").stop().slideToggle();
+    return false;
+  });
+                 
+  $(".who-image-button").on("click", function() {
+    $('.who-image-button').css('border', '0px solid #fff');
+    $(this).css('border','4px solid #fff');
+    
+    $('.who-name').html($(this).data('name'))
+    $('.who-title').html($(this).data('location'))
+    $('.who-description').html($(this).data('description'))
+    var img_url = $(this).data('image-url')
+     $('.traveler-image').attr('src', img_url);
+      console.log(img_url)
+  });
+
+

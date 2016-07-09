@@ -35,16 +35,25 @@
 	}
 
 	.mobile-grid{
-		min-height: 420px;
+		min-height: 390px;
 		position: relative;
 		padding-right: 0px;
 		padding-left: 0px;
 		background-color: #f5f5f5;
 		margin-bottom: 20px;
 		border: 8px solid #00293c;
+		overflow: hidden;
+		margin: auto;
+		max-width: 386px;
 
 		&:hover{
-			
+			.locationtext{
+				opacity: 1 !important;
+				background-color: #212326;
+				bottom: 0px;
+				-webkit-transition: all 0.5s ease-in-out;
+				transition: all 0.5s ease-in-out;
+			}
 		}
 
 		.mobile-grid-img{
@@ -52,9 +61,9 @@
 		    background-size: cover;
 		    background-position: center center;
 		    position: relative;
-		    min-height: 300px;
+		    min-height: 260px;
 		    width: 100%;
-		    background-image: asset-url("background/vietnampathsmall.jpeg");
+		    overflow: hidden;
 		}
 
 		.mobile-grid-overlay{
@@ -74,109 +83,87 @@
 			transition: all 0.7s ease;
 		}
 
-		.mobile-grid-title{
-	  		font-family: proxima_bold;
-	  		color: #FFF;
-	  		text-shadow: 1px 1px 5px rgba(0,0,0,1);
-	  		font-size: 4em;
-	  		text-align: center;
-	  		border: none;
-	  		margin-right: auto;
-	  		margin-left: auto;
-	  		max-width: 670px;
-	  		padding-top: 100px;
-	  		-webkit-transition: all 0.7s ease;
-			transition: all 0.7s ease;
-			line-height: 50px;
-	  	}
+	  	.mobile-grid-info{
 
-	  	.mobile-grid-progress{
-	  		background: #212326;
-	  		border-top: 12px solid #f5f5f5;
+	  		.mobile-grid-arrow-expand{
+	  			background: #f5f5f5;
+	  			border-radius: 50%;
+	  			max-width: 60px;
+	  			height: 60px;
+	  			margin: auto;
+	  			margin-top: -30px;
+	  			position: relative;
+	  			z-index: 1001;
+	  			border: 2px solid #212326;
+	  		}
+
+	  		.mobile-grid-title{
+				font-family: proxima_bold;
+		    	background-color: #f5f5f5;
+		    	color: #212326;
+		    	text-align: left;
+		    	font-size: 1.6em;
+		    	padding-left: 12px;
+		    	padding-right: 12px;
+		    	margin-top: 10px;
+		    	margin-bottom: 10px;
+		    	letter-spacing: -1px;
+		    	overflow: hidden;
+
+				.mobile-grid-subtitle{
+		    		font-family: proxima_regular;
+			    	font-size: 13px;
+			    	letter-spacing: 0px;
+			    }
+		    }
+
+		    .mobile-grid-description{
+		  		font-family: proxima_regular;
+		  		color: #212326;
+		  		font-size: 13px;
+		  		text-align: left;
+		  		border: none;
+		  		margin-right: auto;
+		  		margin-left: auto;
+		  		max-width: 430px;
+		  		line-height: 18px;
+		  		padding-bottom: 18px;
+		  		padding-left: 12px;
+		  		padding-right: 12px;
+		  	}
 
 		  	.mobile-grid-travelers{
-		  		margin-top: -40px !important;
+		  		padding-top: 8px;
+		  		padding-bottom: 8px;
 		  		display: flex;
-		  		max-width: 800px;
+		  		max-width: 370px;
 		  		margin: auto;
+		  		background: rgb(210,210,210);
 
 		  		.traveler-icon{
-		  			height: 80px;
-		  			width: 80px;
+		  			height: 48px;
+		  			width: 48px;
 		  			margin: auto;
 		  			z-index: 1001;
 		  			position: relative;
-		  			border: 2px solid #212326;
+		  			border: 1px solid rgb(210,210,210);
+		  			background: transparent;
+		  			border-radius: 50%;
 
 		  			.traveler-icon-additional{
-		  				font-family: proxima_regular;
-		  				font-size: 0.9em;
+		  				font-family: proxima_bold;
+		  				font-size: 1em;
 		  				text-align: center;
-		  				color: #fff;
+		  				color: #212326;
+		  				padding-top: 15px;
 		  			}
-		  		}
-		  	}
-
-		  	.mobile-grid-progress-bar{
-		  		height: 12px;
-		  		width: 90%;
-		  		border: 1px solid #686868;
-		  		border-radius: 100px;
-		  		margin: auto;
-		  		margin-top: 10px;
-		  		max-width: 500px;
-		  		overflow: hidden;
-		  		margin-bottom: 10px;
-
-		  		.progress-bar-status-vietnam{
-		  			height: 14px;
-			  		width: 100%;
-			  		background-color: #aa4b41;
-			  		border-radius: 0px;
-			  	}
-
-			  	.progress-bar-status-morocco{
-		  			height: 14px;
-			  		width: 100%;
-			  		background-color: #aa4b41;
-			  		border-radius: 0px;
-			  	}
-		  	}
-
-		  	.trip-stats{
-		  		width: 100%;
-		  		font-family: proxima_bold;
-		  		color: #212326;
-		  		text-align: center;
-		  		display: flex;
-		  		padding-top: 20px;
-		  		margin: auto;
-		  		background: #f5f5f5;
-		  		padding-bottom: 20px;
-
-		  		.trip-stats-duration{
-		  			width: 33.333333%;
-		  		}
-
-		  		.trip-stats-capacity{
-		  			width: 33.333333%;
-		  			border-left: 2px solid #d0d0d0;
-		  			border-right: 2px solid #d0d0d0;
-		  		}
-
-		  		.trip-stats-price{
-		  			width: 33.333333%;
-		  		}
-
-		  		.trip-stats-body{
-		  			font-family: proxima_regular;
 		  		}
 		  	}
 		}
 
 	  	.mobile-grid-dates{
 			font-family: proxima_bold;
-	  		color: #212326;
+	  		color: #fff;
 	  		font-size: 1.0em;
 	  		text-align: center;
 	  		border: none;
@@ -200,48 +187,48 @@
 			transition: all 0.7s ease;
 	  	}
 
-	  	.mobile-grid-description{
-	  		font-family: proxima_regular;
-	  		color: #212326;
-	  		font-size: 1.0em;
-	  		text-align: center;
-	  		border: none;
-	  		margin-right: auto;
-	  		margin-left: auto;
-	  		max-width: 430px;
-	  		line-height: 18px;
-	  		padding-bottom: 40px;
-	  	}
-
 		.mobile-grid-btn{
-			font-family: proxima_bold;
+			font-family: proxima_thin;
 			text-align: center;
-			font-size: 1.2em;
+			font-size: 1em;
 			color: #fff;
-			min-height: 40px;
-			margin-top: -10px;
-			opacity:0;
-			-webkit-transition: all 0.7s ease;
-			transition: all 0.7s ease;
-			border: 2px solid #fff;
-			border-radius: 0px;
+			min-height: 32px;
+			margin-top: 20px;
+			-webkit-transition: all 0.5s ease;
+			transition: all 0.5s ease;
+			border: 2px solid #aa4b41;
+			border-radius: 100px;
 			background-color: transparent;
 			padding-top: 8px;
 			max-width: 120px;
 
 			&:hover{
-				background-color: #212326;
-				color: #fff;
-				-webkit-transition: all 0.4s ease;
-				transition: all 0.4s ease;
+				background-color: rgba(170, 75, 65, 0.7);
+				-webkit-transition: all 0.5s ease;
+				transition: all 0.5s ease;
 			}
 		}
 
 		.locationtext{
-			padding-top: 20px;
-			padding-left: 12px;
-			padding-right: 12px;
+			opacity: 1;
 			min-height: 176px;
+			bottom: -260px;
+			position: absolute;
+			height: 100%;
+			-webkit-transition: all 0.5s ease;
+			transition: all 0.5s ease;
+			background: #f5f5f5;
+			width: 100%;
+
+		    .mobile-grid-grabber{
+		    	font-family: proxima_thin;
+		    	color: #f5f5f5;
+		    	font-size: 1.6em;
+		    	text-align: center;
+		    	padding-left: 20px;
+		    	padding-right: 20px;
+		    	padding-top: 60px;
+		    }
 		}
 
 		.mobile-grid-text{
@@ -282,6 +269,12 @@
 	}
 }
 
+@media screen and (min-width: 771px){
+	.mobile-grid-arrow-expand{
+		display: none;
+	}
+}
+
 @media screen and (max-width: 771px){
 	#hiw_grid .grid_header{
 		padding-top: 20px;
@@ -301,16 +294,14 @@
 		line-height: 16px;
 		padding-right: 6px;
 		padding-left: 6px;
+		padding-top: 20px;
+		padding-bottom: 0px;
 	}
 }
 
 @media screen and (max-width: 500px){
 	#hiw_grid .mobile-grid{
 		min-height: 400px;
-	}
-
-	#hiw_grid .mobile-grid .mobile-grid-img{
-		min-height: 322px;
 	}
 
 	#hiw_grid .mobile-grid .mobile-grid-btn{

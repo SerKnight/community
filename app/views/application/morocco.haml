@@ -14,6 +14,7 @@
   %meta{:content => "A high-adrenaline women's surf & bike adventure across Morocco http://goo.gl/YXDo0l", :name => "twitter:description"}
   %meta{:content => "http://i.imgur.com/dCEUfSb.jpg", :name => "twitter:image:src"}/
 
+
 .location-hero.location-hero-fix{style: "background: url('#{asset_path("background/moroccocover.jpeg")}') center center no-repeat"}
 
 .location-slow-scroll
@@ -22,12 +23,12 @@
       The Berber Traverse
     #location-header-mobile
       The Berber Traverse
+    #location-explanation
+      A high-adrenaline women's surf & bike adventure across Morocco.
 
 .location-details
   .col-md-12.location-itinerary
     .mission-block
-      .mission-summary-title
-        A high-adrenaline women's surf & bike adventure across Morocco
       .col-md-3.mission-details-stats
         .mission-details-content
           .mission-details-title
@@ -41,13 +42,30 @@
             5-8 Travelers
           .mission-details-title
             .fa.fa-money.mission-details-icon
-            Starting at $1,750
-          %a{href:'/apply/Morocco'}
+            As low as $1,750
+          %a{href:'/apply/morocco'}
             .mission-apply-button
-              Sign Up
+              Request Invite
+
+      .col-md-12.mobile-trip-stats
+        .mission-details-content
+          .mission-details-title
+            .fa.fa-map-marker.mission-details-icon{style:"padding-left: 8px; padding-right: 8px;"}
+            Morocco
+          .mission-details-title
+            .fa.fa-calendar.mission-details-icon
+            Sep 1st-12th 2016
+          .mission-details-title
+            .fa.fa-users.mission-details-icon
+            5-8 Travelers
+          .mission-details-title
+            .fa.fa-money.mission-details-icon
+            As low as $1,750
+          %a{href:'/apply/morocco'}
+            .mission-apply-button
+              Request Invite
+
       .col-md-8.col-md-offset-1.mission-text-box
-        .mission-summary-subtitle
-          The Berber Traverse
         .mission-body
           Tackle Morocco’s legendary single track riding and soak up the friendly vibes of Berber mountain country. Dipping in and out of rust colored hillsides, palm carpeted desert canyons, and high mountain passes, we’ll ride for 5-6 glorious days. It promises to feel both familiar and wildy different than your rides back home. On the comfort of a full suspension bike, we’ll hit up old trading routes, cart paths, goat trails, dry riverbeds, flowing single track, and coastal roads. Anything it takes to get from the mountain to the coast.
           <br>
@@ -55,81 +73,43 @@
           All great challenges have a glorious reward. For us, that reward is the sparkling blue waters of the Atlantic Ocean and the chilled-out surf camp waiting at the end of the road. Soak your bones in the cool waters of the Atlantic, paddle out for a quiet SUP yoga session, or just lay around like a lazy bum. Your call. Our journey will start and end in the gem of the desert, the walled city of Marrakech. 
           <br>
           <br>
-          %i Oh, and this a ladies only trip. Apologies to any guys who’ve gotten to this point and just had their hopes crushed. Sincerely sorry.
+          %i Oh, and this a ladies only trip. Apologies to any guys who’ve gotten to this point and just had their hopes crushed. Sincerely sorry. 
+
+  .col-md-12.location-who
+    .who-container
+      #meet-the-team
+        .who-text
+          %img.traveler-image{style: "background: url('#{asset_path("travelers/profilelaurie.jpg")}') center center no-repeat"}
+          .who-name
+            Meet the Team
+          .who-title
+            2 Spots Left!
+          .who-description
+      .who-travelers-container
+        .who-image-button{"data-name" => "Laurie T.", "data-location" => "Boulder, CO", "data-description" => "I'm an adventure-loving lady who spends every weekend exploring the Rocky Mountains by bike, snowboard, or foot. I work with Outdoor Women’s Alliance—a worldwide media and adventure collective nonprofit whose mission is to get other adventure-loving ladies outside.", "data-image-url" => "#{asset_url("travelers/profilelaurie.jpg")}", style: "background: url('#{asset_path("travelers/profilelauriesmall.jpg")}') center center no-repeat"}
+        .who-image-button{"data-name" => "Eva L.", "data-location" => "Longmont, CO", "data-description" => "Polish Native who loves mountain sports & exploring culture, currently living in Colorado. This trip combines my 3 favorite activities: mountain biking, surfing and yoga.", "data-image-url" => "#{asset_url("travelers/profileeva.jpeg")}", style: "background: url('#{asset_path("travelers/profileevasmall.jpeg")}') center center no-repeat"}
+        .who-image-button{"data-name" => "Mary M.", "data-location" => "Victoria, BC", "data-description" => "I was raised on freshwater lakes and am a lover of all water-based sports! Although new to mountain biking, I'm excited ride Morocco's Atlas Mountains.", "data-image-url" => "#{asset_url("travelers/profilemary.jpeg")}", style: "background: url('#{asset_path("travelers/profilemarysmall.jpeg")}') center center no-repeat"}
+        .who-image-button{"data-name" => "Sofia C.", "data-location" => "Boulder, CO", "data-description" => "Very excited to be connecting with a badass group of girls. Explorer of rugged terrain, marketer of ethical business, and volunteer at Outdoor Women's Alliance.", "data-image-url" => "#{asset_url("travelers/profilesofia.jpeg")}", style: "background: url('#{asset_path("travelers/profilesofiasmall.jpeg")}') center center no-repeat"}
+      .who-travelers-container
+        .who-image-button{"data-name" => "Awnalisa M.", "data-location" => "Salt Lake City, UT", "data-description" => "I've done a lot of traveling but mostly as your average tourist. Ready to change that! I love mountain biking, climbing, wake boarding, backpacking and anything else that is fun and outside.", "data-image-url" => "#{asset_url("travelers/profileawnalisa.jpeg")}", style: "background: url('#{asset_path("travelers/profileawnalisasmall.jpeg")}') center center no-repeat"}
+        .who-image-button{"data-name" => "Madeline P.", "data-location" => "Boulder, CO", "data-description" => "I'm an Oregon native, living the outdoor-lover's dream in Colorado while working as a web developer. I'm beyond excited to connect with amazing women and push myself in a new sport.", "data-image-url" => "#{asset_url("travelers/profilemadeline.jpg")}", style: "background: url('#{asset_path("travelers/profilemadelinesmall.jpg")}') center center no-repeat"}
+        .who-image-button{style: "background: url('#{asset_path("icons/AvatarWhite7.png")}') center center no-repeat"}
+        .who-image-button{style: "background: url('#{asset_path("icons/AvatarWhite8.png")}') center center no-repeat"}
 
   .col-md-12.location-description
-    .description-title
-      The Team
-    .col-md-6.team-leader-container
-      .description-guide-image{style: "background: url('#{asset_path("background/MoroccoGuide.jpg")}') center center no-repeat"}
-      .guide-name
-        Lahcen
-      .guide-border
-      .guide-title
-        Adventure Leader
-      .guide-description
-        A 15 year mountain bike veteran in the Atlas region, Lahcen will show us the way from the peaks of the Atlas to the Sea. Like a walking rosetta stone, he is fluent in French, English, Arabic, Berber, and single track descents. His knowledge of the Atlas Mountains and Sahara Desert is unrivaled. His team includes a support driver and private chef, who whips up a mean tagine, and Houssain who helps run the show behind the scenes, organizing accommodation and transportation.
+    .team-leader-container
+      .col-md-12
+        .description-guide-image{style: "background: url('#{asset_path("travelers/guideprofilelahcen.jpg")}') center center no-repeat"}
+        .guide-name
+          Lahcen
+        .guide-title
+          Adventure Leader
+        .guide-description
+          Ruslan comes from a long line of traditional falconry & hunting. His ancestors used highly trained eagles, falcons, and other birds of prey to capture foxes, rabbits, and other animals, both for the meat and for the pelts.
+          <br>
+          <br>
+          Today the countless hours Ruslan spends training his eagles not only provide food and furs for his family, but also 50% of his annual income is generated by taking foreigners on backcountry hunting expeditions with his eagles and by doing raptor shows and demonstrations for tourists visiting his beautiful country.
 
-        
-    .col-md-6.team-leader-container 
-      .description-guide-image{style: "background: url('#{asset_path("background/laurieprofile.jpg")}') center center no-repeat"}
-      .guide-name
-        Laurie T.
-      .guide-border
-      .guide-title
-        Adventure Ambassador
-      .guide-description
-        Laurie is an adventure-loving lady who calls Boulder, CO her home/basecamp. She spends every weekend exploring the Rocky Mountains by bike, snowboard, or foot. Whenever she’s not unplugged in the mountains, she works with Outdoor Women’s Alliance—a worldwide media and adventure collective nonprofit whose mission is to get other adventure-loving ladies outside.
-        %hr
-        = link_to "Outdoor Women's Alliance Member", 'http://outdoorwomensalliance.com/', target: '_blank'
-
-  .col-md-10.col-md-offset-1.location-who{style: 'padding-top: 0px;'}
-    .location-who-header
-      The Travelers
-    .col-md-4.who-container
-      .who-image{style: "background: url('#{asset_path("background/eva.jpeg")}') center center no-repeat"}
-      .who-text
-        .who-name
-          Eva L.
-        .who-title
-          From
-        %i.who-description
-          Longmont, CO
-        .who-description
-          Polish Native who loves mountain sports & exploring culture, currently living in Colorado. This trip combines my 3 favorite activities: mountain biking, surfing and yoga. 
-    .col-md-4.who-container
-      .who-image{style: "background: url('#{asset_path("background/sofiamorocco.jpeg")}') center center no-repeat"}
-      .who-text
-        .who-name
-          Sofia C.
-        .who-title
-          From
-        %i.who-description
-          Boulder, Colorado
-        .who-description
-          Very excited to be connecting with a badass group of girls. Explorer of rugged terrain, marketer of ethical business, and volunteer at Outdoor Women's Alliance.
-    .col-md-4.who-container
-      .who-image{style: "background: url('#{asset_path("background/awnalisa.jpeg")}') center center no-repeat"}
-      .who-text
-        .who-name
-          Awnalisa M.
-        .who-title
-          From
-        %i.who-description
-          Salt Lake City, Utah
-        .who-description
-          I've done a lot of traveling but mostly as your average tourist. Ready to change that! I love mountain biking, climbing, wake boarding, backpacking and anything else that is fun and outside.
-    .col-md-4.who-container
-      .who-image{style: "background: url('#{asset_path("background/marymorocco.jpeg")}') center center no-repeat"}
-      .who-text
-        .who-name
-          Mary M.
-        .who-title
-          From
-        %i.who-description
-          Victoria, BC
-        .who-description
-          I was raised on freshwater lakes and am a lover of all water-based sports! Although new to mountain biking, I'm excited ride Morocco's Atlas Mountains.
           
   .col-md-12.destination-container
     .basecamps-title
@@ -190,17 +170,24 @@
         .destination-underline-mobile
         .destination-body-mobile
           Surf, SUP, Sip, and relax in our coastal haven filled with salty air, cold beers, yoga sessions and homemade meals...
-
     
   .col-md-12.location-inclusions{style: "background: #F5F5F5;"}
-    .location-inclusions-header{style: "color: #212326;"}
-      Reserve your Spot
     .col-md-10.col-md-offset-1.inclusions-container{style: "background: transparent;"}
+      .location-inclusions-header{style: "color: #aa4b41;"}
+        2 Spots Left!
+      .location-inclusions-header{style: "color: #212326;"}
+        September 1st-12th, 2016
+      .price-description
+        For each person that joins, everyone's price drops!
       .priceanddate_container
-        .location-date{style: "border:none; color: #212326;"}
-          September 1st-12th 2016
-        .trip-price{style: "color: #212326; padding-bottom: 40px;"}
-          Starting at $1,750
+        .trip-price{style: "padding-bottom: 8px; text-decoration: line-through; opacity: 0.8;"}
+          5 People: $2,310
+        .trip-price{style: "padding-bottom: 8px; text-decoration: line-through; opacity: 0.8;"}
+          6 People: $2,074
+        .trip-price{style: "padding-bottom: 8px; font-family: proxima_black; font-size: 2.4em;"}
+          7 People: $1,955
+        .trip-price{style: "padding-bottom: 40px; opacity: 0.8; font-size: 2em;"}
+          8 People: $1,732
       .col-md-6.inclusion-exclusion-box
         .inclusions-title{style: "color: #00293c;"}
           What's Included
@@ -253,54 +240,52 @@
   .col-md-12.location-join
     .who-join
       Interested in joining?
-    .who-join-description
-      Drop us a line or apply
     %a{href:'/apply/Morocco'}
       .join-button.btn
-        Reach Out!
+        Request Invite
 
-  .col-md-12.similar-trips
-    .similar-trips-header
-      Why stop with Morocco?
-    %a{href:'/colombia'}
-      .col-md-4.similar-trip-container
-        .similar-trip-image{style: "background: url('#{asset_path("background/WhiteWaterColombiaMain-mini.jpg")}') bottom center no-repeat"}
-          .similar-trip-title
-            EXPEDITION SAMANA
-        .similar-trip-guide{style: "background: url('#{asset_path("background/julesguide-mini.jpg")}') center center no-repeat"}
-        .similar-trip-textbox
-          .similar-trip-text
-            Expedition Samana
-          .similar-trip-guide-text
-            with Jules D.
-        .similar-trip-btn
-          View Trip
-    %a{href:'/peru'}
-      .col-md-4.similar-trip-container
-        .similar-trip-image{style: "background: url('#{asset_path("background/packraftjunglemain-mini.jpg")}') bottom center no-repeat"}
-          .similar-trip-title
-            PACKRAFT THE AMAZON
-        .similar-trip-guide{style: "background: url('#{asset_path("background/paul-mini.png")}') center center no-repeat"}
-        .similar-trip-textbox
-          .similar-trip-text
-            Adventure & Conflict in the Amazon
-          .similar-trip-guide-text
-            with Paul R.
-        .similar-trip-btn
-          View Trip
-    %a{href:'/socaltrifecta'}
-      .col-md-4.similar-trip-container
-        .similar-trip-image{style: "background: url('#{asset_path("background/TrestlesBeach-mini.jpeg")}') center center no-repeat"}
-          .similar-trip-title
-            SOCAL TRIFECTA
-        .similar-trip-guide{style: "background: url('#{asset_path("background/QuinnSmiles-mini.jpg")}') center center no-repeat"}
-        .similar-trip-textbox
-          .similar-trip-text
-            The SoCal Trifecta
-          .similar-trip-guide-text
-            with Quinn C.
-        .similar-trip-btn
-          View Trip
+/  .col-md-12.similar-trips
+/    .similar-trips-header
+/      Why stop with Morocco?
+/    %a{href:'/colombia'}
+/      .col-md-4.similar-trip-container
+/        .similar-trip-image{style: "background: url('#{asset_path("background/WhiteWaterColombiaMain-mini.jpg")}') bottom center no-repeat"}
+/          .similar-trip-title
+/            EXPEDITION SAMANA
+/        .similar-trip-guide{style: "background: url('#{asset_path("background/julesguide-mini.jpg")}') center center no-repeat"}
+/        .similar-trip-textbox
+/          .similar-trip-text
+/            Expedition Samana
+/          .similar-trip-guide-text
+/            with Jules D.
+/        .similar-trip-btn
+/          View Trip
+/    %a{href:'/peru'}
+/      .col-md-4.similar-trip-container
+/        .similar-trip-image{style: "background: url('#{asset_path("background/packraftjunglemain-mini.jpg")}') bottom center no-repeat"}
+/          .similar-trip-title
+/            PACKRAFT THE AMAZON
+/        .similar-trip-guide{style: "background: url('#{asset_path("background/paul-mini.png")}') center center no-repeat"}
+/        .similar-trip-textbox
+/          .similar-trip-text
+/            Adventure & Conflict in the Amazon
+/          .similar-trip-guide-text
+/            with Paul R.
+/        .similar-trip-btn
+/          View Trip
+/    %a{href:'/socaltrifecta'}
+/      .col-md-4.similar-trip-container
+/        .similar-trip-image{style: "background: url('#{asset_path("background/TrestlesBeach-mini.jpeg")}') center center no-repeat"}
+/          .similar-trip-title
+/            SOCAL TRIFECTA
+/        .similar-trip-guide{style: "background: url('#{asset_path("background/QuinnSmiles-mini.jpg")}') center center no-repeat"}
+/        .similar-trip-textbox
+/          .similar-trip-text
+/            The SoCal Trifecta
+/          .similar-trip-guide-text
+/            with Quinn C.
+/        .similar-trip-btn
+/          View Trip
 /   %a{href:'/india'}
 /     .col-md-4.similar-trip-container
 /       .similar-trip-image{style: "background: url('#{asset_path("background/IndiaMountains-mini.jpg")}') bottom center no-repeat"}
@@ -355,4 +340,16 @@
   $(".exclusions-title").click(function () {
   $(".exclusions-description-hidden").stop().slideToggle();
     return false;
+  });
+
+  $(".who-image-button").on("click", function() {
+    $('.who-image-button').css('border', '0px solid #fff');
+    $(this).css('border','4px solid #fff');
+    
+    $('.who-name').html($(this).data('name'))
+    $('.who-title').html($(this).data('location'))
+    $('.who-description').html($(this).data('description'))
+    var img_url = $(this).data('image-url')
+     $('.traveler-image').attr('src', img_url);
+      console.log(img_url)
   });

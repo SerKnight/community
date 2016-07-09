@@ -41,34 +41,6 @@
 
 		.col-md-6.upcoming-trip-block
 			.upcoming-trip
-				.upcoming-img{style: "background: url('#{asset_path("background/AdventureandConflictintheAmazon.jpg")}') center center no-repeat; background-size: cover;"}
-				.see-more-btn{style:"color:#fff;"}
-					+
-				.upcoming-text{style: "float: right;"}
-					.upcoming-details
-						.upcoming-title-dates
-							.upcoming-title-stats
-								.fa.fa-map-marker.upcoming-stats-icon{style:"padding-left: 7px; padding-right: 9px;"}
-								<br>
-								Peru
-							.upcoming-title-stats
-								.fa.fa-calendar.upcoming-stats-icon
-								<br>
-								Fall 2016
-							.upcoming-title-stats	
-								.fa.fa-users.upcoming-stats-icon
-								<br>
-								6-9 travelers
-						.upcoming-title
-							Adventure & Conflict in the Amazon
-						.upcoming-description
-							With local guides and a fleet of ultra-portable packrafts, paddle unnamed tributaries through the upper Amazon, while learning the current challenges that jeopardize this River's future.
-						%a{href: "/peru"}
-							.upcoming-trip-btn.btn
-								Unlock this Trip
-
-		.col-md-6.upcoming-trip-block
-			.upcoming-trip
 				.upcoming-img{style: "background: url('#{asset_path("background/TheSoCalTrifectaTitleSmall.jpg")}') bottom center no-repeat; background-size: cover;"}
 				.see-more-btn{style:"color:#fff;"}
 					+
@@ -95,35 +67,6 @@
 							.upcoming-trip-btn.btn
 								Unlock this Trip
 
-		.col-md-6.upcoming-trip-block
-			.upcoming-trip
-				.upcoming-img{style: "background: url('#{asset_path("background/Eagles&YurtsTitleSmall.jpg")}') center center no-repeat; background-size: cover;"}
-				.see-more-btn{style:"color:#fff;"}
-					+
-				.upcoming-text{style: "float: right;"}
-					.upcoming-details
-						.upcoming-title-dates
-							.upcoming-title-stats
-								.fa.fa-map-marker.upcoming-stats-icon{style:"padding-left: 7px; padding-right: 9px;"}
-								<br>
-								Kyrgyzstan
-								<br>
-							.upcoming-title-stats
-								.fa.fa-calendar.upcoming-stats-icon
-								<br>
-								Summer 2016
-							.upcoming-title-stats	
-								.fa.fa-users.upcoming-stats-icon
-								<br>
-								4-8 
-						.upcoming-title
-							Eagles and Yurts
-						.upcoming-description
-							Ride horses high into the mountains, hunt your food with eagles and stay in traditional yurts as this adventure completely immerses you in the amazing and beautiful Kyrgyz culture...
-						%a{href: "/apply/kyrgyzstan"}
-							.upcoming-trip-btn
-								Coming Soon
-
 	.col-md-12.your-adventure
 		.your-adventure-header
 			Let’s Collaborate
@@ -134,6 +77,6 @@
 				Contact Us
 
 :javascript
-	$('.upcoming-trip-block').click(function(){
+	$('.mobile-grid').click(function(){
 		$(this).find('.upcoming-trip').hover()
 	})
