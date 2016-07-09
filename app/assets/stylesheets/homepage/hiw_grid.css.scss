@@ -279,6 +279,10 @@
 	#hiw_grid .grid_header{
 		padding-top: 20px;
 	}
+
+	#hiw_grid .mobile-grid .locationtext .mobile-grid-grabber{
+		padding-top: 30px;
+	}
 }
 
 @media screen and (max-width: 600px){
@@ -286,16 +290,6 @@
 		font-size: 2em;
 		max-width: 300px;
 		line-height: 30px;
-	}
-
-	#hiw_grid .mobile-grid .mobile-grid-description{
-		font-size: 0.9em;
-		max-width: 300px;
-		line-height: 16px;
-		padding-right: 6px;
-		padding-left: 6px;
-		padding-top: 20px;
-		padding-bottom: 0px;
 	}
 }
 
