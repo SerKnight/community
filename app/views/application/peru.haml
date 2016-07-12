@@ -1,12 +1,18 @@
 - content_for(:meta_og) do
-	%meta{:content => "Adventure & Conflict in the Amazon", :property => "og:title"}/
+	%meta{:content => "Packrafting the Upper Amazon", :property => "og:title"}/
 	%meta{:content => "AdventureMade", :property => "og:site_name"}/
-	%meta{:content => "Explore the upper Amazon with a team of local guides and a fleet of ultra-portable packrafts. Trek along remote logging roads, follow animal trails, and paddle unnamed tributaries through one of the most ecologically diverse places on earth.", :property => "og:description"}/
+	%meta{:content => "Explore Peru’s threatened rainforest, from the remote tributaries of the Upper Amazon to the frontiers of deforestation.  A rugged expedition with a mission. Do you have what it takes?", :property => "og:description"}/
 	%meta{:content => "website", :property => "og:type"}/
 	%meta{:content => "http://www.madebyadventure.com/peru", :property => "og:url"}/
-	%meta{:content => "http://i.imgur.com/cIFtIad.png", :property => "og:image"}/
+	%meta{:content => "http://i.imgur.com/KtE0ak6.png", :property => "og:image"}/
 	%meta{:content => "1200", :property => "og:image:width"}/
 	%meta{:content => "628", :property => "og:image:height"}/
+
+	%meta{:content => "summary_large_image", :name => "twitter:card"}
+	%meta{:content => "@AdventureMade", :name => "twitter:site"}
+	%meta{:content => "Packrafting the Upper Amazon", :name => "twitter:title"}
+	%meta{:content => "Explore Peru’s threatened rainforest, from the remote tributaries of the Upper Amazon to the frontiers of deforestation.  A rugged expedition with a mission. Do you have what it takes?", :name => "twitter:description"}
+	%meta{:content => "http://i.imgur.com/KtE0ak6.png", :name => "twitter:image:src"}/
 
 
 .location-hero.location-hero-fix{style: "background: url('#{asset_path("background/piedrassunset.jpg")}') bottom center no-repeat"}
@@ -14,13 +20,13 @@
 .location-slow-scroll
 	#location-text
 		#location-header
-			Adventure & Conflict 
+			Packrafting the 
 			<br>
-			in the Amazon
+			Upper Amazon
 		#location-header-mobile
-			Adventure & Conflict 
+			Packrafting the 
 			<br>
-			in the Amazon
+			Upper Amazon
 		#location-explanation
 			Packrafting earth's most sacred, yet endangered ecosystem
 

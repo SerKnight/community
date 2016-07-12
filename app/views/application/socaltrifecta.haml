@@ -1,21 +1,27 @@
 - content_for(:meta_og) do
-	%meta{:content => "The So-Cal Trifecta - By Casey S.", :property => "og:title"}/
+	%meta{:content => "The SoCal Trifecta", :property => "og:title"}/
 	%meta{:content => "AdventureMade", :property => "og:site_name"}/
-	%meta{:content => "Exploring the ocean, the desert and the mountains all in one trip.", :property => "og:description"}/
+	%meta{:content => "Guided by a local expert, this trip will take you rock climbing in Joshua Tree National Park, hiking and camping in the giant pine forests of San Jacinto State Park, and surfing the waves and watching the sunset on the Malibu coast. All in one weekend.", :property => "og:description"}/
 	%meta{:content => "website", :property => "og:type"}/
 	%meta{:content => "http://www.madebyadventure.com/socaltrifecta", :property => "og:url"}/
-	%meta{:content => "http://i.imgur.com/eegZ8J1.png", :property => "og:image"}/
-	%meta{:content => "1437", :property => "og:image:width"}/
-	%meta{:content => "752", :property => "og:image:height"}/
+	%meta{:content => "http://i.imgur.com/RJPTfSn.png", :property => "og:image"}/
+	%meta{:content => "1200", :property => "og:image:width"}/
+	%meta{:content => "628", :property => "og:image:height"}/
+
+	%meta{:content => "summary_large_image", :name => "twitter:card"}
+	%meta{:content => "@AdventureMade", :name => "twitter:site"}
+	%meta{:content => "The SoCal Trifecta", :name => "twitter:title"}
+	%meta{:content => "Guided by a local expert, this trip will take you rock climbing in Joshua Tree National Park, hiking and camping in the giant pine forests of San Jacinto State Park, and surfing the waves and watching the sunset on the Malibu coast. All in one weekend.", :name => "twitter:description"}
+	%meta{:content => "http://i.imgur.com/RJPTfSn.png", :name => "twitter:image:src"}/
 
 .location-hero.location-hero-fix{style: "background: url('#{asset_path("background/TrestlesBeach.jpeg")}') center center no-repeat"}
 
 .location-slow-scroll
 	#location-text
 		#location-header
-			The So-Cal Trifecta
+			The SoCal Trifecta
 		#location-header-mobile
-			The So-Cal Trifecta
+			The SoCal Trifecta
 		#location-explanation
 			Surf in the ocean, camp in the desert and climb in the mountains
 
