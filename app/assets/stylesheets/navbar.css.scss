@@ -94,8 +94,8 @@
 		background: #212326;
 		min-width: 178px;
 		margin-right: 35px;
-		padding: 0px 0;
 		border: none;
+		min-width: 360px;
 
 		-webkit-transition: .3s ease-in-out;
 		-moz-transition: .3s ease-in-out;
@@ -104,9 +104,12 @@
 		.trip-dropdown-title{
 			color: #fff;
 			text-align: center;
+			padding-top: 10px;
+			font-size: 1.1em;
 
 			&:hover{
-				color: #212326;
+				font-size: 1.3em;
+				background: rgba(255,255,255,0.1);
 			}
 		}
 	}

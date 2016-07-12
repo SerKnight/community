@@ -1,7 +1,7 @@
 - content_for(:meta_og) do
 	%meta{:content => "The Baja Escape", :property => "og:title"}/
 	%meta{:content => "AdventureMade", :property => "og:site_name"}/
-	%meta{:content => "Taking an offroad school bus down Mexico's Baja California for a long weekend of sun, camping, surfing and drinking.", :property => "og:description"}/
+	%meta{:content => "Taking an off-road school bus down Mexico's Baja California for a long weekend of sun, camping, surfing and drinking.", :property => "og:description"}/
 	%meta{:content => "website", :property => "og:type"}/
 	%meta{:content => "http://www.madebyadventure.com/bajabus", :property => "og:url"}/
 	%meta{:content => "http://i.imgur.com/F8z4pLP.png", :property => "og:image"}/
@@ -11,7 +11,7 @@
 	%meta{:content => "summary_large_image", :name => "twitter:card"}
 	%meta{:content => "@AdventureMade", :name => "twitter:site"}
 	%meta{:content => "The Baja Escape", :name => "twitter:title"}
-	%meta{:content => "Taking an offroad school bus down Mexico's Baja California for a long weekend of sun, camping, surfing and drinking.", :name => "twitter:description"}
+	%meta{:content => "Taking an off-road school bus down Mexico's Baja California for a long weekend of sun, camping, surfing and drinking.", :name => "twitter:description"}
 	%meta{:content => "http://i.imgur.com/F8z4pLP.png", :name => "twitter:image:src"}/
 
 
@@ -24,53 +24,37 @@
 		#location-header-mobile
 			The Baja Escape
 		#location-explanation
-			Taking an offroad school bus down Mexico's Baja California for a long weekend of sun, camping, surfing and drinking.
+			Taking an off-road school bus down Mexico's Baja California for a long weekend of sun, camping, surfing and drinking.
 
 .location-details
 	.col-md-12.location-itinerary
 		.mission-block
-			.col-md-3.mission-details-stats
+			.mission-details-stats
 				.mission-details-content
-					.mission-details-title
+					.col-md-3.mission-details-title
 						.fa.fa-map-marker.mission-details-icon{style:"padding-left: 8px; padding-right: 8px;"}
 						Mexico
-					.mission-details-title
+					.col-md-3.mission-details-title
 						.fa.fa-calendar.mission-details-icon
 						Oct. 7-10th, 2016
-					.mission-details-title
+					.col-md-3.mission-details-title
 						.fa.fa-users.mission-details-icon
 						15-18 Travelers
-					.mission-details-title
+					.col-md-3.mission-details-title
 						.fa.fa-money.mission-details-icon
 						As low as $420
-					%a{href:'/apply/baja'}
-						.mission-apply-button
-							Request Invite
+				%a{href:'/apply/baja'}
+					.mission-apply-button
+						Request Invite
 
-			.col-md-12.mobile-trip-stats
-				.mission-details-content
-					.mission-details-title
-						.fa.fa-map-marker.mission-details-icon{style:"padding-left: 8px; padding-right: 8px;"}
-						Mexico
-					.mission-details-title
-						.fa.fa-calendar.mission-details-icon
-						Oct. 7-10th, 2016
-					.mission-details-title
-						.fa.fa-users.mission-details-icon
-						15-18 Travelers
-					.mission-details-title
-						.fa.fa-money.mission-details-icon
-						As low as $420
-					%a{href:'/apply/baja'}
-						.mission-apply-button
-							Request Invite
-
-			.col-md-8.col-md-offset-1.mission-text-box
+			.mission-text-box
 				.mission-body
-					Road trip Baja California in a souped up, 4WD school bus that runs on vegetable oil. I bet that grabbed your attention. Looking for 15 other adventurers to fill “Gus” the bus and check out this nearly forgotten desert playground south of the border.
-					<br>
-					<br>
-					Once a surf mecca for Cali surf bros and those looking to escape the hectic life of LA and San Diego, the Baja is now neglected by most tourists. We’ll scour the rugged pacific coast hunting down the best seafood stands, remote beaches, and desert oasis swimming holes.
+					#preview-body-text
+						Road trip Baja California in a souped up, 4WD school bus that runs on vegetable oil. I bet that grabbed your attention. Looking for 15 other adventurers to fill “Gus” the bus and check out this nearly forgotten desert playground south of the border.<br><br>
+					#readmore-body-text
+						Read more
+					#expanded-body-text
+						Once a surf mecca for Cali surf bros and those looking to escape the hectic life of LA and San Diego, the Baja is now neglected by most tourists. We’ll scour the rugged pacific coast hunting down the best seafood stands, remote beaches, and desert oasis swimming holes.
 
 	.col-md-12.location-who
 		.who-container
@@ -84,7 +68,7 @@
 						.who-description
 			.who-travelers-container
 				.who-image-button.who-image-button{style: "background: url('#{asset_path("travelers/jonmprofilesmall.png")}') center center no-repeat"}
-				.who-image-button{style: "background: url('#{asset_path("icons/Avatar2.png")}') center center no-repeat"}
+				.who-image-button{style: "background: url('#{asset_path("travelers/maxprofilesmall.jpg")}') center center no-repeat"}
 				.who-image-button{style: "background: url('#{asset_path("icons/Avatar3.png")}') center center no-repeat"}
 				.who-image-button{style: "background: url('#{asset_path("icons/Avatar4.png")}') center center no-repeat"}
 				.who-image-button{style: "background: url('#{asset_path("icons/Avatar5.png")}') center center no-repeat"}
@@ -94,53 +78,87 @@
 				.who-image-button{style: "background: url('#{asset_path("icons/AvatarWhite8.png")}') center center no-repeat"}
 				.who-image-button{style: "background: url('#{asset_path("icons/AvatarWhite9.png")}') center center no-repeat"}
 
+	.col-md-12.location-description
+		.team-leader-container
+			.col-md-12
+				.description-guide-image{style: "background: url('#{asset_path("travelers/guideprofilekally.jpg")}') center center no-repeat"}
+				.guide-name
+					Kally C.
+				.guide-title
+					Adventure Leader
+				.guide-description
+					Operating Gus the Bus and making sure we don’t get lost in the wilds of the Baja Peninsula is Kally and the Baja Trek team. In addition to getting us from point A to point B and cooking delicious camp meals, Kally has many years experience in the area and will take us to the best camping and surf spots.
+
 	.col-md-12.destination-container
 		.basecamps-title
 			A Few Highlights
 		.highlight-gallery
-			.row.col-md-6.destination-highlight
-				.destination-image{style: "background: url('#{asset_path("background/perurivermini.jpg")}') bottom center no-repeat"}
+			.row.col-md-6.destination-highlight{style: "min-height: 600px;"}
+				.destination-image{style: "background: url('#{asset_path("background/GusTheBus.jpeg")}') center center no-repeat"}
 					.destination-description
 						.destination-title
-							Ensenada
+							Day 1: Crossing the Border
 				.destination-subtitle-mobile
-					A Village on the Frontier 
+					The Mexican Adventure Begins
 				.destination-underline-mobile
 				.destination-body-mobile
-					You may have forgotten humans live in the Baja after traversing some of it’s more remote sections. Ensenada is a great opportunity to mingle with the local folk. Like most towns, there are shops, great restaurants, and bars to check out. Unlike most towns, Ensenada is home to a designated world surfing reserve, for those who haven’t gotten enough of the water.
+					Once the Baja squad is assembled, we’ll jump in Gus the bus and head south. Stake your spot on the bus and crack a Tecate for the ride as we pass beach towns, Mexican wine country, and desolate deserts. Our journey ends at the legendary surf hostel Coyote Cal’s, just in time to catch a sunset and a family style meal.
 
-			.row.col-md-6.destination-highlight
-				.destination-image{style: "background: url('#{asset_path("background/perurivermini.jpg")}') bottom center no-repeat"}
+			.row.col-md-6.destination-highlight{style: "min-height: 600px;"}
+				.destination-image{style: "background: url('#{asset_path("background/bajabussmall.png")}') center center no-repeat"}
 					.destination-description
 						.destination-title
-							Pristine Beaches
+							Day 2: Long Beach
 				.destination-subtitle-mobile
-					A Village on the Frontier 
+					Vamos a la Playa
 				.destination-underline-mobile
 				.destination-body-mobile
-					Surf, swim, tan, read, play volleyball, organize a game of spikeball, drink. Typical beach stuff. We’ll park the bus right on the beach and set up camp. With 15 people and a beach to ourselves, shouldn’t be hard to come up with fun things to do. Bonus points to those who pack a beach volleyball net, football, skim board, or any other beach-y toys.
+					After snagging a few surfboards, we’ll test the off-road capabilities of our rugged bus and take it down the dirt road to Long Beach. We’ll park the bus right on the sand and set up our private beach camp and party. Surfing. Drinking. Spikeball. Music. Sunsets. Endless beach games. Dinner on the beach. Yes, Yes, Yes.
 
-			.row.col-md-6.destination-highlight
-				.destination-image{style: "background: url('#{asset_path("background/thegusbus.jpg")}') bottom center no-repeat"}
+			.row.col-md-6.destination-highlight{style: "min-height: 600px;"}
+				.destination-image{style: "background: url('#{asset_path("background/elsaltocayon.jpg")}') top center no-repeat"}
 					.destination-description
 						.destination-title
-							Gus the Bus
+							Day 3: El Salto Canyon
 				.destination-subtitle-mobile
-					A Village on the Frontier 
+					From Street Food to Waterfalls 
 				.destination-underline-mobile
 				.destination-body-mobile
-					An eco-friendly, vegetable oil-powered Baja Beach bus, retrofitted for extended road trips. Really not much to say beyond that. Pretty neat.
+					Return north to Ensenada for tacos, fresh ceviche and exploration. In the afternoon, we’ll head into the mountains to camp at El Salto Canyon, a rugged mountain gorge. Hang out around camp if you’re lazy (or hungover) or head up into the mountains for a hike. We’ll spend the night around the campfire and stargazing at the clear desert sky.
 
-			.row.col-md-6.destination-highlight
-				.destination-image{style: "background: url('#{asset_path("background/perurivermini.jpg")}') bottom center no-repeat"}
+			.row.col-md-6.destination-highlight{style: "min-height: 600px;"}
+				.destination-image{style: "background: url('#{asset_path("background/rosaritobeach.jpeg")}') center center no-repeat"}
 					.destination-description
 						.destination-title
-							Camaraderie
+							Day 4: Rosarito
 				.destination-subtitle-mobile
-					A Village on the Frontier 
+					Riding Baja's Coast 
 				.destination-underline-mobile
 				.destination-body-mobile
-					Did we mention you’ll be in a van traversing the Baja with 15-20 other like minded explorers? You’d have to be some sort of crazy person not to have a great time and make new friends. Think of this like the most elaborate field trip you’ve ever taken...and you’re allowed to drink beer. No teachers, no rules.
+					Leave El Salto and go to the beach town of Rosarito where you’re free to roam. If you haven’t had enough drinking, grab a drink at Papas & Beer, the West Coast’s largest beach club. Those searching more wholesome activities can opt for horseback riding or stand up paddleboarding at an additional cost. 
+
+	.col-md-12.location-how{style: "background: url('#{asset_path("background/beachwithfriends.jpeg")}') bottom center no-repeat"}
+		.location-how-header
+			What's the Plan?
+		.col-md-12.how-box-container
+			.col-md-4.how-box
+				.how-box-text
+					.how-box-title
+						Meeting Up
+					.how-box-body
+						As a group, we’ll meet on the US side of the border in San Diego and take the Blue Line Trolley to the meeting location at the border. We’ll cross the border by foot with our guide, boarding the bus on the Mexican side. Pack lightly and make sure to bring your passport! 
+			.col-md-4.how-box
+				.how-box-text
+					.how-box-title
+						What You'll Need
+					.how-box-body
+						Bring a backpack with your clothing essentials (shorts, pants, long and short sleeved shirts, a sweatshirt, a swimsuit, etc...) as well as a tent and/or sleeping bag. All are welcome to sleep on the bus or outside. Since nights are usually mild, it's possible to spend nights in a sleeping bag under the stars. Keep in mind all gear must be carried across the border, so it's best to pack lightly.
+			.col-md-4.how-box
+				.how-box-text
+					.how-box-title
+						Other Expenses
+					.how-box-body 
+						All camp meals are covered by the food fund which is included in the price (about 70% of all meals). Meals in transit and beach towns are not included. You’ll appreciate the flexibility to explore taco stands and restaurants in Ensenada and Rosarito on your own. Alcohol is not included, but can be purchased at various times along the route.
 
 	.col-md-12.location-inclusions{style: "background: #F5F5F5;"}
 		.col-md-10.col-md-offset-1.inclusions-container{style: "background: transparent;"}
@@ -152,13 +170,13 @@
 				For each person that joins, everyone's price drops!
 			.priceanddate_container
 				.trip-price{style: "padding-bottom: 8px; padding-top: 40px; font-size: 2em;"}
-					15 People: $450
+					15 People: $470
 				.trip-price{style: "padding-bottom: 8px; opacity: 0.8; font-size: 1.2em;"}
-					16 People: $440
+					16 People: $460
 				.trip-price{style: "padding-bottom: 8px; opacity: 0.8; font-size: 1.2em;"}
-					17 People: $430
+					17 People: $450
 				.trip-price{style: "padding-bottom: 8px; opacity: 0.8; font-size: 1.2em;"}
-					18 People: $420
+					18 People: $440
 				
 			.col-md-6.inclusion-exclusion-box
 				.inclusions-title{style: "color: #00293c;"}
@@ -254,4 +272,9 @@
 		var img_url = $(this).data('image-url')
 			$('.traveler-image').attr('src', img_url);
 			console.log(img_url)
+	});
+
+	$("#readmore-body-text").click(function(){
+		$("#expanded-body-text").fadeIn('slow');
+		$(this).hide()
 	});

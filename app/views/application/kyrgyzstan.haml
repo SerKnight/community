@@ -14,7 +14,7 @@
   %meta{:content => "Sleep in Yurts. Hunt with Eagles. Ride with the Kyrgyz Nomads.", :name => "twitter:description"}
   %meta{:content => "http://i.imgur.com/WPVt9ck.png", :name => "twitter:image:src"}/
 
-.location-hero.location-hero-fix{style: "background: url('#{asset_path("background/kyrgyzstanbanner.jpg")}') bottom center no-repeat"}
+.location-hero.location-hero-fix{style: "background: url('#{asset_path("background/KyrgyzBanner.jpg")}') bottom center no-repeat"}
 
 .location-slow-scroll
   #location-text
@@ -28,45 +28,32 @@
 .location-details
   .col-md-12.location-itinerary
     .mission-block
-      .col-md-3.mission-details-stats
+      .mission-details-stats
         .mission-details-content
-          .mission-details-title
+          .col-md-3.mission-details-title
             .fa.fa-map-marker.mission-details-icon{style:"padding-left: 8px; padding-right: 8px;"}
             The Kyrgyz Republic
-          .mission-details-title
+          .col-md-3.mission-details-title
             .fa.fa-calendar.mission-details-icon
             September, 2016
-          .mission-details-title
+          .col-md-3.mission-details-title
             .fa.fa-users.mission-details-icon
             4-8 Travelers
-          .mission-details-title
+          .col-md-3.mission-details-title
             .fa.fa-money.mission-details-icon
             As low as $1,780
-          %a{href:'/apply/kyrgyzstan'}
-            .mission-apply-button
-              Request Invite
+        %a{href:'/apply/kyrgyzstan'}
+          .mission-apply-button
+            Request Invite
 
-      .col-md-12.mobile-trip-stats
-        .mission-details-content
-          .mission-details-title
-            .fa.fa-map-marker.mission-details-icon{style:"padding-left: 8px; padding-right: 8px;"}
-            The Kyrgyz Republic
-          .mission-details-title
-            .fa.fa-calendar.mission-details-icon
-            September, 2016
-          .mission-details-title
-            .fa.fa-users.mission-details-icon
-            4-8 Travelers
-          .mission-details-title
-            .fa.fa-money.mission-details-icon
-            TBD
-          %a{href:'/apply/kyrgyzstan'}
-            .mission-apply-button
-              Request Invite
-
-      .col-md-8.col-md-offset-1.mission-text-box
+      .col-md-offset-1.mission-text-box
         .mission-body
-          Like the merchants who once traversed this mountainous stretch of the Silk Road, you’ll travel with a caravan of shepherds, falconers, and local guides across the Kyrgyz highlands, hunting with eagles, riding on horseback, and staying in yurts. <br><br>This is an active 10-day journey, passing through the hidden valleys of the Central Asian steppe and windswept passes of the Tian Shan mountains. The Kyrgyz take great pride in the snow-capped peaks, charging rivers, cavernous gorges, and deep-green forested valleys that make up their homeland. Both an outdoor and cultural adventure, you’ll have the chance to soak up their culture and live as they live, making lasting friendships along the way.<br><br>Most of the journey will be spent on horseback and foot as we navigate alpine meadows and lakes, traversing mountain passes (up to 13,000 ft.) and the high pastures of local herdsmen. After a long day of trekking, relax in traditional Kyrgyz yurts, intimate mountain huts, and pristine tented camps. Our diet will mirror the fresh, seasonal dishes of the locals. Activities include traditional hunting with Berkut eagles, high-alpine trekking to natural hot springs, horseback riding to remote shepherds camps, and ample opportunities to learn about the rich history of the Tian Shan Mountain Range.
+          #preview-body-text
+            Like the merchants who once traversed this mountainous stretch of the Silk Road, you’ll travel with a caravan of shepherds, falconers, and local guides across the Kyrgyz highlands, hunting with eagles, riding on horseback, and staying in yurts. <br><br>
+          #readmore-body-text
+            Read more
+          #expanded-body-text
+            This is an active 10-day journey, passing through the hidden valleys of the Central Asian steppe and windswept passes of the Tian Shan mountains. The Kyrgyz take great pride in the snow-capped peaks, charging rivers, cavernous gorges, and deep-green forested valleys that make up their homeland. Both an outdoor and cultural adventure, you’ll have the chance to soak up their culture and live as they live, making lasting friendships along the way.<br><br>Most of the journey will be spent on horseback and foot as we navigate alpine meadows and lakes, traversing mountain passes (up to 13,000 ft.) and the high pastures of local herdsmen. After a long day of trekking, relax in traditional Kyrgyz yurts, intimate mountain huts, and pristine tented camps. Our diet will mirror the fresh, seasonal dishes of the locals. Activities include traditional hunting with Berkut eagles, high-alpine trekking to natural hot springs, horseback riding to remote shepherds camps, and ample opportunities to learn about the rich history of the Tian Shan Mountain Range.
  
 
   .col-md-12.location-who
@@ -230,59 +217,6 @@
       .join-button.btn
         Request Invite
 
-/  .col-md-12.similar-trips
-/    .similar-trips-header
-/      Why stop with Morocco?
-/    %a{href:'/colombia'}
-/      .col-md-4.similar-trip-container
-/        .similar-trip-image{style: "background: url('#{asset_path("background/WhiteWaterColombiaMain-mini.jpg")}') bottom center no-repeat"}
-/          .similar-trip-title
-/            EXPEDITION SAMANA
-/        .similar-trip-guide{style: "background: url('#{asset_path("background/julesguide-mini.jpg")}') center center no-repeat"}
-/        .similar-trip-textbox
-/          .similar-trip-text
-/            Expedition Samana
-/          .similar-trip-guide-text
-/            with Jules D.
-/        .similar-trip-btn
-/          View Trip
-/    %a{href:'/peru'}
-/      .col-md-4.similar-trip-container
-/        .similar-trip-image{style: "background: url('#{asset_path("background/packraftjunglemain-mini.jpg")}') bottom center no-repeat"}
-/          .similar-trip-title
-/            PACKRAFT THE AMAZON
-/        .similar-trip-guide{style: "background: url('#{asset_path("background/paul-mini.png")}') center center no-repeat"}
-/        .similar-trip-textbox
-/          .similar-trip-text
-/            Adventure & Conflict in the Amazon
-/          .similar-trip-guide-text
-/            with Paul R.
-/        .similar-trip-btn
-/          View Trip
-/    %a{href:'/socaltrifecta'}
-/      .col-md-4.similar-trip-container
-/        .similar-trip-image{style: "background: url('#{asset_path("background/TrestlesBeach-mini.jpeg")}') center center no-repeat"}
-/          .similar-trip-title
-/            SOCAL TRIFECTA
-/        .similar-trip-guide{style: "background: url('#{asset_path("background/QuinnSmiles-mini.jpg")}') center center no-repeat"}
-/        .similar-trip-textbox
-/          .similar-trip-text
-/            The SoCal Trifecta
-/          .similar-trip-guide-text
-/            with Quinn C.
-/        .similar-trip-btn
-/          View Trip
-/   %a{href:'/india'}
-/     .col-md-4.similar-trip-container
-/       .similar-trip-image{style: "background: url('#{asset_path("background/IndiaMountains-mini.jpg")}') bottom center no-repeat"}
-/       .similar-trip-guide{style: "background: url('#{asset_path("background/manojprofile-mini.jpg")}') center center no-repeat"}
-/       .similar-trip-textbox
-/         .similar-trip-text
-/           Riding the Roof of the World
-/         .similar-trip-guide-text
-/           with Manoj K.
-
-
 :javascript
 
   $(document).ready(function() {
@@ -339,5 +273,11 @@
      $('.traveler-image').attr('src', img_url);
       console.log(img_url)
   });
+
+  $("#readmore-body-text").click(function(){
+    $("#expanded-body-text").fadeIn('slow');
+    $(this).hide()
+  });
+
 
 

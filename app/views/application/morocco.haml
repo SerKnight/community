@@ -29,51 +29,37 @@
 .location-details
   .col-md-12.location-itinerary
     .mission-block
-      .col-md-3.mission-details-stats
+      .mission-details-stats
         .mission-details-content
-          .mission-details-title
+          .col-md-3.mission-details-title
             .fa.fa-map-marker.mission-details-icon{style:"padding-left: 8px; padding-right: 8px;"}
             Morocco
-          .mission-details-title
+          .col-md-3.mission-details-title
             .fa.fa-calendar.mission-details-icon
             Sep 1st-12th 2016
-          .mission-details-title
+          .col-md-3.mission-details-title
             .fa.fa-users.mission-details-icon
             5-8 Travelers
-          .mission-details-title
+          .col-md-3.mission-details-title
             .fa.fa-money.mission-details-icon
             As low as $1,750
-          %a{href:'/apply/morocco'}
-            .mission-apply-button
-              Request Invite
+        %a{href:'/apply/morocco'}
+          .mission-apply-button
+            Request Invite
 
-      .col-md-12.mobile-trip-stats
-        .mission-details-content
-          .mission-details-title
-            .fa.fa-map-marker.mission-details-icon{style:"padding-left: 8px; padding-right: 8px;"}
-            Morocco
-          .mission-details-title
-            .fa.fa-calendar.mission-details-icon
-            Sep 1st-12th 2016
-          .mission-details-title
-            .fa.fa-users.mission-details-icon
-            5-8 Travelers
-          .mission-details-title
-            .fa.fa-money.mission-details-icon
-            As low as $1,750
-          %a{href:'/apply/morocco'}
-            .mission-apply-button
-              Request Invite
-
-      .col-md-8.col-md-offset-1.mission-text-box
+      .col-md-offset-1.mission-text-box
         .mission-body
-          Tackle Morocco’s legendary single track riding and soak up the friendly vibes of Berber mountain country. Dipping in and out of rust colored hillsides, palm carpeted desert canyons, and high mountain passes, we’ll ride for 5-6 glorious days. It promises to feel both familiar and wildy different than your rides back home. On the comfort of a full suspension bike, we’ll hit up old trading routes, cart paths, goat trails, dry riverbeds, flowing single track, and coastal roads. Anything it takes to get from the mountain to the coast.
-          <br>
-          <br>
-          All great challenges have a glorious reward. For us, that reward is the sparkling blue waters of the Atlantic Ocean and the chilled-out surf camp waiting at the end of the road. Soak your bones in the cool waters of the Atlantic, paddle out for a quiet SUP yoga session, or just lay around like a lazy bum. Your call. Our journey will start and end in the gem of the desert, the walled city of Marrakech. 
-          <br>
-          <br>
-          %i Oh, and this a ladies only trip. Apologies to any guys who’ve gotten to this point and just had their hopes crushed. Sincerely sorry. 
+          #preview-body-text
+            Tackle Morocco’s legendary single track riding and soak up the friendly vibes of Berber mountain country. Dipping in and out of rust colored hillsides, palm carpeted desert canyons, and high mountain passes, we’ll ride for 5-6 glorious days. It promises to feel both familiar and wildy different than your rides back home. On the comfort of a full suspension bike, we’ll hit up old trading routes, cart paths, goat trails, dry riverbeds, flowing single track, and coastal roads. Anything it takes to get from the mountain to the coast.
+            <br>
+            <br>
+          #readmore-body-text
+            Read more
+          #expanded-body-text
+            All great challenges have a glorious reward. For us, that reward is the sparkling blue waters of the Atlantic Ocean and the chilled-out surf camp waiting at the end of the road. Soak your bones in the cool waters of the Atlantic, paddle out for a quiet SUP yoga session, or just lay around like a lazy bum. Your call. Our journey will start and end in the gem of the desert, the walled city of Marrakech. 
+            <br>
+            <br>
+            %i Oh, and this a ladies only trip. Apologies to any guys who’ve gotten to this point and just had their hopes crushed. Sincerely sorry. 
 
   .col-md-12.location-who
     .who-container
@@ -349,4 +335,9 @@
     var img_url = $(this).data('image-url')
      $('.traveler-image').attr('src', img_url);
       console.log(img_url)
+  });
+
+  $("#readmore-body-text").click(function(){
+    $("#expanded-body-text").fadeIn('slow');
+    $(this).hide()
   });

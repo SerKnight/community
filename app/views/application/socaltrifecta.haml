@@ -28,43 +28,25 @@
 .location-details
 	.col-md-12.location-itinerary
 		.mission-block
-			.col-md-3.mission-details-stats
+			.mission-details-stats
 				.mission-details-content
-					.mission-details-title
+					.col-md-3.mission-details-title
 						.fa.fa-map-marker.mission-details-icon{style:"padding-left: 8px; padding-right: 8px;"}
 						Los Angeles, CA
-					.mission-details-title
+					.col-md-3.mission-details-title
 						.fa.fa-calendar.mission-details-icon
 						Fall 2016
-					.mission-details-title
+					.col-md-3.mission-details-title
 						.fa.fa-users.mission-details-icon
 						4-6 Travelers
-					.mission-details-title
+					.col-md-3.mission-details-title
 						.fa.fa-money.mission-details-icon
 						As low as $450
-					%a{href:'/apply/socaltrifecta'}
-						.mission-apply-button
-							Request Invite
+				%a{href:'/apply/socaltrifecta'}
+					.mission-apply-button
+						Request Invite
 
-			.col-md-12.mobile-trip-stats
-				.mission-details-content
-					.mission-details-title
-						.fa.fa-map-marker.mission-details-icon{style:"padding-left: 8px; padding-right: 8px;"}
-						Los Angeles, CA
-					.mission-details-title
-						.fa.fa-calendar.mission-details-icon
-						Fall 2016
-					.mission-details-title
-						.fa.fa-users.mission-details-icon
-						4-6 Travelers
-					.mission-details-title
-						.fa.fa-money.mission-details-icon
-						As low as $450
-					%a{href:'/apply/socaltrifecta'}
-						.mission-apply-button
-							Request Invite
-
-			.col-md-8.col-md-offset-1.mission-text-box
+			.col-md-offset-1.mission-text-box
 				.mission-body
 					The SoCal Trifecta: Exploring the ocean, the desert and the mountains all in one trip. There are only a few places in the world where you can experience the desert, the mountains, and the ocean all in one weekend. This trip, guided by a local expert, will take you rock climbing in Joshua Tree National Park, hiking and camping in the giant pine forests of San Jacinto State Park, and surfing the waves and watching the sunset on the Malibu coast. Three different worlds, one weekend. With transportation, equipment, food, and entrance fees included, this trip will cover all the bases of adventure you could imagine right here in LA's backyard.
 
@@ -256,4 +238,9 @@
 	$(".exclusions-title").click(function () {
 	$(".exclusions-description-hidden").stop().slideToggle();
 		return false;
+	});
+
+	$("#readmore-body-text").click(function(){
+		$("#expanded-body-text").fadeIn('slow');
+		$(this).hide()
 	});

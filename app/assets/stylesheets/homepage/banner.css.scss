@@ -39,7 +39,7 @@
     #adventure-local-explainer{
       font-family: proxima_regular;
       letter-spacing: 0px;
-      font-size: 1.5em;
+      font-size: 1.8em;
       margin: auto;
       max-width: 540px;
     }
@@ -100,12 +100,14 @@
     letter-spacing: 0px;
     font-size: 1em;
     display: block;
-    max-width: 280px;
+    max-width: 200px;
     margin: auto;
   }
 
   .scroll-slow #homepage-text #adventure-local-mobile{
     max-width: 400px;
     margin: auto;
+    line-height: 30px;
+    padding-bottom: 6px;
   }
 }

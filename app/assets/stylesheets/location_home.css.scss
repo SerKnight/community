@@ -124,8 +124,6 @@
 
 	.location-itinerary{
 		width: 100%;
-		background: #00293c;
-		min-height: 400px;
 		padding-right: 0px;
 		padding-left: 0px;
 		padding-bottom: 80px;
@@ -160,85 +158,80 @@
 		}
 
 		.mission-details-content{
+			margin-bottom: 50px;
 
 			.mission-details-title{
 				font-family: proxima_bold;
 				font-size: 1em;
 				color: #fff;
-				text-align: left;
+				text-align: center;
+				padding-left: 0px;
+				padding-right: 0px;
 
 				.mission-details-icon{
 					color: #fff;
 					padding: 5px;
-					background: #212326;
+					background: #aa4b41;
 					border-radius: 100px;
-					border: 4px solid #f5f5f5;
-					margin-left: -41px;
-					margin-top: 12px;
+					border: 2px solid #aa4b41;
 					margin-right: 4px;
+					box-shadow: 1px 1px 2px #000;
 				}
 			}
+		}
 
-			.mission-apply-button{
-				font-family: proxima_bold;
-				text-align: center;
-				color: #fff;
-				font-size: 1.2em;
-				padding: 10px;
-				-webkit-transition: .3s ease-in-out;
-				background: #aa4b41;
-				border: 4px solid #fff;
-				box-shadow: 2px 2px 3px black;
-				width: 100%;
-				max-width: 160px;
-				margin: auto;
-				margin-top: 20px;
-				display: block;
-				margin-bottom: -46px;
+		.mission-apply-button{
+			font-family: proxima_bold;
+			text-align: center;
+			color: #fff;
+			font-size: 1.2em;
+			padding: 10px;
+			-webkit-transition: .3s ease-in-out;
+			background: #aa4b41;
+			border: 4px solid #fff;
+			box-shadow: 1px 1px 2px #444;
+			width: 100%;
+			max-width: 160px;
+			margin: auto;
+			margin-top: 40px;
+			margin-bottom: -46px;
 
-				&:hover{
-					background: #8E3E35;
-					max-width: 180px;
-				}
+			&:hover{
+				background: #8E3E35;
+				max-width: 180px;
+			}
 
-				.btn, .btn:active, .btn:hover{
-					text-decoration: none;
-				}
+			.btn, .btn:active, .btn:hover{
+				text-decoration: none;
 			}
 		}
 
 		.mission-block{
 			max-width: 800px;
 			margin: auto;
-			margin-top: -55px;
-			padding: 24px;
+			margin-top: -95px;
 
 			.mission-text-box{
-				background: #f5f5f5;
+				background: #fff;
+				max-width: 800px;
+				margin: auto;
 				padding: 0px;
 				margin-left: 0px;
-				width: 72.6%;
-				box-shadow: 2px 2px 3px #111;
-				border-top: 10px solid #f5f5f5;
-				margin-top: -10px;
+				box-shadow: 1px 1px 2px #444;
+				z-index: 1;
+				position: relative;
 			}
 
 			.mission-details-stats{
 				background: #212326;
+				max-width: 800px;
+				margin: auto;
 				padding: 20px;
-				border: 10px solid #212326;
-				border-right: none;
 				margin-top: -10px;
-				box-shadow: 2px 2px 3px #111;
-				margin-left: 10px;
-				padding-top: 0px;
+				box-shadow: 1px 1px 2px #444;
+				z-index: 1001;
+				position: relative;
 			}
-
-			.mobile-trip-stats{
-				background: #212326;
-				display: none;
-			}
-
 		
 			.itinerary-header{
 				font-family: proxima_black;
@@ -269,6 +262,18 @@
 				max-width: 600px;
 				margin: auto;
 				padding: 20px;
+				padding-top: 44px;
+
+				#expanded-body-text{
+					display: none;
+				}
+
+				#readmore-body-text{
+					color: #aa4b41;
+					font-family: proxima_bold;
+					font-size: 1.2em;
+					text-align: center;
+				}
 			}
 		}
 
@@ -512,20 +517,20 @@
 					min-height: 300px;
 
 					.how-box-title{
-						font-family: proxima_thin;
+						font-family: proxima_bold;
 						font-size: 2.2em;
 						text-align: center;
 						padding: 10px;
 						color: #fff;
-						padding-top: 74px;
+						padding-top: 20px;
 					}
 
 					.how-box-body{
-						font-family: proxima_thin;
-						font-size: 1.2em;
+						font-family: proxima_regular;
+						font-size: 1.1em;
 						text-align: center;
 						padding: 20px;
-						color: rgba(255,255,255,0.5);
+						color: rgba(255,255,255,0.8);
 					}
 				}
 			}
@@ -536,12 +541,12 @@
 		padding-top: 80px;
 		padding-bottom: 80px;
 		min-height: 600px;
-		background: #f5f5f5;
+		background: #fff;
 
 		.who-travelers-container{
 			margin: auto;
 			display: flex;
-			background: #f5f5f5;
+			background: #fff;
 			padding-top: 20px;
 
 			.who-image-button{
@@ -551,6 +556,7 @@
 			    border-radius: 50%;
 			    cursor: pointer;
 			    margin: auto;
+			    box-shadow: 1px 1px 2px #444;
 			}
 		}
 
@@ -574,7 +580,6 @@
 					height: 240px;
 					width: 240px;
 					border-radius: 50%;
-					margin-top: 20px;
 				}
 
 				.who-name{
@@ -620,7 +625,7 @@
 
 		.who-container{
 			background: #fff;
-			max-width: 600px;
+			max-width: 800px;
 			margin: auto;
 		}
 	}
@@ -953,12 +958,8 @@
 		margin-top: 260px;
 	}
 
-	.location-details .location-itinerary .mission-block .mission-details-stats{
-		display: none;
-	}
-
-	.location-details .location-itinerary .mission-block .mobile-trip-stats{
-		display: block;
+	.location-details .location-itinerary .mission-details-content{
+		margin-bottom: 0px;
 	}
 
 	.location-details .location-itinerary .mission-block{
@@ -966,15 +967,15 @@
 		background: transparent;
 		box-shadow: none;
 		border: none;
+		padding-top: 20px;
 	}
 
 	.location-details .location-itinerary .mission-block .mission-text-box{
 		box-shadow: none;
 		border-top: none;
 		width: 100%;
-		margin-top: 40px !important;
 		margin: auto;
-		box-shadow: 2px 2px 3px #111;
+		box-shadow: 1px 1px 2px #444;
 		padding-top: 40px;
 	}
 
@@ -1005,10 +1006,14 @@
 		margin-left: 0px;
 	}
 
-	.location-details .location-itinerary .mission-details-content .mission-apply-button{
-		margin-bottom: -66px;
+	.location-details .location-itinerary .mission-apply-button{
 		z-index: 1001;
 		position: relative;
+		margin-top: 20px !important;
+	}
+
+	.location-details .location-itinerary .mission-block .mission-body{
+		padding-top: 10px;
 	}
 
 	.location-details .location-itinerary{
@@ -1023,10 +1028,6 @@
 
 	.location-details .location-who .who-container .who-text .who-description{
 		font-size: 0.9em;
-	}
-
-	.location-details .location-who .who-container{
-		min-height: 450px;
 	}
 
 	.location-details .location-itinerary .map-block .route-map{

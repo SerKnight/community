@@ -32,48 +32,34 @@
 .location-details
 	.col-md-12.location-itinerary
 		.mission-block
-			.col-md-3.mission-details-stats
+			.mission-details-stats
 				.mission-details-content
-					.mission-details-title
+					.col-md-3.mission-details-title
 						.fa.fa-map-marker.mission-details-icon{style:"padding-left: 8px; padding-right: 8px;"}
 						India
-					.mission-details-title
+					.col-md-3.mission-details-title
 						.fa.fa-calendar.mission-details-icon
 						Fall 2016
-					.mission-details-title
+					.col-md-3.mission-details-title
 						.fa.fa-users.mission-details-icon
 						5-8 Travelers
-					.mission-details-title
+					.col-md-3.mission-details-title
 						.fa.fa-money.mission-details-icon
 						As low as $1,899
-					%a{href:'/apply/india'}
-						.mission-apply-button
-							Request Invite
+				%a{href:'/apply/india'}
+					.mission-apply-button
+						Request Invite
 
-			.col-md-12.mobile-trip-stats
-				.mission-details-content
-					.mission-details-title
-						.fa.fa-map-marker.mission-details-icon{style:"padding-left: 8px; padding-right: 8px;"}
-						India
-					.mission-details-title
-						.fa.fa-calendar.mission-details-icon
-						Fall 2016
-					.mission-details-title
-						.fa.fa-users.mission-details-icon
-						5-8 Travelers
-					.mission-details-title
-						.fa.fa-money.mission-details-icon
-						As low as $1,899
-					%a{href:'/apply/india'}
-						.mission-apply-button
-							Request Invite
-
-			.col-md-8.col-md-offset-1.mission-text-box
+			.col-md-offset-1.mission-text-box
 				.mission-body
-					Conquer one of the most challenging motorcycle routes in the world. A true pilgrimage for adventure rider enthusiasts. Mountain faces, painted by the passing sun, border the scenic valleys we’ll follow high into the Himalayan Plateau. We'll traverse the world's top five mountain passes, including the mighty Khardungla Pass, which at nearly 18,000 feet, stands as the world’s highest motorable pass.  
-					<br>
-					<br>
-					We’ll have to endure challenging adventure riding and harsh weather to complete the circuit. It will take teamwork, persistence, and positivity to realize this once of a lifetime trip. It won’t be easy, but the payoff is immense. Take in the unmatched beauty of high altitude lakes that change color by the hour, marvel at the surprising presence of bactrian camels in high altitude desert valleys, and relax at a river oasis hamlet. 
+					#preview-body-text
+						Conquer one of the most challenging motorcycle routes in the world. A true pilgrimage for adventure rider enthusiasts. Mountain faces, painted by the passing sun, border the scenic valleys we’ll follow high into the Himalayan Plateau. We'll traverse the world's top five mountain passes, including the mighty Khardungla Pass, which at nearly 18,000 feet, stands as the world’s highest motorable pass.  
+						<br>
+						<br>
+					#readmore-body-text
+						Read more
+					#expanded-body-text
+						We’ll have to endure challenging adventure riding and harsh weather to complete the circuit. It will take teamwork, persistence, and positivity to realize this once of a lifetime trip. It won’t be easy, but the payoff is immense. Take in the unmatched beauty of high altitude lakes that change color by the hour, marvel at the surprising presence of bactrian camels in high altitude desert valleys, and relax at a river oasis hamlet. 
 
 	.col-md-12.location-description
 		.col-md-6.team-leader-container
@@ -227,7 +213,7 @@
 			Interested in joining?
 		.who-join-description
 			Drop us a line or apply
-		%a{href:'/apply/socaltrifecta'}
+		%a{href:'/apply/india'}
 			.join-button.btn
 				Reach Out!
 
@@ -274,4 +260,9 @@
 	$(".exclusions-title").click(function () {
 	$(".exclusions-description-hidden").stop().slideToggle();
 		return false;
+	});
+
+	$("#readmore-body-text").click(function(){
+		$("#expanded-body-text").fadeIn('slow');
+		$(this).hide()
 	});

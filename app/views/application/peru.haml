@@ -33,51 +33,37 @@
 .location-details
 	.col-md-12.location-itinerary
 		.mission-block
-			.col-md-3.mission-details-stats
+			.mission-details-stats
 				.mission-details-content
-					.mission-details-title
+					.col-md-3.mission-details-title
 						.fa.fa-map-marker.mission-details-icon{style:"padding-left: 8px; padding-right: 8px;"}
 						Peru
-					.mission-details-title
+					.col-md-3.mission-details-title
 						.fa.fa-calendar.mission-details-icon
 						Nov. 18-29th, 2016
-					.mission-details-title
+					.col-md-3.mission-details-title
 						.fa.fa-users.mission-details-icon
 						6-9 Travelers
-					.mission-details-title
+					.col-md-3.mission-details-title
 						.fa.fa-money.mission-details-icon
 						As low as $3,200
-					%a{href:'/apply/peru'}
-						.mission-apply-button
-							Request Invite
+				%a{href:'/apply/peru'}
+					.mission-apply-button
+						Request Invite
 
-			.col-md-12.mobile-trip-stats
-				.mission-details-content
-					.mission-details-title
-						.fa.fa-map-marker.mission-details-icon{style:"padding-left: 8px; padding-right: 8px;"}
-						Peru
-					.mission-details-title
-						.fa.fa-calendar.mission-details-icon
-						Nov. 18-29th, 2016
-					.mission-details-title
-						.fa.fa-users.mission-details-icon
-						6-9 Travelers
-					.mission-details-title
-						.fa.fa-money.mission-details-icon
-						As low as $3,200
-					%a{href:'/apply/peru'}
-						.mission-apply-button
-							Request Invite
-
-			.col-md-8.col-md-offset-1.mission-text-box
+			.col-md-offset-1.mission-text-box
 				.mission-body
-					Loggers versus Indians, gold miners versus helicopter commandos; oil companies, pipelines, new roads, secret genocide, corruption, greed, missionaries, bandits, politicians, and massive paradigm shifts unfolding at a dizzying pace.
-					<br>
-					<br>
-					Explore one of the most volatile and crucially important places on earth, the Madre de Dios region of the upper Amazon. Venturing as far as permitted, you’ll be taken by boats to the jungle outpost of Monte Selvado, which borders the territory of the last uncontacted tribes in the world. Over the course of several days, you’ll return to the Las Piedras research station by packraft, experiencing the Amazon in the most personal and intimate way possible. One part adventure, one part research expedition, you’ll have the opportunity to participate in research by documenting wildlife densities, tracking apex predators, and searching for undocumented species.
-					<br>
-					<br>
-					This adventure is not for the faint of heart. You will be a member of a purposeful expedition, not a guest on a tour. True exploration of the Amazon is both a physical and mental challenge. You’ll be exposed to the elements, paddling/hiking for 6-8 hours a day and wilderness camping in tents at night. This journey will undoubtedly challenge you, but it will also draw from you a sense of pride, curiosity, and wonder. You’ll learn to love the Amazon, by fully immersing yourself in this spectacular place. 
+					#preview-body-text
+						Loggers versus Indians, gold miners versus helicopter commandos; oil companies, pipelines, new roads, secret genocide, corruption, greed, missionaries, bandits, politicians, and massive paradigm shifts unfolding at a dizzying pace.
+						<br>
+						<br>
+					#readmore-body-text
+						Read more
+					#expanded-body-text
+						Explore one of the most volatile and crucially important places on earth, the Madre de Dios region of the upper Amazon. Venturing as far as permitted, you’ll be taken by boats to the jungle outpost of Monte Selvado, which borders the territory of the last uncontacted tribes in the world. Over the course of several days, you’ll return to the Las Piedras research station by packraft, experiencing the Amazon in the most personal and intimate way possible. One part adventure, one part research expedition, you’ll have the opportunity to participate in research by documenting wildlife densities, tracking apex predators, and searching for undocumented species.
+						<br>
+						<br>
+						This adventure is not for the faint of heart. You will be a member of a purposeful expedition, not a guest on a tour. True exploration of the Amazon is both a physical and mental challenge. You’ll be exposed to the elements, paddling/hiking for 6-8 hours a day and wilderness camping in tents at night. This journey will undoubtedly challenge you, but it will also draw from you a sense of pride, curiosity, and wonder. You’ll learn to love the Amazon, by fully immersing yourself in this spectacular place. 
 
 
 	.col-md-12.location-description{style: "padding-top: 40px; min-height: 800px; background: url('#{asset_path("travelers/guideprofilepaul.jpg")}') bottom center no-repeat"}
@@ -313,4 +299,9 @@
 		var img_url = $(this).data('image-url')
 			$('.traveler-image').attr('src', img_url);
 			console.log(img_url)
+	});
+
+	$("#readmore-body-text").click(function(){
+		$("#expanded-body-text").fadeIn('slow');
+		$(this).hide()
 	});
