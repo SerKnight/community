@@ -32,7 +32,9 @@ RailsAdmin.config do |config|
 
   config.model Contact do
     list do
+      sort_by :created_at
       sort_by :contact_type
+      field :created_at
       field :contact_type
       field :name
       field :email
