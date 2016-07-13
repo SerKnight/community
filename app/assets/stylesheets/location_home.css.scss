@@ -968,6 +968,7 @@
 		box-shadow: none;
 		border: none;
 		padding-top: 20px;
+		margin-top: 0px;
 	}
 
 	.location-details .location-itinerary .mission-block .mission-text-box{
@@ -1169,6 +1170,7 @@
 
 	.location-hero-fix{
 		min-height: 700px;
+		margin-top: 0px;
 	}
 
 	.location-details .location-join .who-join{
@@ -1319,7 +1321,7 @@
 	}
 
 	.location-details .destination-container .destination-body-mobile{
-		font-size: 1em;
+		font-size: 1em !important;
 	}
 
 	.location-details .location-how .location-how-header{
