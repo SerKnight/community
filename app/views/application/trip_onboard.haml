@@ -8,19 +8,20 @@
 	%meta{:content => "1326", :property => "og:image:width"}/
 	%meta{:content => "700", :property => "og:image:height"}/
 
-.hero-image.hero-image-fix{style: "background: url('#{asset_path("background/clifflaunch.jpeg")}') center center no-repeat"}
+.hero-image.hero-image-fix{style: "background: url('#{asset_path("background/clifflaunch.jpeg")}') top center no-repeat"}
 
-.hero-image.hero-image-fix-mobile{style: "background: url('#{asset_path("background/clifflaunchmobile.jpeg")}') center center no-repeat"}
+.hero-image.hero-image-fix-mobile{style: "background: url('#{asset_path("background/clifflaunchmobile.jpeg")}') left center no-repeat"}
 
 .banner-scroll
 	#landing-text  
 		#landing-header
-			Dream Big, Travel Bold, Tread Light
-		#landing-body
-			Our mission is to help spread the positive effects and impacts of travel.
-
+			Dream Big, Travel Bold,
+			<br>
+			Tread Light
 
 .col-md-12.onboard-mission
+	#landing-body
+		Our mission is to help spread the positive effects and impacts of travel.
 	.onboard-mission-body
 		AdventureMade brings together travelers, adventure guides and social causes to create compelling and purposeful group travel experiences. Whether a weekend getaway or an international expedition, we're here to help find the resources and support to make every trip a positive experience for everyone involved.
 
@@ -76,7 +77,7 @@
 .col-md-12.adventure-creator-container
 	.col-md-10.col-md-offset-1.adventure-creator-text
 		.adventure-creator-header
-			Unlock a Trip
+			Potential Trips
 		.adventure-creator-body
 			%a{href: '/india' , target: '_blank'}
 				.adventure-creator-trip{style: "background: url('#{asset_path("background/IndiaTitle.jpeg")}') center center no-repeat; background-size: cover;"}
@@ -86,9 +87,6 @@
 
 			%a{href: '/socaltrifecta' , target: '_blank'}
 				.adventure-creator-trip{style: "background: url('#{asset_path("background/TheSoCalTrifectaTitleSmall.jpg")}') center center no-repeat; background-size: cover;"}
-
-			%a{href: '/apply/kyrgyzstan' , target: '_blank'}
-				.adventure-creator-trip{style: "background: url('#{asset_path("background/Eagles&YurtsTitleSmall.jpg")}') center center no-repeat; background-size: cover;"}
 
 .col-md-12.creation-apply
 	.creation-apply-box

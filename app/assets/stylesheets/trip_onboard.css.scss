@@ -3,7 +3,7 @@
 }
 
 .hero-image-fix {
-	min-height: 600px;
+	min-height: 700px;
 	background-size: cover !important;
   	margin-top: -68px;
 }
@@ -32,25 +32,16 @@
 
 		#landing-header{
 			font-family: proxima_bold;
-			font-size: 2.4em;
+			font-size: 4em;
 			letter-spacing: -1px;
-			text-transform: uppercase;
-			text-shadow: 1px 1px 2px #212326;
-		}
-
-		#landing-body{
-			font-family: proxima_regular;
-			letter-spacing: -1px;
-			font-size: 1.4em;
-			color: #212326;
+			text-transform: capitalize;
 		}
 	}
 }
 
 .onboard-mission{
-	background: #212326;
-	border-top: 8px solid #00293c;
-	padding-bottom: 40px;
+	background: #fff;
+	padding-bottom: 20px;
 
 	.onboard-mission-header{
 		font-family: proxima_bold;
@@ -63,21 +54,29 @@
 		padding-top: 50px;
 	}
 
+	#landing-body{
+		font-family: proxima_bold;
+		letter-spacing: -1px;
+		font-size: 2em;
+		color: #212326;
+		text-align: center;
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+
 	.onboard-mission-body{
 		font-family: proxima_regular;
 		color: #212326;
-		font-size: 1.2em;
+		font-size: 1.1em;
 		text-align: center;
-		max-width: 800px;
+		max-width: 620px;
 		margin: auto;
-		padding-top: 50px;
-		padding-bottom: 50px;
-		background: #fff;
-		margin-top: -120px;
-		padding-right: 8%;
-		padding-left: 8%;
-		border-top: 8px solid #00293c;
-		line-height: 32px;
+		padding-top: 40px;
+		padding-bottom: 40px;
+		padding-right: 2%;
+		padding-left: 2%;
+		border-top: 4px solid #aa4b41;
+		line-height: 24px;
 	}
 }
 
@@ -112,7 +111,7 @@
 			padding-top: 40px;
 			padding-bottom: 40px;
 			background: rgba(33,35,38,1);
-			box-shadow: 2px 2px 8px rgba(33,35,38,0.5);
+			box-shadow: 2px 2px 3px #000;
 			max-width: 400px;
 			margin: auto;
 			min-height: 270px;
@@ -366,18 +365,20 @@
 		margin: auto;
 	}
 
+	.onboard-mission #landing-body{
+		font-size: 1.2em;
+	}
+
 	.banner-scroll #landing-text #landing-body{
 		max-width: 260px;
 		margin: auto;
 	}
 
 	.onboard-mission .onboard-mission-body{
-		font-size: 1em;
-		padding-top: 30px;
-		padding-bottom: 30px;
-		padding-right: 4%;
-		padding-left: 4%;
-		line-height: 24px;
+		font-size: 0.9em;
+		padding-right: 0%;
+		padding-left: 0%;
+		line-height: 20px;
 	}
 
 	.we-are-seeking .we-are-seeking-body{
@@ -387,11 +388,7 @@
 	.creator-hiw .creator-hiw-header{
 		margin-bottom: 40px;
 	}
-
-	.adventure-creator-container .adventure-creator-text{
-		margin-top: -200px;
-	}
-
+	
 	.creation-apply .creation-apply-box .creation-apply-header{
 		font-size: 2.2em;
 		padding-top: 80px;
