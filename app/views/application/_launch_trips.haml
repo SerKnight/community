@@ -1,0 +1,24 @@
+#launch_trips{style: "background: url('#{asset_path("background/surfhike.jpeg")}') fixed bottom center no-repeat"}
+
+	.container
+		.launch-trips-header
+			.launch-trips-title
+				Launch your Adventure
+				<br>
+				.launch-trips-subtitle
+					We're here to create your perfect trip. Get started by telling us about yourself and what you're looking for.
+			%a{href: "/apply/adventure"}
+				.launch-apply-btn
+					Get Started
+
+
+:javascript
+
+	function simpleParallax() {
+		var scrolled = $(window).scrollTop() + 1;
+		$('#launch_trips').css('background-position', '0' + -(scrolled * 0.3) + 'px');
+	}
+
+	$(window)#launch_trips(function (e) {
+		simpleParallax();
+	});

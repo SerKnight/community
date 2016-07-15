@@ -8,9 +8,9 @@
 	%meta{:content => "1326", :property => "og:image:width"}/
 	%meta{:content => "700", :property => "og:image:height"}/
 
-.hero-image.hero-image-fix{style: "background: url('#{asset_path("background/clifflaunch.jpeg")}') top center no-repeat"}
+.hero-image-fix{style: "background: url('#{asset_path("background/clifflaunch.jpeg")}') fixed top center no-repeat"}
 
-.hero-image.hero-image-fix-mobile{style: "background: url('#{asset_path("background/clifflaunchmobile.jpeg")}') left center no-repeat"}
+.hero-image-fix-mobile{style: "background: url('#{asset_path("background/clifflaunchmobile.jpeg")}') fixed center center no-repeat"}
 
 .banner-scroll
 	#landing-text  
@@ -25,9 +25,7 @@
 	.onboard-mission-body
 		AdventureMade brings together travelers, adventure guides and social causes to create compelling and purposeful group travel experiences. Whether a weekend getaway or an international expedition, we're here to help find the resources and support to make every trip a positive experience for everyone involved.
 
-.col-md-12.creator-hiw
-	.creator-hiw-header
-		How it Works
+.col-md-12.creator-hiw{style: "background: url('#{asset_path("background/SEAsiaStock.jpeg")}') fixed center center no-repeat"}
 	.col-md-4.creator-hiw-box
 		.creator-hiw-box-text
 			.creator-hiw-box-title
@@ -74,21 +72,21 @@
 			<br>
 			Your mere presence on a trip makes it worthwhile for others to join. You have a unique skillset and the opportunity to share your knowledge and perspective through travel. Photographers, yoga instructors, biologists, foodies, language teachers, athletes...we’re talking to you! 
 
-.col-md-12.adventure-creator-container
-	.col-md-10.col-md-offset-1.adventure-creator-text
-		.adventure-creator-header
-			Potential Trips
-		.adventure-creator-body
-			%a{href: '/india' , target: '_blank'}
-				.adventure-creator-trip{style: "background: url('#{asset_path("background/IndiaTitle.jpeg")}') center center no-repeat; background-size: cover;"}
+/.col-md-12.adventure-creator-container
+/	.col-md-10.col-md-offset-1.adventure-creator-text
+/		.adventure-creator-header
+/			Potential Trips
+/		.adventure-creator-body
+/			%a{href: '/india' , target: '_blank'}
+/				.adventure-creator-trip{style: "background: url('#{asset_path("background/IndiaTitle.jpeg")}') center center no-repeat; background-size: cover;"}
 
-			%a{href: '/peru' , target: '_blank'}
-				.adventure-creator-trip{style: "background: url('#{asset_path("background/AdventureandConflictintheAmazon.jpg")}') bottom center no-repeat; background-size: cover;"}
+/			%a{href: '/peru' , target: '_blank'}
+/				.adventure-creator-trip{style: "background: url('#{asset_path("background/AdventureandConflictintheAmazon.jpg")}') bottom center no-repeat; background-size: cover;"}
 
-			%a{href: '/socaltrifecta' , target: '_blank'}
-				.adventure-creator-trip{style: "background: url('#{asset_path("background/TheSoCalTrifectaTitleSmall.jpg")}') center center no-repeat; background-size: cover;"}
+/			%a{href: '/socaltrifecta' , target: '_blank'}
+/				.adventure-creator-trip{style: "background: url('#{asset_path("background/TheSoCalTrifectaTitleSmall.jpg")}') center center no-repeat; background-size: cover;"}
 
-.col-md-12.creation-apply
+.col-md-12.creation-apply{style: "background: url('#{asset_path("background/carlandscape.jpeg")}') fixed left center no-repeat"}
 	.creation-apply-box
 		.creation-apply-header
 			Think you're ready?
@@ -96,5 +94,33 @@
 			Let's set up your next adventure.
 		%a{href: "/apply/adventure"}
 			.creation-apply-btn
-				Introduce Yourself
+				Get Started
 
+:javascript
+
+	function simpleParallax() {
+		var scrolled = $(window).scrollTop() + 1;
+		$('.hero-image-fix').css('background-position', '0' + -(scrolled * 0.3) + 'px');
+	}
+
+	$(window).hero-image-fix(function (e) {
+		simpleParallax();
+	});
+
+	function simpleParallax() {
+		var scrolled = $(window).scrollTop() + 1;
+		$('.hero-image-fix-mobile').css('background-position', '0' + -(scrolled * 0.3) + 'px');
+	}
+
+	$(window).hero-image-fix-mobile(function (e) {
+		simpleParallax();
+	});
+
+	function simpleParallax() {
+		var scrolled = $(window).scrollTop() + 1;
+		$('.creator-hiw').css('background-position', '0' + -(scrolled * 0.3) + 'px');
+	}
+
+	$(window).creator-hiw(function (e) {
+		simpleParallax();
+	});
