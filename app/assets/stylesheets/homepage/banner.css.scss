@@ -58,8 +58,7 @@
 
   .jumbotron_fix_mobile{
     display: block;
-    min-height: 375px;
-    background-size: cover !important;
+    min-height: 600px;
     margin-top: -0px;
   }
 
@@ -68,7 +67,7 @@
   }
 
   .scroll-slow{
-    margin-top: 200px;
+    margin-top: 260px;
   }
 
   .scroll-slow #homepage-text #adventure-local{
@@ -98,7 +97,7 @@
 @media screen and (max-width: 500px){
   .scroll-slow #homepage-text #adventure-local-explainer-mobile{
     letter-spacing: 0px;
-    font-size: 1em;
+    font-size: 1.1em;
     display: block;
     max-width: 200px;
     margin: auto;

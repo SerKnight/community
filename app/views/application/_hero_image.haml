@@ -1,6 +1,6 @@
 .jumbotron.jumbotron_fix{style: "background: url('#{asset_path("background/groupcolombia.jpg")}') fixed bottom center no-repeat"}
 
-.jumbotron.jumbotron_fix_mobile{style: "background: url('#{asset_path("background/groupcolombia.jpg")}') bottom center no-repeat"}
+.jumbotron.jumbotron_fix_mobile{style: "background: url('#{asset_path("background/groupcolombiamobile.jpg")}') fixed bottom center no-repeat"}
 
 
 .scroll-slow
@@ -27,5 +27,14 @@
 	}
 
 	$(window).jumbotron_fix(function (e) {
+		simpleParallax();
+	});
+
+	function simpleParallax() {
+		var scrolled = $(window).scrollTop() + 1;
+		$('.jumbotron_fix_mobile').css('background-position', '0' + -(scrolled * 0.3) + 'px');
+	}
+
+	$(window).jumbotron_fix_mobile(function (e) {
 		simpleParallax();
 	});
