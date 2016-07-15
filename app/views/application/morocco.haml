@@ -15,7 +15,7 @@
   %meta{:content => "http://i.imgur.com/mhXlBFl.png", :name => "twitter:image:src"}/
 
 
-.location-hero.location-hero-fix{style: "background: url('#{asset_path("background/moroccocover.jpeg")}') left center no-repeat"}
+.location-hero.location-hero-fix{style: "background: url('#{asset_path("background/moroccocover.jpeg")}') fixed left center no-repeat"}
 
 .location-slow-scroll
   #location-text
@@ -285,6 +285,15 @@
   $(document).ready(function() {
   $('.location-slow-scroll').show();
   $('.location-slow-scroll').animate({ opacity: 1, top: "-60px" }, 'slow');
+  });
+
+  function simpleParallax() {
+    var scrolled = $(window).scrollTop() + 1;
+    $('.location-hero-fix').css('background-position', '0' + -(scrolled * 0.3) + 'px');
+  }
+
+  $(window).scroll(function (e) {
+    simpleParallax();
   });
 
   $(document).ready(function() {

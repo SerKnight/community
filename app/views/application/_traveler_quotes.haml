@@ -1,0 +1,21 @@
+#traveler_quotes
+	.quote-content
+		.traveler-quote-text
+			"Unreal experience and highly unique opportunity to explore a stunningly spectacular corner of the world with expert guides who know and love it!"
+		.traveler-quote-name
+			Rachel L.
+		.quote-images
+			.quote-image-button{"data-name" => "Rachel L.", "data-description" => ' "Unreal experience and highly unique opportunity to explore a stunningly spectacular corner of the world with expert guides who know and love it!" ', style: "background: url('#{asset_path("travelers/RachelQuote.jpeg")}') center center no-repeat"}
+			.quote-image-button{"data-name" => "Jon B.", "data-description" => '"Best trip ever! World-class local guides, crazy fun adventures, and just the right amount of unpredictability."', style: "background: url('#{asset_path("travelers/JonProfile.jpg")}') center center no-repeat"}
+			.quote-image-button{"data-name" => "Mitchel P.", "data-description" => '"A true adventure in the purest sense of the word. Spontaneity combined with thorough planning created an amazing experience with a unique group of people"', style: "background: url('#{asset_path("travelers/MichelQuote.jpeg")}') center center no-repeat"}
+
+
+:javascript
+
+	$(".quote-image-button").on("click", function() {
+		$('.quote-image-button').css('border', '0px solid #fff');
+		$(this).css('border','4px solid #212326');
+    
+		$('.traveler-quote-name').html($(this).data('name'))
+		$('.traveler-quote-text').html($(this).data('description'))
+	});

@@ -1,0 +1,55 @@
+#traveler_quotes{
+	background: #fff;
+	min-height: 570px;
+
+	.quote-content{
+		max-width: 800px;
+		margin: auto;
+		padding-top: 100px;
+
+		.traveler-quote-text{
+			font-family: proxima_thin;
+			font-size: 2em;
+			color: #212326;
+			text-align: center;
+		}
+
+		.traveler-quote-name{
+			font-family: proxima_bold;
+			font-size: 1.8em;
+			color: #212326;
+			text-align: center;
+			padding-top: 20px;
+			padding-bottom: 40px;
+		}
+
+		.quote-images{
+			max-width: 400px;
+			margin: auto;
+			display: flex;
+
+			.quote-image-button{
+			    width: 100px;
+			    height: 100px;
+			    float: left;
+			    border-radius: 50%;
+			    cursor: pointer;
+			    margin: auto;
+			    box-shadow: 1px 1px 2px #444;
+			    background-size: contain !important;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 500px){
+
+	#traveler_quotes .quote-content .traveler-quote-text{
+		font-size: 1.4em;
+	}
+
+	#traveler_quotes .quote-content{
+		padding-left: 8px;
+		padding-right: 8px;
+	}
+}
