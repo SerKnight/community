@@ -226,3 +226,14 @@
 		}
 	}
 }
+
+@media screen and (max-width: 500px){
+
+	.navbar.logged-out .trip-dropdown-content{
+		min-width: 0px;
+	}
+
+	.navbar.logged-out .btn.btn-default{
+		margin-right: 0px;
+	}
+}
