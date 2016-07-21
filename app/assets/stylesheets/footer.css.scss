@@ -9,13 +9,26 @@
 		padding-top: 30px;
 		background: rgba(255,255,255,0.1);
 		padding-bottom: 20px;
+		margin-left: 0px;
+		margin-right: 0px;
 
 		#footer-email-title{
 			color: #fff;
 			font-family: proxima_bold;
-			font-size: 1.4em;
-			padding-bottom: 8px;
+			font-size: 2.2em;
 			text-align: center;
+			letter-spacing: -0.5px;
+		}
+
+		#footer-email-subtitle{
+			color: rgba(255,255,255,0.8);
+			font-family: proxima_thin;
+			font-size: 1.25em;
+			padding-bottom: 18px;
+			max-width: 320px;
+			margin: auto;
+			text-align: center;
+			letter-spacing: -0.2px;
 		}
 
 		.footer-email-container{
@@ -178,6 +191,15 @@
 @media screen and (max-width: 500px){
 	#footer .container .footer_text a{
 		font-size: 1.2em;
+	}
+
+	#footer .footer-contact-section #footer-email-title{
+		font-size: 1.6em;
+	}
+
+	#footer .footer-contact-section #footer-email-subtitle{
+		font-size: 1em;
+		max-width: 250px;
 	}
 
 	#footer .container .footer-email-container{

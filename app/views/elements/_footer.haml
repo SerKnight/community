@@ -1,7 +1,9 @@
 #footer
   .row.footer-contact-section
     #footer-email-title
-      Be first in line for upcoming trips.
+      Discover a world of adventure
+    #footer-email-subtitle
+      Connect with us to be the first to know when new adventures launch!
     #signupModal{"aria-labelledby" => "signupModal", :role => "dialog", :tabindex => "-1"}
       = form_for :contact, url: {:controller => "contacts", :action => "create"}, method: "post", remote: true do |f|
         %input{:name => "contact[contact_type]", :type => "hidden", value: 'Email Signup'}

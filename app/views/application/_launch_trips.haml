@@ -7,9 +7,7 @@
 				<br>
 				.launch-trips-subtitle
 					We're here to create your perfect trip. Get started by telling us about yourself and what you're looking for.
-			%a{:href => "https://madebyadventure.typeform.com/to/oSy8y4", :target => "_blank"}
-				.launch-apply-btn
-					Get Started
+			%a.launch-apply-btn.typeform-share.button{"data-mode" => "1", :href => "https://madebyadventure.typeform.com/to/oSy8y4", :target => "_blank"} Get Started
 
 
 :javascript
@@ -22,3 +20,6 @@
 	$(window)#launch_trips(function (e) {
 		simpleParallax();
 	});
+
+:javascript
+	(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}id=id+'_';if(!gi.call(d,id)){qs=ce.call(d,'link');qs.rel='stylesheet';qs.id=id;qs.href=b+'share-button.css';s=gt.call(d,'head')[0];s.appendChild(qs,s)}})()
