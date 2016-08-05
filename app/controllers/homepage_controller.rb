@@ -4,6 +4,18 @@ class HomepageController < ApplicationController
 
   end
 
+  def trips_page
+
+  end
+
+  def our_process
+
+  end
+
+  def about_us
+
+  end
+
   def trip_onboard
 
   end

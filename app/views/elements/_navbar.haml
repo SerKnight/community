@@ -9,20 +9,29 @@
       .col-md-12
         %a.navbar-brand{href: "/"}
     #bs-example-navbar-collapse-1.collapse.navbar-collapse.mobile-navbar-menu
-      %ul.nav.navbar-nav.navbar-right
-        %a{:href => "/adventure"} 
+      %ul.nav.navbar-nav.navbar-left
+        %a{:href => "/projects"} 
           .btn.btn-default
-            LAUNCH A TRIP
-        %li.dropdown
-          %a.dropdown-toggle.trip-dropdown{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
-            JOIN A TRIP
-          %ul.dropdown-menu.trip-dropdown-content
-            %li
-              %a.trip-dropdown-title{:href => "/morocco"} The Berber Traverse
-            %li
-              %a.trip-dropdown-title{:href => "/kyrgyzstan"} The Kyrgyz Republic
-            %li
-              %a.trip-dropdown-title{:href => "/peru"} Packrafting the Upper Amazon
+            Current Projects
+        %a{:href => "/our-process"} 
+          .btn.btn-default
+            Our Process
+        %a{:href => "/about-us"} 
+          .btn.btn-default
+            About Us
+        
 
-    / /.navbar-collapse
-  / /.container-fluid
+
+/        %li.dropdown
+/          %a.dropdown-toggle.trip-dropdown{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
+/            Current Projects
+/          %ul.dropdown-menu.trip-dropdown-content
+/            %li
+/              %a.trip-dropdown-title{:href => "/morocco"} The Berber Traverse
+/            %li
+/              %a.trip-dropdown-title{:href => "/kyrgyzstan"} The Kyrgyz Republic
+/            %li
+/              %a.trip-dropdown-title{:href => "/peru"} Packrafting the Upper Amazon
+
+/ /.navbar-collapse
+/ /.container-fluid

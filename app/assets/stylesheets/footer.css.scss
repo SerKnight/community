@@ -1,13 +1,11 @@
 #footer {
 	width: 100%;
 	position: relative;
-	background-color: #212326;
+	background-color: #37393b;
 	overflow-y: hidden !important;
 	padding: 0px 0 0px 0;
 
 	.footer-contact-section{
-		padding-top: 30px;
-		background: rgba(255,255,255,0.1);
 		padding-bottom: 20px;
 		margin-left: 0px;
 		margin-right: 0px;
@@ -15,24 +13,22 @@
 		#footer-email-title{
 			color: #fff;
 			font-family: proxima_bold;
-			font-size: 2.2em;
+			font-size: 1.8em;
 			text-align: center;
 			letter-spacing: -0.5px;
 		}
 
 		#footer-email-subtitle{
-			color: rgba(255,255,255,0.8);
-			font-family: proxima_thin;
-			font-size: 1.25em;
+			font-size: 1em;
+			color: #fff;
 			padding-bottom: 18px;
-			max-width: 320px;
+			max-width: 240px;
 			margin: auto;
 			text-align: center;
 			letter-spacing: -0.2px;
 		}
 
 		.footer-email-container{
-			border: 2px solid #aa4b41;
 			border-radius: 20px;
 			width: 280px;
 			margin: auto;
@@ -40,7 +36,8 @@
 			padding-right: 6px;
 			margin-bottom: 20px;
 			border: 2px solid #fff;
-			background: #fff;
+			background: rgba(255,255,255,1);
+			border-right: none;
 
 			.enter-email-field{
 				border-radius: 4px;
@@ -54,11 +51,10 @@
 				font-family: proxima_bold; 
 				-webkit-transition: all 0.4s ease;
 				transition: all 0.4s ease;
-				width: 60px;
+				width: 61px;
 				border-radius: 14px;
 				border-top-left-radius: 0px;
 				border-bottom-left-radius: 0px;
-				border-left: 2px solid #fff;
 
 				&:hover{
 					background-color: rgba(170, 75, 65, 0.7);
@@ -74,17 +70,15 @@
 	    background-size: cover;
 	    background-position: center center;
 	    position: relative;
-	    width: 200px;
-	    height: 200px;
+	    width: 160px;
+	    height: 160px;
 	    background-image: asset-url("logos/headerlogo.png");
 	    margin: auto;
-	    margin-bottom: -80px;
-	    margin-top: -110px;
 	    cursor: pointer;
 	}
 
 	.social-row{
-		background: #FFF;
+		background: #212326;
 		padding-top: 70px;
 
 		a:hover {
@@ -102,8 +96,9 @@
 
 		.footer-social-buttons{
 			margin: auto;
-			max-width: 200px;
+			max-width: 132px;
 			padding-bottom: 20px;
+			padding-top: 80px;
 		}
 	}
 
@@ -125,8 +120,7 @@
 				text-decoration: none;
 				color: #fff;
 				font-family: proxima_bold;
-				font-size: 1.2em;
-				padding-bottom: 8px;
+				font-size: 1.4em;
 			}
 
 			.footer-header-underline{
@@ -134,11 +128,12 @@
 				max-width: 80px;
 				margin: auto;
 				margin-bottom: 8px;
+				margin-top: 8px;
 			}
 
 			.footer-trip-link{
 				text-decoration: none;
-				color: rgba(255,255,255,0.8);
+				color: #fff;
 				font-family: proxima_regular;
 				font-size: 1.0em;
 				padding-bottom: 8px;
@@ -180,11 +175,16 @@
 @media screen and (max-width: 991px){
 
 	.footer-upcoming-trips{
-		margin-bottom: 16px;
+		margin-bottom: 50px;
+		margin-top: 40px;
 	}
 
-	#footer .footer-logo{
-		margin-top: -60px;
+	.footer-logo-section{
+		display: none !important;
+	}
+
+	#footer .social-row .footer-social-buttons{
+		padding-top: 30px;
 	}
 }
 
@@ -202,12 +202,12 @@
 		max-width: 250px;
 	}
 
-	#footer .container .footer-email-container{
+	#footer .footer-contact-section .footer-email-container{
 		width: 230px;
 		margin-bottom: 70px;
 	}
 
-	#footer .container .footer-email-container .email-form-button{
+	#footer .footer-contact-section .footer-email-container .email-form-button{
 		border-radius: 20px !important;
 		width: 80px;
 		margin-top: 10px;

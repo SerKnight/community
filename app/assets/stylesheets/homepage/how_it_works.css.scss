@@ -3,17 +3,16 @@
 	background: #fff;
 
 	.mission-statement{
-		padding-top: 40px;
+		background: #fff;
 
 		.mission-block{
+			padding-top: 50px;
+			padding-bottom: 120px;
 			
 			.mission-block-content{
 				max-width: 800px;
 				margin: auto;
-				background-color: #fff;
-				padding: 40px;
-				margin-top: -100px;
-				box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+				background-color: transparent;
 
 				&:hover{
 					.which_stage_btn{
@@ -25,12 +24,21 @@
 				}
 
 				.mission-description{
-					font-family: proxima_regular;
-					font-size: 1.2em;
+					font-family: proxima_light;
+					font-size: 1.4em;
+					color: #212326;
+					text-align: center;
+					max-width: 550px;
+					margin: auto;
+				}
+
+				.mission-description-bold{
+					font-family: proxima_bold;
+					font-size: 2em;
 					color: #212326;
 					text-align: center;
 					margin-bottom: 10px !important;
-					max-width: 600px;
+					max-width: 650px;
 					margin: auto;
 				}
 
@@ -197,14 +205,8 @@
 		font-size: 1.0em;
 	}
 
-	#how_it_works .mission-statement .mission-block .mission-block-content{
-		max-width: 600px;
-		padding: 25px;
-		min-height: 0px;
-	}
-
 	#how_it_works .mission-statement .mission-block .mission-block-content .mission-description{
-		font-size: 1.05em;
+		font-size: 1.5em;
 	}
 
 	#how_it_works .mission-statement .mission-block .mission-block-content .mission-block-image{
@@ -215,6 +217,11 @@
 @media screen and (max-width: 771px){
 
 	#how_it_works{
+		min-height: 0px;
+	}
+
+	#how_it_works .mission-statement .mission-block .mission-block-content{
+		max-width: 600px;
 		min-height: 0px;
 	}
 
@@ -231,19 +238,27 @@
 	}
 }
 
-@media screen and (max-width: 600px){
-
-	#how_it_works .mission-statement .mission-block .mission-block-content{
-		padding: 15px;
-		margin-top: -75px;
-	}
+@media screen and (max-width: 500px){
 
 	#how_it_works .which_stage_btn{
 		margin-bottom: -35px;
 	}
 
 	#how_it_works .mission-statement .mission-block .mission-block-content .mission-description{
-		font-size: 0.95em;
-		margin-top: 10px !important;
+		font-size: 1em !important;
+		font-family: proxima_light;
+	}
+
+	#how_it_works .mission-statement .mission-block .mission-block-content .mission-description-bold{
+		font-size: 1.4em;
+	}
+
+	#how_it_works .mission-statement .mission-block{
+		padding-bottom: 0px;
+	}
+
+	#how_it_works .mission-statement .mission-block{
+		max-width: 320px;
+		margin: auto;
 	}
 }

@@ -1,0 +1,93 @@
+#trips_page{
+	background: #fff;
+
+	.trips_page_banner{
+		background-size: cover !important;
+		height: 400px;
+		background-attachment: fixed !important;
+
+		.trips_page_banner_text_box{
+			height: 300px;
+			padding-top: 140px;
+			max-width: 800px;
+			margin: auto;
+
+			.trips_page_banner_text{
+				font-family: proxima_bold;
+				font-size: 3.2em;
+				text-align: center;
+				color: #fff;
+				padding-top: 24px;
+			}
+
+			.trips_page_banner_text_small{
+				font-family: proxima_bold;
+				font-size: 1.6em;
+				text-align: center;
+				color: #fff;
+				padding-top: 24px;
+				padding-bottom: 24px;
+				display: none;
+			}
+		}
+	}
+
+	.trips_page_container{
+		padding-top: 50px;
+		padding-bottom: 60px;
+		padding-left: 0px;
+		padding-right: 0px;
+
+		.trips_page_title{
+			font-family: proxima_bold;
+			font-size: 2em;
+			text-align: center;
+			color: #212326;
+		}
+
+		.trips_page_description{
+			font-family: proxima_light;
+			font-size: 1.4em;
+			text-align: center;
+			color: #212326;
+			padding-top: 24px;
+			max-width: 700px;
+			margin: auto;
+			padding-bottom: 60px;
+		}
+	}
+}
+
+
+@media screen and (max-width: 991px){
+	
+	#trips_page .trips_page_banner{
+		background-attachment: scroll !important;
+	}
+
+	#trips_page .trips_page_banner .trips_page_banner_text_box{
+		padding-top: 100px;
+	}
+
+	#trips_page .trips_page_banner .trips_page_banner_text_box .trips_page_banner_text{
+		font-size: 2.4em;
+		max-width: 400px;
+		margin: auto;
+	}
+
+	#trips_page .trips_page_container .trips_page_description{
+		font-size: 1.2em;
+		max-width: 500px;
+	}
+}
+
+@media screen and (max-width: 500px){
+	#trips_page .trips_page_banner .trips_page_banner_text_box .trips_page_banner_text{
+		font-size: 1.8em;
+	}
+
+	#trips_page .trips_page_container .trips_page_description{
+		font-size: 1em;
+		max-width: 90%;
+	}
+}

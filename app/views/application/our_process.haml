@@ -1,0 +1,63 @@
+- content_for(:meta_og) do
+	%meta{:content => "Our Process - MadebyAdventure", :property => "og:title"}/
+	%meta{:content => "MadebyAdventure", :property => "og:site_name"}/
+	%meta{:content => "Create an adventure with a local guide and get rewarded when others book your trip.", :property => "og:description"}/
+	%meta{:content => "website", :property => "og:type"}/
+	%meta{:content => "http://www.madebyadventure.com/ourprocess", :property => "og:url"}/
+	%meta{:content => "http://i.imgur.com/hShb0MO.png", :property => "og:image"}/
+	%meta{:content => "1326", :property => "og:image:width"}/
+	%meta{:content => "700", :property => "og:image:height"}/
+
+
+#our_process
+
+	.our_process_banner{style: "background: url('#{asset_path("background/verdemoring.jpeg")}') bottom center no-repeat"}
+		.our_process_title
+			Our Process	
+
+	.col-md-12.project-how-it-works-container
+		.project-how-it-works-title
+			How it Works
+		.project-how-it-works-description
+			We find people who are attacking global issues and working to foster healthy communities and ecosystems. Working with them, we identify specific ways travel can benefit their cause and connect them with local guides, a team of travelers, and passionate advocates who can further their mission.
+
+	.col-md-12.project-elements-container
+		.project-elements-title
+			Elements of a Project
+		.project-elements-subtitle
+			Each project is centered around connection and collaboration
+		.col-md-6.project-element
+			.project-element-image{style: "background: url('#{asset_path("background/Verdecaldera.jpg")}') center center no-repeat"}
+				.project-element-overlay
+					.project-element-header
+						1. Mission
+					.project-element-hover
+						.project-element-description
+							A social, economic, or environmental issue to be explored and better understood through travel. Highlighting critical global issues and the changemakers addressing them.
+		.col-md-6.project-element
+			.project-element-image{style: "background: url('#{asset_path("background/fixerboat.jpeg")}') bottom center no-repeat"}
+				.project-element-overlay
+					.project-element-header
+						2. Local Fixer
+					.project-element-hover
+						.project-element-description
+							A local guide who can make it all happen. The fixer handles ground logistics and accommodation, while providing important cultural and historical context.
+		.col-md-12{style: "margin-top: -100px;"}
+			.project-element-logo-container
+				.project-element-logo{style: "background: url('#{asset_path("logos/headerlogoemail.png")}') center center no-repeat"}
+		.col-md-6.project-element
+			.project-element-image{style: "background: url('#{asset_path("background/ColombiaRafting.jpg")}') center center no-repeat"}
+				.project-element-overlay
+					.project-element-header
+						3. Engagement
+					.project-element-hover
+						.project-element-description
+							A tangible way for participants to get involved. Initiatives that benefit local economies while raising awareness for those confronting important issues head-on.
+		.col-md-6.project-element
+			.project-element-image{style: "background: url('#{asset_path("background/coloredcolombiasmall.jpeg")}') center center no-repeat"}
+				.project-element-overlay
+					.project-element-header
+						4. Team
+					.project-element-hover
+						.project-element-description
+							The people who make a project possible by sharing positive energy, skills, and perspective. These advocates make the project a reality by experiencing the people and places firsthand and spreading the word.

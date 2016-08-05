@@ -1,22 +1,32 @@
 #traveler_quotes{
 	background: #fff;
-	min-height: 570px;
+	padding-top: 50px;
+	padding-bottom: 60px;
 
 	.quote-content{
-		max-width: 800px;
+		max-width: 500px;
 		margin: auto;
 		padding-top: 100px;
+		padding-bottom: 120px;
+
+		.traveler-quote-header{
+			font-family: proxima_bold;
+			font-size: 2em;
+			color: #212326;
+			text-align: center;
+			padding-bottom: 20px;
+		}
 
 		.traveler-quote-text{
-			font-family: proxima_thin;
-			font-size: 2em;
+			font-family: proxima_light;
+			font-size: 1.4em;
 			color: #212326;
 			text-align: center;
 		}
 
 		.traveler-quote-name{
 			font-family: proxima_bold;
-			font-size: 1.8em;
+			font-size: 1.5em;
 			color: #212326;
 			text-align: center;
 			padding-top: 20px;
@@ -43,9 +53,30 @@
 }
 
 @media screen and (max-width: 500px){
+	#how_it_works .mission-statement .mission-block .mission-block-content .mission-description{
+		font-size: 1.2em;
+	}
+}
+
+@media screen and (max-width: 500px){
+
+	#traveler_quotes{
+		padding-top: 0px;
+		padding-bottom: 0px;
+	}
+
+	#traveler_quotes .quote-content .traveler-quote-header{
+		font-size: 1.4em;
+	}
 
 	#traveler_quotes .quote-content .traveler-quote-text{
-		font-size: 1.4em;
+		font-size: 1em;
+		max-width: 300px;
+		margin: auto;
+	}
+
+	#traveler_quotes .quote-content .traveler-quote-name{
+		font-size: 1em;
 	}
 
 	#traveler_quotes .quote-content{

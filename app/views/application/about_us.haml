@@ -1,0 +1,42 @@
+- content_for(:meta_og) do
+	%meta{:content => "About Us - MadebyAdventure", :property => "og:title"}/
+	%meta{:content => "MadebyAdventure", :property => "og:site_name"}/
+	%meta{:content => "Create an adventure with a local guide and get rewarded when others book your trip.", :property => "og:description"}/
+	%meta{:content => "website", :property => "og:type"}/
+	%meta{:content => "http://www.madebyadventure.com/ourprocess", :property => "og:url"}/
+	%meta{:content => "http://i.imgur.com/hShb0MO.png", :property => "og:image"}/
+	%meta{:content => "1326", :property => "og:image:width"}/
+	%meta{:content => "700", :property => "og:image:height"}/
+
+
+#about_us
+
+	.about_us_banner{style: "background: url('#{asset_path("background/CamCliffPicNoLogo.jpeg")}') bottom center no-repeat"}
+		.about_us_title
+			Why do we do this?
+
+	.col-md-12.about_us_container
+		.about_us_explanation_bold
+			We believe...
+		.about_us_explanation
+			travel can be used as a force for good. It can evoke empathy, bring people together and tell meaningful stories. It can be a tool for wealth distribution and economic empowerment.
+			<br>
+			<br>
+			Unfortunately, travel is frequently oversimplified; dominated by bucketlists, social media “likes”, and mass produced itineraries. It is often dismissive of the needs of local people, ecosystems, and strangely enough, travelers themselves.
+			<br>
+			<br>
+			By engaging people early to create shared experiences, we’re setting the stage for more accurate and well rounded stories. Stories that capture the spirit of a place and provide the lens for a more optimistic future. Stories of involvement, empowerment, and accurate representation. Stories of travel done right.
+		.about_us_who
+			.col-md-6.founder_container
+				.founder_image
+				.founder_name
+					Jon Maser
+				.founder_description
+					After founding two adventure travel organizations and working with local adventure travel guides, Jon has put full effots into MadebyAdventure and finding the best way possible to spread the travel bug and positive impacts.
+			.col-md-6.founder_container
+				.founder_image
+				.founder_name
+					Max Joles
+				.founder_description
+					After founding two adventure travel organizations and working with local adventure travel guides, Jon has put full effots into MadebyAdventure and finding the best way possible to spread the travel bug and positive impacts.
+

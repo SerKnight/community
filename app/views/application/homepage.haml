@@ -1,7 +1,6 @@
-= render partial: 'hero_image'
+= render partial: 'homepage_banner'
 = render partial: 'how_it_works'
 = render partial: 'hiw_grid'
-= render partial: 'launch_trips'
 = render partial: 'traveler_quotes'
 
 - if notice
@@ -9,6 +8,9 @@
     remove_notice(10);
 
   
+
+/ = render partial: 'hero_image'
+/= render partial: 'launch_trips'
 
 
 

@@ -1,0 +1,214 @@
+#our_process{
+	background: #fff;
+
+	.our_process_banner{
+		background-size: cover !important;
+		height: 600px;
+		background-attachment: fixed !important;
+	}
+
+	.our_process_title{
+		font-family: proxima_bold;
+		font-size: 5em;
+		text-align: center;
+		color: #fff;
+		padding-top: 180px;
+		letter-spacing: -1px;
+	}
+
+	.project-how-it-works-container{
+		padding-top: 50px;
+		padding-bottom: 40px;
+		background: rgba(33, 35, 38, 0.05);
+
+		.project-how-it-works-title{
+			font-family: proxima_bold;
+			font-size: 2.8em;
+			text-align: center;
+			color: #212326;
+		}
+
+		.project-how-it-works-description{
+			font-family: proxima_light;
+			font-size: 1.4em;
+			text-align: center;
+			color: #212326;
+			max-width: 620px;
+			margin: auto;
+			padding-bottom: 36px;
+		}
+	}
+
+	.project-elements-container{
+		padding-top: 50px;
+		padding-bottom: 60px;
+		padding-right: 5%;
+		padding-left: 5%;
+
+		.project-elements-title{
+			font-family: proxima_bold;
+			font-size: 2.8em;
+			text-align: center;
+			color: #212326;
+		}
+
+		.project-elements-subtitle{
+			font-family: proxima_light;
+			font-size: 1.4em;
+			text-align: center;
+			color: #212326;
+			padding-bottom: 36px;
+		}
+
+		.project-element{
+			min-height: 300px;
+			background-color: #000;
+			border: 2px solid #fff;
+			padding-left: 0px;
+			padding-right: 0px;
+			max-width: 800px;
+			margin: auto;
+
+			&:hover{
+
+				.project-element-hover{
+					opacity: 1 !important;
+				}
+
+				.project-element-header{
+					padding-top: 60px !important;
+				}
+			}
+
+			.project-element-image{
+				min-height: 400px;
+				background-size: cover !important;
+				width: 100%;
+				overflow: hidden;
+
+				.project-element-overlay{
+					background: rgba(0,0,0,0.3);
+					height: 400px;
+					width: 100%;
+
+					.project-element-header{
+						font-family: proxima_bold;
+						text-transform: uppercase;
+						font-size: 3.2em;
+						text-align: center;
+						color: #fff;
+						padding-top: 120px;
+						-webkit-transition: all 0.3s ease-in-out;
+						transition: all 0.3s ease-in-out;
+					}
+
+					.project-element-hover{
+						opacity: 0;
+						background: transparent;
+						height: 400px;
+						width: 100%;
+						-webkit-transition: all 0.3s ease-in-out;
+						transition: all 0.3s ease-in-out;
+
+						.project-element-description{
+							font-family: proxima_regular;
+							font-size: 1.4em;
+							text-align: left;
+							color: #fff;
+							max-width: 500px;
+							margin: auto;
+							padding: 20px;
+							background: rgba(0,0,0,0.4);
+						}
+					}
+				}
+			}
+		}
+
+		.project-element-logo-container{
+			background: transparent;
+			max-width: 100px;
+			margin: auto;
+			height: 100px;
+			padding-top: 50px;
+			padding-left: 1px;
+			z-index: 1001;
+			position: relative;
+
+
+			.project-element-logo{
+				background-size: cover !important;
+				height: 99px;
+				width: 100px;
+				margin: auto;
+				background: #000;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 991px){
+	
+	#our_process .our_process_banner{
+		background-attachment: scroll !important;
+		height: 450px;
+	}
+
+	#our_process .our_process_title{
+		padding-top: 150px;
+	}
+
+	#our_process .project-how-it-works-container .project-how-it-works-description{
+		font-size: 1.2em;
+		max-width: 500px;
+	}
+
+	#our_process .project-elements-container .project-elements-subtitle{
+		font-size: 1.2em;
+	}
+
+	#our_process .project-how-it-works-container .project-how-it-works-title{
+		font-size: 1.8em;
+	}
+
+	#our_process .project-elements-container .project-elements-title{
+		font-size: 1.8em;
+	}
+
+	#our_process .project-elements-container{
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	#our_process .project-elements-container .project-element-logo-container .project-element-logo{
+		display: none;
+	}
+
+	#our_process .project-elements-container .project-element .project-element-image .project-element-overlay .project-element-header{
+		padding-top: 80px !important;
+	}
+
+	#our_process .project-elements-container .project-element .project-element-image .project-element-overlay .project-element-hover{
+		opacity: 1 !important;
+		margin: auto;
+		width: 90%;
+	}
+}
+
+@media screen and (max-width: 500px){
+	#our_process .our_process_title{
+		font-size: 3em;
+	}
+
+	#our_process .project-how-it-works-container .project-how-it-works-description{
+		font-size: 1em;
+	}
+
+	#our_process .project-elements-container .project-element .project-element-image .project-element-overlay .project-element-header{
+		font-size: 2.4em;
+	}
+
+	#our_process .project-elements-container .project-element .project-element-image .project-element-overlay .project-element-hover .project-element-description{
+		font-size: 1em;
+	}
+}

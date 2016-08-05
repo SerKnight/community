@@ -1,0 +1,105 @@
+#about_us{
+	background: #fff;
+
+	.about_us_banner{
+		background-size: cover !important;
+		height: 500px;
+		background-attachment: scroll !important;
+
+		.about_us_title{
+			font-family: proxima_bold;
+			font-size: 3.4em;
+			text-align: center;
+			color: #fff;
+			padding-top: 150px;
+			letter-spacing: -1px;
+		}
+
+		.about_us_subtitle{
+			font-family: proxima_bold;
+			font-size: 1.6em;
+			text-align: center;
+			color: #fff;
+		}
+	}
+
+	.about_us_container{
+		padding-top: 50px;
+		padding-bottom: 60px;
+
+		.about_us_explanation{
+			font-family: proxima_light;
+			font-size: 1.6em;
+			text-align: left;
+			color: #212326;
+			padding-bottom: 24px;
+			max-width: 800px;
+			margin: auto;
+		}
+
+		.about_us_explanation_bold{
+			font-family: proxima_bold;
+			font-size: 2em;
+			text-align: left;
+			color: #212326;
+			padding-bottom: 20px;
+			max-width: 800px;
+			margin: auto;
+		}	
+	}
+
+	.about_us_who{
+		max-width: 1000px;
+		margin: auto;
+		display: none;
+
+		.founder_container{
+			padding-top: 50px;
+			padding-bottom: 60px;
+		}
+
+		.founder_name{
+			font-family: proxima_bold;
+			font-size: 1.6em;
+			text-align: left;
+			color: #212326;
+		}
+
+		.founder_description{
+			font-family: proxima_light;
+			font-size: 1.6em;
+			text-align: left;
+			color: #212326;
+		}
+	}
+}
+
+@media screen and (max-width: 991px){
+	
+	#about_us .about_us_banner{
+		height: 360px;
+	}
+
+	#about_us .about_us_banner .about_us_title{
+		font-size: 2.4em;
+	}
+
+	#about_us .about_us_container .about_us_explanation_bold{
+		font-size: 1.6em;
+	}
+
+	#about_us .about_us_container .about_us_explanation{
+		font-size: 1.2em;
+	}
+}
+
+@media screen and (max-width: 500px){
+
+	#about_us .about_us_container .about_us_explanation{
+		font-size: 1em;
+	}
+
+	#about_us .about_us_banner{
+		background-position: left !important;
+	}
+}

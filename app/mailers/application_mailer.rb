@@ -9,7 +9,7 @@ class ApplicationMailer < ActionMailer::Base
 
   def contact_confirmation_email(contact_id)
   	@contact = Contact.find(contact_id)
-  	mail(to: @contact.email, subject: "Message from AdventureMade")
+  	mail(to: @contact.email, subject: "Message from MadebyAdventure")
   end
 
   def trip_interest_signup(user_id)

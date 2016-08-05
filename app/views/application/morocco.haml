@@ -1,6 +1,6 @@
 - content_for(:meta_og) do
   %meta{:content => "The Berber Traverse", :property => "og:title"}/
-  %meta{:content => "AdventureMade", :property => "og:site_name"}/
+  %meta{:content => "MadebyAdventure", :property => "og:site_name"}/
   %meta{:content => "A high-adrenaline women's surf & bike adventure across Morocco", :property => "og:description"}/
   %meta{:content => "website", :property => "og:type"}/
   %meta{:content => "http://www.madebyadventure.com/morocco", :property => "og:url"}/
@@ -285,15 +285,6 @@
   $(document).ready(function() {
   $('.location-slow-scroll').show();
   $('.location-slow-scroll').animate({ opacity: 1, top: "-60px" }, 'slow');
-  });
-
-  function simpleParallax() {
-    var scrolled = $(window).scrollTop() + 1;
-    $('.location-hero-fix').css('background-position', '0' + -(scrolled * 0.3) + 'px');
-  }
-
-  $(window).scroll(function (e) {
-    simpleParallax();
   });
 
   $(document).ready(function() {

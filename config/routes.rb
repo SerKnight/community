@@ -8,6 +8,9 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'homepage#homepage'
   
+  get 'projects' => 'homepage#trips_page'
+  get 'our-process' => 'homepage#our_process'
+  get 'about-us'  =>  'homepage#about_us'
   get 'adventure' =>  'homepage#trip_onboard'
   get 'vietnam'   =>  'homepage#vietnam'
   get 'colombia'   =>  'homepage#colombia'

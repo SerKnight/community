@@ -3,9 +3,8 @@
 }
 
 .jumbotron_fix {
-	min-height: 850px;
+	min-height: 740px;
 	background-size: cover !important;
-  margin-top: -68px;
 }
 
 .jumbotron_fix_mobile{
@@ -33,19 +32,17 @@
 
     #adventure-local{
       font-family: proxima_black;
-      font-size: 4.8em;
-      letter-spacing: -3px;
-      text-shadow: 1px 1px 1px #000;
+      font-size: 4em;
+      letter-spacing: -1px;
     }
 
     #adventure-local-explainer{
-      font-family: proxima_thin;
+      font-family: proxima_regular;
       letter-spacing: -1px;
-      font-size: 2em;
+      font-size: 1.8em;
       margin: auto;
       max-width: 540px;
       margin-bottom: -12px;
-      text-shadow: 1px 1px 1px #000;
     }
 
     #adventure-local-mobile{
