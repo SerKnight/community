@@ -3,9 +3,480 @@
 }
 
 .location-hero-fix {
-	min-height: 650px;
+	min-height: 750px;
 	background-size: cover !important;
 	background-color: #fff !important;
+}
+
+.trip-banner{
+	background: #212326;
+	width: 100%;
+	min-height: 550px;
+
+	.trip-banner-content{
+		max-width: 700px;
+		margin: auto;
+		min-height: 360px;
+		padding-left: 24px;
+		padding-right: 24px;
+		z-index: 1000;
+
+		.trip-banner-title{
+			color: #fff;
+			font-family: proxima_bold;
+			font-size: 4em;
+			line-height: 60px;
+			letter-spacing: -1px;
+			text-align: center;
+		}
+
+		.trip-banner-description{
+			color: #fff;
+			font-size: 1.2em;
+			font-family: proxima_regular;
+			padding-top: 12px;
+			text-align: center;
+			max-width: 500px;
+			margin: auto;
+			letter-spacing: -0.5px;
+		}
+
+		.trip-banner-non-button{
+			color: #fff;
+			font-size: 1.6em;
+			border-top: 2px solid #aa4b41;
+			font-family: proxima_bold;
+			padding-top: 12px;
+			margin-top: 12px !important;
+			text-align: center;
+			max-width: 300px;
+			margin: auto;
+			letter-spacing: -0.5px;
+		}
+
+		.trip-banner-details{
+			padding-top: 8px;
+			font-family: proxima_bold;
+			font-size: 1.2em;
+			color: #fff;
+			text-align: center;
+			display: none;
+		}
+
+		.trip-banner-btn{
+			font-family: proxima_bold;
+			text-align: center;
+			color: #fff;
+			font-size: 1.2em;
+			padding: 10px;
+			-webkit-transition: .3s ease-in-out;
+			background: transparent;
+			border: 4px solid #fff;
+			box-shadow: 1px 1px 2px #444;
+			width: 100%;
+			max-width: 200px;
+			margin-top: 20px !important;
+			margin: auto;
+			float: none;
+
+			&:hover{
+				background: #8E3E35;
+				max-width: 220px;
+			}
+
+			.btn, .btn:active, .btn:hover{
+				text-decoration: none;
+			}
+		}
+	}
+
+	.trip-banner-image{
+		background-size: cover !important;
+		background-color: #fff !important;
+		min-height: 750px;
+		padding-top: 220px;
+	}
+}
+
+.story-container{
+	padding-top: 50px;
+
+
+	.story-header{
+		font-family: proxima_bold;
+		font-size: 2.4em;
+		color: #212326;
+		text-align: center;
+	}
+
+	.story-mission{
+		padding-top: 24px;
+		padding-bottom: 32px;
+		font-family: proxima_light;
+		font-size: 2em;
+		color: #212326;
+		text-align: center;
+		max-width: 700px;
+		margin: auto;
+	}
+
+	.story-text-regular{
+		padding-top: 32px;
+		font-family: proxima_regular;
+		font-size: 1.4em;
+		color: #212326;
+		text-align: left;
+		max-width: 700px;
+		margin: auto;
+		line-height: 32px;
+	}
+
+	.story-image-section{
+		padding-top: 48px;
+		min-height: 500px;
+		margin: auto;
+
+		.story-full-image{
+			min-height: 650px;
+			background-size: cover !important;
+		}
+
+		.story-title-image{
+			min-height: 500px;
+			background-size: cover !important;
+
+			.title-image-text{
+				padding-top: 160px;
+				max-width: 700px;
+				margin: auto;
+
+				.story-image-header{
+					text-align: center;
+					font-size: 4em;
+					color: #fff;
+					font-family: proxima_bold;
+					padding-bottom: 12px;
+				}
+
+				.story-image-description{
+					text-align: center;
+					font-size: 1.8em;
+					color: #fff;
+					font-family: proxima_regular;
+				}
+			}
+		}
+
+		.story-image{
+			min-height: 450px;
+			background-size: cover !important;
+			background-color: #fff !important;
+		}
+
+		.story-image-bordered{
+			min-height: 400px;
+			border: 4px solid #fff;
+			background-size: cover !important;
+			background-color: #fff !important;
+		}
+
+		.story-image-text{
+			padding-top: 24px;
+			font-family: proxima_light;
+			font-style: italic;
+			font-size: 1.8em;
+			color: #212326;
+			text-align: left;
+			max-width: 400px;
+			margin: auto;
+			padding-left: 24px;
+		}
+	}
+}
+
+.experience-container{
+	background: #fff;
+
+	.experience-header{
+		font-family: proxima_bold;
+		max-width: 800px;
+		margin: auto;
+		font-size: 2.4em;
+		color: #212326;
+		text-align: center;
+	}
+
+	.experience-mission{
+		padding-top: 48px;
+		padding-bottom: 48px;
+		font-family: proxima_light;
+		font-size: 1.8em;
+		color: #212326;
+		text-align: center;
+		max-width: 700px;
+		margin: auto;
+	}
+
+	.experience-text-regular{
+		font-family: proxima_regular;
+		font-size: 1.4em;
+		color: #212326;
+		text-align: left;
+		max-width: 700px;
+		margin: auto;
+		line-height: 32px;
+		padding-bottom: 32px;
+		padding-top: 32px;
+	}
+
+	.experience-image-section{
+		min-height: 400px;
+		margin: auto;
+
+		.experience-image-bordered{
+			min-height: 400px;
+			max-width: 800px;
+			margin: auto;
+			border: 4px solid #212326;
+			background-size: cover !important;
+			background-color: #fff !important;
+		}
+
+		.experience-full-image{
+			min-height: 650px;
+			background-size: cover !important;
+		}
+
+		.experience-third-image{
+			min-height: 400px;
+			background-size: cover !important;
+			max-width: 700px;
+			margin: auto;
+		}
+	}
+
+	.experience-partner{
+		min-height: 500px;
+		background: rgba(33, 35, 38, 0.1);
+		max-width: 1200px;
+		margin: auto;
+
+		.experience-partner-image{
+			min-height: 500px;
+			background-size: cover !important;
+		}
+
+		.experience-partner-text{
+			min-height: 500px;
+			padding-top: 72px;
+			padding-left: 48px;
+			padding-right: 48px;
+		}
+
+		.experience-partner-header{
+			text-align: left;
+			font-size: 2em;
+			color: #212326;
+			font-family: proxima_bold;
+			padding-bottom: 12px;
+		}
+
+		.experience-partner-description{
+			color: #212326;
+			font-size: 1.2em;
+			text-align: left;
+			font-family: proxima_regular;
+			line-height: 28px;
+		}
+
+		.experience-partner-btn{
+			font-family: proxima_bold;
+			text-align: center;
+			color: #212326;
+			font-size: 1.2em;
+			padding: 10px;
+			-webkit-transition: .3s ease-in-out;
+			background: #fff;
+			border: 2px solid #212326;
+			box-shadow: 1px 1px 2px #444;
+			width: 100%;
+			max-width: 200px;
+			margin-top: 20px !important;
+			float: none;
+
+			&:hover{
+				background: rgba(255,255,255,0.4);
+				border: 2px solid #666666;
+				color: #666666;
+			}
+		}
+	}
+
+	.experience-details-container{
+		margin-top: 24px;
+		padding-top: 24px;
+		padding-bottom: 72px;
+		background: #fff;
+		min-height: 200px;
+
+		.experience-details-title{
+			padding-top: 24px;
+			font-family: proxima_light;
+			font-size: 1.6em;
+			color: #212326;
+			text-align: center;
+		}
+
+		.experience-details-subtitle{
+			padding-top: 12px;
+			font-family: proxima_bold;
+			font-size: 1.6em;
+			color: #212326;
+			text-align: center;
+		}
+	}
+
+	.location-who{
+		padding-top: 80px;
+		padding-bottom: 80px;
+		min-height: 550px;
+		background: #212326;
+
+		.who-travelers-container{
+			margin: auto;
+			display: flex;
+			padding-top: 20px;
+
+			.who-image-button{
+			    width: 100px;
+			    height: 100px;
+			    float: left;
+			    border-radius: 50%;
+			    cursor: pointer;
+			    margin: auto;
+			    box-shadow: 1px 1px 2px #000;
+			}
+		}
+
+		#back{
+		    width: 380px;
+		    height: 100px;
+		    margin: 10px;
+		    float: left;
+		    background: #999;
+		}
+
+		#meet-the-team{
+
+			.who-text{
+				min-height: 200px;
+				text-align: center;
+				max-width: 700px;
+				margin: auto;
+				padding-top: 32px;
+
+				.traveler-image{
+					height: 240px;
+					width: 240px;
+					border-radius: 50%;
+				}
+
+				.who-name{
+					font-family: proxima_bold;
+					color: #fff;
+					font-size: 2em;
+					padding-top: 10px;
+					border-bottom: 2px solid transparent;
+					margin: auto;
+
+					-webkit-transition: .3s ease-in-out;
+					-moz-transition: .3s ease-in-out;
+					-o-transition: .3s ease-in-out;
+				}
+
+				.who-title{
+					font-family: proxima_bold;
+					color: #fff;
+					font-size: 1.4em;
+					padding-top: 4px;
+				}
+
+				.who-description{
+					font-family: proxima_regular;
+					color: #fff;
+					font-size: 1.4em;
+					padding-top: 10px;
+					padding-bottom: 20px;
+					line-height: 32px;
+				}
+			}
+		}
+
+		.location-who-header{
+			font-family: proxima_black;
+			font-size: 3.2em;
+			color: #212326;
+			text-align: center;
+			border-bottom: 4px solid #aa4b41;
+			max-width: 300px;
+			margin: auto;
+			margin-bottom: 80px;
+		}
+
+		.who-container{
+			max-width: 800px;
+			margin: auto;
+		}
+	}
+}
+
+.interest-section{
+	background: #fff;
+	min-height: 500px;
+	background-size: cover !important;
+
+	.interest-section-title{
+		font-family: proxima_bold;
+		max-width: 800px;
+		margin: auto;
+		padding-top: 120px;
+		font-size: 4em;
+		color: #fff;
+		text-align: center;
+	}
+
+	.interest-section-request-btn{
+		font-family: proxima_bold;
+		text-align: center;
+		color: #fff;
+		font-size: 1.2em;
+		padding: 10px;
+		-webkit-transition: .3s ease-in-out;
+		background: #aa4b41;
+		border: 4px solid #fff;
+		box-shadow: 1px 1px 2px #444;
+		width: 100%;
+		max-width: 200px;
+		margin: auto;
+		margin-top: 12px;
+
+		&:hover{
+			background: #8E3E35;
+			max-width: 220px;
+		}
+	}
+}
+
+.photo-credit{
+	width: 100%;
+	background: #212326;
+
+	.photo-credit-text{
+		color: #fff;
+		font-size: 1em;
+		text-align: center;
+		font-family: proxima_light;
+	}
 }
 
 .location-slow-scroll {
@@ -26,9 +497,10 @@
 		text-shadow: 1px 1px 2px #333;
 
     #location-header{
-			font-family: proxima_black;
+			font-family: proxima_bold;
 			font-size: 5em;
 			line-height: 60px;
+			letter-spacing: -3px;
 		}
 
 		#location-explanation {
@@ -55,6 +527,7 @@
 .location-details{
 	width: 100%;
 	background: #fff;
+	display: none;
 
 	.location-description-mobile{
 		background-color: #212326;
@@ -210,7 +683,7 @@
 		.mission-block{
 			max-width: 800px;
 			margin: auto;
-			margin-top: -95px;
+			margin-top: 50px;
 
 			.mission-text-box{
 				background: #fff;
@@ -540,9 +1013,9 @@
 	}
 
 	.location-who{
-		padding-top: 80px;
-		padding-bottom: 80px;
-		min-height: 600px;
+		padding-top: 32px;
+		padding-bottom: 32px;
+		min-height: 500px;
 		background: #fff;
 
 		.who-travelers-container{
@@ -588,7 +1061,6 @@
 					font-family: proxima_bold;
 					color: #212326;
 					font-size: 2em;
-					padding-top: 10px;
 					border-bottom: 2px solid transparent;
 					margin: auto;
 
@@ -922,6 +1394,127 @@
 
 @media screen and (max-width: 991px){
 
+	.trip-banner .trip-banner-image{
+		background-attachment: scroll !important;
+	}
+
+	.trip-banner .trip-banner-content{
+		max-width: 600px;
+		min-height: 320px;
+	}
+
+	.trip-banner .trip-banner-content .trip-banner-title{
+		font-size: 3em;
+	}
+
+	.trip-banner .trip-banner-content .trip-banner-details{
+		padding-top: 0px;
+	}
+
+	.trip-banner .trip-banner-content .trip-banner-description{
+		font-size: 1.2em;
+		max-width: 400px;
+		padding-top: 0px;
+	}
+
+	.story-container .story-mission{
+		font-size: 1.6em;
+		max-width: 500px;
+		padding-left: 24px;
+		padding-right: 24px;
+	}
+
+	.experience-container{
+		padding-bottom: 0px;
+		padding-left: 24px;
+		padding-right: 24px;
+	}
+
+	.experience-container .experience-mission{
+		font-size: 1.6em;
+		max-width: 500px;
+	}
+
+	.story-container .story-text-regular{
+		font-size: 1.2em;
+		max-width: 550px;
+		line-height: 28px;
+	}
+
+	.experience-container .experience-text-regular{
+		font-size: 1.2em;
+		max-width: 550px;
+		line-height: 28px;
+	}
+
+	.story-container .story-image-section .story-image-text{
+		padding-top: 32px;
+		max-width: 500px;
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+
+	.story-container .story-image-section .story-full-image{
+		min-height: 500px;
+		background-attachment: scroll !important;
+	}
+
+	.story-container .story-image-section .story-title-image{
+		background-attachment: scroll !important;
+	}
+
+	.experience-container .experience-image-section .experience-full-image{
+		min-height: 500px;
+		background-attachment: scroll !important;
+	}
+
+	.experience-container .experience-image-section{
+		min-height: 500px;
+		padding-bottom: 32px;
+	}
+
+	.experience-container .experience-partner{
+		max-width: 600px;
+	}
+
+	.experience-container .experience-partner .experience-partner-image{
+		min-height: 300px;
+	}
+
+	.experience-container .experience-partner .experience-partner-text{
+		min-height: 300px;
+		padding: 24px !important;
+	}
+
+	.experience-container .experience-image-section .experience-third-image{
+		min-height: 300px;
+		max-width: 400px;
+	}
+
+	.experience-container .experience-details-container{
+		margin-right: -24px;
+		margin-left: -24px;
+		padding-top: 0px;
+	}
+
+	.experience-container .experience-details-container .experience-details-subtitle{
+		padding-top: 0px;
+		font-size: 1em;
+	}
+
+	.experience-container .experience-details-container .experience-details-header{
+		padding-bottom: 24px;
+	}
+
+	.experience-container .location-who{
+		margin-left: -24px;
+		margin-right: -24px;
+	}
+
+	.interest-section{
+		background-attachment: scroll !important;
+	}
+	
 	.location-slow-scroll #location-text{
 		max-width: 600px;
 	}
@@ -1189,6 +1782,148 @@
 }
 
 @media screen and (max-width: 500px){
+
+	.trip-banner .trip-banner-image{
+		min-height: 550px;
+		padding-top: 140px;
+	}
+
+	.trip-banner .trip-banner-content{
+		padding-left: 12px;
+		padding-right: 12px;
+	}
+
+	.trip-banner .trip-banner-content .trip-banner-title{
+		font-size: 2em;
+		line-height: 32px;
+	}
+
+	.story-container{
+		padding-left: 12px;
+		padding-right: 12px;
+		padding-bottom: 12px;
+	}
+
+	.experience-container{
+		padding-left: 12px;
+		padding-right: 12px;
+	}
+
+	.story-container .story-mission{
+		font-size: 1.1em;
+	}
+
+	.experience-container .experience-mission{
+		font-size: 1.1em;
+		padding-top: 24px;
+		padding-bottom: 24px;
+	}
+
+	.story-container .story-text-regular{
+		font-size: 1em;
+		line-height: 20px;
+	}
+
+	.experience-container .experience-text-regular{
+		font-size: 1em;
+		line-height: 20px;
+	}
+
+	.story-container .story-image-section .story-image{
+		min-height: 240px;
+	}
+
+	.story-container .story-image-section .story-image-text{
+		font-size: 1.2em;
+	}
+
+	.story-container .story-image-section{
+		min-height: 240px;
+		padding-top: 32px;
+	}
+
+	.story-container .story-image-section .story-full-image{
+		min-height: 300px;
+	}
+
+	.story-container .story-image-section .story-title-image{
+		margin-left: -12px;
+		margin-right: -12px;
+		min-height: 450px;
+	}
+
+	.story-container .story-image-section .story-title-image .title-image-text .story-image-header{
+		font-size: 3em;
+	}
+
+	.experience-container .experience-image-section{
+		min-height: 240px;
+		padding-bottom: 32px;
+	}
+
+	.experience-container .experience-partner .experience-partner-image{
+		min-height: 240px;
+	}
+
+	.experience-container .experience-partner .experience-partner-text{
+		min-height: 240px;
+		padding: 12px !important;
+	}
+
+	.experience-container .experience-partner .experience-partner-header{
+		font-size: 1.2em;
+	}
+
+	.experience-container .experience-partner .experience-partner-description{
+		font-size: 1em;
+		line-height: 20px;
+	}
+
+	.experience-container .experience-partner .experience-partner-btn{
+		margin-top: 12px !important;
+		margin: auto;
+		font-size: 1em;
+		max-width: 150px;
+	}
+
+	.experience-container .experience-image-section .experience-full-image{
+		min-height: 300px;
+	}
+
+	.experience-container .experience-image-section .experience-image-bordered{
+		min-height: 300px;
+	}
+
+	.experience-container .experience-details-container{
+		margin-right: -12px;
+		margin-left: -12px;
+	}
+
+	.experience-container .location-who .who-travelers-container .who-image-button{
+		height: 60px;
+		width: 60px;
+	}
+
+	.experience-container .location-who #meet-the-team .who-text .who-description{
+		font-size: 1em;
+		line-height: 20px;
+	}
+
+	.experience-container .location-who #meet-the-team .who-text .who-name{
+		font-size: 1.4em;
+	}
+
+	.experience-container .location-who{
+		margin-left: -12px;
+		margin-right: -12px;
+		padding-top: 62px;
+		min-height: 450px;
+	}
+
+	.interest-section .interest-section-title{
+		font-size: 3.2em;
+	}
+
 	.location-slow-scroll #location-text{
 		max-width: 95%;
 		padding-top: 2px;

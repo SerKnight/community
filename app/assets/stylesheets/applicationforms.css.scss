@@ -35,27 +35,26 @@
 	  	}
 
 	  	.application-form-btn{
-	  		min-width: 200px;
+	  		min-width: 190px;
 			color: #fff;
 			margin: auto;
 			text-align: center;
-			height: 48px;
-			font-family: proxima_thin;
-			font-size: 1.4em;
-			margin-top: 24px;
-			padding-top: 8px;
-			border-radius: 4px;
+			height: 50px;
+			font-family: proxima_bold;
+			font-size: 1.2em;
+			margin-top: 12px;
+			padding-top: 11px;
 			background: #aa4b41;
+			box-shadow: 2px 2px 3px #000;
+			letter-spacing: -0.5px;
 			border: none;
-			box-shadow: 1px 1px 3px #333;
 
-			-webkit-transition: .3s ease-in-out;
-			-moz-transition: .3s ease-in-out;
-			-o-transition: .3s ease-in-out;
+			-webkit-transition: .2s ease-in-out;
+			-moz-transition: .2s ease-in-out;
+			-o-transition: .2s ease-in-out;
 
 			&:hover{
-				background: #77342D;
-				min-width: 220px;
+				box-shadow: 0px 0px 0px #000;
 			}	  		
 	  	}
   	}

@@ -1,12 +1,18 @@
 - content_for(:meta_og) do
-	%meta{:content => "Our Process - MadebyAdventure", :property => "og:title"}/
+	%meta{:content => "Join a MadebyAdventure Project", :property => "og:title"}/
 	%meta{:content => "MadebyAdventure", :property => "og:site_name"}/
-	%meta{:content => "Create an adventure with a local guide and get rewarded when others book your trip.", :property => "og:description"}/
+	%meta{:content => "We believe travel can be used as a force for good. Our mission is to widen perspectives, evoke empathy and bring the world closer through undeniably adventurous experiences.", :property => "og:description"}/
 	%meta{:content => "website", :property => "og:type"}/
-	%meta{:content => "http://www.madebyadventure.com/ourprocess", :property => "og:url"}/
-	%meta{:content => "http://i.imgur.com/hShb0MO.png", :property => "og:image"}/
-	%meta{:content => "1326", :property => "og:image:width"}/
-	%meta{:content => "700", :property => "og:image:height"}/
+	%meta{:content => "http://www.madebyadventure.com", :property => "og:url"}/
+	%meta{:content => "http://i.imgur.com/mGVttVR.png", :property => "og:image"}/
+	%meta{:content => "1200", :property => "og:image:width"}/
+	%meta{:content => "628", :property => "og:image:height"}/
+
+	%meta{:content => "summary_large_image", :name => "twitter:card"}
+	%meta{:content => "@MadebyAdventure", :name => "twitter:site"}
+	%meta{:content => "MadebyAdventure", :name => "twitter:title"}
+	%meta{:content => "We believe travel can be used as a force for good and we want to bring the world closer through adventure travel. http://goo.gl/mPjFMC", :name => "twitter:description"}
+	%meta{:content => "http://i.imgur.com/mGVttVR.png", :name => "twitter:image:src"}/
 
 
 #our_process
@@ -38,10 +44,10 @@
 			.project-element-image{style: "background: url('#{asset_path("background/fixerboat.jpeg")}') bottom center no-repeat"}
 				.project-element-overlay
 					.project-element-header
-						2. Local Fixer
+						2. Local Support
 					.project-element-hover
 						.project-element-description
-							A local guide who can make it all happen. The fixer handles ground logistics and accommodation, while providing important cultural and historical context.
+							A local guide or organization who can make it all happen. These fixers handle ground logistics and accommodation, while providing important cultural and historical context.
 		.col-md-12{style: "margin-top: -100px;"}
 			.project-element-logo-container
 				.project-element-logo{style: "background: url('#{asset_path("logos/headerlogoemail.png")}') center center no-repeat"}

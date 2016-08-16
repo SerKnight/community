@@ -1,29 +1,95 @@
 - content_for(:meta_og) do
   %meta{:content => "Spirit of the Nomad", :property => "og:title"}/
   %meta{:content => "MadebyAdventure", :property => "og:site_name"}/
-  %meta{:content => "Sleep in Yurts. Hunt with Eagles. Ride with the Kyrgyz Nomads.", :property => "og:description"}/
+  %meta{:content => "Travel with local shepherds, falconers and guides across the Kyrgyz highlands, hunting with eagles, riding on horseback and staying in yurts.", :property => "og:description"}/
   %meta{:content => "website", :property => "og:type"}/
   %meta{:content => "http://www.madebyadventure.com/kyrgyzstan", :property => "og:url"}/
-  %meta{:content => "http://i.imgur.com/WPVt9ck.png", :property => "og:image"}/
+  %meta{:content => "http://i.imgur.com/sf7FJb5.png", :property => "og:image"}/
   %meta{:content => "1200", :property => "og:image:width"}/
   %meta{:content => "628", :property => "og:image:height"}/
 
   %meta{:content => "summary_large_image", :name => "twitter:card"}
-  %meta{:content => "@AdventureMade", :name => "twitter:site"}
+  %meta{:content => "@MadebyAdventure", :name => "twitter:site"}
   %meta{:content => "Spirit of the Nomad", :name => "twitter:title"}
-  %meta{:content => "Sleep in Yurts. Hunt with Eagles. Ride with the Kyrgyz Nomads.", :name => "twitter:description"}
-  %meta{:content => "http://i.imgur.com/WPVt9ck.png", :name => "twitter:image:src"}/
+  %meta{:content => "Sleep in Yurts. Hunt with Eagles. Ride with the Kyrgyz Nomads. http://goo.gl/0r7uzz", :name => "twitter:description"}
+  %meta{:content => "http://i.imgur.com/sf7FJb5.png", :name => "twitter:image:src"}/
 
-.location-hero.location-hero-fix{style: "background: url('#{asset_path("background/KyrgyzBanner.jpg")}') center center no-repeat"}
+.trip-banner
+  .trip-banner-image{style: "background: url('#{asset_path("background/KyrgyzBanner.jpg")}') fixed center center no-repeat"}
+    .trip-banner-content
+      .trip-banner-title
+        Spirit of the Nomad
+      .trip-banner-details
+        .fa.fa-map-marker{style:"color:#aa4b41; font-size: 16px;"}
+        The Kyrgyz Republic
+      .trip-banner-description
+        Travel with local shepherds, falconers and guides across the Kyrgyz highlands, hunting with eagles, riding on horseback and staying in yurts.
+      %a.typeform-share{"data-mode" => "1", :href => "https://madebyadventure.typeform.com/to/HqYicH", :target => "_blank"}
+        .trip-banner-btn 
+          Get Involved
 
-.location-slow-scroll
-  #location-text
-    #location-header
-      Spirit of the Nomad
-    #location-header-mobile
-      Spirit of the Nomad
-    #location-explanation
-      Sleep in Yurts. Hunt with Eagles. Ride with the Kyrgyz Nomads.
+
+
+.story-container
+  .story-header
+    The Mission
+  .story-mission
+    Use ecotourism to fight poverty in Central Asia, while raising awareness for the region's beauty and potential as an adventure travel destination.
+    <br>
+    <br>
+    • • •
+  .story-header
+    The Backstory
+  .story-text-regular
+    Around the world, there are millions of people who struggle because they lack a basic necessity that some of us take for granted: the ability to build a livelihood and provide for their families; simply put, a job. I’m not talking about a fulfilling career or high-paying salary, but the security of being able to feed yourself and family at the end of the day.
+    <br><br>
+    This struggle is a fact of life for people living in the isolated mountains of Central Asia. Home to some of the most challenging and impassable sections of the ancient Silk Road, these extreme landscapes have traditionally been an economic barrier for the local communities. Today, they are finding ways to turn their mountains into an economic advantage — a sustainable resource from which they can build sustainable livelihoods.
+  .story-image-section
+    .col-md-8.story-image{style: "background: url('#{asset_path("background/ryanmountainpic.jpeg")}') center center no-repeat"}
+    .col-md-4.story-image-text
+      “These extreme landscapes have traditionally been an economic barrier for the local communities. Today, they are finding ways to turn their mountains into an economic advantage.”
+  .story-text-regular
+    Central Asia has some of our world's most captivating mountains and lush valleys, but it's also challenged by the insurmountable obstacles locals face as they build futures for themselves and families. Although there were, and still are, few work opportunities in the region, some innovative locals have discovered a ray of hope through the development of community-based tourism, adventure travel, and hospitality initiatives.
+    <br>
+    <br>
+    Unlike mainstream tourism, which often involves all-inclusive packages and multi-national tours, community-based tourism takes place in rural regions that are often poor or economically marginalized. Local residents welcome travelers into their own homes and villages, enabling them to earn incomes as land managers, entrepreneurs and service providers. Through this model, travelers participate in genuine cultural exchange while locals benefit from hyper-local spending. With the highest mountain ranges in the world, no shortage of breathtaking landscapes, and kind-hearted locals, Central Asia is an unparalleled destination for adventure travelers. Unfortunately, it can be nearly impossible for people to find dependable information online regarding the logistics and accommodations necessary to live this hyper-local experience.
+  .story-image-section
+    .story-title-image{style: "background: url('#{asset_path("background/KyrgyzHorseBlack.jpeg")}') fixed center center no-repeat"}
+      .title-image-text
+        .story-image-header
+          The Expedition
+
+.experience-container
+  .experience-mission
+    We're building a team of travelers to trek by foot and horseback across the Tian Shan mountains and live like nomads alongside Kyrgyz hunters and shepherds.
+    <br>
+    <br>
+    • • •
+  .experience-text-regular
+    Together we’ve built a true adventure, guided by a team of locals including Ruslan, a Kyrgyz hunter who raises and trains Berkut Eagles for hunting foxes, rabbits and other animals for meat and pelts. We became friends last year while visiting his small village in Kyrgyzstan, where he told me about his long family heritage of falconers who raise birds of prey. Today, the countless hours Ruslan spends training his eagles not only provides food and furs for his family but also provides over 50% of his annual income, through demonstrations and eagle shows given to visitors.
+  .experience-details-container
+    .col-md-4.experience-details-title
+      Date
+      .experience-details-subtitle
+        May, 2017
+    .col-md-4.experience-details-title
+      Capacity
+      .experience-details-subtitle
+        4-8 Travelers
+    .col-md-4.experience-details-title
+      Price
+      .experience-details-subtitle
+        $1,850
+
+.interest-section{style: "background: url('#{asset_path("background/ruslanwitheagle.jpg")}') fixed top center no-repeat"}
+  .interest-section-title
+    Get Involved
+  %a{:href => "https://madebyadventure.typeform.com/to/HqYicH", :target => "_blank"}
+    .interest-section-request-btn
+      Request Information
+
+
+
 
 .location-details
   .col-md-12.location-itinerary
@@ -42,7 +108,7 @@
           .col-md-3.mission-details-title
             .fa.fa-money.mission-details-icon
             As low as $1,850
-        %a{href:'/apply/kyrgyzstan'}
+        %a.typeform-share{"data-mode" => "1", :href => "https://madebyadventure.typeform.com/to/HqYicH", :target => "_blank"}
           .mission-apply-button
             Request Invite
 
@@ -219,6 +285,8 @@
 
 :javascript
 
+  (function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}id=id+'_';if(!gi.call(d,id)){qs=ce.call(d,'link');qs.rel='stylesheet';qs.id=id;qs.href=b+'share-button.css';s=gt.call(d,'head')[0];s.appendChild(qs,s)}})()
+
   $(document).ready(function() {
   $('.location-slow-scroll').show();
   $('.location-slow-scroll').animate({ opacity: 1, top: "-60px" }, 'slow');
@@ -279,5 +347,16 @@
     $(this).hide()
   });
 
+  (function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}id=id+'_';if(!gi.call(d,id)){qs=ce.call(d,'link');qs.rel='stylesheet';qs.id=id;qs.href=b+'share-button.css';s=gt.call(d,'head')[0];s.appendChild(qs,s)}})()
 
+/.location-hero.location-hero-fix{style: "background: url('#{asset_path("background/KyrgyzBanner.jpg")}') center center no-repeat"}
+
+/.location-slow-scroll
+/  #location-text
+/    #location-header
+/      Spirit of the Nomad
+/    #location-header-mobile
+/      Spirit of the Nomad
+/    #location-explanation
+/      Sleep in Yurts. Hunt with Eagles. Ride with the Kyrgyz Nomads.
 

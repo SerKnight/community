@@ -41,9 +41,9 @@
 
 	.project-elements-container{
 		padding-top: 50px;
-		padding-bottom: 60px;
-		padding-right: 5%;
-		padding-left: 5%;
+		padding-bottom: 72px;
+		padding-right: 12%;
+		padding-left: 12%;
 
 		.project-elements-title{
 			font-family: proxima_bold;
@@ -66,10 +66,14 @@
 			border: 2px solid #fff;
 			padding-left: 0px;
 			padding-right: 0px;
-			max-width: 800px;
+			max-width: 650px;
 			margin: auto;
 
 			&:hover{
+
+				.project-element-overlay{
+					background: rgba(0,0,0,0.7) !important;
+				}
 
 				.project-element-hover{
 					opacity: 1 !important;
@@ -90,6 +94,8 @@
 					background: rgba(0,0,0,0.3);
 					height: 400px;
 					width: 100%;
+					-webkit-transition: all 0.3s ease-in-out;
+					transition: all 0.3s ease-in-out;
 
 					.project-element-header{
 						font-family: proxima_bold;
@@ -118,7 +124,6 @@
 							max-width: 500px;
 							margin: auto;
 							padding: 20px;
-							background: rgba(0,0,0,0.4);
 						}
 					}
 				}

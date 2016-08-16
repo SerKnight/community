@@ -1,12 +1,18 @@
 - content_for(:meta_og) do
-	%meta{:content => "About Us - MadebyAdventure", :property => "og:title"}/
+	%meta{:content => "Join a MadebyAdventure Project", :property => "og:title"}/
 	%meta{:content => "MadebyAdventure", :property => "og:site_name"}/
-	%meta{:content => "Create an adventure with a local guide and get rewarded when others book your trip.", :property => "og:description"}/
+	%meta{:content => "We believe travel can be used as a force for good. Our mission is to widen perspectives, evoke empathy and bring the world closer through undeniably adventurous experiences.", :property => "og:description"}/
 	%meta{:content => "website", :property => "og:type"}/
-	%meta{:content => "http://www.madebyadventure.com/ourprocess", :property => "og:url"}/
-	%meta{:content => "http://i.imgur.com/hShb0MO.png", :property => "og:image"}/
-	%meta{:content => "1326", :property => "og:image:width"}/
-	%meta{:content => "700", :property => "og:image:height"}/
+	%meta{:content => "http://www.madebyadventure.com", :property => "og:url"}/
+	%meta{:content => "http://i.imgur.com/mGVttVR.png", :property => "og:image"}/
+	%meta{:content => "1200", :property => "og:image:width"}/
+	%meta{:content => "628", :property => "og:image:height"}/
+
+	%meta{:content => "summary_large_image", :name => "twitter:card"}
+	%meta{:content => "@MadebyAdventure", :name => "twitter:site"}
+	%meta{:content => "MadebyAdventure", :name => "twitter:title"}
+	%meta{:content => "We believe travel can be used as a force for good and we want to bring the world closer through adventure travel. http://goo.gl/mPjFMC", :name => "twitter:description"}
+	%meta{:content => "http://i.imgur.com/mGVttVR.png", :name => "twitter:image:src"}/
 
 
 #about_us
@@ -39,4 +45,7 @@
 					Max Joles
 				.founder_description
 					After founding two adventure travel organizations and working with local adventure travel guides, Jon has put full effots into MadebyAdventure and finding the best way possible to spread the travel bug and positive impacts.
+		%a{href: "/contact-us"}
+			.about-us-contact-btn
+				Connect with us
 

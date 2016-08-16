@@ -1,6 +1,23 @@
+- content_for(:meta_og) do
+	%meta{:content => "Join a MadebyAdventure Project", :property => "og:title"}/
+	%meta{:content => "MadebyAdventure", :property => "og:site_name"}/
+	%meta{:content => "We believe travel can be used as a force for good. Our mission is to widen perspectives, evoke empathy and bring the world closer through undeniably adventurous experiences.", :property => "og:description"}/
+	%meta{:content => "website", :property => "og:type"}/
+	%meta{:content => "http://www.madebyadventure.com", :property => "og:url"}/
+	%meta{:content => "http://i.imgur.com/mGVttVR.png", :property => "og:image"}/
+	%meta{:content => "1200", :property => "og:image:width"}/
+	%meta{:content => "628", :property => "og:image:height"}/
+
+	%meta{:content => "summary_large_image", :name => "twitter:card"}
+	%meta{:content => "@MadebyAdventure", :name => "twitter:site"}
+	%meta{:content => "MadebyAdventure", :name => "twitter:title"}
+	%meta{:content => "We believe travel can be used as a force for good and we want to bring the world closer through adventure travel. http://goo.gl/mPjFMC", :name => "twitter:description"}
+	%meta{:content => "http://i.imgur.com/mGVttVR.png", :name => "twitter:image:src"}/
+
+
 #trips_page
 
-	.trips_page_banner{style: "background: url('#{asset_path("background/hikerssky.jpeg")}') bottom center no-repeat"}
+	.trips_page_banner{style: "background: url('#{asset_path("background/groupcolombia.jpg")}') bottom center no-repeat"}
 		.trips_page_banner_text_box
 			.trips_page_banner_text
 				Dream Big, Travel Bold, Tread Light
@@ -12,6 +29,9 @@
 			What's a Project?
 		.trips_page_description
 			The goal of every project is to demonstrate the positive potential of travel. Through creative planning and community involvement, we aim to capture the spirit of a place and its culture to provide the lens for a more thoughtful future. Deliberate but never scripted, projects set the tone for a meaningful and stimulating group adventure.
+			<br><br>
+			%a{href: "/our-process"}
+				%b See Our Process
 
 		= render partial: 'hiw_grid'
 

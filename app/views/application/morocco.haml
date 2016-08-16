@@ -1,30 +1,110 @@
 - content_for(:meta_og) do
   %meta{:content => "The Berber Traverse", :property => "og:title"}/
   %meta{:content => "MadebyAdventure", :property => "og:site_name"}/
-  %meta{:content => "A high-adrenaline women's surf & bike adventure across Morocco", :property => "og:description"}/
+  %meta{:content => "An all women's Moroccan adventure from biking through the Atlas Mountains to surfing the Atlantic Coast.", :property => "og:description"}/
   %meta{:content => "website", :property => "og:type"}/
   %meta{:content => "http://www.madebyadventure.com/morocco", :property => "og:url"}/
-  %meta{:content => "http://i.imgur.com/mhXlBFl.png", :property => "og:image"}/
+  %meta{:content => "http://i.imgur.com/UQV7Cg2.png", :property => "og:image"}/
   %meta{:content => "1200", :property => "og:image:width"}/
   %meta{:content => "628", :property => "og:image:height"}/
 
   %meta{:content => "summary_large_image", :name => "twitter:card"}
-  %meta{:content => "@AdventureMade", :name => "twitter:site"}
+  %meta{:content => "@MadebyAdventure", :name => "twitter:site"}
   %meta{:content => "The Berber Traverse", :name => "twitter:title"}
-  %meta{:content => "A high-adrenaline women's surf & bike adventure across Morocco http://goo.gl/YXDo0l", :name => "twitter:description"}
-  %meta{:content => "http://i.imgur.com/mhXlBFl.png", :name => "twitter:image:src"}/
+  %meta{:content => "An all women's Moroccan adventure from biking through the Atlas Mountains to surfing the Atlantic Coast. http://goo.gl/YXDo0l", :name => "twitter:description"}
+  %meta{:content => "http://i.imgur.com/UQV7Cg2.png", :name => "twitter:image:src"}/
+
+.trip-banner
+  .trip-banner-image{style: "background: url('#{asset_path("background/moroccovillage.jpg")}') fixed center center no-repeat"}
+    .trip-banner-content
+      .trip-banner-title
+        The Berber Traverse
+      .trip-banner-details
+        .fa.fa-map-marker{style:"color:#aa4b41; font-size: 16px;"}
+        Morocco
+      .trip-banner-description
+        An all women's Moroccan adventure from biking through the Atlas Mountains to surfing the Atlantic Coast.
+      %a.typeform-share{"data-mode" => "1", :href => "https://madebyadventure.typeform.com/to/ruHxpt", :target => "_blank"}
+        .trip-banner-btn 
+          Request Information
 
 
-.location-hero.location-hero-fix{style: "background: url('#{asset_path("background/moroccocover.jpeg")}') left center no-repeat"}
+.story-container
+  .story-header
+    The Mission
+  .story-mission
+    Encourage and engage women through adventure travel while promoting access to continued education in the High Atlas Mountains.
+    <br>
+    <br>
+    • • •
+  .story-header
+    Background
+  .story-text-regular
+    Although Morocco has seen increased aid and set ambitious goals for expanding access to education for women, there’s still a harsh reality facing women in rural parts of the country: the illiteracy rate is nearly 90%. Unfortunately, this issue disproportionately affects the native Berber women and girls in the High Atlas Mountains.
+    <br>
+    <br>
+    There are many factors behind this unfortunate truth; however, distance remains an overlying barrier preventing Berber women from attending and continuing their educations in secondary schools. Most villages are miles away from schools and, for many families, it’s not acceptable for a girl to walk alone to and from school; nor is it financially feasible to live away from home. With extreme temperatures in the summer and winter months, as well as poor infrastructure and alternate transportation not an option, it’s simply too great a feat to attend school for many women.
+  .story-image-section
+    .col-md-8.story-image{style: "background: url('#{asset_path("background/marrakeshchildren.jpg")}') center center no-repeat"}
+    .col-md-4.story-image-text
+      “A product of the numerous obstacles between them and continued education, only 26% of Berber women enroll in secondary school; and nearly 90% drop out before completion.”
+  .story-text-regular
+    In order to break these barriers and cycle illiteracy, we’ve partnered with Pack for a Purpose and the secondary school in Asni; the gateway into the higher Altas Mountains. Like many other areas, transportation to the large secondary school is very limited; resulting in many young girls dropping out. A project was developed to combat this issue by building a central boarding house for up to 100 girls ages 13 to 18 years old so they can continue their education. The Asni Boarding House for Girls is making a dent in the larger issue, however, the boarding house is over capacity and there is an urgent need for items to help sustain the project’s future.
+  .story-image-section
+    .story-title-image{style: "background: url('#{asset_path("background/moroccomountainvillageb&w.jpeg")}') fixed bottom center no-repeat"}
+      .title-image-text
+        .story-image-header
+          The Expedition
 
-.location-slow-scroll
-  #location-text
-    #location-header
-      The Berber Traverse
-    #location-header-mobile
-      The Berber Traverse
-    #location-explanation
-      A high-adrenaline women's surf & bike adventure across Morocco.
+.experience-container
+  .experience-mission
+    We've built a team of badass women who will be biking through Morocco and surfing the coast, while donating supplies directly to the Asni Boarding House for Girls in the Atlas Mountains.
+    <br>
+    <br>
+    • • •
+  .experience-text-regular
+    Tackle Morocco’s legendary single track riding and soak up the friendly vibes of Berber mountain country. Dipping in and out of rust colored hillsides, palm carpeted desert canyons, and high mountain passes, we’ll ride for 5-6 glorious days. It promises to feel both familiar and wildy different than your rides back home. On the comfort of a full suspension bike, we’ll ride down old trading routes, cart paths, goat trails, dry riverbeds, flowing single track, and coastal roads. Anything it takes to get from the Berber regions in the mountains to the coast.
+    <br>
+    <br>
+    All great challenges have a glorious reward. For us, that reward is the sparkling blue waters of the Atlantic Ocean and the chilled-out surf camp waiting at the end of the road. Soak your bones in the cool waters of the Atlantic, paddle out for a quiet SUP yoga session, or just lay around like a lazy bum. Your call. Our journey will start and end in the gem of the desert, the walled city of Marrakech.
+
+  .experience-details-container
+    .col-md-4.experience-details-title
+      Date
+      .experience-details-subtitle
+        Sept. 1-10th, 2017
+    .col-md-4.experience-details-title
+      Capacity
+      .experience-details-subtitle
+        6 Women
+    .col-md-4.experience-details-title
+      Price
+      .experience-details-subtitle
+        Sold Out!
+  .location-who
+    .who-container
+      .who-travelers-container
+        .who-image-button{"data-name" => "Laurie T. | Boulder, CO", "data-location" => "Boulder, CO", "data-description" => "I'm an adventure-loving lady who spends every weekend exploring the Rocky Mountains by bike, snowboard, or foot. I work with Outdoor Women’s Alliance—a worldwide media and adventure collective nonprofit whose mission is to get other adventure-loving ladies outside.", "data-image-url" => "#{asset_url("travelers/profilelaurie.jpg")}", style: "background: url('#{asset_path("travelers/profilelauriesmall.jpg")}') center center no-repeat"}
+        .who-image-button{"data-name" => "Eva H. | Longmont, CO", "data-location" => "Longmont, CO", "data-description" => "Polish Native who loves mountain sports & exploring culture, currently living in Colorado. This trip combines my 3 favorite activities: mountain biking, surfing and yoga.", "data-image-url" => "#{asset_url("travelers/profileeva.jpeg")}", style: "background: url('#{asset_path("travelers/profileevasmall.jpeg")}') center center no-repeat"}
+        .who-image-button{"data-name" => "Mary M. | Victoria, BC", "data-location" => "Victoria, BC", "data-description" => "I was raised on freshwater lakes and am a lover of all water-based sports! Although new to mountain biking, I'm excited ride Morocco's Atlas Mountains.", "data-image-url" => "#{asset_url("travelers/profilemary.jpeg")}", style: "background: url('#{asset_path("travelers/profilemarysmall.jpeg")}') center center no-repeat"}
+        .who-image-button{"data-name" => "Sofia C. | Boulder, CO", "data-location" => "Boulder, CO", "data-description" => "Very excited to be connecting with a badass group of girls. Explorer of rugged terrain, marketer of ethical business, and volunteer at Outdoor Women's Alliance.", "data-image-url" => "#{asset_url("travelers/profilesofia.jpeg")}", style: "background: url('#{asset_path("travelers/profilesofiasmall.jpeg")}') center center no-repeat"}
+        .who-image-button{"data-name" => "Awnalisa M. | SLC, UT", "data-location" => "Salt Lake City, UT", "data-description" => "I've done a lot of traveling but mostly as your average tourist. Ready to change that! I love mountain biking, climbing, wake boarding, backpacking and anything else that is fun and outside.", "data-image-url" => "#{asset_url("travelers/profileawnalisa.jpeg")}", style: "background: url('#{asset_path("travelers/profileawnalisasmall.jpeg")}') center center no-repeat"}
+        .who-image-button{"data-name" => "Madeline P. | Boulder, CO", "data-location" => "Boulder, CO", "data-description" => "I'm an Oregon native, living the outdoor-lover's dream in Colorado while working as a web developer. I'm beyond excited to connect with amazing women and push myself in a new sport.", "data-image-url" => "#{asset_url("travelers/profilemadeline.jpg")}", style: "background: url('#{asset_path("travelers/profilemadelinesmall.jpg")}') center center no-repeat"}
+      #meet-the-team
+        .who-text
+          .who-name
+            Laurie T. | Boulder, CO
+          .who-description
+            I'm an adventure-loving lady who spends every weekend exploring the Rocky Mountains by bike, snowboard, or foot. I work with Outdoor Women’s Alliance—a worldwide media and adventure collective nonprofit whose mission is to get other adventure-loving ladies outside.
+
+.interest-section{style: "background: url('#{asset_path("background/moroccobeach.jpg")}') fixed bottom center no-repeat"}
+  .interest-section-title
+    Get Involved
+  %a.typeform-share{"data-mode" => "1", :href => "https://madebyadventure.typeform.com/to/ruHxpt", :target => "_blank"}
+    .interest-section-request-btn
+      Request Information
+
+
 
 .location-details
   .col-md-12.location-itinerary
@@ -282,6 +362,9 @@
 
 :javascript
 
+  (function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}id=id+'_';if(!gi.call(d,id)){qs=ce.call(d,'link');qs.rel='stylesheet';qs.id=id;qs.href=b+'share-button.css';s=gt.call(d,'head')[0];s.appendChild(qs,s)}})()
+
+
   $(document).ready(function() {
   $('.location-slow-scroll').show();
   $('.location-slow-scroll').animate({ opacity: 1, top: "-60px" }, 'slow');
@@ -341,3 +424,14 @@
     $("#expanded-body-text").fadeIn('slow');
     $(this).hide()
   });
+
+/.location-hero.location-hero-fix{style: "background: url('#{asset_path("background/moroccocover.jpeg")}') left center no-repeat"}
+
+/.location-slow-scroll
+/  #location-text
+/    #location-header
+/      The Berber Traverse
+/    #location-header-mobile
+/      The Berber Traverse
+/    #location-explanation
+/      A high-adrenaline women's surf & bike adventure across Morocco.

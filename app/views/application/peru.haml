@@ -1,34 +1,119 @@
 - content_for(:meta_og) do
 	%meta{:content => "Packrafting the Upper Amazon", :property => "og:title"}/
 	%meta{:content => "MadebyAdventure", :property => "og:site_name"}/
-	%meta{:content => "Explore Peru’s threatened rainforest, from the remote tributaries of the Upper Amazon to the frontiers of deforestation.  A rugged expedition with a mission. Do you have what it takes?", :property => "og:description"}/
+	%meta{:content => "Explore Peru’s threatened rainforest, from the remote tributaries of the Upper Amazon to the frontiers of deforestation.", :property => "og:description"}/
 	%meta{:content => "website", :property => "og:type"}/
 	%meta{:content => "http://www.madebyadventure.com/peru", :property => "og:url"}/
-	%meta{:content => "http://i.imgur.com/KtE0ak6.png", :property => "og:image"}/
+	%meta{:content => "http://i.imgur.com/OKXT1iJ.png", :property => "og:image"}/
 	%meta{:content => "1200", :property => "og:image:width"}/
 	%meta{:content => "628", :property => "og:image:height"}/
 
 	%meta{:content => "summary_large_image", :name => "twitter:card"}
-	%meta{:content => "@AdventureMade", :name => "twitter:site"}
+	%meta{:content => "@MadebyAdventure", :name => "twitter:site"}
 	%meta{:content => "Packrafting the Upper Amazon", :name => "twitter:title"}
-	%meta{:content => "Explore Peru’s threatened rainforest, from the remote tributaries of the Upper Amazon to the frontiers of deforestation.  A rugged expedition with a mission. Do you have what it takes?", :name => "twitter:description"}
-	%meta{:content => "http://i.imgur.com/KtE0ak6.png", :name => "twitter:image:src"}/
+	%meta{:content => "Explore Peru’s threatened rainforest, from the remote tributaries of the Upper Amazon to the frontiers of deforestation. http://goo.gl/2CVIkY", :name => "twitter:description"}
+	%meta{:content => "http://i.imgur.com/OKXT1iJ.png", :name => "twitter:image:src"}/
+
+.trip-banner
+	.trip-banner-image{style: "background: url('#{asset_path("background/packraftcoverphoto.jpeg")}') fixed bottom right no-repeat"}
+		.trip-banner-content
+			.trip-banner-title
+				Packrafting the Amazon
+			.trip-banner-details
+				.fa.fa-map-marker{style:"color:#aa4b41; font-size: 16px;"}
+				Peruvian Amazon
+			.trip-banner-description
+				Explore Peru’s threatened rainforest, from the remote tributaries of the Upper Amazon to the frontiers of deforestation.
+			%a.typeform-share{"data-mode" => "1", :href => "https://madebyadventure.typeform.com/to/aoPhvG", :target => "_blank"}
+				.trip-banner-btn 
+					Request Information
+
+.story-container
+	.story-header
+		The Mission
+	.story-mission
+		Explore one of the most volatile and crucially important places on earth to connect with the people on the ground working to make a difference.
+		<br>
+		<br>
+		• • •
+	.story-header
+		The Backstory
+	.story-text-regular
+		Few places on the planet are as mysterious and awe-inspiring as the Amazon Rainforest. Its massive size and prolific biodiversity make it one of the greatest natural wonders of the world. Towering trees and winding rivers make up a vast and fertile basin that is home to a stunning array of flora and fauna found nowhere else on earth. It's also home to some of the last remaining tribal cultures isolated from the modern world. 
+		<br>
+		<br>
+		Increasing economic development is putting a strain on the natural resources of the Peruvian Amazon. Unsustainable forms of farming, logging, and poaching are on the rise. While timber extraction has always been intertwined with the history of the region, it has reached an all-time time high on the Las Piedras, devastating Ironwood trees where Macaws nest. The completion of the Trans-Amazon highway, known to be one of the most environmentally destructive projects, has given easier access to the area, compounding the problem. 
+		<br>
+		<br>
+		Despite all this, the Las Piedras Basin is generally recognized as one of the best-preserved sections of the Amazon. Teeming with wildlife, protected by an unbroken canopy, and home to “uncontacted tribes”, it represents an ideal site for ecological studies with limited, but slowly increasing, human influence.
+	.story-image-section
+		.story-title-image{style: "background: url('#{asset_path("background/paulpackraftBW.jpeg")}') fixed bottom center no-repeat"}
+			.title-image-text
+				.story-image-header
+					The Expedition
+				
+.experience-container
+	.experience-mission
+		Packrafting, trekking and camping with a team of travelers, photographers and naturalists from the jungle outpost of Monte Selvado to the Las Piedras Research Station.
+		<br>
+		<br>
+	.experience-partner
+		.col-md-6.experience-partner-image{style: "background: url('#{asset_path("travelers/guideprofilepaul.jpg")}') center center no-repeat"}  
+		.col-md-6.experience-partner-text
+			.experience-partner-header
+				Expedition Leader | Paul Rosolie
+			.experience-partner-description
+				In the past decade, Paul has founded Tamandua Expeditions and non-profit Junglekeepers, documented new ecosystems, launched the first ever study of anacondas in lowland rainforest, and spent extensive time traveling with poachers to document the illegal trade of endangered species. He has written a bestselling book, spoken at the United Nations, and has been featured in National Geographic, Discovery Channel, and The Guardian; among others.
+			%a{:href => "http://paulrosolie.com/", :target => "_blank"}
+				.experience-partner-btn
+					View Paul's Site
+	.experience-text-regular
+		Your journey begins in Puerto Maldonado, the largest city in the region and a jungle outpost. Until recently, Puerto Maldonado was a quiet river town, but the recent completion of the trans-Amazonian highway, which connects the Amazon to the Pacific coast and lucrative Asian lumber markets has changed that. 
+		<br>
+		<br>
+		Leaving behind this bustling town, you’ll be taken up the Las Piedras river by motorized boat to Monte Selvado, a small village bordering the territory of the world’s last uncontacted tribes. You’ll be taken through the jungle on logging roads to the banks of the Las Piedras river, where you’ll travel for several days upstream by motorboat. In Monte Selvado, you’ll learn about traditional cultures and the ongoing battle to preserve a vastly different lifestyle. 
+		<br>
+		<br>
+		Over the course of several days, we'll hike and paddle through the Las Piedras watershed, returning to the Las Piedras Research Station. One of the last true wilderness areas in the world, the Las Piedras watershed is home to a wide range of birds, insects, and borderline mythical beasts, like giant anacondas and river otters. 
+	.experience-image-section
+		.col-md-4.experience-third-image{style: "background: url('#{asset_path("background/jaguarpaul.jpg")}') center center no-repeat"}
+		.col-md-4.experience-third-image{style: "background: url('#{asset_path("background/slothpaul.jpg")}') center center no-repeat"}  
+		.col-md-4.experience-third-image{style: "background: url('#{asset_path("background/monkeypaul.jpg")}') center center no-repeat"}
+	.experience-text-regular
+		You’ll have the rare privilege of experiencing this remarkable place in the most immersive way possible. The stealth of a packraft affords you the opportunity to approach rare wildlife silently. Along the way, you’ll learn from a team of passionate conservationists, who will explain the significance and context of the conflict in the Madre de Dios region. This adventure is structured to give you a real world look at the dynamics of deforestation. Participating in wildlife observation and date keeping, you’ll have an active role in protecting this region while witnessing first-hand the varying degrees of environmental destruction.
+		<br>
+		<br>
+		The second half of the project will take place at The Las Piedras Biodiversity Station, located on the banks of the Las Piedras river. Staying at the research station will place you in one of the most biodiverse regions on the planet. Your stay at the research camp will fund efforts to conserve and purchase surrounding forest. The station is staffed with employees who can teach and share their passion and way of life with you.
+		<br>
+		<br>
+		This adventure is not for the faint of heart. You will be a member of a purposeful expedition, not a guest on a tour. True exploration of the Amazon is both a physical and mental challenge. You’ll be exposed to the elements, paddling/hiking for 6-8 hours a day and wilderness camping in tents at night. This journey will undoubtedly challenge you, but it will also draw from you a sense of pride, curiosity, and wonder. You’ll learn to love the Amazon, by fully immersing yourself in this spectacular place.  
+	.experience-details-container
+		.col-md-4.experience-details-title
+			Date
+			.experience-details-subtitle
+				Nov. 18-29th, 2016
+		.col-md-4.experience-details-title
+			Capacity
+			.experience-details-subtitle
+				6-9 Travelers
+		.col-md-4.experience-details-title
+			Price
+			.experience-details-subtitle
+				$3,200
+
+.interest-section{style: "background: url('#{asset_path("background/piedrassunset.jpg")}') fixed bottom center no-repeat"}
+	.interest-section-title
+		Get Involved
+	%a.typeform-share{"data-mode" => "1", :href => "https://madebyadventure.typeform.com/to/aoPhvG", :target => "_blank"}
+		.interest-section-request-btn
+			Request Information
+.photo-credit
+	.photo-credit-text
+		Photo Credits to
+		%a{href: 'http://www.mohsinkazmi.com/' , target: '_blank', style: "color: #fff; font-weight: bold;"} Mohsin Kazmi
+		and Gowri Varanashi
 
 
-.location-hero.location-hero-fix{style: "background: url('#{asset_path("background/piedrassunset.jpg")}') bottom center no-repeat"}
-
-.location-slow-scroll
-	#location-text
-		#location-header
-			Packrafting the 
-			<br>
-			Upper Amazon
-		#location-header-mobile
-			Packrafting the 
-			<br>
-			Upper Amazon
-		#location-explanation
-			Packrafting earth's most sacred, yet endangered ecosystem
 
 .location-details
 	.col-md-12.location-itinerary
@@ -246,6 +331,8 @@
 
 :javascript
 
+	(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}id=id+'_';if(!gi.call(d,id)){qs=ce.call(d,'link');qs.rel='stylesheet';qs.id=id;qs.href=b+'share-button.css';s=gt.call(d,'head')[0];s.appendChild(qs,s)}})()
+
 	$(document).ready(function() {
 	$('.location-slow-scroll').show();
 	$('.location-slow-scroll').animate({ opacity: 1, top: "-60px" }, 'slow');
@@ -305,3 +392,20 @@
 		$("#expanded-body-text").fadeIn('slow');
 		$(this).hide()
 	});
+
+
+
+/.location-hero.location-hero-fix{style: "background: url('#{asset_path("background/piedrassunset.jpg")}') bottom center no-repeat"}
+
+/.location-slow-scroll
+/	#location-text
+/		#location-header
+/			Packrafting the 
+/			<br>
+/			Upper Amazon
+/		#location-header-mobile
+/			Packrafting the 
+/			<br>
+/			Upper Amazon
+/		#location-explanation
+/			Packrafting earth's most sacred, yet endangered ecosystem

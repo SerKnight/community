@@ -1,11 +1,27 @@
+- content_for(:meta_og) do
+	%meta{:content => "Join a MadebyAdventure Project", :property => "og:title"}/
+	%meta{:content => "MadebyAdventure", :property => "og:site_name"}/
+	%meta{:content => "We believe travel can be used as a force for good. Our mission is to widen perspectives, evoke empathy and bring the world closer through undeniably adventurous experiences.", :property => "og:description"}/
+	%meta{:content => "website", :property => "og:type"}/
+	%meta{:content => "http://www.madebyadventure.com", :property => "og:url"}/
+	%meta{:content => "http://i.imgur.com/mGVttVR.png", :property => "og:image"}/
+	%meta{:content => "1200", :property => "og:image:width"}/
+	%meta{:content => "628", :property => "og:image:height"}/
+
+	%meta{:content => "summary_large_image", :name => "twitter:card"}
+	%meta{:content => "@MadebyAdventure", :name => "twitter:site"}
+	%meta{:content => "MadebyAdventure", :name => "twitter:title"}
+	%meta{:content => "We believe travel can be used as a force for good and we want to bring the world closer through adventure travel. http://goo.gl/mPjFMC", :name => "twitter:description"}
+	%meta{:content => "http://i.imgur.com/mGVttVR.png", :name => "twitter:image:src"}/
+
 = render partial: 'homepage_banner'
 = render partial: 'how_it_works'
 = render partial: 'hiw_grid'
 = render partial: 'traveler_quotes'
 
 - if notice
-  :javascript
-    remove_notice(10);
+	:javascript
+		remove_notice(10);
 
   
 
