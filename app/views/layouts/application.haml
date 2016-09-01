@@ -22,7 +22,7 @@
     = favicon_link_tag 'adventuremade_favicon.ico'
     = csrf_meta_tags
 
-    // Facebook Pixel Code
+    / Facebook Pixel Code
     :javascript
       !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
       n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
@@ -32,9 +32,9 @@
       
       fbq('init', '1121657104555830');
       fbq('track', "PageView");
-
-        %noscript
-          %img{:height => "1", :src => "https://www.facebook.com/tr?id=1121657104555830&ev=PageView&noscript=1", :style => "display:none", :width => "1"}/
+    %noscript
+      %img{:height => "1", :src => "https://www.facebook.com/tr?id=1121657104555830&ev=PageView&noscript=1", :style => "display:none", :width => "1"}/
+    / End Facebook Pixel Code
 
   %body
     #loader-overlay
