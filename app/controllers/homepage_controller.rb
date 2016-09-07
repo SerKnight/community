@@ -52,7 +52,7 @@ class HomepageController < ApplicationController
 
   end  
 
-  def lakepowell
+  def giveandsurf
 
   end
 

@@ -1,0 +1,184 @@
+- content_for(:meta_og) do
+	%meta{:content => "Packraft the Amazon with Paul Rosolie", :property => "og:title"}/
+	%meta{:content => "MadebyAdventure", :property => "og:site_name"}/
+	%meta{:content => "Explore Peru’s threatened rainforest, from the remote tributaries of the Upper Amazon to the frontiers of deforestation.", :property => "og:description"}/
+	%meta{:content => "website", :property => "og:type"}/
+	%meta{:content => "http://www.madebyadventure.com/peru", :property => "og:url"}/
+	%meta{:content => "http://i.imgur.com/wp3dM78.jpg", :property => "og:image"}/
+	%meta{:content => "1200", :property => "og:image:width"}/
+	%meta{:content => "628", :property => "og:image:height"}/
+
+	%meta{:content => "summary_large_image", :name => "twitter:card"}
+	%meta{:content => "@MadebyAdventure", :name => "twitter:site"}
+	%meta{:content => "Packrafting the Upper Amazon", :name => "twitter:title"}
+	%meta{:content => "Explore Peru’s threatened rainforest, from the remote tributaries of the Upper Amazon to the frontiers of deforestation. http://goo.gl/2CVIkY", :name => "twitter:description"}
+	%meta{:content => "http://i.imgur.com/OKXT1iJ.png", :name => "twitter:image:src"}/
+
+.trip-banner
+	.trip-banner-image{style: "background: url('#{asset_path("background/ChanguinolaPanama.jpeg")}') fixed top no-repeat"}
+		.trip-banner-content
+			.trip-banner-title
+				Give and Surf
+			.trip-banner-details
+				.fa.fa-map-marker{style:"color:#aa4b41; font-size: 16px;"}
+				Bocas del Toro, Panama
+			.trip-banner-description
+				Explore Bocas del Toro and its best surf breaks, while island hopping and giving back to the local communities you visit.
+			%a.typeform-share{"data-mode" => "1", :href => "https://madebyadventure.typeform.com/to/aoPhvG", :target => "_blank"}
+				.trip-banner-btn
+					Apply to Join
+
+.story-container
+	.story-header
+		The Mission
+	.story-mission
+		Partner with Give & Surf to support their efforts to empower the indigenous communities of Bocas del Toro, while island hopping and exploring some of the Caribbean’s best surf breaks.
+		<br>
+		<br>
+		• • •
+	.story-header
+		The Backstory
+	.story-text-regular
+		Few places on the planet are as mysterious and awe-inspiring as the Amazon Rainforest. Its massive size and prolific biodiversity make it one of the greatest natural wonders of the world. Towering trees and winding rivers make up a vast and fertile basin that is home to a stunning array of flora and fauna found nowhere else on earth. It's also home to some of the last remaining tribal cultures isolated from the modern world. 
+		<br>
+		<br>
+		Increasing economic development is putting a strain on the natural resources of the Peruvian Amazon. Unsustainable forms of farming, logging, and poaching are on the rise. While timber extraction has always been intertwined with the history of the region, it has reached an all-time time high on the Las Piedras, devastating Ironwood trees where Macaws nest. The completion of the Trans-Amazon highway, known to be one of the most environmentally destructive projects, has given easier access to the area, compounding the problem. 
+		<br>
+		<br>
+		Despite all this, the Las Piedras Basin is generally recognized as one of the best-preserved sections of the Amazon. Teeming with wildlife, protected by an unbroken canopy, and home to “uncontacted tribes”, it represents an ideal site for ecological studies with limited, but slowly increasing, human influence.
+	.story-image-section
+		.story-title-image{style: "background: url('#{asset_path("background/giveandsurfcollage.jpg")}') fixed center center no-repeat"}
+			.title-image-text
+				
+.experience-container
+	.experience-mission
+		We've partnered with Give and Surf to send three groups to Bocas del Toro to discover the beauty of the region and it's communities, while finding adventure in its endless activities.
+	.experience-partner
+		.col-md-6.experience-partner-image{style: "background: url('#{asset_path("background/neilprofilehappy.jpeg")}') center center no-repeat"}  
+		.col-md-6.experience-partner-text
+			.experience-partner-header
+				Expedition Leader | Neil Christenson
+			.experience-partner-description
+				The founder and brainchild behind Give & Surf, Neil serves as the captain whether he’s jungle living or doing development work in the states. Packing more excitement and energy than the normal human, Neil is a modern day energizer bunny. Neil's organization is now actively working in 6 different regions of Bocas del Toros where their mission is to to empower the local indigenous communities through education and community development.
+			%a{:href => "http://www.theinertia.com/surf/4-realizations-that-came-from-starting-my-non-profit-in-panama/#modal-close", :target => "_blank"}
+				.experience-partner-btn
+					About Neil
+	.experience-text-regular
+		An archipelago off the northwest coast of Panama, Bocas del Toro is an eco­tourism favorite with English­speaking and other tourists traveling to this Central American country. Seven islands (including Isla Colón, Isla Carenero, Isla Solarte and Isla Bastimentos) comprise the land area, with Bocas Town, its regional capital and the “big city,” for those looking to shop, dine, and explore nightlife. Colorful and utterly Caribbean, this town of clapboard houses was built by the United Fruit Company in the early 20th century. Today, Bocas is a relaxed community of West Indians, Latinos and resident gringos, with a friendly atmosphere that easily rubs off on visitors.
+		<br>
+		<br>
+		Adventure lovers will find plenty to keep them occupied, as scuba diving, snorkeling, sailing, surfing and hiking are first­-rate. Bocas serves as a convenient base for exploring the archipelago as water taxis cruise the waters and can whisk you away to remote beaches and surf sites for a few dollars. The archipelago offers several superb and still uncrowded waves and are primarily reef breaks, similar what one might find in the South Pacific or Indian Ocean.
+	.experience-image-section
+		.col-md-4.experience-third-image{style: "background: url('#{asset_path("background/bambudaslide.jpeg")}') center center no-repeat"}
+		.col-md-4.experience-third-image{style: "background: url('#{asset_path("background/bambudaview.jpeg")}') center center no-repeat"}  
+		.col-md-4.experience-third-image{style: "background: url('#{asset_path("background/neilsurfing.png")}') center center no-repeat"}
+	.experience-text-regular
+		You’ll have the rare privilege of experiencing this remarkable place in the most immersive way possible. The stealth of a packraft affords you the opportunity to approach rare wildlife silently. Along the way, you’ll learn from a team of passionate conservationists, who will explain the significance and context of the conflict in the Madre de Dios region. This adventure is structured to give you a real world look at the dynamics of deforestation. Participating in wildlife observation and date keeping, you’ll have an active role in protecting this region while witnessing first-hand the varying degrees of environmental destruction.
+		<br>
+		<br>
+		The second half of the project will take place at The Las Piedras Biodiversity Station, located on the banks of the Las Piedras river. Staying at the research station will place you in one of the most biodiverse regions on the planet. Your stay at the research camp will fund efforts to conserve and purchase surrounding forest. The station is staffed with employees who can teach and share their passion and way of life with you.
+		<br>
+		<br>
+		This adventure is not for the faint of heart. You will be a member of a purposeful expedition, not a guest on a tour. True exploration of the Amazon is both a physical and mental challenge. You’ll be exposed to the elements, paddling/hiking for 6-8 hours a day and wilderness camping in tents at night. This journey will undoubtedly challenge you, but it will also draw from you a sense of pride, curiosity, and wonder. You’ll learn to love the Amazon, by fully immersing yourself in this spectacular place.  
+	.experience-details-container
+		.col-md-4.experience-details-title
+			Dates
+			.experience-details-subtitle
+				December, 2016
+		.col-md-4.experience-details-title
+			Capacity
+			.experience-details-subtitle
+				5-12 Travelers
+		.col-md-4.experience-details-title
+			Price
+			.experience-details-subtitle
+				$1,400
+
+.interest-section{style: "background: url('#{asset_path("background/waitingonthedock.jpeg")}') fixed bottom center no-repeat"}
+	.interest-section-title
+		Join a Trip
+	%a.typeform-share{"data-mode" => "1", :href => "https://madebyadventure.typeform.com/to/aoPhvG", :target => "_blank"}
+		.interest-section-request-btn
+			Go to Panama
+
+
+:javascript
+
+	(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}id=id+'_';if(!gi.call(d,id)){qs=ce.call(d,'link');qs.rel='stylesheet';qs.id=id;qs.href=b+'share-button.css';s=gt.call(d,'head')[0];s.appendChild(qs,s)}})()
+
+	$(document).ready(function() {
+	$('.location-slow-scroll').show();
+	$('.location-slow-scroll').animate({ opacity: 1, top: "-60px" }, 'slow');
+	});
+
+	$(document).ready(function() {
+
+		$('body *').each( function(){
+
+			var top_of_object = $(this).position().top;
+			var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+			if( bottom_of_window < top_of_object  ){
+
+				$(this).addClass('hideme').css({'opacity':'0'});  
+			} 
+		});
+
+		$(window).scroll( function(){
+
+			$('.hideme').each( function(i){
+
+				var bottom_of_window = $(window).scrollTop() + $(window).height();
+				var top_of_object = $(this).position().top;
+
+					if( bottom_of_window > ( top_of_object + 100 )  ){
+
+						$(this).removeClass('hideme').animate({'opacity':'1'},800); 
+					}
+			}); 
+		});
+	});;
+
+	$(".inclusions-title").click(function () {
+	$(".inclusions-description-hidden").stop().slideToggle();
+		return false;
+	});
+
+	$(".exclusions-title").click(function () {
+	$(".exclusions-description-hidden").stop().slideToggle();
+		return false;
+	});
+                 
+	$(".who-image-button").on("click", function() {
+		$('.who-image-button').css('border', '0px solid #fff');
+		$(this).css('border','4px solid #fff');
+    
+		$('.who-name').html($(this).data('name'))
+		$('.who-title').html($(this).data('location'))
+		$('.who-description').html($(this).data('description'))
+		var img_url = $(this).data('image-url')
+			$('.traveler-image').attr('src', img_url);
+			console.log(img_url)
+	});
+
+	$("#readmore-body-text").click(function(){
+		$("#expanded-body-text").fadeIn('slow');
+		$(this).hide()
+	});
+
+
+
+/.location-hero.location-hero-fix{style: "background: url('#{asset_path("background/piedrassunset.jpg")}') bottom center no-repeat"}
+
+/.location-slow-scroll
+/	#location-text
+/		#location-header
+/			Packrafting the 
+/			<br>
+/			Upper Amazon
+/		#location-header-mobile
+/			Packrafting the 
+/			<br>
+/			Upper Amazon
+/		#location-explanation
+/			Packrafting earth's most sacred, yet endangered ecosystem
