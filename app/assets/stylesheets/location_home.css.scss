@@ -14,7 +14,7 @@
 	min-height: 550px;
 
 	.trip-banner-content{
-		max-width: 700px;
+		max-width: 720px;
 		margin: auto;
 		min-height: 360px;
 		padding-left: 24px;
@@ -30,13 +30,20 @@
 			text-align: center;
 		}
 
+		.trip-banner-underline{
+			border-bottom: 4px solid #aa4b41;
+			max-width: 500px;
+			margin: auto;
+			padding-top: 8px;
+		}
+
 		.trip-banner-description{
 			color: #fff;
-			font-size: 1.2em;
+			font-size: 1.6em;
 			font-family: proxima_regular;
 			padding-top: 12px;
 			text-align: center;
-			max-width: 500px;
+			max-width: 550px;
 			margin: auto;
 			letter-spacing: -0.5px;
 		}
@@ -192,14 +199,73 @@
 			padding-left: 24px;
 		}
 	}
+
+	.story-partner{
+		min-height: 400px;
+		max-width: 1000px;
+		background: #212326;
+		margin: auto;
+		margin-top: 24px !important;
+
+		.story-partner-image{
+			min-height: 400px;
+			background-size: cover !important;
+		}
+
+		.story-partner-text{
+			min-height: 400px;
+			padding-top: 36px;
+			padding-left: 48px;
+			padding-right: 48px;
+		}
+
+		.story-partner-header{
+			text-align: left;
+			font-size: 2em;
+			color: #fff;
+			font-family: proxima_bold;
+			padding-bottom: 12px;
+		}
+
+		.story-partner-description{
+			color: #fff;
+			font-size: 1.2em;
+			text-align: left;
+			font-family: proxima_regular;
+			line-height: 28px;
+		}
+
+		.story-partner-btn{
+			font-family: proxima_bold;
+			text-align: center;
+			color: #fff;
+			font-size: 1.2em;
+			padding: 10px;
+			-webkit-transition: .3s ease-in-out;
+			background: #212326;
+			border: 2px solid #fff;
+			box-shadow: 1px 1px 2px #000;
+			width: 100%;
+			max-width: 200px;
+			margin-top: 20px !important;
+			float: none;
+
+			&:hover{
+				background: rgba(255,255,255,0.1);
+				border: 2px solid #666666;
+			}
+		}
+	}
 }
 
 .experience-container{
 	background: #fff;
+	padding-top: 50px;
+	padding-bottom: 48px;
 
 	.experience-header{
 		font-family: proxima_bold;
-		max-width: 800px;
+		max-width: 700px;
 		margin: auto;
 		font-size: 2.4em;
 		color: #212326;
@@ -315,7 +381,7 @@
 	.experience-details-container{
 		margin-top: 24px;
 		padding-top: 24px;
-		padding-bottom: 72px;
+		padding-bottom: 36px;
 		background: #fff;
 		min-height: 200px;
 
@@ -1407,6 +1473,12 @@
 		font-size: 3em;
 	}
 
+	.trip-banner .trip-banner-content .trip-banner-underline{
+		max-width: 360px;
+		padding-top: 0px;
+		margin-bottom: 10px;
+	}
+
 	.trip-banner .trip-banner-content .trip-banner-details{
 		padding-top: 0px;
 	}
@@ -1425,7 +1497,6 @@
 	}
 
 	.experience-container{
-		padding-bottom: 0px;
 		padding-left: 24px;
 		padding-right: 24px;
 	}
@@ -1471,6 +1542,19 @@
 	.experience-container .experience-image-section{
 		min-height: 500px;
 		padding-bottom: 32px;
+	}
+
+	.story-container .story-partner{
+		max-width: 600px;
+	}
+
+	.story-container .story-partner .story-partner-image{
+		min-height: 300px;
+	}
+
+	.story-container .story-partner .story-partner-text{
+		min-height: 300px;
+		padding: 24px !important;
 	}
 
 	.experience-container .experience-partner{
@@ -1794,14 +1878,25 @@
 	}
 
 	.trip-banner .trip-banner-content .trip-banner-title{
-		font-size: 2em;
+		font-size: 1.9em;
 		line-height: 32px;
+	}
+
+	.trip-banner .trip-banner-content .trip-banner-underline{
+		max-width: 280px;
+		padding-top: 4px;
+		margin-bottom: 6px;
 	}
 
 	.story-container{
 		padding-left: 12px;
 		padding-right: 12px;
 		padding-bottom: 12px;
+	}
+
+	.story-container .story-mission{
+		padding-left: 0px;
+		padding-right: 0px;
 	}
 
 	.experience-container{
@@ -1859,6 +1954,31 @@
 	.experience-container .experience-image-section{
 		min-height: 240px;
 		padding-bottom: 32px;
+	}
+
+	.story-container .story-partner .story-partner-image{
+		min-height: 240px;
+	}
+
+	.story-container .story-partner .story-partner-text{
+		min-height: 240px;
+		padding: 12px !important;
+	}
+
+	.story-container .story-partner .story-partner-header{
+		font-size: 1.2em;
+	}
+
+	.story-container .story-partner .story-partner-description{
+		font-size: 1em;
+		line-height: 20px;
+	}
+
+	.story-container .story-partner .story-partner-btn{
+		margin-top: 12px !important;
+		margin: auto;
+		font-size: 1em;
+		max-width: 150px;
 	}
 
 	.experience-container .experience-partner .experience-partner-image{
