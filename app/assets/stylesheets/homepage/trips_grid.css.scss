@@ -14,23 +14,26 @@
 
 		.grid_title{
 			font-family: proxima_bold;
-			font-size: 1.8em;
+			font-size: 3em;
 			color: #fff;
-			text-align: left;
+			text-align: center;
 	
 
 			.grid_subtitle{
 				font-family: proxima_regular;
 				font-size: 16px;
 				color: rgba(255,255,255,0.9);
-				text-align: left;
+				text-align: center;
+				max-width: 500px;
+				margin: auto;
 			}
 		}
 
 		.grid-title-underline{
 			max-width: 100px;
 			border-bottom: 4px solid #aa4b41;
-			margin-top: 20px;
+			margin-top: 20px !important;
+			margin: auto;
 		}
 	}
 
@@ -199,7 +202,7 @@
 		.grid-title{
 	  		font-family: proxima_bold;
 	  		color: #17181B;
-	  		font-size: 1.2em;
+	  		font-size: 1.8em;
 	  		text-align: left;
 	  		border: none;
 	  		margin-right: auto;
