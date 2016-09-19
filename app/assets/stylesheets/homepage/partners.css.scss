@@ -106,7 +106,7 @@
 	}
 
 	.partner-signup{
-		background: #fff;
+		background: #212326;
 		height: 500px;
 		padding-top: 140px;
 
@@ -114,17 +114,8 @@
 			font-family: proxima_bold;
 			font-size: 4em;
 			text-align: center;
-			color: #212326;
+			color: #fff;
 			max-width: 900px;
-			margin: auto;
-			letter-spacing: -1px;
-		}
-
-		.partner-signup-subtitle{
-			font-family: proxima_regular;
-			font-size: 2em;
-			text-align: center;
-			color: #212326;
 			margin: auto;
 			letter-spacing: -1px;
 		}
@@ -138,9 +129,8 @@
 			font-family: proxima_bold;
 			font-size: 1.2em;
 			margin-top: 12px;
-			padding-top: 14px;
-			background: #aa4b41;
-			box-shadow: 2px 2px 3px #888;
+			padding-top: 10px;
+			border: 4px solid #aa4b41;
 
 			-webkit-transition: .2s ease-in-out;
 			-moz-transition: .2s ease-in-out;
