@@ -1,0 +1,253 @@
+#partners{
+	background: #fff;
+
+	.partners-banner{
+		background-size: cover !important;
+		height: 800px;
+		background-attachment: fixed !important;
+		padding-top: 180px;
+
+		.partners-title{
+			font-family: proxima_bold;
+			font-size: 5em;
+			text-align: center;
+			color: #fff;
+			padding: 24px;
+			letter-spacing: -1px;
+			width: 700px;
+			line-height: 72px;
+			margin: auto;
+		}
+	}
+
+	.partners-details{
+		padding-left: 0px;
+		padding-right: 0px;
+
+		.partners-mission{
+			padding-top: 72px;
+			padding-bottom: 96px;
+			background: #fff;
+
+			.partners-mission-text{
+				font-family: proxima_thin;
+				font-size: 2em;
+				text-align: center;
+				color: #212326;
+				max-width: 900px;
+				margin: auto;
+				letter-spacing: -1px;
+			}
+		}
+
+		.partners-grid{
+
+			.partners-grid-image-container{
+				padding-left: 0px;
+				padding-right: 0px;
+
+				.partners-grid-image{
+					background-size: cover !important;
+					background-attachment: fixed !important;
+					height: 750px;
+
+					.partners-grid-text{
+						padding: 36px;
+						background: #fff;
+						width: 50%;
+						padding-top: 180px;
+						height: 100%;
+
+						.partners-grid-header{
+							font-family: proxima_bold;
+							font-size: 3em;
+							text-align: left;
+							color: #fff;
+							max-width: 500px;
+							margin: auto;
+						}
+
+						.partners-grid-subheader{
+							font-family: proxima_regular;
+							font-size: 2em;
+							text-align: left;
+							color: #fff;
+							max-width: 500px;
+							margin: auto;
+							letter-spacing: -0.5px;
+							font-style: italic;
+						}
+
+						.partners-grid-underline-container{
+							max-width: 500px;
+							padding-top: 24px;
+							margin: auto;
+
+							.partners-grid-underline{
+								border-bottom: 4px solid #fff;
+								max-width: 60px;
+							}
+						}
+
+						.partners-grid-description{
+							font-family: proxima_regular;
+							font-size: 1.4em;
+							text-align: left;
+							color: #fff;
+							max-width: 500px;
+							margin: auto;
+							padding-top: 24px;
+							letter-spacing: -0.3px
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.partner-signup{
+		background: #fff;
+		height: 500px;
+		padding-top: 140px;
+
+		.partner-signup-title{
+			font-family: proxima_bold;
+			font-size: 4em;
+			text-align: center;
+			color: #212326;
+			max-width: 900px;
+			margin: auto;
+			letter-spacing: -1px;
+		}
+
+		.partner-signup-subtitle{
+			font-family: proxima_regular;
+			font-size: 2em;
+			text-align: center;
+			color: #212326;
+			margin: auto;
+			letter-spacing: -1px;
+		}
+
+		.partner-signup-btn{
+			max-width: 190px;
+			color: #fff;
+			margin: auto;
+			text-align: center;
+			height: 50px;
+			font-family: proxima_bold;
+			font-size: 1.2em;
+			margin-top: 12px;
+			padding-top: 14px;
+			background: #aa4b41;
+			box-shadow: 2px 2px 3px #888;
+
+			-webkit-transition: .2s ease-in-out;
+			-moz-transition: .2s ease-in-out;
+			-o-transition: .2s ease-in-out;
+
+			&:hover{
+				box-shadow: 0px 0px 0px #000;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 991px){
+	#partners .partners-banner{
+		background-attachment: scroll !important;
+	}
+
+	#partners .partners-details .partners-grid .partners-grid-image-container .partners-grid-image .partners-grid-text{
+		width: 100%;
+	}
+
+	#partners .partners-details .partners-mission .partners-mission-text{
+		font-size: 1.6em;
+		max-width: 700px;
+	}
+
+	#partners .partner-signup .partner-signup-title{
+		font-size: 3em;
+	}
+}
+
+@media screen and (max-width: 771px){
+
+	#partners .partners-banner .partners-title{
+		font-size: 3em;
+		max-width: 400px;
+		line-height: 48px;
+	}
+
+	#partners .partners-details .partners-mission .partners-mission-text{
+		font-size: 1.4em;
+		max-width: 500px;
+		letter-spacing: -0.5px;
+	}
+
+	#partners .partners-details .partners-grid .partners-grid-image-container .partners-grid-image{
+		height: 500px;
+	}
+
+	#partners .partners-details .partners-grid .partners-grid-image-container .partners-grid-image .partners-grid-text{
+		padding-top: 120px;
+	}
+
+	#partners .partners-details .partners-grid .partners-grid-image-container .partners-grid-image .partners-grid-text .partners-grid-header{
+		font-size: 2.4em;
+	}
+
+	#partners .partners-details .partners-grid .partners-grid-image-container .partners-grid-image .partners-grid-text .partners-grid-subheader{
+		font-size: 1.4em;
+	}
+
+	#partners .partners-details .partners-grid .partners-grid-image-container .partners-grid-image .partners-grid-text .partners-grid-description{
+		font-size: 1.2em;
+	}
+}
+
+@media screen and (max-width: 500px){
+
+	#partners .partners-banner{
+		height: 500px;
+		padding-top: 120px;
+	}
+
+	#partners .partners-banner .partners-title{
+		font-size: 2.2em;
+		max-width: 300px;
+		line-height: 36px;
+	}
+
+	#partners .partners-details .partners-mission .partners-mission-text{
+		font-size: 1.2em;
+		max-width: 95%;
+		letter-spacing: 0px;
+	}
+
+	#partners .partners-details .partners-grid .partners-grid-image-container .partners-grid-image .partners-grid-text{
+		padding-top: 120px;
+		padding-left: 12px;
+		padding-right: 12px;
+	}
+
+	#partners .partners-details .partners-grid .partners-grid-image-container .partners-grid-image .partners-grid-text .partners-grid-header{
+		font-size: 2em;
+		line-height: 32px;
+		padding-bottom: 4px;
+	}
+
+	#partners .partners-details .partners-grid .partners-grid-image-container .partners-grid-image .partners-grid-text .partners-grid-subheader{
+		font-size: 1.2em;
+	}
+
+	#partners .partners-details .partners-grid .partners-grid-image-container .partners-grid-image .partners-grid-text .partners-grid-underline-container{
+		padding-top: 12px;
+	}
+
+	#partners .partners-details .partners-grid .partners-grid-image-container .partners-grid-image .partners-grid-text .partners-grid-description{
+		font-size: 1em;
+		padding-top: 12px;
+	}
+}

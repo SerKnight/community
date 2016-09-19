@@ -21,6 +21,7 @@ Rails.application.routes.draw do
   get 'bajabus'   =>    'homepage#bajabus'
   get 'morocco'   =>    'homepage#morocco'
   get 'give-and-surf'   =>    'homepage#giveandsurf'
+  get 'partners'  =>  'homepage#partners'
 
   get '/contact-us' => 'contacts#new'
   get '/apply/:type' => 'contacts#new'

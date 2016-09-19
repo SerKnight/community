@@ -3,8 +3,7 @@
 
 	.our_process_banner{
 		background-size: cover !important;
-		height: 600px;
-		background-attachment: fixed !important;
+		height: 500px;
 	}
 
 	.our_process_title{
@@ -153,11 +152,6 @@
 }
 
 @media screen and (max-width: 991px){
-	
-	#our_process .our_process_banner{
-		background-attachment: scroll !important;
-		height: 450px;
-	}
 
 	#our_process .our_process_title{
 		padding-top: 150px;
