@@ -106,9 +106,9 @@
 	}
 
 	.partner-signup{
-		background: #212326;
-		height: 500px;
-		padding-top: 140px;
+		background: #aa4b41;
+		height: 450px;
+		padding-top: 120px;
 
 		.partner-signup-title{
 			font-family: proxima_bold;
@@ -130,7 +130,7 @@
 			font-size: 1.2em;
 			margin-top: 12px;
 			padding-top: 10px;
-			border: 4px solid #aa4b41;
+			border: 4px solid #fff;
 
 			-webkit-transition: .2s ease-in-out;
 			-moz-transition: .2s ease-in-out;
@@ -239,5 +239,13 @@
 	#partners .partners-details .partners-grid .partners-grid-image-container .partners-grid-image .partners-grid-text .partners-grid-description{
 		font-size: 1em;
 		padding-top: 12px;
+	}
+
+	#partners .partner-signup{
+		padding-top: 130px;
+	}
+
+	#partners .partner-signup .partner-signup-title{
+		font-size: 2.4em;
 	}
 }
