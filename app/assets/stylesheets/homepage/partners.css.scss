@@ -5,16 +5,15 @@
 		background-size: cover !important;
 		height: 800px;
 		background-attachment: fixed !important;
-		padding-top: 180px;
+		padding-top: 270px;
 
 		.partners-title{
 			font-family: proxima_bold;
-			font-size: 5em;
+			font-size: 3.5em;
 			text-align: center;
 			color: #fff;
 			padding: 24px;
 			letter-spacing: -1px;
-			width: 700px;
 			line-height: 72px;
 			margin: auto;
 		}
@@ -30,11 +29,11 @@
 			background: #fff;
 
 			.partners-mission-text{
-				font-family: proxima_thin;
-				font-size: 2em;
+				font-family: proxima_regular;
+				font-size: 1.4em;
 				text-align: center;
 				color: #212326;
-				max-width: 900px;
+				max-width: 700px;
 				margin: auto;
 				letter-spacing: -1px;
 			}
@@ -49,7 +48,7 @@
 				.partners-grid-image{
 					background-size: cover !important;
 					background-attachment: fixed !important;
-					height: 750px;
+					height: 800px;
 
 					.partners-grid-text{
 						padding: 36px;
@@ -61,21 +60,23 @@
 						.partners-grid-header{
 							font-family: proxima_bold;
 							font-size: 3em;
+							letter-spacing: -1px;
 							text-align: left;
 							color: #fff;
 							max-width: 500px;
 							margin: auto;
+							line-height: 40px;
 						}
 
 						.partners-grid-subheader{
 							font-family: proxima_regular;
-							font-size: 2em;
+							font-size: 1.6em;
 							text-align: left;
 							color: #fff;
 							max-width: 500px;
 							margin: auto;
 							letter-spacing: -0.5px;
-							font-style: italic;
+							padding-top: 12px;
 						}
 
 						.partners-grid-underline-container{
@@ -96,8 +97,8 @@
 							color: #fff;
 							max-width: 500px;
 							margin: auto;
-							padding-top: 24px;
-							letter-spacing: -0.3px
+							padding-top: 32px;
+							letter-spacing: -0.5px
 						}
 					}
 				}
@@ -141,6 +142,10 @@
 			}
 		}
 	}
+}
+
+#header{
+	display: none !important;
 }
 
 @media screen and (max-width: 991px){
@@ -217,7 +222,7 @@
 	}
 
 	#partners .partners-details .partners-grid .partners-grid-image-container .partners-grid-image .partners-grid-text{
-		padding-top: 120px;
+		padding-top: 72px;
 		padding-left: 12px;
 		padding-right: 12px;
 	}
