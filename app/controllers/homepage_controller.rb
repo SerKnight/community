@@ -1,4 +1,9 @@
 class HomepageController < ApplicationController
+  layout 'consulting_layout', :only => [:consulting]
+  # created consulting_layout in /layouts || references ^ controller method name
+
+  # layout :consulting_layout, only:  []
+                                 # tip ^ this : is same syntax. ( does the same thing )
 
   def homepage
 
@@ -56,8 +61,10 @@ class HomepageController < ApplicationController
 
   end
 
-  def partners
-
+  def consulting
+    # changed the name from partners
+    # also had to update the routes.rb file 
+    # to that I know to match the url (/consulting) with a certain controller#action_name
   end
 
 end

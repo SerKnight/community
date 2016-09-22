@@ -1,0 +1,42 @@
+#header{role: "navigation"}
+  .container-fluid{style: "background: #fff; z-index: 1001; position: relative;"}
+    .navbar-header
+      %button.navbar-toggle.collapsed.mobile-navbar-navigation{"aria-expanded" => "false", "data-target" => "#bs-example-navbar-collapse-1", "data-toggle" => "collapse", :type => "button"}
+        %span.sr-only
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
+      .col-md-12
+        %a.navbar-brand{href: "/"}
+    #bs-example-navbar-collapse-1.collapse.navbar-collapse.mobile-navbar-menu
+      %ul.nav.navbar-nav.navbar-left
+        %a{:href => "/projects"} 
+          .btn.btn-default
+            YOUR BRAND NEW HEADER
+        %a{:href => "/about-us"} 
+          .btn.btn-default
+            ITS BEAUTIFUL!!!!!!!
+        %a{:href => "/about-us"} 
+          .btn.btn-default
+            REALLY! GREAT JOB 
+        %a{:href => "/about-us"} 
+          .btn.btn-default
+            SHIT IS BEAUTRIFUL
+
+
+/        %a{:href => "/our-process"} 
+/          .btn.btn-default
+/            Our Process
+/        %li.dropdown
+/          %a.dropdown-toggle.trip-dropdown{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
+/            Current Projects
+/          %ul.dropdown-menu.trip-dropdown-content
+/            %li
+/              %a.trip-dropdown-title{:href => "/morocco"} The Berber Traverse
+/            %li
+/              %a.trip-dropdown-title{:href => "/kyrgyzstan"} The Kyrgyz Republic
+/            %li
+/              %a.trip-dropdown-title{:href => "/peru"} Packrafting the Upper Amazon
+
+/ /.navbar-collapse
+/ /.container-fluid

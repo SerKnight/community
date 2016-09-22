@@ -1,0 +1,80 @@
+// Wholle new payout.. But it changes everything... 
+// Another way you could do this is just put an if / else around the header
+// but it sounds like you might want the capabilities to change meta tag & og information specificically different for this page.
+
+!!!
+%html
+  %head
+    - if content_for?(:meta_og)
+      = yield :meta_og
+    - else
+      %meta{:content => "Group Adventures Made By Travelers - MadebyAdventure", :property => "og:title"}/
+      // !!!
+      %meta{:content => "Adventure Travel Industry Consultants", :property => "og:site_name"}/
+      // !!!
+      %meta{:content => "Discover one of a kind group adventures created by travelers with local guides.", :property => "og:description"}/
+      %meta{:content => "website", :property => "og:type"}/
+      %meta{:content => "http://www.madebyadventure.com/", :property => "og:url"}/
+      %meta{:content => "http://i.imgur.com/hShb0MO.png", :property => "og:image"}/
+      %meta{:content => "1326", :property => "og:image:width"}/
+      %meta{:content => "700", :property => "og:image:height"}/
+
+    %title MadebyAdventure
+    = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}
+    / Prelang: Analytics / Google Analytics
+    = analytics_init if Rails.env.production? or Rails.env.development?
+    = favicon_link_tag 'adventuremade_favicon.ico'
+    = csrf_meta_tags
+
+    / Facebook Pixel Code
+    :javascript
+      !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+      n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+      document,'script','https://connect.facebook.net/en_US/fbevents.js');
+      
+      fbq('init', '1121657104555830');
+      fbq('track', "PageView");
+    %noscript
+      %img{:height => "1", :src => "https://www.facebook.com/tr?id=1121657104555830&ev=PageView&noscript=1", :style => "display:none", :width => "1"}/
+    / End Facebook Pixel Code
+
+  %body
+    #loader-overlay
+      .fa.fa-spinner.fa-spin
+
+    
+    / Button trigger modal
+    
+    / Modal
+    
+
+    /- if !current_user && controller_name != 'registrations'
+    /  #email-signup-now{"data-target" => "#signupModal", "data-toggle" => "modal", :type => "button"}
+    /    %span.fa-stack.fa-2x.email-capture
+    /      %i.fa.fa-circle.fa-stack-2x.email-capture-container
+    /      %i.fa.fa.fa-angle-left.fa-stack-1x.fa-inverse.email-capture-button
+
+    /  = render partial: "devise/shared/signup_modal"
+
+
+    = render partial: "elements/consulting_navbar"
+    = render partial: "devise/shared/basecamp_modal"    
+    = bootstrap_flash
+
+    = yield
+
+  %footer
+    - if controller_name != 'registrations' && controller_name != 'sessions'
+      = render partial: "elements/footer"
+
+:javascript
+  var _d_site = _d_site || '746CC09FADB10525E8E1336A';
+  (function(w, d, p, s, s2) {
+    w[p] = w[p] || function() { (w[p].q = w[p].q || []).push(arguments) };
+    s = d.createElement('script'); s.async = 1; s.src = '//widget.privy.com/assets/widget.js';
+    s2 = d.getElementsByTagName('script')[0]; s2.parentNode.insertBefore(s, s2);
+  })(window, document, 'Privy');
