@@ -1,4 +1,4 @@
-#header {
+#consulting_header {
 	top: 0px;
 	left: 0px;
 	width: 100%;
@@ -10,6 +10,7 @@
 	border: none;
 	margin-bottom: 0px;
 	border-radius: 0px;
+	display: none;
 
 	.navbar-brand {
 		background: asset-url("logos/headerlogo.png");
@@ -178,7 +179,7 @@
 
 
 @media screen and (max-width: 767px){
-	#header .navbar-brand{
+	#consulting_header .navbar-brand{
 		margin-top: -6px;
 		margin-left: 5px !important;
 		margin-bottom: 0px;
@@ -195,7 +196,7 @@
 		}
 	}
 
-	#header .mobile-navbar-navigation{
+	#consulting_header .mobile-navbar-navigation{
 		margin-top: 0px;
 	}
 
@@ -204,11 +205,11 @@
 		box-shadow: 0px 9px 9px #222 !important;
 	}
 
-	#header{
+	#consulting_header{
 		padding: 12px 0 0px 0px;
 	}
 
-	#header .btn.btn-default{
+	#consulting_header .btn.btn-default{
 		width: 100%;
 		background: transparent;
 		font-size: 16px;
@@ -222,7 +223,7 @@
 		}
 	}
 
-	#header .open .dropdown-menu{
+	#consulting_header .open .dropdown-menu{
 		margin: auto !important;
 		padding-top: 20px;
 
@@ -231,7 +232,7 @@
 		-o-transition: .3s ease-in-out;
 	}
 
-	#header .trip-dropdown{
+	#consulting_header .trip-dropdown{
 		font-size: 14px;
 		color: #212326 !important;
 		text-align: center;
@@ -247,11 +248,11 @@
 
 @media screen and (max-width: 500px){
 
-	#header .trip-dropdown-content{
+	#consulting_header .trip-dropdown-content{
 		min-width: 0px;
 	}
 
-	#header .btn.btn-default{
+	#consulting_header .btn.btn-default{
 		margin-right: 0px;
 		margin-left: 0px;
 	}

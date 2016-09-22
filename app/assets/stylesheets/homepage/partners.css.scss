@@ -5,7 +5,7 @@
 		background-size: cover !important;
 		height: 750px;
 		background-attachment: fixed !important;
-		padding-top: 240px;
+		padding-top: 220px;
 
 		.partners-title{
 			font-family: proxima_bold;
@@ -16,6 +16,38 @@
 			letter-spacing: -1px;
 			line-height: 72px;
 			margin: auto;
+			padding-bottom: 0px;
+		}
+
+		.partners-subtitle{
+			font-family: proxima_light;
+			font-size: 2em;
+			text-align: center;
+			color: #fff;
+			letter-spacing: -1px;
+			margin: auto;
+			padding-bottom: 24px;
+		}
+
+		.consulting-signup-btn{
+			max-width: 190px;
+			color: #fff;
+			margin: auto;
+			text-align: center;
+			height: 50px;
+			font-family: proxima_bold;
+			font-size: 1.2em;
+			padding-top: 14px;
+			background: #aa4b41;
+			border-radius: 4px;
+
+			-webkit-transition: .2s ease-in-out;
+			-moz-transition: .2s ease-in-out;
+			-o-transition: .2s ease-in-out;
+
+			&:hover{
+				max-width: 210px;
+			}
 		}
 	}
 
@@ -167,9 +199,13 @@
 @media screen and (max-width: 771px){
 
 	#partners .partners-banner .partners-title{
-		font-size: 3em;
-		max-width: 400px;
+		font-size: 2.2em;
 		line-height: 48px;
+	}
+
+	#partners .partners-banner .partners-subtitle{
+		font-size: 1.4em;
+		padding-bottom: 16px;
 	}
 
 	#partners .partners-details .partners-mission .partners-mission-text{
@@ -210,6 +246,11 @@
 		font-size: 2.2em;
 		max-width: 300px;
 		line-height: 36px;
+		padding-bottom: 16px;
+	}
+
+	#partners .partners-banner .partners-subtitle{
+		display: none;
 	}
 
 	#partners .partners-details .partners-mission .partners-mission-text{

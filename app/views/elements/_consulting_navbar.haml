@@ -1,4 +1,4 @@
-#header{role: "navigation"}
+#consulting_header{role: "navigation"}
   .container-fluid{style: "background: #fff; z-index: 1001; position: relative;"}
     .navbar-header
       %button.navbar-toggle.collapsed.mobile-navbar-navigation{"aria-expanded" => "false", "data-target" => "#bs-example-navbar-collapse-1", "data-toggle" => "collapse", :type => "button"}
@@ -9,19 +9,16 @@
       .col-md-12
         %a.navbar-brand{href: "/"}
     #bs-example-navbar-collapse-1.collapse.navbar-collapse.mobile-navbar-menu
-      %ul.nav.navbar-nav.navbar-left
-        %a{:href => "/projects"} 
-          .btn.btn-default
-            YOUR BRAND NEW HEADER
-        %a{:href => "/about-us"} 
-          .btn.btn-default
-            ITS BEAUTIFUL!!!!!!!
-        %a{:href => "/about-us"} 
-          .btn.btn-default
-            REALLY! GREAT JOB 
-        %a{:href => "/about-us"} 
-          .btn.btn-default
-            SHIT IS BEAUTRIFUL
+      %ul.nav.navbar-nav.navbar-right
+        %a.typeform-share{"data-mode" => "1", :href => "https://madebyadventure.typeform.com/to/BTT9KK", :target => "_blank", style: "float: left;"}
+          .btn.btn-default.consult-signup
+            Free Digital Audit
+
+
+
+:javascript
+
+  (function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}id=id+'_';if(!gi.call(d,id)){qs=ce.call(d,'link');qs.rel='stylesheet';qs.id=id;qs.href=b+'share-button.css';s=gt.call(d,'head')[0];s.appendChild(qs,s)}})()
 
 
 /        %a{:href => "/our-process"} 

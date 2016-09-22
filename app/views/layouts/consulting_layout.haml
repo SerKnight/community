@@ -1,4 +1,4 @@
-// Wholle new payout.. But it changes everything... 
+// Whole new payout.. But it changes everything... 
 // Another way you could do this is just put an if / else around the header
 // but it sounds like you might want the capabilities to change meta tag & og information specificically different for this page.
 
@@ -8,11 +8,11 @@
     - if content_for?(:meta_og)
       = yield :meta_og
     - else
-      %meta{:content => "Group Adventures Made By Travelers - MadebyAdventure", :property => "og:title"}/
+      %meta{:content => "Adventure Travel Digital Consultants - MadebyAdventure", :property => "og:title"}/
       // !!!
-      %meta{:content => "Adventure Travel Industry Consultants", :property => "og:site_name"}/
+      %meta{:content => "MadebyAdventure | Digital Consultants", :property => "og:site_name"}/
       // !!!
-      %meta{:content => "Discover one of a kind group adventures created by travelers with local guides.", :property => "og:description"}/
+      %meta{:content => "Travel Experiences Begin Online", :property => "og:description"}/
       %meta{:content => "website", :property => "og:type"}/
       %meta{:content => "http://www.madebyadventure.com/", :property => "og:url"}/
       %meta{:content => "http://i.imgur.com/hShb0MO.png", :property => "og:image"}/
