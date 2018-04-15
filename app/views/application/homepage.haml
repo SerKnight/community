@@ -16,19 +16,19 @@
 	
 %meta{:content => "o5F7lEA8dwxqpzBjzrEd_EQ_21zmTHh8ZyHmLxg9Ycg", :name => "google-site-verification"}/
 
-= render partial: 'homepage_banner'
-= render partial: 'how_it_works'
-= render partial: 'hiw_grid'
-= render partial: 'traveler_quotes'
 
 - if notice
 	:javascript
 		remove_notice(10);
 
-  
-/= render partial: 'trips_grid'
-/ = render partial: 'hero_image'
+/= render partial: 'hero_image'
+= render partial: 'homepage_banner'
+= render partial: 'how_it_works'
+
+= render partial: 'projects_grid'
 /= render partial: 'launch_trips'
+/= render partial: 'upcoming_trips'
+
 
 
 

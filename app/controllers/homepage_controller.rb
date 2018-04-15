@@ -9,6 +9,22 @@ class HomepageController < ApplicationController
 
   end
 
+  def thrivepass
+
+  end
+
+  def tourism_collective
+
+  end
+
+  def rio_samana
+
+  end
+
+  def baja_escape
+
+  end
+
   def trips_page
 
   end

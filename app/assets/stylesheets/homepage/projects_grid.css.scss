@@ -1,0 +1,371 @@
+#projects_grid{
+	background: rgba(0,0,0,0.01);
+	padding-top: 60px;
+	padding-bottom: 140px;
+
+	.grid_background{
+		width: 100%;
+	}
+
+	.grid_header{
+		min-height: 60px;
+		padding-bottom: 60px;
+	
+
+		.grid_title{
+			color: #15181B;
+			text-align: center;
+	
+
+			.grid_subtitle{
+				color: rgba(21, 24, 27, 0.6);
+				text-align: center;
+				max-width: 600px;
+				margin: auto;
+				padding-top: 20px;
+			}
+		}
+
+		.grid-title-underline{
+			max-width: 100px;
+			border-bottom: 4px solid #FFE52E;
+			margin-top: 30px !important;
+			margin: auto;
+		}
+	}
+
+	.grid-row{
+		margin-left: 15px;
+		margin-right: 15px;
+	}
+
+	.project-thumbnail-grid{
+		max-width: 1800px;
+		margin: auto;
+		width: 99%;
+		display: table;
+
+		.grid-container{
+			position: relative;
+			padding-left: 0px;
+			padding-right: 0px;
+
+			-moz-transition:-moz-transform 0.5s ease-in-out; 
+			-webkit-transition:-webkit-transform 0.5s ease-in-out; 
+			-o-transition:-o-transform 0.5s ease-in-out;
+
+			&:hover  {
+
+				.grid-img-overlay{
+					opacity: 1 !important;
+
+					.grid-btn{
+						bottom: 0px !important;
+						-webkit-transition: all 0.8s ease;
+						transition: all 0.8s ease;
+					}
+
+					.grid-underline-cta{
+						max-width: 100% !important;
+						bottom: 60px;
+						opacity: 1;
+					}
+				}
+
+				.grid-img{
+					-webkit-transform: scale(1.08);
+	      			-ms-transform: scale(1.08);
+	          		transform: scale(1.08);
+
+	          		.grid-mask{
+						background-color: rgba(20, 23, 26, 0.8) !important;
+						position: absolute;
+						-webkit-transition: all 0.8s ease !important;
+						transition: all 0.8s ease !important;
+					}
+				}
+
+				.grid-image-container{
+
+					.grid-text{
+						top: 40px;
+
+						.grid-title{
+							color: #FFE52E;
+						}
+
+						.grid-description{
+							opacity: 1 !important;
+						}
+
+						.grid-category{
+							color: #ffffff;
+						}
+					}
+				}
+			}
+
+			.grid-image-container{
+				position: relative;
+			    padding-right: 0px;
+				padding-left: 0px;
+			    min-height: 360px;
+			    margin: 10px;
+			    box-shadow: 0px 14px 12px rgba(0, 0, 0, 0.3);
+			    overflow: hidden;
+			    border-radius: 4px;
+			    -webkit-transition: all 0.5s ease;
+				transition: all 0.5s ease;
+
+				.grid-img{
+				    position: relative;
+				    padding-right: 0px;
+					padding-left: 0px;
+				    min-height: 360px;
+				    border-radius: 4px;
+				    overflow: hidden;
+				    -webkit-transition: all 0.5s ease;
+					transition: all 0.5s ease;
+
+					.grid-mask{
+						height: 100%;
+						width: 100%;
+						bottom: 0;
+						background: radial-gradient(rgba(20, 23, 26, 0), rgba(21, 24, 27,0.8));
+						background-color: rgba(21, 24, 27, 0.2);
+						position: absolute;
+						z-index: 1003;
+
+						-webkit-transition: all 0.8s ease;
+						transition: all 0.8s ease;
+					}
+				}
+
+				.grid-text{
+					padding-left: 20px;
+					padding-right: 20px;
+					position: absolute;
+					top: 200px;
+					float: left;
+					z-index: 1008;
+					pointer-events: none;
+					max-width: 640px;
+					-webkit-transition: all 0.8s ease;
+					transition: all 0.8s ease;
+
+
+					.grid-title{
+						font-family: lora_bolditalic;
+				  		color: #ffffff;
+				  		text-align: left;
+				  		border: none;
+				  		margin-right: auto;
+				  		margin-left: auto;
+				  		-webkit-transition: all 0.8s ease;
+						transition: all 0.8s ease;
+				  	}
+
+				  	.grid-category{
+				  		font-family: lora_italic;
+				  		color: #FFE52E;
+				  		font-size: 20px;
+				  		line-height: 32px;
+				  		text-align: left;
+				  		padding-top: 4px;
+				  		-webkit-transition: all 0.8s ease;
+						transition: all 0.8s ease;
+				  	}
+
+				  	.grid-title-dates{
+				  		display: none;
+						font-family: proxima_bold;
+				  		color: #17181B;
+				  		font-size: 1.0em;
+				  		text-align: left;
+				  		border: none;
+				  		margin-right: auto;
+				  		margin-left: auto;
+				  		padding-bottom: 10px;
+				  		-webkit-transition: all 0.7s ease;
+						transition: all 0.7s ease;
+				  	}
+
+				  	.grid-description{
+				  		opacity: 0;
+				  		font-family: proxima_light;
+				  		color: #ffffff;
+				  		font-size: 18px;
+				  		line-height: 28px;
+				  		text-align: left;
+				  		margin-right: auto;
+				  		margin-left: 0px;
+				  		padding-bottom: 20px;
+				  		padding-top: 8px;
+				  		-webkit-transition: all 0.5s ease;
+						transition: all 0.5s ease;
+				  	}
+				}
+
+				.grid-img-overlay{
+					opacity: 0;
+					width: 100%;
+			    	-webkit-transition: all 0.5s ease;
+					transition: all 0.5s ease;
+					z-index: 1003;
+					top: 0;
+					height: 100%;
+					border-radius: 4px;
+					position: absolute;
+					overflow: hidden;
+
+					.grid-underline-cta{
+						border-bottom: 4px solid #ffe52e;
+						width: 0%;
+						position: absolute;
+						bottom: 0px;
+						-webkit-transition: all 0.8s ease;
+						transition: all 0.8s ease;
+					}
+
+					.grid-btn{
+						display: none !important;
+						font-family: lora_bolditalic;
+						text-align: center;
+						font-size: 24px;
+						display: block;
+						width: 100%;
+						margin: auto;
+						color: #ffe52e;
+						min-height: 60px;
+						padding-top: 10px;
+						z-index: 1001;
+						position: absolute;
+						bottom: -40px;
+						box-shadow: inset 0px 14px 28px rgba(0,0,0,0.6);
+						border-radius: 0px;
+						border-bottom-left-radius: 4px;
+						border-bottom-right-radius: 4px;
+						border: none !important;
+
+						-webkit-transition: all 0.5s ease;
+						transition: all 0.5s ease;
+
+						&:hover{
+							background: rgba(21, 24, 27, 0.9);
+							color: #ffffff;
+							box-shadow: inset 0px 20px 36px rgba(0, 0, 0, 0.6);
+							background: rgba(255, 229, 46, 0.4);
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.your-adventure{
+	background: #00293c;
+	height: 448px;
+
+	.your-adventure-header{
+		font-family: proxima_bold;
+  		color: #fff;
+  		font-size: 3em;
+  		text-align: center;
+  		padding-top: 100px;
+	}
+
+	.your-adventure-body{
+		font-family: proxima_regular;
+  		color: #fff;
+  		font-size: 1.1em;
+  		text-align: center;
+  		max-width: 550px;
+  		margin: auto;
+  		padding-top: 12px;
+  		padding-bottom: 12px;
+	}
+
+	.your-adventure-btn{
+		font-family: proxima_bold;
+		text-align: center;
+		font-size: 1.2em;
+		color: #fff;
+		min-height: 40px;
+		max-width: 170px;
+		margin: auto;
+		padding-top: 7px;
+		-webkit-transition: all 0.7s ease;
+		transition: all 0.7s ease;
+		border-radius: 100px;
+		background-color: #aa4b41;
+		margin-top: 20px;
+
+		&:hover{
+			background-color: rgba(89,39,34,1);
+			-webkit-transition: all 0.4s ease;
+			transition: all 0.4s ease;
+			max-width: 200px;
+		}
+	}
+}
+
+@media screen and (max-width: 991px){
+
+	.grid-image-container{
+		max-width: 500px !important;
+		margin: auto !important;
+		margin-bottom: 20px !important;
+	}
+
+	.grid-text .grid-title{
+		font-size: 32px !important;
+		line-height: 48px !important;
+		letter-spacing: -0.6px !important;
+	}
+
+	.grid_title .grid_subtitle{
+		max-width: 500px;
+	}
+}
+
+@media screen and (max-width: 600px){
+
+	.grid-image-container{
+		max-width: 94% !important;
+		min-height: 300px !important;
+
+		.grid-img{
+			min-height: 300px !important;
+
+			.grid-mask{
+				background-color: rgba(21, 24, 27, 0.5) !important;
+			}
+		}
+
+		.grid-text{
+			top: 60px !important;
+		}
+	}
+
+	.grid-text .grid-title{
+		font-size: 24px !important;
+		line-height: 34px !important;
+		letter-spacing: -0.4px !important;
+	}
+
+	.your-adventure .your-adventure-header{
+		padding-top: 90px;
+		max-width: 340px;
+		margin: auto;
+		line-height: 50px;
+		font-size: 1.9em;
+	}
+
+	.your-adventure .your-adventure-body{
+		max-width: none;
+		margin: auto;
+		font-size: 1.0em;
+	}
+}
+

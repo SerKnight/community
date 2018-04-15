@@ -1,0 +1,74 @@
+#thrivepass{style: "background: #434649;"}
+
+	#thrivepass-trip-banner{style: "background: url('#{asset_path("background/Colombia-Rio-Samana-Rocks.jpeg")}') top center no-repeat"}
+
+		#thrivepass-trip-banner-content
+			#header-font.thrivepass-trip-banner-header
+				Fleeting Magic on the
+				<br>
+				%b{style: "color: #ffffff; font-family: lora_bolditalic;"} Río Samaná
+				
+	#thrivepass-mission
+
+		.thrivepass-mission-section
+
+			#header-font.thrivepass-mission-header
+				The Mission
+			#body-font.thrivepass-mission-description
+				Create a multi-week adventure travel experience, showing off the environment and activities central Colombia has to offer, while also recruiting a team of like-minded travelers.
+
+		.thrivepass-mission-grid
+			.thrivepass-mission-subsection
+				#body-font.thrivepass-mission-subsection-header
+					the location
+				#subheader-font.thrivepass-mission-subsection-description{:href => "http://thrivepass.com/"}
+					Rio Samaná, Colombia
+
+			.thrivepass-mission-subsection
+				#body-font.thrivepass-mission-subsection-header
+					the timeline
+				#subheader-font.thrivepass-mission-subsection-description
+					May '16
+
+	#thrivepass-adventure-trip-banner{style: "background: url('#{asset_path("background/Colombia-Rio-Samana-Merge.jpeg")}') center center no-repeat fixed"}
+		.thrivepass-adventure-trip-text
+			#header-font.thrivepass-adventure-trip-header
+				The Unexpected
+				%b{style: "font-family: lora_italic; color: #ffffff;"} Adventure
+			#body-font.thrivepass-adventure-trip-description
+				Our rafting trip spun into a 
+				%b{style: "font-family: lora_italic; color: #ffffff;"} conservation expedition.
+				Our local rafting team, Expedition Colombia, saw an opportunity to combine our mutual passion for the natural environment with our one-time itinerary. A local filmmaking crew joined our trip in order to document the current threat of dam construction, which will forever flood this extremely bio-diverse valley and displace many people from their home. 
+				<br>
+				<br>
+				There's a complex irony in rivers like the Samaná. They are 
+				%b{style: "font-family: lora_italic; color: #ffffff;"} bone-crushingly powerful
+				and
+				%b{style: "font-family: lora_italic; color: #ffffff;"} exceptionally fragile.
+				With expectations or resilience, we pollute and trash rivers without a second thought. Unappreciative of their raw impact, we dam them for hydroelectric power and the recreational benefits that idyllic reservoirs present.
+
+	#thrivepass-call-to-action-section
+
+
+		#header-font.thrivepass-call-to-action-header
+			Is your organization ready to be
+			%b{style: "font-family: lora_bolditalic; color: #434649;"} Made by Adventure
+			?
+		%a.typeform-share{"data-mode" => "1", :href => "https://madebyadventure.typeform.com/to/BTT9KK", :target => "_blank"}
+			.thrivepass-call-to-action-btn
+				let's talk
+
+
+
+:javascript
+	$(document).ready(function() {
+	$('#thrivepass-trip-banner-content').show();
+	$('#thrivepass-trip-banner-content').animate({ opacity: 1, top: "0px" }, 2000);
+	});
+
+	$(document).ready(function() {
+	$('#thrivepass-trip-banner').show();
+	$('#thrivepass-trip-banner').animate({ opacity: 1, height: "100vh" }, 2000);
+	});
+
+	(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}id=id+'_';if(!gi.call(d,id)){qs=ce.call(d,'link');qs.rel='stylesheet';qs.id=id;qs.href=b+'share-button.css';s=gt.call(d,'head')[0];s.appendChild(qs,s)}})()

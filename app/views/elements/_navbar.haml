@@ -1,35 +1,25 @@
-#header{role: "navigation"}
-  .container-fluid{style: "background: #fff; z-index: 1001; position: relative;"}
-    .navbar-header
-      %button.navbar-toggle.collapsed.mobile-navbar-navigation{"aria-expanded" => "false", "data-target" => "#bs-example-navbar-collapse-1", "data-toggle" => "collapse", :type => "button"}
-        %span.sr-only
-        %span.icon-bar
-        %span.icon-bar
-        %span.icon-bar
-      .col-md-12
-        %a.navbar-brand{href: "/"}
-    #bs-example-navbar-collapse-1.collapse.navbar-collapse.mobile-navbar-menu
-      %ul.nav.navbar-nav.navbar-left
-        %a{:href => "/projects"} 
-          .btn.btn-default
-            Current Projects
-        %a{:href => "/about-us"} 
-          .btn.btn-default
-            About Us
+%nav.Offscreen.Nav-List
+  %a.Button
+    %i.Menu-Bar.Menu-Top
+    %i.Menu-Bar.Menu-Middle
+    %i.Menu-Bar.Menu-Bottom
+    #mobile-nav-brand{:href => "http://www.madebyadventure.com/"}
+  %ul
+    %li
+      %a.nav-drawer-link{:href => "/"}
+        home
+    %li
+      %a.nav-drawer-link{:href => "/about-us"}
+        about us
+    %li
+      %a.nav-drawer-link.typeform-share{"data-mode" => "1", :href => "https://madebyadventure.typeform.com/to/BTT9KK", :target => "_blank"}
+        work with us
 
-/        %a{:href => "/our-process"} 
-/          .btn.btn-default
-/            Our Process
-/        %li.dropdown
-/          %a.dropdown-toggle.trip-dropdown{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
-/            Current Projects
-/          %ul.dropdown-menu.trip-dropdown-content
-/            %li
-/              %a.trip-dropdown-title{:href => "/morocco"} The Berber Traverse
-/            %li
-/              %a.trip-dropdown-title{:href => "/kyrgyzstan"} The Kyrgyz Republic
-/            %li
-/              %a.trip-dropdown-title{:href => "/peru"} Packrafting the Upper Amazon
 
-/ /.navbar-collapse
-/ /.container-fluid
+:javascript
+
+  $(".Button").on("click",function(e){
+    $(this).parent().toggleClass("is-Open");
+  });
+
+  (function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}id=id+'_';if(!gi.call(d,id)){qs=ce.call(d,'link');qs.rel='stylesheet';qs.id=id;qs.href=b+'share-button.css';s=gt.call(d,'head')[0];s.appendChild(qs,s)}})()

@@ -28,3 +28,27 @@ src: asset_url("ProximaNovaLight.otf");
 font-family: proxima_thin;
 src: asset_url("ProximaNovaThin.otf");
 }
+
+@font-face
+{
+font-family: lora_regular;
+src: asset_url("Lora-Regular.ttf");
+}
+
+@font-face
+{
+font-family: lora_bold;
+src: asset_url("Lora-Bold.ttf");
+}
+
+@font-face
+{
+font-family: lora_italic;
+src: asset_url("Lora-Italic.ttf");
+}
+
+@font-face
+{
+font-family: lora_bolditalic;
+src: asset_url("Lora-BoldItalic.ttf");
+}

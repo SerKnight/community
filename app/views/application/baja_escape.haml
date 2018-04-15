@@ -1,0 +1,67 @@
+#thrivepass
+
+	#thrivepass-banner{style: "background-size: cover !important; background: url('#{asset_path("background/Baja-Escape-Truck.png")}') center center no-repeat"}
+
+		#thrivepass-banner-content
+			#header-font.thrivepass-banner-header
+				Stuck Together in the
+				<br>
+				%b{style: "color: #434649; font-family: lora_bolditalic;"} Baja Escape
+				
+	#thrivepass-mission
+
+		.thrivepass-mission-section
+
+			#header-font.thrivepass-mission-header
+				The Mission
+			#body-font.thrivepass-mission-description
+				Create a unique, one-time experience for a group to connect with Baja's natural beauty and culture by camping and surfing along the Pacific coast.
+
+		.thrivepass-mission-grid
+			.thrivepass-mission-subsection
+				#body-font.thrivepass-mission-subsection-header
+					the location
+				#subheader-font.thrivepass-mission-subsection-description{:href => "http://thrivepass.com/"}
+					Baja, Mexico
+
+			.thrivepass-mission-subsection
+				#body-font.thrivepass-mission-subsection-header
+					the timeline
+				#subheader-font.thrivepass-mission-subsection-description
+					October '16
+
+	#thrivepass-adventure-trip-banner{style: "background: url('#{asset_path("background/Baja-Escape-Bus.jpg")}') center center no-repeat fixed"}
+		.thrivepass-adventure-trip-text
+			#header-font.thrivepass-adventure-trip-header
+				The Unexpected
+				%b{style: "font-family: lora_italic; color: #ffffff;"} Adventure
+			#body-font.thrivepass-adventure-trip-description
+				A getaway camping experience turned into the ultimate team building event when our truck, followed by our bus, got stuck in a rocky grave turned clay-trap for an entire day beneath the blazing sun. Through relentless digging efforts, comical trial and error, and working together with locals and massive machinery, we set our bus free and 
+				%b{style: "font-family: lora_italic; color: #ffffff;"}grew infinitely closer through unexpected problem-solving. 
+				To this day, our 17-person Made by Adventure team stays in close contact and regards the truck and bus getting stuck as the best part of the journey.
+
+	#thrivepass-call-to-action-section
+
+
+		#header-font.thrivepass-call-to-action-header
+			Is your organization ready to be
+			%b{style: "font-family: lora_bolditalic; color: #434649;"} Made by Adventure
+			?
+		%a.typeform-share{"data-mode" => "1", :href => "https://madebyadventure.typeform.com/to/BTT9KK", :target => "_blank"}
+			.thrivepass-call-to-action-btn
+				let's talk
+
+
+
+:javascript
+	$(document).ready(function() {
+	$('#thrivepass-banner-content').show();
+	$('#thrivepass-banner-content').animate({ opacity: 1, top: "0px" }, 1400);
+	});
+
+	$(document).ready(function() {
+	$('#thrivepass-banner').show();
+	$('#thrivepass-banner').animate({ opacity: 1, top: "0px" }, 1400);
+	});
+
+	(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}id=id+'_';if(!gi.call(d,id)){qs=ce.call(d,'link');qs.rel='stylesheet';qs.id=id;qs.href=b+'share-button.css';s=gt.call(d,'head')[0];s.appendChild(qs,s)}})()

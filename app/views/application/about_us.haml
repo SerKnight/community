@@ -17,21 +17,40 @@
 
 #about_us
 
-	.about_us_banner{style: "background: url('#{asset_path("background/CamCliffPicNoLogo.jpeg")}') bottom center no-repeat"}
-		.about_us_title
-			Why do we do this?
+	.about_us_banner{style: "background: url('#{asset_path("background/MBA-Mountains.jpg")}') top center no-repeat"}
+		#header-font.about_us_title
+			About Made by Adventure
+		#body-font.about_us_subtitle
+			People don’t make adventures, adventures make people.
 
 	.col-md-12.about_us_container
-		.about_us_explanation_bold
+		#subheader-font.about_us_explanation_bold
 			We believe...
-		.about_us_explanation
-			travel can be used as a force for good. It can evoke empathy, bring people together and tell meaningful stories. It can be a tool for wealth distribution and economic empowerment.
+		#body-font.about_us_explanation
+			Adventure lies where certainty ends and evolution can begin. Where positive development is possible due to the unexpected events, changes, challenges and unknown will shape you.
 			<br>
 			<br>
-			Unfortunately, travel is frequently oversimplified; dominated by bucketlists, social media “likes”, and mass produced itineraries. It is often dismissive of the needs of local people, ecosystems, and strangely enough, travelers themselves.
+			We believe travel can be used as a force for good. It can evoke empathy, bring people together and tell meaningful stories. It can be a tool for wealth distribution and economic empowerment.
+			<br>
+			<br>
+			We believe travel is frequently oversimplified; dominated by bucketlists, social media “likes”, and mass produced experiences and expectations. It's often dismissive of the needs of residents, ecosystems, and strangely enough, travelers themselves.
 			<br>
 			<br>
 			By engaging people early to create shared experiences, we’re setting the stage for more accurate and well rounded stories. Stories that capture the spirit of a place and provide the lens for a more optimistic future. Stories of involvement, empowerment, and accurate representation. Stories of travel done right.
+
+	#contact-us-section.col-md-12{style: "background: url('#{asset_path("background/MBA-Footer-Image.png")}') bottom center no-repeat"}
+		#header-font.contact_us_title
+			What's Your Adventure?
+		#body-font.contact_us_subtitle
+			We're always interested in new projects and challenges.
+		%a{href: "/contact-us"}
+			.about-us-contact-btn
+				Connect with us
+		%a{href: "/consulting"}
+			.work-with-us-contact-btn
+				What we do
+
+
 		.about_us_who
 			.col-md-6.founder_container
 				.founder_image
@@ -45,7 +64,5 @@
 					Max Joles
 				.founder_description
 					After founding two adventure travel organizations and working with local adventure travel guides, Jon has put full effots into MadebyAdventure and finding the best way possible to spread the travel bug and positive impacts.
-		%a{href: "/contact-us"}
-			.about-us-contact-btn
-				Connect with us
+
 

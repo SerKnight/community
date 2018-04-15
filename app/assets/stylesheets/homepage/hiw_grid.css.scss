@@ -1,272 +1,276 @@
 #hiw_grid{
-	background: #fff;
-	min-height: 650px;
-	width: 90%;
+	width: 100%;
 	margin: auto;
-	margin-bottom: 60px;
-	min-width: 1000px;
+	float: left;
 
 	.mobile_grid_background{
 		width: 100%;
 	}
 
-	.grid-container{
-		width: 100%;
-		margin: auto;
+	.grid_header{
+		min-height: 60px;
+		padding-top: 40px;
+		padding-bottom: 20px;
+	
 
-		.grid_header{
-			min-height: 60px;
-			padding-top: 40px;
-			padding-bottom: 20px;
-		
+		.grid_title{
+			font-family: lora_regular;
+			font-size: 48px;
+			color: #454A57;
+			text-align: center;
+	
 
-			.grid_title{
-				font-family: proxima_bold;
-				font-size: 3em;
-				color: #212326;
+			.grid_subtitle{
+				font-family: proxima_regular;
+				font-size: 16px;
+				color: rgba(33,35,38,0.8);
 				text-align: center;
-		
-
-				.grid_subtitle{
-					font-family: proxima_regular;
-					font-size: 16px;
-					color: rgba(33,35,38,0.8);
-					text-align: center;
-					max-width: 500px;
-					margin: auto;
-					display: none;
-				}
-			}
-
-			.grid-title-underline{
-				max-width: 100px;
-				border-bottom: 4px solid #aa4b41;
-				margin-top: 20px;
+				max-width: 500px;
 				margin: auto;
-				padding-top: 20px;
-				margin-bottom: 20px;
+				display: none;
 			}
 		}
 
-		.mobile-grid{
-			min-height: 390px;
-			position: relative;
-			padding-right: 0px;
-			padding-left: 0px;
-			margin-bottom: 20px;
-			overflow: hidden;
+		.grid-title-underline{
+			max-width: 100px;
+			border-bottom: 4px solid #ffe52e;
+			margin-top: 20px;
 			margin: auto;
-			max-width: 500px;
+			padding-top: 20px;
+			margin-bottom: 20px;
+		}
+	}
 
-			&:hover{
+	.mobile-grid{
+		min-height: 660px;
+		position: relative;
+		padding-right: 0px;
+		padding-left: 0px;
+		margin-bottom: 90px !important;
+		overflow: hidden;
+		margin: auto;
+		max-width: 500px;
+		padding-top: 30px;
 
-				.locationtext{
-					opacity: 1 !important;
-					background-color: rgba(33,35,38,0.9);
-					-webkit-transition: all 0.3s ease-in-out;
-					transition: all 0.3s ease-in-out;
-				}
-			}
-
-			.mobile-grid-img{
-			    background-repeat: no-repeat;
-			    background-size: cover;
-			    background-position: center center;
-			    position: relative;
-			    min-height: 260px;
-			    width: 100%;
-			    overflow: hidden;
-			}
-
-			.mobile-grid-overlay{
-				font-family: proxima_thin;
-				text-align: center;
-				font-size: 3em;
-				color: #fff;
-				text-align: center;
-				width:100%;
-				min-height:400px;
-				position:absolute;
-				margin-top: 160px;
-				top:0;
-				left:0;
-				opacity:0;
-				-webkit-transition: all 0.7s ease;
-				transition: all 0.7s ease;
-			}
-
-		  	.mobile-grid-info{
-		  		background: #fff;
-		  		padding-left: 8px;
-		  		padding-right: 8px;
-		  		padding-top: 12px;
-		  		padding-bottom: 12px;
-
-		  		.mobile-grid-arrow-expand{
-		  			background: #212326;
-		  			max-width: 60px;
-		  			height: 30px;
-		  			margin: auto;
-		  			margin-top: -30px;
-		  			position: relative;
-		  			z-index: 1001;
-		  			box-shadow: 0px 0px 14px #fff;
-		  		}
-
-		  		.mobile-grid-title{
-					font-family: proxima_regular;
-			    	color: #212326;
-			    	text-align: left;
-			    	font-size: 1.8em;
-			    	padding-top: 12px;
-			    	padding-bottom: 12px;
-			    	margin-top: 10px;
-			    	margin-bottom: 10px;
-			    	letter-spacing: -1px;
-			    	overflow: hidden;
-			    	max-width: 400px;
-			    	margin: auto;
-
-					.mobile-grid-subtitle{
-			    		font-family: proxima_bold;
-				    	font-size: 14px;
-				    	letter-spacing: 0px;
-				    	padding-top: 8px;
-				    }
-			    }
-
-			    .mobile-grid-description{
-			  		font-family: proxima_regular;
-			  		color: rgba(33, 35, 38, 0.75);
-			  		font-size: 1.2em;
-			  		text-align: left;
-			  		border: none;
-			  		margin-right: auto;
-			  		margin-left: auto;
-			  		max-width: 400px;
-			  		padding-bottom: 18px;
-			  	}
-
-			  	.mobile-grid-travelers{
-			  		padding-top: 8px;
-			  		padding-bottom: 8px;
-			  		display: flex;
-			  		max-width: 370px;
-			  		margin: auto;
-			  		display: none;
-
-			  		.traveler-icon{
-			  			height: 48px;
-			  			width: 48px;
-			  			margin: auto;
-			  			z-index: 1001;
-			  			position: relative;
-			  			border: 1px solid #f5f5f5;
-			  			background: transparent;
-			  			border-radius: 50%;
-
-			  			.traveler-icon-additional{
-			  				font-family: proxima_bold;
-			  				font-size: 1em;
-			  				text-align: center;
-			  				color: #212326;
-			  				padding-top: 15px;
-			  			}
-			  		}
-			  	}
-
-			  	.mobile-grid-launch-count{
-			  		font-family: proxima_regular;
-			  		font-size: 1em;
-			  		text-align: center;
-					color: #fff;
-					background: #00293c;
-					display: none;
-			  	}
-			}
-
-		  	.mobile-grid-dates{
-				font-family: proxima_bold;
-		  		color: #fff;
-		  		font-size: 1.0em;
-		  		text-align: center;
-		  		border: none;
-		  		margin-right: auto;
-		  		margin-left: auto;
-		  		padding-bottom: 10px;
-		  		-webkit-transition: all 0.7s ease;
-				transition: all 0.7s ease;
-		  	}
-
-		  	.mobile-grid-location{
-		  		font-family: proxima_regular;
-		  		color: #212326;
-		  		font-size: 1.2em;
-		  		text-align: center;
-		  		border: none;
-		  		padding-bottom: 10px;
-		  		margin-right: auto;
-		  		margin-left: auto;
-		  		-webkit-transition: all 0.7s ease;
-				transition: all 0.7s ease;
-		  	}
-
-			.mobile-grid-btn{
-				font-family: proxima_bold;
-				text-align: center;
-				font-size: 1em;
-				color: #fff;
-				min-height: 32px;
-				margin-top: 20px;
-				-webkit-transition: all 0.5s ease;
-				transition: all 0.5s ease;
-				border-radius: 0px;
-				background-color: transparent;
-				padding-top: 6px;
-				border: 2px solid rgba(255,255,255,0.8);
-
-				&:hover{
-					background-color: rgba(170, 75, 65, 0.5);
-					border-color: #fff;
-					-webkit-transition: all 0.5s ease;
-					transition: all 0.5s ease;
-				}
-			}
+		&:hover{
 
 			.locationtext{
-				opacity: 0;
-				min-height: 176px;
-				position: absolute;
-				height: 100%;
-				-webkit-transition: all 0.5s ease;
-				transition: all 0.5s ease;
-				background: #212326;
-				width: 100%;
-
-			    .mobile-grid-grabber{
-			    	font-family: proxima_regular;
-			    	color: #f5f5f5;
-			    	font-size: 1.2em;
-			    	text-align: center;
-			    	padding-left: 20px;
-			    	padding-right: 20px;
-			    	padding-top: 60px;
-			    	max-width: 300px;
-			    	margin: auto;
-			    }
+				opacity: 1 !important;
+				background-color: rgba(33,35,38,0.9);
+				-webkit-transition: all 0.3s ease-in-out;
+				transition: all 0.3s ease-in-out;
 			}
+		}
 
-			.mobile-grid-text{
-		  		font-family: proxima_thin;
-		  		color: #FFF;
-		  		font-size: 1.4em;
-		  		width: 360px;
-		  		margin: auto;
-		  		padding-top: 20px;
-		  		opacity:0;
-				-webkit-transition: all 0.7s ease;
-				transition: all 0.7s ease;
+		&.withborderedsides{
+			border-left: 1px solid rgba(0,0,0,0.1);
+			border-right: 1px solid rgba(0,0,0,0.1);
+		}
+
+		.mobile-grid-img{
+		    background-repeat: no-repeat;
+		    background-size: cover;
+		    background-position: center center;
+		    position: relative;
+		    min-height: 260px;
+		    overflow: hidden;
+		    border-radius: 4px;
+		    margin-left: 20px;
+		    margin-right: 20px;
+		}
+
+		.mobile-grid-overlay{
+			font-family: proxima_thin;
+			text-align: center;
+			font-size: 3em;
+			color: #fff;
+			text-align: center;
+			width:100%;
+			min-height:400px;
+			position:absolute;
+			margin-top: 160px;
+			top:0;
+			left:0;
+			opacity:0;
+			-webkit-transition: all 0.7s ease;
+			transition: all 0.7s ease;
+		}
+
+	  	.mobile-grid-info{
+	  		background: #fff;
+	  		padding-left: 20px;
+	  		padding-right: 20px;
+	  		padding-top: 12px;
+	  		padding-bottom: 12px;
+
+	  		.mobile-grid-arrow-expand{
+	  			background: #212326;
+	  			max-width: 60px;
+	  			height: 30px;
+	  			margin: auto;
+	  			margin-top: -30px;
+	  			position: relative;
+	  			z-index: 1001;
+	  			box-shadow: 0px 0px 14px #fff;
+	  		}
+
+	  		.mobile-grid-title{
+				font-family: lora_regular;
+		    	color: #454A57;
+		    	text-align: left;
+		    	font-size: 32px;
+		    	padding-top: 12px;
+		    	padding-bottom: 18px;
+		    	margin-top: 10px;
+		    	margin-bottom: 10px;
+		    	overflow: hidden;
+		    	max-width: 100%;
+		    	margin: auto;
+
+				.mobile-grid-subtitle{
+		    		font-family: lora_italic;
+			    	font-size: 18px;
+			    	padding-top: 12px;
+			    	line-height: 32px;
+			    	color: rgba(69, 74, 87, 0.75);
+			    }
+		    }
+
+		    .mobile-grid-description{
+		  		font-family: proxima_regular;
+		  		color: rgba(33, 35, 38, 0.6);
+		  		font-size: 18px;
+		  		line-height: 32px;
+		  		text-align: left;
+		  		border: none;
+		  		margin-right: auto;
+		  		margin-left: auto;
+		  		max-width: 100%;
+		  		padding-bottom: 18px;
 		  	}
+
+		  	.mobile-grid-travelers{
+		  		padding-top: 8px;
+		  		padding-bottom: 8px;
+		  		display: flex;
+		  		max-width: 370px;
+		  		margin: auto;
+		  		display: none;
+
+		  		.traveler-icon{
+		  			height: 48px;
+		  			width: 48px;
+		  			margin: auto;
+		  			z-index: 1001;
+		  			position: relative;
+		  			border: 1px solid #f5f5f5;
+		  			background: transparent;
+		  			border-radius: 50%;
+
+		  			.traveler-icon-additional{
+		  				font-family: proxima_bold;
+		  				font-size: 1em;
+		  				text-align: center;
+		  				color: #212326;
+		  				padding-top: 15px;
+		  			}
+		  		}
+		  	}
+
+		  	.mobile-grid-launch-count{
+		  		font-family: proxima_regular;
+		  		font-size: 1em;
+		  		text-align: center;
+				color: #fff;
+				background: #00293c;
+				display: none;
+		  	}
+		}
+
+	  	.mobile-grid-dates{
+			font-family: proxima_bold;
+	  		color: #fff;
+	  		font-size: 1.0em;
+	  		text-align: center;
+	  		border: none;
+	  		margin-right: auto;
+	  		margin-left: auto;
+	  		padding-bottom: 10px;
+	  		-webkit-transition: all 0.7s ease;
+			transition: all 0.7s ease;
+	  	}
+
+	  	.mobile-grid-location{
+	  		font-family: proxima_regular;
+	  		color: #212326;
+	  		font-size: 1.2em;
+	  		text-align: center;
+	  		border: none;
+	  		padding-bottom: 10px;
+	  		margin-right: auto;
+	  		margin-left: auto;
+	  		-webkit-transition: all 0.7s ease;
+			transition: all 0.7s ease;
+	  	}
+
+		.mobile-grid-btn{
+			font-family: lora_regular;
+			text-align: center;
+			font-size: 18px;
+			color: #ffffff;
+			min-height: 32px;
+			margin-top: 20px !important;
+			-webkit-transition: all 0.3s ease;
+			transition: all 0.3s ease;
+			border-radius: 4px;
+			padding-top: 6px;
+			max-width: 200px;
+			margin: auto;
+			display: grid;
+			text-decoration: none !important;
+			background: #ffe52e;
+			color: #454A57;
+
+			&:hover{
+				background: #d6c026;
+				box-shadow: none;
+				color: #ffffff;
+				-webkit-transition: all 0.3s ease;
+				transition: all 0.3s ease;
+			}
+		}
+
+		.locationtext{
+			opacity: 0;
+			min-height: 176px;
+			position: absolute;
+			height: 100%;
+			-webkit-transition: all 0.5s ease;
+			transition: all 0.5s ease;
+			background: #212326;
+			width: 100%;
+
+		    .mobile-grid-grabber{
+		    	font-family: lora_regular;
+		    	color: #ffffff;
+		    	font-size: 20px;
+		    	text-align: center;
+		    	padding-top: 60px;
+		    	max-width: 300px;
+		    	margin: auto;
+		    }
+		}
+
+		.mobile-grid-text{
+	  		font-family: proxima_thin;
+	  		color: #FFF;
+	  		font-size: 1.4em;
+	  		width: 360px;
+	  		margin: auto;
+	  		padding-top: 20px;
+	  		opacity:0;
+			-webkit-transition: all 0.7s ease;
+			transition: all 0.7s ease;
 		}
 	}
 }
@@ -280,9 +284,8 @@
 		min-width: 0px;
 	}
 
-	#hiw_grid .grid-container .mobile-grid{
+	#hiw_grid .mobile-grid{
 		margin-top: 12px;
-		box-shadow: 2px 2px 3px rgba(0,0,0,0.3);
 	}
 
 	#hiw_grid .mobile-grid .mobile-grid-title{
@@ -322,7 +325,7 @@
 
 @media screen and (max-width: 500px){
 
-	#hiw_grid .grid-container{
+	#hiw_grid{
 		width: 99% !important;
 	}
 
@@ -337,7 +340,7 @@
 		padding-top: 8px;
 	}
 
-	#hiw_grid .grid-container .grid_header .grid_title{
+	#hiw_grid .grid_header .grid_title{
 		font-size: 1.4em !important;
 	}
 
@@ -345,12 +348,12 @@
 		font-size: 14px;
 	}
 
-	#hiw_grid .grid-container .grid_header{
+	#hiw_grid .grid_header{
 		padding-top: 20px;
 		padding-bottom: 2px;
 	}
 
-	#hiw_grid .grid-container .mobile-grid .mobile-grid-img{
+	#hiw_grid .mobile-grid .mobile-grid-img{
 		min-height: 200px;
 	}
 
@@ -360,16 +363,16 @@
 		padding-bottom: 6px !important;
 	}
 
-	#hiw_grid .grid-container .mobile-grid .mobile-grid-info .mobile-grid-title .mobile-grid-subtitle{
+	#hiw_grid .mobile-grid .mobile-grid-info .mobile-grid-title .mobile-grid-subtitle{
 		padding-top: 2px;
 		font-family: proxima_regular;
 	}
 
-	#hiw_grid .grid-container .mobile-grid .mobile-grid-info .mobile-grid-description{
+	#hiw_grid .mobile-grid .mobile-grid-info .mobile-grid-description{
 		font-size: 1em;
 	}
 
-	#hiw_grid .grid-container .mobile-grid .locationtext .mobile-grid-grabber{
+	#hiw_grid .mobile-grid .locationtext .mobile-grid-grabber{
 		padding-top: 40px !important;
 		font-size: 1em;
 	}

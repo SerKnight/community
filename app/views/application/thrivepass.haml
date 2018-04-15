@@ -1,0 +1,68 @@
+#thrivepass
+
+	#thrivepass-banner{style: "background: url('#{asset_path("background/MBA-ThrivePass-Banner.png")}') center bottom no-repeat"}
+
+		#thrivepass-banner-content
+			#header-font.thrivepass-banner-header
+				Rethinking the 
+				<br>
+				%b{style: "color: #434649; font-family: lora_bolditalic;"} Employee Benefits
+				<br>
+				Experience
+
+	#thrivepass-mission
+
+		.thrivepass-mission-section
+
+			#header-font.thrivepass-mission-header
+				The Mission
+			#body-font.thrivepass-mission-description
+				Create an innovative user experience and interface for a web application used by employees around the world and also manage the developement process.
+
+		.thrivepass-mission-grid
+			.thrivepass-mission-subsection
+				#body-font.thrivepass-mission-subsection-header
+					the client
+				#subheader-font.thrivepass-mission-subsection-description{:href => "http://thrivepass.com/"}
+					ThrivePass
+
+			.thrivepass-mission-subsection
+				#body-font.thrivepass-mission-subsection-header
+					the timeline
+				#subheader-font.thrivepass-mission-subsection-description
+					Sept. '17 - Feb. '18
+
+	#thrivepass-adventure-banner{style: "background: url('#{asset_path("background/MBA-ThrivePass-Mobile.png")}') center center no-repeat fixed"}
+		.thrivepass-adventure-text
+			#header-font.thrivepass-adventure-header
+				The Adventure
+			#body-font.thrivepass-adventure-description
+				While designing an application covering everything from a two-sided marketplace and gym stipends to wearable device challenges and pre-tax benefits, we discovered the
+				%b{style: "font-family: lora_italic; color: #ffffff;"}importance of employee wellbeing 
+				and its effects on retaining and attracting talent.
+
+	#thrivepass-call-to-action-section
+
+
+		#header-font.thrivepass-call-to-action-header
+			Is your organization ready to be
+			%b{style: "font-family: lora_bolditalic; color: #434649;"} Made by Adventure
+			?
+		%a.typeform-share{"data-mode" => "1", :href => "https://madebyadventure.typeform.com/to/BTT9KK", :target => "_blank"}
+			.thrivepass-call-to-action-btn
+				let's talk
+
+
+
+:javascript
+	$(document).ready(function() {
+	$('#thrivepass-banner-content').show();
+	$('#thrivepass-banner-content').animate({ opacity: 1, top: "0px" }, 1400);
+	});
+
+	$(document).ready(function() {
+	$('#thrivepass-banner').show();
+	$('#thrivepass-banner').animate({ opacity: 1, top: "0px" }, 1400);
+	});
+
+	(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}id=id+'_';if(!gi.call(d,id)){qs=ce.call(d,'link');qs.rel='stylesheet';qs.id=id;qs.href=b+'share-button.css';s=gt.call(d,'head')[0];s.appendChild(qs,s)}})()

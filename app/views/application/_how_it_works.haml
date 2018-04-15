@@ -1,17 +1,32 @@
 #how_it_works
 
-	.col-md-12.mission-statement
-		.mission-block
-			.mission-block-content
-				.mission-description-bold
-					Our Mission
-				.mission-description
-					We believe travel can be used as a force for good. Our mission is to widen perspectives, evoke empathy and bring the world closer through undeniably exciting experiences.
-					<br>
-					%a{:href => "/our-process"} More about our process.
+	.col-md-5.mission-image{style: "background: url('#{asset_path("background/MBATrianglesShadow.png")}') center center no-repeat"}
 
-/We bring together travelers, local guides and social causes to launch unique and purposeful group trips. Our mission is to widen perspectives, evoke empathy and bring the world closer through undeniably adventureous experiences.
-	
+	.col-md-7.mission-statement
+		#header-font.mission-description-header
+			We're an on-demand
+			<br>
+			%b{style: "color: #15181B; font-family: lora_bolditalic; text-decoration: underline #FFE52E; letter-spacing: 0px;"}
+				design & strategy
+			team.
+
+		#body-font.mission-description
+			We partner with ambitious organizations to accelerate positive impact and solve complex challenges.
+
+	#how-it-works-call-to-action.col-md-12
+		#subheader-font.how-it-works-call-to-action-text
+			What we do
+		.how-it-works-down-link
+			.fa.fa-angle-double-down
+
+
+:javascript
+
+	$("#how-it-works-call-to-action").click(function() {
+		$('html, body').animate({
+			scrollTop: $("#projects_grid").offset().top
+		}, 800);
+	});
 
 /	.col-md-12.how-it-works-thumbnails
 /		.col-md-10.col-md-offset-1.explainer_steps
@@ -24,19 +39,21 @@
 /				.explainer_step_image{style: "background: url('#{asset_path("background/JoinATripfinal.png")}') center center no-repeat"}
 /				.explainer_step_mobile
 /					.explainer_step_mobile_text
-/						Discover outbound trips and connect with those who’ve committed to going.
+/						Discover outbound trips and connect with those who’ve committed to going.			
 
-			
+/	.container
+/		.col-md-6.hiw_panel
+/			.howitworkstitle
+/				Choose an Adventure
+/			.hiw-explainer
+/				From beaches to mountains, select the adventure and travelers that fit your travel needs.
+/		.col-md-6.hiw_panel
+/			.howitworkstitle
+/				Create an Adventure
+/			.hiw-explainer
+/				Tell us your dream travel adventure and we'll connect you with those who can make it a reality.
 
 
-/  .container
-/    .col-md-6.hiw_panel
-/      .howitworkstitle
-/        Choose an Adventure
-/      .hiw-explainer
-/        From beaches to mountains, select the adventure and travelers that fit your travel needs.
-/    .col-md-6.hiw_panel
-/      .howitworkstitle
-/        Create an Adventure
-/      .hiw-explainer
-/        Tell us your dream travel adventure and we'll connect you with those who can make it a reality.
+/ We bring together travelers, local guides and social causes to launch unique and purposeful group trips. Our mission is to widen perspectives, evoke empathy and bring the world closer through undeniably adventureous experiences.
+
+/Our mission is to encourage impactful tourism through community, storytelling, and technology. We seek to widen perspectives, evoke empathy and bring the world closer through undeniably exciting experiences.

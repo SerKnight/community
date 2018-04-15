@@ -1,14 +1,46 @@
 .banner
 
-	.banner-image{style: "background: url('#{asset_path("background/indiacamping.jpeg")}') bottom center no-repeat"}
+	#banner-image{style: "background: url('#{asset_path("background/MBADarkBanner.png")}') right center no-repeat"}
 
 		#banner-content
-			.banner-header
-				Adventures
+			#header-font.banner-header
+				Willingness to embrace the unknown allows us to be 
+				<br>
+				%b{style: "font-family: lora_italic; color: #ffe52e;"} Made by Adventure
 			.banner-small-header
-				with a mission
-			.banner-description
-				Connecting people and places through travel.
+				Encouraging impactful tourism through community, storytelling, and technology.
 			%a{:href => "/projects"}
 				.banner-btn
-					Explore Projects
+					Learn more
+
+		#banner-call-to-action
+			#subheader-font.banner-call-to-action-text
+				Who we are
+			.banner-down-link
+				.fa.fa-angle-double-down
+
+	#contact-us-header
+		%a.typeform-share{"data-mode" => "1", :href => "https://madebyadventure.typeform.com/to/BTT9KK", :target => "_blank"}
+			#subheader-font.contact-us-header-text
+				Work with us
+				.fa.fa-angle-double-right{style: "color: #ffffff; padding-left: 12px; font-size: 26px;"}
+
+
+:javascript
+	$(document).ready(function() {
+	$('#banner-content').show();
+	$('#banner-content').animate({ opacity: 1, top: "0px" }, 1400);
+	});
+
+	$(document).ready(function() {
+	$('#banner-image').show();
+	$('#banner-image').animate({ opacity: 1, marginTop: "0px" }, 1400);
+	});
+
+	$("#banner-call-to-action").click(function() {
+		$('html, body').animate({
+			scrollTop: $("#how_it_works").offset().top
+		}, 800);
+	});
+
+	(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}id=id+'_';if(!gi.call(d,id)){qs=ce.call(d,'link');qs.rel='stylesheet';qs.id=id;qs.href=b+'share-button.css';s=gt.call(d,'head')[0];s.appendChild(qs,s)}})()
