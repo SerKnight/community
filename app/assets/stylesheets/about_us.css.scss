@@ -44,6 +44,7 @@
 		background-size: contain !important;
 		height: 100vh;
 		background-color: #ffffff !important;
+		padding-top: 40px;
 
 		.contact_us_title{
 			text-align: center;
@@ -139,13 +140,55 @@
 	
 	#about_us .about_us_banner{
 		height: 360px;
+		background-position: bottom center !important;
+		background-attachment: scroll !important;
+	}
+
+	.about_us_banner.about_mobile_banner{
+		background: url('#{asset_path("background/MBA-About-Mobile.png")}') !important;
+		background-position: bottom center no-repeat;
+	}
+
+	#about_us .about_us_banner .about_us_title{
+		padding-top: 120px;
+		max-width: 500px;
+		margin: auto
+	}
+
+	#about_us .about_us_banner .about_us_title{
+		max-width: 500px;
+		margin: auto
+	}
+
+	#contact-us-section{
+		padding-top: 80px;
+	}
+
+	#about_us #contact-us-section .contact_us_title{
+		max-width: 500px;
+		margin: auto
+	}
+
+	#about_us #contact-us-section .contact_us_subtitle{
+		max-width: 500px;
+		margin: auto
 	}
 }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 600px){
 
 
 	#about_us .about_us_banner{
 		background-position: left !important;
+	}
+
+	#about_us .about_us_banner .about_us_subtitle{
+		max-width: 300px;
+		margin: auto
+	}
+
+	#about_us #contact-us-section .contact_us_subtitle{
+		max-width: 300px;
+		margin: auto
 	}
 }
