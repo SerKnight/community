@@ -1,10 +1,11 @@
 #projects_grid{
 	background: rgba(0,0,0,0.01);
 	padding-top: 60px;
-	padding-bottom: 140px;
 
 	.grid_background{
 		width: 100%;
+		padding-bottom: 140px;
+
 	}
 
 	.grid_header{
@@ -261,6 +262,43 @@
 			}
 		}
 	}
+
+	#thrivepass-call-to-action-section{
+		height: 100vh;
+		background: #ffffff;
+
+		.thrivepass-call-to-action-header{
+			color: #727476;
+			margin: auto;
+			text-align: center;
+			max-width: 730px;
+			padding-top: 24vh;
+		}
+
+		.thrivepass-call-to-action-btn{
+			background: #ffe52e;
+			color: #727476;
+			font-size: 24px;
+			text-align: center;
+			padding-top: 10px;
+			border-radius: 4px;
+			font-family: lora_bolditalic;
+			box-shadow: 0px 8px 14px rgba(0, 0, 0, 0.05);
+			max-width: 280px;
+			margin: auto;
+			margin-top: 40px;
+			height: 60px;
+
+			-webkit-transition: all 0.5s ease;
+			transition: all 0.5s ease;
+
+			&:hover{
+				background: #cacaca;
+				color: #434649;
+				box-shadow: none;
+			}
+		}
+	}
 }
 
 .your-adventure{
@@ -345,6 +383,10 @@
 
 		.grid-text{
 			top: 60px !important;
+
+			.grid-description{
+				display: none !important;
+			}
 		}
 	}
 

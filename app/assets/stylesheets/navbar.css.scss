@@ -149,16 +149,32 @@
 
 
 @media screen and (max-width: 991px){
-  .brands-link{
-    display: none !important;
+
+  .Nav-List{
+    padding-top: 80px;
+  }
+
+  #mobile-nav-brand{
+    width: 60px !important;
+    height: 60px;
+    top: 20px;
+    left: 37%;
+  }
+
+  .Nav-List ul, .Nav-List li{
+    font-size: 24px;
+    line-height: 42px;
+    padding-top: 18px;
+    height: 80px;
+  }
+
+  .nav-drawer-link{
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-right: 114px;
   }
 }
 
-@media screen and (min-width: 991px){
-  .mobile-brands-link{
-    display: none !important;
-  }
-}
 
 @media screen and (max-width: 500px){
   .Offscreen {

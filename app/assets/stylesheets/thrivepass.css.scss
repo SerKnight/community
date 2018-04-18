@@ -75,7 +75,7 @@
 		margin: auto;
 
 		.thrivepass-mission-section{
-			width: 60%;
+			width: 55%;
 			padding-top: 140px;
 			position: absolute;
 			padding-left: 5%;
@@ -129,7 +129,7 @@
 	}
 
 	#thrivepass-adventure-banner{
-		height: 100vh;
+		min-height: 100vh;
 		background-size: cover !important;
 		position: relative;
 
@@ -137,7 +137,8 @@
 			max-width: 50%;
 			float: right;
 			padding-right: 5%;
-			padding-top: 24vh;
+			padding-top: 18vh;
+			padding-bottom: 140px;
 
 			.thrivepass-adventure-header{
 				color: #ffffff;
@@ -218,6 +219,92 @@
 }
 
 
+
+@media screen and (max-width: 991px){
+
+	#thrivepass-banner.TC-banner-image{
+		background: url('#{asset_path("background/MBA-TC-Mobile.png")}') !important;
+		background-position: center center !important;
+		background-repeat: no-repeat !important;
+	}
+
+	#thrivepass #thrivepass-mission{
+		min-height: 640px;
+
+		.thrivepass-mission-section{
+			width: 100%;
+			padding-top: 100px;
+			max-width: 600px;
+			margin: auto;
+			padding-left: 0%;
+			position: relative;
+		}
+
+		.thrivepass-mission-grid{
+			padding-top: 0px;
+			width: 100%;
+			max-width: 600px;
+			margin: auto;
+			float: none;
+			padding-right: 0%;
+			position: relative;
+
+			.thrivepass-mission-subsection{
+				padding-left: 20px;
+				max-width: 50%;
+				float: left;
+				margin-right: 40px;
+			}
+		}
+	}
+
+	#thrivepass-adventure-banner.thrivepass-mission-image{
+		background: url('#{asset_path("background/MBA-TP-Mobile.png")}') !important;
+		background-position: center center no-repeat;
+	}
+
+	#thrivepass #thrivepass-adventure-banner .thrivepass-adventure-text{
+		max-width: 60%;
+		float: none;
+		padding-right: 0%;
+		margin: auto;
+	}
+
+	#thrivepass #thrivepass-adventure-trip-banner .thrivepass-adventure-trip-text{
+		max-width: 80%
+	}
+}
+
+
+@media screen and (max-width: 600px){
+
+	#thrivepass #thrivepass-mission{
+		min-height: 720px;
+
+		.thrivepass-mission-section{
+			max-width: 80%;
+			padding-top: 60px;
+		}
+
+		.thrivepass-mission-grid{
+			max-width: 80%;
+
+
+			.thrivepass-mission-subsection{
+				max-width: 100%;
+				margin-top: 40px;
+			}
+		}
+	}
+
+	#thrivepass #thrivepass-adventure-banner .thrivepass-adventure-text{
+		max-width: 90%;
+	}
+
+	#thrivepass #thrivepass-adventure-trip-banner .thrivepass-adventure-trip-text{
+		max-width: 90%
+	}
+}
 
 
 
