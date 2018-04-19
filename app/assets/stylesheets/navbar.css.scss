@@ -2,14 +2,14 @@
   background: asset-url("background/MBAShadowLogo.png");
   background-repeat: no-repeat;
   background-size: 100%;
-  width: 120px !important;
-  height: 120px;
+  width: 160px !important;
+  height: 160px;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
   position: fixed;
   z-index: 1001;
-  top: 20px;
-  left: 29%;
+  top: 0px;
+  left: 22%;
   opacity: 0.7;
 
   &:hover{
@@ -155,10 +155,9 @@
   }
 
   #mobile-nav-brand{
-    width: 60px !important;
-    height: 60px;
-    top: 20px;
-    left: 37%;
+    width: 100px !important;
+    height: 100px;
+    left: 29%;
   }
 
   .Nav-List ul, .Nav-List li{

@@ -4,14 +4,23 @@
     - if content_for?(:meta_og)
       = yield :meta_og
     - else
-      %meta{:content => "Group Adventures Made By Travelers - MadebyAdventure", :property => "og:title"}/
-      %meta{:content => "MadebyAdventure", :property => "og:site_name"}/
-      %meta{:content => "Discover one of a kind group adventures created by travelers with local guides.", :property => "og:description"}/
-      %meta{:content => "website", :property => "og:type"}/
-      %meta{:content => "http://www.madebyadventure.com/", :property => "og:url"}/
-      %meta{:content => "http://i.imgur.com/hShb0MO.png", :property => "og:image"}/
-      %meta{:content => "1326", :property => "og:image:width"}/
-      %meta{:content => "700", :property => "og:image:height"}/
+      - content_for(:meta_og) do
+        %meta{:content => "Welcome to Made by Adventure", :property => "og:title"}/
+        %meta{:content => "Made by Adventure", :property => "og:site_name"}/
+        %meta{:content => "We're an on-demand design & strategy team. We partner with ambitious organizations to accelerate positive impact and solve complex challenges.", :property => "og:description"}/
+        %meta{:content => "website", :property => "og:type"}/
+        %meta{:content => "http://www.madebyadventure.com", :property => "og:url"}/
+        %meta{:content => "https://i.imgur.com/d55lByp.png", :property => "og:image"}/
+        %meta{:content => "1200", :property => "og:image:width"}/
+        %meta{:content => "630", :property => "og:image:height"}/
+
+        %meta{:content => "summary_large_image", :name => "twitter:card"}
+        %meta{:content => "@MadebyAdventure", :name => "twitter:site"}
+        %meta{:content => "MadebyAdventure", :name => "twitter:title"}
+        %meta{:content => "On-demand design & strategy team partnering with organizations to accelerate positive impact and solve complex challenges. goo.gl/zk4Et4", :name => "twitter:description"}
+        %meta{:content => "https://i.imgur.com/d55lByp.png", :name => "twitter:image:src"}/
+        
+      %meta{:content => "o5F7lEA8dwxqpzBjzrEd_EQ_21zmTHh8ZyHmLxg9Ycg", :name => "google-site-verification"}/
 
     %title MadebyAdventure
     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true
