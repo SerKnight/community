@@ -18,7 +18,7 @@ gem 'devise', github: 'plataformatec/devise'
 gem 'omniauth'
 gem 'omniauth-facebook'
 gem 'binding_of_caller'
-gem 'bootstrap-sass', '3.3.5'
+gem 'bootstrap-sass', '3.4.1'
 gem 'bootstrap-sass-extras'
 gem 'google-analytics-rails'
 
